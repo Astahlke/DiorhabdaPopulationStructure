@@ -1,0 +1,133 @@
+---
+title: "structure_analysis"
+author: "Amanda Stahlke"
+date: "2/28/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(pophelper)
+library(gridExtra)
+library(gtable)
+library(label.switching)
+```
+
+## R Structure Rnd 1
+
+```{r inputs}
+popmap <- read.csv("~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/masterpopmap.tsv", 
+                   sep = "\t",  
+                   col.names = c("sampID", "PopID"),
+                   stringsAsFactors = FALSE, header = FALSE)
+
+tail(popmap)
+
+# Only do this once
+unzip(zipfile = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/Results_f.zip",
+      exdir = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/Results_f")
+
+## global
+sfiles <- list.files(path="~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/Results_f/", 
+  pattern="outfile_*",full.names=TRUE)
+
+slist <- readQ(sfiles,filetype="structure", 
+               indlabfromfile = TRUE, 
+               readci = TRUE)
+
+popmap <- left_join(data.frame(sampID = rownames(slist[[1]])), 
+                    popmap)
+
+popID <- data.frame(PopID = popmap$PopID)
+popID <- data.frame(lapply(popID, as.character), stringsAsFactors=FALSE)
+sapply(popID, is.character)
+
+cbbPalette <- c("#56B4E9", "#E69F00", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+```
+
+```{r which_K}
+sr1 <- summariseQ(tabulateQ(slist))
+p <- evannoMethodStructure(data=sr1,exportplot=F,returnplot=T,returndata=F,basesize=12,linesize=0.7)
+grid.arrange(p)
+```
+
+
+```{r, Ks}
+k2 <- plotQ(alignK(slist[c(21:30)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            clustercol=cbbPalette,
+            grplab = popID) 
+grid.arrange(k2$plot[[1]])
+
+k3 <- plotQ(alignK(slist[c(31:40)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            clustercol=cbbPalette,
+            grplab = popID,
+            grplabangle=-90)
+grid.arrange(k3$plot[[1]])
+
+
+k4 <- plotQ(alignK(slist[c(41:50)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            clustercol=cbbPalette,
+            grplab = popID,
+            grplabangle=-90)
+grid.arrange(k4$plot[[1]])
+
+
+k5 <- plotQ(alignK(slist[c(51:60)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            clustercol=cbbPalette,
+            grplab = popID,
+            grplabangle=-90)
+grid.arrange(k5$plot[[1]])
+
+k6 <- plotQ(alignK(slist[c(61:70)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            clustercol=cbbPalette,
+            grplab = popID,
+            grplabangle=-90)
+grid.arrange(k6$plot[[1]])
+
+
+k7 <- plotQ(alignK(slist[c(71:80)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            clustercol=cbbPalette,
+            grplab = popID,
+            grplabangle=-90)
+grid.arrange(k7$plot[[1]])
+
+k8 <- plotQ(alignK(slist[c(81:90)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            # clustercol=cbbPalette,
+            grplab = popID,
+            grplabangle=-90)
+grid.arrange(k8$plot[[1]])
+```
+
+```{r K4}
+plotQMultiline(slist[41],
+      showticks=T,
+      clustercol=cbbPalette,
+      grplab = popID,
+      spl = 25,
+      showindlab = T,
+      showyaxis = T,
+      barsize = .9,
+      # subsetgrp = pop_order,
+      # ordergrp = T,
+      basesize=11, 
+      useindlab = T,
+      exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/")
+
+```
+
+
