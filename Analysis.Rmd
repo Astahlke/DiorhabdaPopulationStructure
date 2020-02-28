@@ -1,0 +1,244 @@
+---
+title: "Process Stacks Output"
+author: "Amanda Stahlke"
+date: "2/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libs}
+library(dplyr)
+library(ggplot2)
+library(vcfR)
+library(adegenet)
+```
+
+# Global dataset
+
+Produced in Stacks/2.5 with script raw2vcf.sh. Briefly:
+``````{r, engine = 'bash', eval = FALSE, stackscode}
+projhome=/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019
+
+#raw1=/mnt/ceph/stah3621/diorhabda/00rawdata/RADseq/widesurvey ## produced in 2016ish
+#raw2=/mnt/ceph/stah3621/diorhabda/00rawdata/RADseq/morewidesurvey ## produced later
+## Combined here ##
+raw=/mnt/ceph/stah3621/diorhabda/00rawdata/RADseq/StahlkeBitume
+
+fqc_out=$projhome/fastqc
+cf_out=$projhome/1clonefilter ## output directory
+proc=$projhome/2processed ## these are your clone_filtered, demultiplexed reads
+al_out=$projhome/3refaligned ## output directory
+popmap=${projhome}/info/masterpopmap.tsv
+g_out=$projhome/4gstacks
+p_out=$projhome/5populations
+
+for lib in $(ls ${raw}/PH*R1*); do
+       echo $lib
+       base=$(basename $lib _L00*_R1_001.fastq.gz)
+#       echo $base
+                ##T10_S17_L002_R
+       T=$(echo $base | cut -f 1 -d _)
+       echo $T
+
+        ### clone_filter
+       clone_filter -P -1 $lib -2 $raw/$T*R2_001.fastq.gz -o $cf_out -i gzfastq \
+               &>> $cf_out/clone_filter_$T.log
+$cf_out/clone_filter_$T.log
+
+       process_radtags -1 $cf_out/${T}*_R1_001.1.fq.gz \
+       -2 $cf_out/${T}*_R2_001.2.fq.gz --paired --bestrad -e sbfI -r -q \
+       -b $projhome/info/${T}_barcodes.tsv -o $proc --barcode_dist_1 3
+       mv $proc/process_radtags.1clonefilter.log $proc/process_radtags.1clonefilter.${T}.log
+       mv $proc/*rem*fq.gz $proc/rem/
+$proc/process_radtags.1clonefilter.${T}.log
+       done
+
+#### Align fq to reference ####
+bowtie_db=/mnt/ceph/stah3621/diorhabda/bowtie_db/carinulata_arced_scaffolds
+bowtielog=$al_out/bowtie.log
+
+module load bowtie2
+module load samtools
+
+for samp in $(ls $proc/*1.fq.gz | cut -f 9 -d / | cut -f 1 -d .); do
+        echo 'Aligning' $samp >> $bowtielog
+
+        ## I use --very-sensitive because divergent spp
+        bowtie2 --very-sensitive -x $bowtie_db \
+       -1 $proc/${samp}.1.fq.gz -2 $proc/${samp}.2.fq.gz \
+        -S $al_out/${samp}.sam 2>> $bowtielog
+         samtools view -bS $al_out/${samp}.sam | samtools sort - --threads 30 \
+         -o $al_out/${samp}.bam
+done
+
+gstacks -I $al_out/ -M $popmap -O $g_out/ -t 30
+
+stacks-dist-extract $g_out/gstacks.log.distribs bam_stats_per_sample > $g_out/bam_stats_per_sample.tsv
+
+stacks-dist-extract $g_out/gstacks.log.distribs effective_coverages_per_sample > $g_out/effective_coverages_per_sample.tsv
+
+populations -P $g_out -O $p_out -M $popmap --threads 30 -e SbfI --merge-sites \
+         --write-random-snp --ordered-export --vcf
+
+module load vcftools
+
+## individual missingness - .imiss
+vcftools --missing-indv --vcf $p_out/populations.snps.vcf \
+         --out $f_out/populations.snps
+
+## missingness across sites - .lmiss
+vcftools --missing-site --vcf $p_out/populations.snps.vcf \
+         --out $f_out/populations.snps
+
+
+### I used to do this filtering then bring the vcf back to Stacks - this doesn't work
+### anymore so now I'm going to try populations:
+### tried p35, R50, p35R50, r80p35, and R50
+### -p,--min-populations 
+### -r,--min-samples-per-pop 
+### -R,--min-samples-overall 
+
+mkdir R50
+### winner - reasonable number of loci, snps, and missing data rate for gloabl analysis
+
+populations -P ${g_out} -O ${p_out}/R50 -M ${popmap} --threads 30 \
+-e SbfI --merge-sites --write-random-snp --ordered-export --vcf \
+         -R 0.50
+
+vcftools --missing-indv --vcf $p_out/populations.snps.vcf \
+         --out $f_out/populations.snps
+
+mkdir ${p_out}/75mmR50
+awk '$5 > 0.75' ${p_out}/R50/populations.snps.imiss | cut -f 1 > ${p_out}/75mmR50/75mmR50.txt
+grep -v -f ${p_out}/75mmR50/75mmR50.txt $popmap > ${p_out}/75mmR50/75mmR50_popmap.txt
+
+populations -P ${g_out} -O ${p_out}/75mmR50 -M ${p_out}/75mmR50/75mmR50_popmap.txt \
+         --threads 30 \
+         -e SbfI --merge-sites \
+         --write-random-snp --ordered-export --vcf --structure \
+         -R 0.50
+
+```
+
+## Gstacks
+
+```{r gstacks_bamstats}
+bam <- read.delim(file = "bam_stats_per_sample.tsv")
+hist(bam$records, breaks=1000)
+hist(bam$records, breaks=1000, xlim = c(0,1000000))
+bam %>%
+  filter(records < 1000)
+```
+
+```{r gstacks_effcov}
+eff_cov <- read.delim("effective_coverages_per_sample.tsv", skip = 2)
+hist(eff_cov$mean_cov, breaks = 100, xlim = c(5, 50))
+```
+
+## Missing data
+```{r}
+
+# read.delim(".imiss")
+# read.delim(".lmiss")
+
+```
+
+## Populations
+
+```{r populations}
+## First section of sumstats for only variable positions 
+sumstats <- read.delim("populations.sumstats_summary.tsv", skip=1, nrows = 39)
+colnames(sumstats)[1] <- "popID"
+knitr::kable(sumstats)
+```
+
+
+```{r populations_popgen}
+ggplot(data=sumstats) +
+  geom_col(aes(x = popID, y = Private)) +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  ggtitle("Private Alleles")
+
+ggplot(data=sumstats) +
+  geom_col(aes(x = popID, y = Exp_Het)) +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+    ggtitle("Exp_Het")
+
+ggplot(data=sumstats) +
+  geom_col(aes(x = popID, y = Pi)) +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+    ggtitle("Pi")
+
+ggplot(data=sumstats) +
+  geom_col(aes(x = popID, y = Fis)) +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+    ggtitle("Fis")
+```
+
+```{r vcf2adgenet}
+popmap <- read.table("masterpopmap.tsv", sep = "\t", header = FALSE, col.names =  c("sampID", "pop"), stringsAsFactors = FALSE)
+vcf_gl <- read.vcfR(file = "populations.snps.vcf")
+gl_gl <- vcfR2genlight(vcf_gl)
+
+gl_gl
+
+inds <- data.frame(sampID = gl_gl@ind.names)
+subset_popmap <- left_join(inds, popmap, by = "sampID")
+
+subset_popmap %>%
+  count(pop) %>%
+  knitr::kable()
+
+genind <- vcfR2genind(vcf_gl)
+strata(gl_gl) <- subset_popmap[,1:2]
+strata(genind) <- subset_popmap[,1:2]
+setPop(gl_gl) <- ~pop
+setPop(genind) <- ~pop
+```
+
+```{r pca}
+pca <- glPca(gl_gl, nf = 50)
+scores <- pca$scores
+sampID <- row.names(scores) 
+scores <- cbind(scores, sampID)
+scores <- merge(scores, subset_popmap, by = 'sampID')
+
+scores <- arrange(scores, by=pop)
+# scores <- as.data.frame(pca$scores, as.character(newpopmap[,1]))
+scores$PC1 <-as.numeric(as.character(scores$PC1))
+scores$PC2 <- as.numeric(as.character(scores$PC2))
+scores$PC3 <- as.numeric(as.character(scores$PC3))
+scores$PC4 <- as.numeric(as.character(scores$PC4))
+scores$PC5 <- as.numeric(as.character(scores$PC5))
+scores$PC6 <- as.numeric(as.character(scores$PC6))
+scores$PC7 <- as.numeric(as.character(scores$PC7))
+scores$PC8 <- as.numeric(as.character(scores$PC8))
+scores$PC9 <- as.numeric(as.character(scores$PC9))
+
+pca_plot <- ggplot(data = scores, aes(x=PC1, y=PC2, color = pop, label=pop)) +
+  # geom_point() +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = 0) +
+  geom_text() +
+  # stat_ellipse(geom = "polygon", alpha = .2, aes(fill=pop)) +
+  # xlim(-40, 0) +
+  # ylim(-1.5,0) +
+  guides(fill=FALSE) +
+  theme_bw() +
+  ggtitle("Global dataset")
+
+pca_plot
+```
+
+```{r dapc}
+dapc <- dapc(genind, n.pca=100, n.da = 6)
+scatter(dapc)
+```
+
