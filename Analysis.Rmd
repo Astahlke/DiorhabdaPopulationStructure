@@ -150,7 +150,12 @@ hist(eff_cov$mean_cov, breaks = 100, xlim = c(5, 50))
 
 ```{r populations}
 ## First section of sumstats for only variable positions 
-sumstats <- read.delim("populations.sumstats_summary.tsv", skip=1, nrows = 39)
+## Round 1
+# sumstats <- read.delim("populations.sumstats_summary.tsv", skip=1, nrows = 39)
+
+## Round 2
+sumstats <- read.delim("5populations/75mmR50/populations.sumstats_summary.tsv", skip=1, nrows = 35)
+
 colnames(sumstats)[1] <- "popID"
 knitr::kable(sumstats)
 ```
@@ -192,9 +197,7 @@ gl_gl
 inds <- data.frame(sampID = gl_gl@ind.names)
 subset_popmap <- left_join(inds, popmap, by = "sampID")
 
-subset_popmap %>%
-  count(pop) %>%
-  knitr::kable()
+knitr::kable(subset_popmap$pop)
 
 genind <- vcfR2genind(vcf_gl)
 strata(gl_gl) <- subset_popmap[,1:2]
