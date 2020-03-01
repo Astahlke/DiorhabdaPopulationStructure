@@ -14,7 +14,11 @@ library(gtable)
 library(label.switching)
 ```
 
-## R Structure Rnd 1
+## Structure Rnd 1
+
+First, examine "global" ancestry for all available samples. There are old replicates in here and some suspected contamination/switching. The masterpopmap has ALL of these samples. 
+
+Admixture model, LD=0, allele freqs are uncorrelated, alpha is inferred for each popualtion.
 
 ```{r inputs}
 popmap <- read.csv("~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/masterpopmap.tsv", 
@@ -24,7 +28,6 @@ popmap <- read.csv("~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/mas
 
 tail(popmap)
 
-# Only do this once
 unzip(zipfile = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/Results_f.zip",
       exdir = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/Results_f")
 
@@ -46,12 +49,15 @@ sapply(popID, is.character)
 cbbPalette <- c("#56B4E9", "#E69F00", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 ```
 
+## What is the best K?
+
 ```{r which_K}
 sr1 <- summariseQ(tabulateQ(slist))
 p <- evannoMethodStructure(data=sr1,exportplot=F,returnplot=T,returndata=F,basesize=12,linesize=0.7)
 grid.arrange(p)
 ```
 
+K=2 and K=3 are super stable. D. carinata appears as a mix between sublineata and elongata. I am surprised to see, for the first time in these samples, indications of admixture between carinlata and sublineata along the Rio Grande. 
 
 ```{r, Ks}
 k2 <- plotQ(alignK(slist[c(21:30)]),
@@ -68,7 +74,11 @@ k3 <- plotQ(alignK(slist[c(31:40)]),
             grplab = popID,
             grplabangle=-90)
 grid.arrange(k3$plot[[1]])
+```
 
+As usual, K=4 reflects lab populations, elongata in the native range, and hints at carinulata substructure. 
+
+```{r}
 
 k4 <- plotQ(alignK(slist[c(41:50)]),
             imgoutput="join",
@@ -111,6 +121,7 @@ k8 <- plotQ(alignK(slist[c(81:90)]),
             grplab = popID,
             grplabangle=-90)
 grid.arrange(k8$plot[[1]])
+
 ```
 
 ```{r K4}
