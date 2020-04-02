@@ -123,6 +123,51 @@ populations -P ${g_out} -O ${p_out}/75mmR50 -M ${p_out}/75mmR50/75mmR50_popmap.t
 
 ```
 
+Final sample and site list.
+```{r}
+global_popmap <- read.delim("globalpopmap_R5075mm4cov.tsv",
+           col.names=c("sampID", "popID"),
+           header = F)
+table(global_popmap$popID)
+write.table(file = "samplesize.tsv",
+            col.names = c("popID", "sample_size"),
+            table(global_popmap$popID),
+            quote = F, row.names = F)
+```
+
+Merge this with existing metadata table. 
+
+## Samtools flagstat
+Report generated from Multiqc
+```{r flagstat}
+flagstat <- read.delim("multiqc_data/multiqc_samtools_flagstat.txt")
+head(flagstat)
+
+mapped_perc <- select(flagstat, c(Sample,mapped_passed_pct))
+hist(mapped_perc$mapped_passed_pct, breaks = 50)
+mean(mapped_perc$mapped_passed_pct)
+
+colnames(mapped_perc)[1] <- "sampID"
+
+```
+
+```{r violinplot}
+sample_meta.dat <- read.csv("~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/pop_metadata.csv", header = TRUE, stringsAsFactors = FALSE)
+sample_meta.dat
+
+mapped_perc_metadat <- merge(mapped_perc, global_popmap) %>%
+  merge(sample_meta.dat)
+
+ggplot(mapped_perc_metadat) +
+  geom_violin(aes(x = Grp, y = mapped_passed_pct)) +
+  geom_point(aes(x = Grp, y = mapped_passed_pct), alpha = .5) +
+  geom_hline(yintercept  = as.numeric(summarise(mapped_perc_metadat, mean(mapped_passed_pct)))) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+ggsave("mapped_perc_metadat_grp.jpg", dpi = 300)
+
+```
+
+
 ## Gstacks
 
 ```{r gstacks_bamstats}
@@ -133,58 +178,136 @@ bam %>%
   filter(records < 1000)
 ```
 
+
+
 ```{r gstacks_effcov}
 eff_cov <- read.delim("effective_coverages_per_sample.tsv", skip = 2)
 hist(eff_cov$mean_cov, breaks = 100, xlim = c(5, 50))
+
+## check which rep to keep among these, kept the higher coverage
+eff_cov[grep("_", eff_cov$sample),]
+
+colnames(popmap)[1] <- "sample"
+semi_join(eff_cov, popmap) %>%
+    merge(popmap) %>%
+  dplyr::filter(mean_cov_ns < 4) %>%
+    arrange(mean_cov_ns) %>%
+  select(sample) %>%
+  write.table(., file = "low_cov_samples.tsv", quote = F, col.names = F, row.names = F)
+
 ```
 
-## Missing data
-```{r}
+  merge(popmap)## Missing data
+```{r ind_missingness}
+imiss <- read.delim("5populations/R50mm75cov4/populations.snps.imiss")
+head(imiss)
+hist(imiss$F_MISS, breaks = 100)
 
-# read.delim(".imiss")
-# read.delim(".lmiss")
+colnames(imiss)[1] <- "sampID"
+merge(imiss, global_popmap) %>%
+    arrange(desc(F_MISS)) 
+
+miss_meta <- merge(imiss, global_popmap) %>%
+  merge(sample_meta.dat)
+
+arrange(miss_meta, desc(F_MISS)) 
+
+summarise(miss_meta, mean(F_MISS)) 
+
+miss_meta %>%
+  group_by(Grp) %>%
+  summarise(mean= mean(F_MISS))
+
+ggplot(miss_meta) +
+  geom_violin(aes(x = Grp, y = F_MISS)) +
+  geom_point(aes(x = Grp, y = F_MISS), alpha = .5) +
+  geom_hline(yintercept  = as.numeric(summarise(miss_meta, mean(F_MISS)))) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+ggsave("missingdata_metadat_grp.jpg", dpi = 300, width = 6, height = 4, units = "in")
+
 
 ```
 
 ## Populations
 
+Summary statistics: Private alleles, exp het, pi, fis
+
 ```{r populations}
+sumstats_variant <- read.delim("5populations/R50mm75cov4/populations.sumstats_summary.tsv", skip=1, nrows = 35)
+sumstats_variant_fixed <- read.delim("5populations/R50mm75cov4/populations.sumstats_summary.tsv", skip=38)
+
+colnames(sumstats_variant)[1] <- "popID"
+colnames(sumstats_variant_fixed)[1] <- "popID"
+sample_meta.dat
+
+## reorder 
+sumstats_variant$PopID <- factor(sumstats_variant$popID, levels = arrange(sample_meta.dat, Order)[,'popID'])
+sumstats_variant_fixed$PopID <- factor(sumstats_variant_fixed$popID, levels = arrange(sample_meta.dat, Order)[,'popID'])
+
+knitr::kable(sumstats_variant)
+```
+
+```{r}
+knitr::kable(sumstats_variant_fixed)
+```
+
+```{r populations_substructure}
 ## First section of sumstats for only variable positions 
-## Round 1
-# sumstats <- read.delim("populations.sumstats_summary.tsv", skip=1, nrows = 39)
+## carinu
+sumstats_variant_carinu <- read.delim("substructure/carinu/populations.sumstats_summary.tsv", skip=1, nrows = 14)
 
-## Round 2
-sumstats <- read.delim("5populations/75mmR50/populations.sumstats_summary.tsv", skip=1, nrows = 35)
+sumstats_variant_fixed_carinu <- read.delim("substructure/carinu/populations.sumstats_summary.tsv", skip=17)
+knitr::kable(sumstats_variant_carinu)
 
-colnames(sumstats)[1] <- "popID"
-knitr::kable(sumstats)
+## other
+sumstats_variant_others <- read.delim("substructure/others/populations.sumstats_summary.tsv", skip=1, nrows = 24)
+sumstats_variant_fixed_others <- read.delim("substructure/others/populations.sumstats_summary.tsv", skip=27)
+knitr::kable(sumstats_variant_others)
 ```
 
 
 ```{r populations_popgen}
-ggplot(data=sumstats) +
-  geom_col(aes(x = popID, y = Private)) +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  ggtitle("Private Alleles")
+sumstats_variant <- merge(sumstats_variant, sample_meta.dat[,c('popID','cat')])
+sumstats_variant$Cat <- factor(sumstats_variant$cat, levels = c("native", "lab", "original_release", "carinulata_expansion", "potential_hybrid_zone"))
 
-ggplot(data=sumstats) +
-  geom_col(aes(x = popID, y = Exp_Het)) +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-    ggtitle("Exp_Het")
+sumstats_variant_fixed <- merge(sumstats_variant_fixed, sample_meta.dat[,c('popID','cat')])
+sumstats_variant_fixed$Cat <- factor(sumstats_variant_fixed$cat, levels = c("native", "lab", "original_release", "carinulata_expansion", "potential_hybrid_zone"))
 
-ggplot(data=sumstats) +
-  geom_col(aes(x = popID, y = Pi)) +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-    ggtitle("Pi")
 
-ggplot(data=sumstats) +
-  geom_col(aes(x = popID, y = Fis)) +
-  theme_bw() +
+a <- ggplot(data=sumstats_variant) +
+  geom_col(aes(x = PopID, y = Private), width = 0.9) +
+  theme_minimal() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-    ggtitle("Fis")
+  facet_grid(~Cat, scales = "free", space = "free")
+
+b <- ggplot(data=sumstats_variant) +
+  geom_col(aes(x = PopID, y = Exp_Het), width = 0.9) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_grid(~Cat, scales = "free", space = "free") 
+
+c <- ggplot(data=sumstats_variant) +
+  geom_col(aes(x = PopID, y = Pi), width = 0.9) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_grid(~Cat, scales = "free", space = "free") 
+
+d <- ggplot(data=sumstats_variant_fixed) +
+  geom_col(aes(x = PopID, y = X.Polymorphic_Loci), width = 0.9) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_grid(~Cat, scales = "free", space = "free")
+
+e <- ggplot(data=sumstats_variant) +
+  geom_col(aes(x = PopID, y = Fis), width = 0.9) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_grid(~Cat, scales = "free", space = "free")
+
+library(cowplot)
+
+plot_grid(a, b, d, e)
+
 ```
 
 ```{r vcf2adgenet}
@@ -243,5 +366,147 @@ pca_plot
 ```{r dapc}
 dapc <- dapc(genind, n.pca=100, n.da = 6)
 scatter(dapc)
+```
+
+
+```{r vcf2adgenet_substructure_carinu}
+popmap <- read.table("masterpopmap.tsv", sep = "\t", header = FALSE, col.names =  c("sampID", "pop"), stringsAsFactors = FALSE)
+vcf_gl <- read.vcfR(file = "substructure/carinu/populations.snps.vcf")
+gl_gl <- vcfR2genlight(vcf_gl)
+
+gl_gl
+
+inds <- data.frame(sampID = gl_gl@ind.names)
+subset_popmap <- left_join(inds, popmap, by = "sampID")
+
+knitr::kable(table(subset_popmap$pop))
+
+genind <- vcfR2genind(vcf_gl)
+strata(gl_gl) <- subset_popmap[,1:2]
+strata(genind) <- subset_popmap[,1:2]
+setPop(gl_gl) <- ~pop
+setPop(genind) <- ~pop
+
+pca <- glPca(gl_gl, nf = 50)
+scores <- pca$scores
+sampID <- row.names(scores) 
+scores <- cbind(scores, sampID)
+scores <- merge(scores, subset_popmap, by = 'sampID')
+
+scores <- arrange(scores, by=pop)
+# scores <- as.data.frame(pca$scores, as.character(newpopmap[,1]))
+scores$PC1 <-as.numeric(as.character(scores$PC1))
+scores$PC2 <- as.numeric(as.character(scores$PC2))
+scores$PC3 <- as.numeric(as.character(scores$PC3))
+scores$PC4 <- as.numeric(as.character(scores$PC4))
+scores$PC5 <- as.numeric(as.character(scores$PC5))
+scores$PC6 <- as.numeric(as.character(scores$PC6))
+scores$PC7 <- as.numeric(as.character(scores$PC7))
+scores$PC8 <- as.numeric(as.character(scores$PC8))
+scores$PC9 <- as.numeric(as.character(scores$PC9))
+
+pca_plot <- ggplot(data = scores, aes(x=PC1, y=PC2, color = pop, label=pop)) +
+  # geom_point() +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = 0) +
+  geom_text() +
+  # stat_ellipse(geom = "polygon", alpha = .2, aes(fill=pop)) +
+  # xlim(-40, 0) +
+  # ylim(-1.5,0) +
+  guides(fill=FALSE) +
+  theme_bw() +
+  ggtitle("Global dataset")
+
+pca_plot
+```
+
+```{r vcf2adgenet_substructure_others}
+popmap <- read.table("masterpopmap.tsv", sep = "\t", header = FALSE, col.names =  c("sampID", "pop"), stringsAsFactors = FALSE)
+vcf_gl <- read.vcfR(file = "substructure/others/populations.snps.vcf")
+gl_gl <- vcfR2genlight(vcf_gl)
+
+gl_gl
+
+inds <- data.frame(sampID = gl_gl@ind.names)
+subset_popmap <- left_join(inds, popmap, by = "sampID")
+
+knitr::kable(table(subset_popmap$pop))
+
+genind <- vcfR2genind(vcf_gl)
+strata(gl_gl) <- subset_popmap[,1:2]
+strata(genind) <- subset_popmap[,1:2]
+setPop(gl_gl) <- ~pop
+setPop(genind) <- ~pop
+
+pca <- glPca(gl_gl, nf = 50)
+scores <- pca$scores
+sampID <- row.names(scores) 
+scores <- cbind(scores, sampID)
+scores <- semi_join(scores, subset_popmap, by = 'sampID')
+
+scores <- arrange(scores, by=pop)
+# scores <- as.data.frame(pca$scores, as.character(newpopmap[,1]))
+scores$PC1 <-as.numeric(as.character(scores$PC1))
+scores$PC2 <- as.numeric(as.character(scores$PC2))
+scores$PC3 <- as.numeric(as.character(scores$PC3))
+scores$PC4 <- as.numeric(as.character(scores$PC4))
+scores$PC5 <- as.numeric(as.character(scores$PC5))
+scores$PC6 <- as.numeric(as.character(scores$PC6))
+scores$PC7 <- as.numeric(as.character(scores$PC7))
+scores$PC8 <- as.numeric(as.character(scores$PC8))
+scores$PC9 <- as.numeric(as.character(scores$PC9))
+
+pca_plot <- ggplot(data = scores, aes(x=PC1, y=PC2, color = pop, label=pop)) +
+  # geom_point() +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = 0) +
+  geom_text() +
+  # stat_ellipse(geom = "polygon", alpha = .2, aes(fill=pop)) +
+  # xlim(-40, 0) +
+  # ylim(-1.5,0) +
+  guides(fill=FALSE) +
+  theme_bw() +
+  ggtitle("Others dataset")
+pca_plot
+
+ggplot(data = scores, aes(x=PC1, y=PC2, color = pop, label=pop)) +
+  # geom_point() +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = 0) +
+  geom_text() +
+  # stat_ellipse(geom = "polygon", alpha = .2, aes(fill=pop)) +
+  xlim(-15, -4) +
+  ylim(0,3) +
+  guides(fill=FALSE) +
+  theme_bw() +
+  ggtitle("Others - elongata")
+
+ggplot(data = scores, aes(x=PC1, y=PC2, color = pop, label=pop)) +
+  # geom_point() +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = 0) +
+  geom_text() +
+  # stat_ellipse(geom = "polygon", alpha = .2, aes(fill=pop)) +
+  xlim(0, 6) +
+  ylim(0,3) +
+  guides(fill=FALSE) +
+  theme_bw() +
+  ggtitle("Others - sublineata")
+
+
+ggplot(data = scores, aes(x=PC1, y=PC2, color = pop, label=pop)) +
+  # geom_point() +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = 0) +
+  geom_text() +
+  # stat_ellipse(geom = "polygon", alpha = .2, aes(fill=pop)) +
+  xlim(0, 6) +
+  ylim(-12,0) +
+  guides(fill=FALSE) +
+  theme_bw() +
+  ggtitle("Others - carinata")
+
+
+pca_plot
 ```
 

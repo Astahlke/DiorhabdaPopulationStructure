@@ -1,0 +1,204 @@
+---
+title: "range_expansion"
+author: "Amanda Stahlke"
+date: "3/6/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+``````{r, engine = 'bash', eval = FALSE, stackscode}
+## convert this contig vcf to plink
+module load plink/1.90
+
+plink --vcf contig.populations.snps.vcf --set-missing-var-ids "@_#" --make-bed --out contig.populations.snps --allow-extra-chr
+## out: Error: --set-missing-var-ids requires a sorted .bim file.  Retry this command
+after using --make-bed to sort your data.
+
+plink --bfile contig.populations.snps --set-missing-var-ids "@_#" --make-bed --out contig.populations.snps --allow-extra-chr
+``````
+
+```{r}
+library(rangeExpansion) ## Version: 0.0.0.9000
+library(dplyr)
+library(snpStats) #1.32.0
+library(geosphere)
+library(rworldmap)
+
+library(ggplot2)
+```
+
+
+## make coords file
+
+```{r inputs}
+snp.file <- "contig.populations.snps.bed"
+geneticdat <- load.plink.file(snp.file)
+nrow(geneticdat$genotypes) # 154 individuals
+id <- data.frame(id = rownames(geneticdat$genotypes))
+
+ploidy <- 2 #diploid individuals
+
+### make coords_file: id, longitude, latitude, outgroup, region, pop
+sample_meta.dat <- read.csv("~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/pop_metadata.csv", header = TRUE, stringsAsFactors = FALSE)
+ind_map <- read.csv("intro_carinu_popmap.tsv", sep = "\t", header = F, col.names = c("id", "popID"))
+nrow(ind_map)
+
+meta_ind <- merge(sample_meta.dat, ind_map) %>%
+  select(c(id, Longitude, Latitude, popID))
+
+unique(meta_ind$popID)
+
+## from population substructure
+carinu_regions <- data.frame(popID=unique(meta_ind$popID), region = c(1, #11CO
+                                                                      2, #12AZ
+                                                                      1, #18TX
+                                                                      1, #1WY
+                                                                      1, #28NM
+                                                                      1, #2CO
+                                                                      2, #31NV
+                                                                      2, #32UT
+                                                                      2, #33NV
+                                                                      2, #34UT
+                                                                      1, #4CO
+                                                                      1, #5CO 
+                                                                      1))
+
+
+carinu_meta_regions <- merge(meta_ind, carinu_regions)
+
+carinu_meta_regions$id <- gsub('_rep', "", carinu_meta_regions$id)
+carinu_meta_regions$id <- gsub('_2019', "", carinu_meta_regions$id)
+colnames(carinu_meta_regions)[c(1,3,4)] <- c('pop','longitude', 'latitude')
+# View(carinu_meta_regions)
+
+
+carinu_meta_regions <- carinu_meta_regions[,c('id','longitude', 'latitude', 'pop')]
+# write.table(carinu_meta_regions, "Git_Repo/carinu_meta_regions.tsv", quote = F, row.names = F, sep = "\t")
+
+write.csv(carinu_meta_regions, "carinu_meta_regions.csv", quote = F, row.names = F)
+carinu_coords.file <- "carinu_meta_regions.csv"
+
+regions_to_analyze <- list(NULL,
+                           "1", 
+                           "2",
+                           c("1", "2"))
+
+
+```
+
+```{r}
+raw.data <- load.data(plink.file = snp.file, coords.file = carinu_coords.file, sep = ",", ploidy=ploidy)
+
+pop <- make.pop(raw.data, ploidy)
+
+psi <- get.all.psi(pop)
+
+### this isn't working and I don't know why
+### Error in matrix(unlist(tdoa.data), ncol = 5) : 'data' must be of a vector type, was 'NULL'
+# results <- run.regions(region=regions_to_analyze, psi = psi,  pop=pop, xlen=10, ylen=20)
+# summary(results)
+```
+
+## psi is directionality index
+
+```{r psi}
+my_psi <- as.matrix(psi)
+rownames(my_psi) <- pop$coords$pop
+colnames(my_psi) <- pop$coords$pop
+max(my_psi)
+# heatmap(my_psi, Rowv = TRUE, symm = TRUE, col = heat.colors(256), margins=c(5,10))
+# ?heatmap
+# my_psi$pop1 <- rownames(my_psi)
+melted_cormat <- reshape2::melt(my_psi, na.rm = TRUE)
+
+melted_cormat <- melted_cormat[order(melted_cormat$value, decreasing = TRUE),]
+melted_cormat$Var1 <- factor(melted_cormat$Var1, levels=unique(melted_cormat$Var1[order(melted_cormat$value)]))
+melted_cormat$Var2 <- factor(melted_cormat$Var2, levels=unique(melted_cormat$Var2[order(melted_cormat$value)]))
+
+# library(ggplot2)
+ggplot(data = filter(melted_cormat, value >0), aes(Var1, Var2, fill = value))+
+  geom_tile(color = "white")+
+  scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
+                       midpoint = 0, limit = c(-.2,.2), space = "Lab", 
+                       name="Psi") +
+  xlab("Psi_1") +
+  ylab("Psi_2") +
+  theme_minimal()+ 
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+                                   size = 12, hjust = 1))+
+  coord_fixed()
+ggsave("range_expansion.jpeg", dpi = 300)
+
+```
+## Try again with samples only along virgin river expansion
+
+```{r}
+snp.file <- "virgin-river.contig.populations.snps"
+geneticdat <- load.plink.file(snp.file)
+nrow(geneticdat$genotypes) # 67 individuals
+id <- data.frame(id = rownames(geneticdat$genotypes))
+
+ploidy <- 2 #diploid individuals
+
+### make coords_file: id, longitude, latitude, outgroup, region, pop
+sample_meta.dat
+ind_map <- read.csv("intro_carinu_popmap.tsv", sep = "\t", header = F, col.names = c("id", "popID"))
+ind_map$id <- gsub('_rep', "", ind_map$id)
+ind_map$id <- gsub('_2019', "", ind_map$id)
+
+ind_map <- merge(id, ind_map)
+
+
+meta_ind <- merge(sample_meta.dat, ind_map) %>%
+  select(c(id, Longitude, Latitude, popID))
+meta_ind
+
+unique(meta_ind$popID)
+virgin_meta_regions <- merge(meta_ind, carinu_regions)
+colnames(virgin_meta_regions)[c(1,3,4)] <- c('pop','longitude', 'latitude')
+View(carinu_meta_regions)
+
+virgin_meta_regions <- virgin_meta_regions[,c('id','longitude', 'latitude', 'pop')]
+write.csv(virgin_meta_regions, "virgin_meta_regions.csv", quote = F, row.names = F)
+
+```
+```{r}
+snp.file <- "virgin-river.contig.populations.snps"
+coords.file <- "virgin_meta_regions.csv"
+region <- list(NULL, "2")
+
+raw.data <- load.data(plink.file = snp.file, coords.file = coords.file, sep = ",", ploidy=ploidy)
+pop <- make.pop(raw.data, ploidy)
+psi <- get.all.psi(pop)
+run.regions(region=region, pop=pop, psi=psi, xlen=10,ylen=20)
+```
+```{r}
+my_psi <- as.matrix(psi)
+rownames(my_psi) <- pop$coords$pop
+colnames(my_psi) <- pop$coords$pop
+max(my_psi)
+# heatmap(my_psi, Rowv = TRUE, symm = TRUE, col = heat.colors(256), margins=c(5,10))
+# ?heatmap
+# my_psi$pop1 <- rownames(my_psi)
+melted_cormat <- reshape2::melt(my_psi, na.rm = TRUE)
+
+melted_cormat <- melted_cormat[order(melted_cormat$value, decreasing = TRUE),]
+melted_cormat$Var1 <- factor(melted_cormat$Var1, levels=unique(melted_cormat$Var1[order(melted_cormat$value)]))
+melted_cormat$Var2 <- factor(melted_cormat$Var2, levels=unique(melted_cormat$Var2[order(melted_cormat$value)]))
+
+ggplot(data = filter(melted_cormat, value >0), aes(Var1, Var2, fill = value))+
+  geom_tile(color = "white")+
+  scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
+                       midpoint = 0, limit = c(-.2,.2), space = "Lab", 
+                       name="Psi") +
+  xlab("Psi_1") +
+  ylab("Psi_2") +
+  theme_minimal()+ 
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+                                   size = 12, hjust = 1))+
+  coord_fixed()
+```
+

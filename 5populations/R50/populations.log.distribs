@@ -1,0 +1,3875 @@
+# Note: Individual distributions can be extracted using the `stacks-dist-extract` utility.
+#       e.g. `stacks-dist-extract populations.log.distribs dist_name`
+
+BEGIN batch_progress
+1: analyzed 6 loci; filtered 299 loci; 305 loci seen.
+    5193 genomic sites, of which 12 were covered by multiple loci (0.2%).
+2: analyzed 4 loci; filtered 245 loci; 249 loci seen.
+    3582 genomic sites, of which 8 were covered by multiple loci (0.2%).
+3: analyzed 2 loci; filtered 375 loci; 377 loci seen.
+    1757 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4: analyzed 2 loci; filtered 207 loci; 209 loci seen.
+    1580 genomic sites, of which 4 were covered by multiple loci (0.3%).
+7: analyzed 5 loci; filtered 513 loci; 518 loci seen.
+    3761 genomic sites, of which 4 were covered by multiple loci (0.1%).
+8: analyzed 2 loci; filtered 160 loci; 162 loci seen.
+    1713 genomic sites, of which 4 were covered by multiple loci (0.2%).
+9: analyzed 3 loci; filtered 104 loci; 107 loci seen.
+    2715 genomic sites, of which 4 were covered by multiple loci (0.1%).
+10: analyzed 4 loci; filtered 129 loci; 133 loci seen.
+    3277 genomic sites, of which 8 were covered by multiple loci (0.2%).
+11: analyzed 2 loci; filtered 142 loci; 144 loci seen.
+    1812 genomic sites, of which 4 were covered by multiple loci (0.2%).
+12: analyzed 2 loci; filtered 189 loci; 191 loci seen.
+    1794 genomic sites, of which 4 were covered by multiple loci (0.2%).
+13: analyzed 2 loci; filtered 258 loci; 260 loci seen.
+    1925 genomic sites, of which 4 were covered by multiple loci (0.2%).
+14: analyzed 2 loci; filtered 292 loci; 294 loci seen.
+    1863 genomic sites, of which 4 were covered by multiple loci (0.2%).
+16: analyzed 2 loci; filtered 73 loci; 75 loci seen.
+    1571 genomic sites, of which 4 were covered by multiple loci (0.3%).
+17: analyzed 4 loci; filtered 217 loci; 221 loci seen.
+    3729 genomic sites, of which 8 were covered by multiple loci (0.2%).
+18: analyzed 2 loci; filtered 210 loci; 212 loci seen.
+    1811 genomic sites, of which 4 were covered by multiple loci (0.2%).
+20: analyzed 6 loci; filtered 261 loci; 267 loci seen.
+    5272 genomic sites, of which 12 were covered by multiple loci (0.2%).
+21: analyzed 2 loci; filtered 38 loci; 40 loci seen.
+    1842 genomic sites, of which 4 were covered by multiple loci (0.2%).
+22: analyzed 4 loci; filtered 93 loci; 97 loci seen.
+    3639 genomic sites, of which 8 were covered by multiple loci (0.2%).
+23: analyzed 2 loci; filtered 173 loci; 175 loci seen.
+    1981 genomic sites, of which 4 were covered by multiple loci (0.2%).
+24: analyzed 4 loci; filtered 339 loci; 343 loci seen.
+    3652 genomic sites, of which 8 were covered by multiple loci (0.2%).
+26: analyzed 4 loci; filtered 164 loci; 168 loci seen.
+    3286 genomic sites, of which 8 were covered by multiple loci (0.2%).
+27: analyzed 4 loci; filtered 89 loci; 93 loci seen.
+    3662 genomic sites, of which 8 were covered by multiple loci (0.2%).
+28: analyzed 2 loci; filtered 79 loci; 81 loci seen.
+    1800 genomic sites, of which 4 were covered by multiple loci (0.2%).
+29: analyzed 2 loci; filtered 182 loci; 184 loci seen.
+    1815 genomic sites, of which 4 were covered by multiple loci (0.2%).
+30: analyzed 2 loci; filtered 79 loci; 81 loci seen.
+    1888 genomic sites, of which 4 were covered by multiple loci (0.2%).
+32: analyzed 3 loci; filtered 376 loci; 379 loci seen.
+    2608 genomic sites, of which 4 were covered by multiple loci (0.2%).
+34: analyzed 2 loci; filtered 201 loci; 203 loci seen.
+    1801 genomic sites, of which 4 were covered by multiple loci (0.2%).
+36: analyzed 3 loci; filtered 210 loci; 213 loci seen.
+    2832 genomic sites, of which 4 were covered by multiple loci (0.1%).
+37: analyzed 2 loci; filtered 527 loci; 529 loci seen.
+    1654 genomic sites, of which 4 were covered by multiple loci (0.2%).
+42: analyzed 2 loci; filtered 101 loci; 103 loci seen.
+    1740 genomic sites, of which 4 were covered by multiple loci (0.2%).
+44: analyzed 4 loci; filtered 119 loci; 123 loci seen.
+    3431 genomic sites, of which 8 were covered by multiple loci (0.2%).
+45: analyzed 4 loci; filtered 106 loci; 110 loci seen.
+    3424 genomic sites, of which 4 were covered by multiple loci (0.1%).
+46: analyzed 6 loci; filtered 68 loci; 74 loci seen.
+    5344 genomic sites, of which 12 were covered by multiple loci (0.2%).
+47: analyzed 2 loci; filtered 338 loci; 340 loci seen.
+    1797 genomic sites, of which 4 were covered by multiple loci (0.2%).
+51: analyzed 2 loci; filtered 89 loci; 91 loci seen.
+    1614 genomic sites, of which 4 were covered by multiple loci (0.2%).
+52: analyzed 4 loci; filtered 202 loci; 206 loci seen.
+    3606 genomic sites, of which 8 were covered by multiple loci (0.2%).
+53: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    1980 genomic sites, of which 4 were covered by multiple loci (0.2%).
+54: analyzed 2 loci; filtered 197 loci; 199 loci seen.
+    1825 genomic sites, of which 4 were covered by multiple loci (0.2%).
+56: analyzed 4 loci; filtered 156 loci; 160 loci seen.
+    3665 genomic sites, of which 8 were covered by multiple loci (0.2%).
+58: analyzed 3 loci; filtered 279 loci; 282 loci seen.
+    2669 genomic sites, of which 4 were covered by multiple loci (0.1%).
+61: analyzed 4 loci; filtered 141 loci; 145 loci seen.
+    3411 genomic sites, of which 8 were covered by multiple loci (0.2%).
+62: analyzed 4 loci; filtered 28 loci; 32 loci seen.
+    3554 genomic sites, of which 8 were covered by multiple loci (0.2%).
+63: analyzed 6 loci; filtered 374 loci; 380 loci seen.
+    5805 genomic sites, of which 12 were covered by multiple loci (0.2%).
+67: analyzed 4 loci; filtered 228 loci; 232 loci seen.
+    3611 genomic sites, of which 8 were covered by multiple loci (0.2%).
+70: analyzed 7 loci; filtered 229 loci; 236 loci seen.
+    6479 genomic sites, of which 12 were covered by multiple loci (0.2%).
+71: analyzed 2 loci; filtered 141 loci; 143 loci seen.
+    1773 genomic sites, of which 4 were covered by multiple loci (0.2%).
+73: analyzed 3 loci; filtered 330 loci; 333 loci seen.
+    2733 genomic sites, of which 4 were covered by multiple loci (0.1%).
+79: analyzed 5 loci; filtered 172 loci; 177 loci seen.
+    4252 genomic sites, of which 8 were covered by multiple loci (0.2%).
+80: analyzed 4 loci; filtered 188 loci; 192 loci seen.
+    3461 genomic sites, of which 8 were covered by multiple loci (0.2%).
+82: analyzed 2 loci; filtered 240 loci; 242 loci seen.
+    1862 genomic sites, of which 4 were covered by multiple loci (0.2%).
+83: analyzed 2 loci; filtered 105 loci; 107 loci seen.
+    1805 genomic sites, of which 4 were covered by multiple loci (0.2%).
+84: analyzed 4 loci; filtered 134 loci; 138 loci seen.
+    3518 genomic sites, of which 8 were covered by multiple loci (0.2%).
+86: analyzed 4 loci; filtered 183 loci; 187 loci seen.
+    3625 genomic sites, of which 8 were covered by multiple loci (0.2%).
+88: analyzed 4 loci; filtered 42 loci; 46 loci seen.
+    3622 genomic sites, of which 8 were covered by multiple loci (0.2%).
+89: analyzed 2 loci; filtered 349 loci; 351 loci seen.
+    1787 genomic sites, of which 4 were covered by multiple loci (0.2%).
+93: analyzed 2 loci; filtered 11 loci; 13 loci seen.
+    1793 genomic sites, of which 4 were covered by multiple loci (0.2%).
+94: analyzed 2 loci; filtered 287 loci; 289 loci seen.
+    1798 genomic sites, of which 4 were covered by multiple loci (0.2%).
+97: analyzed 2 loci; filtered 507 loci; 509 loci seen.
+    1550 genomic sites, of which 4 were covered by multiple loci (0.3%).
+103: analyzed 4 loci; filtered 357 loci; 361 loci seen.
+    3774 genomic sites, of which 8 were covered by multiple loci (0.2%).
+107: analyzed 2 loci; filtered 74 loci; 76 loci seen.
+    1597 genomic sites, of which 0 were covered by multiple loci (0.0%).
+108: analyzed 3 loci; filtered 77 loci; 80 loci seen.
+    2503 genomic sites, of which 4 were covered by multiple loci (0.2%).
+109: analyzed 2 loci; filtered 257 loci; 259 loci seen.
+    1855 genomic sites, of which 4 were covered by multiple loci (0.2%).
+112: analyzed 2 loci; filtered 33 loci; 35 loci seen.
+    1862 genomic sites, of which 4 were covered by multiple loci (0.2%).
+113: analyzed 2 loci; filtered 149 loci; 151 loci seen.
+    1818 genomic sites, of which 4 were covered by multiple loci (0.2%).
+116: analyzed 3 loci; filtered 290 loci; 293 loci seen.
+    2583 genomic sites, of which 4 were covered by multiple loci (0.2%).
+119: analyzed 4 loci; filtered 104 loci; 108 loci seen.
+    3429 genomic sites, of which 8 were covered by multiple loci (0.2%).
+120: analyzed 2 loci; filtered 78 loci; 80 loci seen.
+    1625 genomic sites, of which 4 were covered by multiple loci (0.2%).
+121: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    1757 genomic sites, of which 4 were covered by multiple loci (0.2%).
+122: analyzed 4 loci; filtered 65 loci; 69 loci seen.
+    3673 genomic sites, of which 8 were covered by multiple loci (0.2%).
+123: analyzed 2 loci; filtered 164 loci; 166 loci seen.
+    1904 genomic sites, of which 4 were covered by multiple loci (0.2%).
+125: analyzed 3 loci; filtered 43 loci; 46 loci seen.
+    2231 genomic sites, of which 4 were covered by multiple loci (0.2%).
+126: analyzed 7 loci; filtered 76 loci; 83 loci seen.
+    6420 genomic sites, of which 12 were covered by multiple loci (0.2%).
+127: analyzed 2 loci; filtered 234 loci; 236 loci seen.
+    1909 genomic sites, of which 4 were covered by multiple loci (0.2%).
+131: analyzed 2 loci; filtered 88 loci; 90 loci seen.
+    1806 genomic sites, of which 4 were covered by multiple loci (0.2%).
+134: analyzed 3 loci; filtered 218 loci; 221 loci seen.
+    2755 genomic sites, of which 4 were covered by multiple loci (0.1%).
+135: analyzed 4 loci; filtered 132 loci; 136 loci seen.
+    3528 genomic sites, of which 8 were covered by multiple loci (0.2%).
+136: analyzed 3 loci; filtered 56 loci; 59 loci seen.
+    2454 genomic sites, of which 4 were covered by multiple loci (0.2%).
+138: analyzed 3 loci; filtered 408 loci; 411 loci seen.
+    1902 genomic sites, of which 4 were covered by multiple loci (0.2%).
+142: analyzed 3 loci; filtered 199 loci; 202 loci seen.
+    2792 genomic sites, of which 4 were covered by multiple loci (0.1%).
+144: analyzed 2 loci; filtered 111 loci; 113 loci seen.
+    1764 genomic sites, of which 4 were covered by multiple loci (0.2%).
+146: analyzed 2 loci; filtered 136 loci; 138 loci seen.
+    1854 genomic sites, of which 4 were covered by multiple loci (0.2%).
+148: analyzed 6 loci; filtered 152 loci; 158 loci seen.
+    5397 genomic sites, of which 12 were covered by multiple loci (0.2%).
+150: analyzed 2 loci; filtered 566 loci; 568 loci seen.
+    1668 genomic sites, of which 0 were covered by multiple loci (0.0%).
+156: analyzed 2 loci; filtered 400 loci; 402 loci seen.
+    1801 genomic sites, of which 4 were covered by multiple loci (0.2%).
+162: analyzed 2 loci; filtered 297 loci; 299 loci seen.
+    1773 genomic sites, of which 4 were covered by multiple loci (0.2%).
+166: analyzed 2 loci; filtered 32 loci; 34 loci seen.
+    1931 genomic sites, of which 4 were covered by multiple loci (0.2%).
+167: analyzed 3 loci; filtered 281 loci; 284 loci seen.
+    2240 genomic sites, of which 4 were covered by multiple loci (0.2%).
+171: analyzed 3 loci; filtered 100 loci; 103 loci seen.
+    2656 genomic sites, of which 4 were covered by multiple loci (0.2%).
+172: analyzed 4 loci; filtered 243 loci; 247 loci seen.
+    3785 genomic sites, of which 8 were covered by multiple loci (0.2%).
+175: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    1749 genomic sites, of which 4 were covered by multiple loci (0.2%).
+176: analyzed 2 loci; filtered 531 loci; 533 loci seen.
+    1726 genomic sites, of which 4 were covered by multiple loci (0.2%).
+187: analyzed 3 loci; filtered 643 loci; 646 loci seen.
+    1948 genomic sites, of which 966 were covered by multiple loci (49.6%).
+193: analyzed 2 loci; filtered 20 loci; 22 loci seen.
+    1816 genomic sites, of which 4 were covered by multiple loci (0.2%).
+194: analyzed 4 loci; filtered 154 loci; 158 loci seen.
+    3464 genomic sites, of which 8 were covered by multiple loci (0.2%).
+196: analyzed 5 loci; filtered 96 loci; 101 loci seen.
+    4432 genomic sites, of which 8 were covered by multiple loci (0.2%).
+197: analyzed 2 loci; filtered 183 loci; 185 loci seen.
+    1849 genomic sites, of which 4 were covered by multiple loci (0.2%).
+200: analyzed 3 loci; filtered 153 loci; 156 loci seen.
+    2258 genomic sites, of which 4 were covered by multiple loci (0.2%).
+202: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1775 genomic sites, of which 4 were covered by multiple loci (0.2%).
+203: analyzed 4 loci; filtered 156 loci; 160 loci seen.
+    3942 genomic sites, of which 8 were covered by multiple loci (0.2%).
+204: analyzed 2 loci; filtered 473 loci; 475 loci seen.
+    1860 genomic sites, of which 4 were covered by multiple loci (0.2%).
+212: analyzed 2 loci; filtered 85 loci; 87 loci seen.
+    1662 genomic sites, of which 4 were covered by multiple loci (0.2%).
+214: analyzed 2 loci; filtered 101 loci; 103 loci seen.
+    1608 genomic sites, of which 4 were covered by multiple loci (0.2%).
+215: analyzed 2 loci; filtered 29 loci; 31 loci seen.
+    1754 genomic sites, of which 4 were covered by multiple loci (0.2%).
+216: analyzed 2 loci; filtered 299 loci; 301 loci seen.
+    1771 genomic sites, of which 4 were covered by multiple loci (0.2%).
+219: analyzed 2 loci; filtered 15 loci; 17 loci seen.
+    1824 genomic sites, of which 4 were covered by multiple loci (0.2%).
+220: analyzed 4 loci; filtered 137 loci; 141 loci seen.
+    3394 genomic sites, of which 8 were covered by multiple loci (0.2%).
+222: analyzed 4 loci; filtered 356 loci; 360 loci seen.
+    3719 genomic sites, of which 8 were covered by multiple loci (0.2%).
+229: analyzed 3 loci; filtered 207 loci; 210 loci seen.
+    2485 genomic sites, of which 4 were covered by multiple loci (0.2%).
+231: analyzed 2 loci; filtered 196 loci; 198 loci seen.
+    1389 genomic sites, of which 4 were covered by multiple loci (0.3%).
+234: analyzed 2 loci; filtered 365 loci; 367 loci seen.
+    1766 genomic sites, of which 4 were covered by multiple loci (0.2%).
+240: analyzed 2 loci; filtered 180 loci; 182 loci seen.
+    1602 genomic sites, of which 4 were covered by multiple loci (0.2%).
+242: analyzed 6 loci; filtered 33 loci; 39 loci seen.
+    3777 genomic sites, of which 1576 were covered by multiple loci (41.7%).
+243: analyzed 2 loci; filtered 27 loci; 29 loci seen.
+    1595 genomic sites, of which 4 were covered by multiple loci (0.3%).
+244: analyzed 4 loci; filtered 419 loci; 423 loci seen.
+    3362 genomic sites, of which 8 were covered by multiple loci (0.2%).
+249: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    1837 genomic sites, of which 4 were covered by multiple loci (0.2%).
+251: analyzed 4 loci; filtered 84 loci; 88 loci seen.
+    3786 genomic sites, of which 8 were covered by multiple loci (0.2%).
+255: analyzed 7 loci; filtered 293 loci; 300 loci seen.
+    5637 genomic sites, of which 12 were covered by multiple loci (0.2%).
+258: analyzed 4 loci; filtered 242 loci; 246 loci seen.
+    3616 genomic sites, of which 8 were covered by multiple loci (0.2%).
+261: analyzed 2 loci; filtered 652 loci; 654 loci seen.
+    1743 genomic sites, of which 4 were covered by multiple loci (0.2%).
+272: analyzed 2 loci; filtered 86 loci; 88 loci seen.
+    1966 genomic sites, of which 4 were covered by multiple loci (0.2%).
+273: analyzed 2 loci; filtered 61 loci; 63 loci seen.
+    1730 genomic sites, of which 4 were covered by multiple loci (0.2%).
+274: analyzed 5 loci; filtered 295 loci; 300 loci seen.
+    4265 genomic sites, of which 8 were covered by multiple loci (0.2%).
+279: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    1796 genomic sites, of which 4 were covered by multiple loci (0.2%).
+281: analyzed 2 loci; filtered 352 loci; 354 loci seen.
+    1748 genomic sites, of which 4 were covered by multiple loci (0.2%).
+288: analyzed 2 loci; filtered 35 loci; 37 loci seen.
+    1979 genomic sites, of which 4 were covered by multiple loci (0.2%).
+289: analyzed 4 loci; filtered 95 loci; 99 loci seen.
+    3583 genomic sites, of which 8 were covered by multiple loci (0.2%).
+290: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    1705 genomic sites, of which 4 were covered by multiple loci (0.2%).
+292: analyzed 2 loci; filtered 216 loci; 218 loci seen.
+    1919 genomic sites, of which 4 were covered by multiple loci (0.2%).
+295: analyzed 2 loci; filtered 49 loci; 51 loci seen.
+    1848 genomic sites, of which 4 were covered by multiple loci (0.2%).
+296: analyzed 2 loci; filtered 98 loci; 100 loci seen.
+    1648 genomic sites, of which 4 were covered by multiple loci (0.2%).
+297: analyzed 4 loci; filtered 193 loci; 197 loci seen.
+    3647 genomic sites, of which 8 were covered by multiple loci (0.2%).
+300: analyzed 2 loci; filtered 513 loci; 515 loci seen.
+    1756 genomic sites, of which 4 were covered by multiple loci (0.2%).
+310: analyzed 2 loci; filtered 44 loci; 46 loci seen.
+    1667 genomic sites, of which 4 were covered by multiple loci (0.2%).
+319: analyzed 2 loci; filtered 677 loci; 679 loci seen.
+    1692 genomic sites, of which 0 were covered by multiple loci (0.0%).
+322: analyzed 2 loci; filtered 99 loci; 101 loci seen.
+    1945 genomic sites, of which 4 were covered by multiple loci (0.2%).
+324: analyzed 5 loci; filtered 122 loci; 127 loci seen.
+    4727 genomic sites, of which 8 were covered by multiple loci (0.2%).
+325: analyzed 2 loci; filtered 87 loci; 89 loci seen.
+    1903 genomic sites, of which 4 were covered by multiple loci (0.2%).
+326: analyzed 3 loci; filtered 234 loci; 237 loci seen.
+    2233 genomic sites, of which 4 were covered by multiple loci (0.2%).
+329: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    1536 genomic sites, of which 4 were covered by multiple loci (0.3%).
+330: analyzed 2 loci; filtered 53 loci; 55 loci seen.
+    1298 genomic sites, of which 4 were covered by multiple loci (0.3%).
+331: analyzed 2 loci; filtered 61 loci; 63 loci seen.
+    1803 genomic sites, of which 4 were covered by multiple loci (0.2%).
+332: analyzed 3 loci; filtered 62 loci; 65 loci seen.
+    1875 genomic sites, of which 4 were covered by multiple loci (0.2%).
+345: analyzed 5 loci; filtered 844 loci; 849 loci seen.
+    4520 genomic sites, of which 8 were covered by multiple loci (0.2%).
+348: analyzed 2 loci; filtered 169 loci; 171 loci seen.
+    1874 genomic sites, of which 4 were covered by multiple loci (0.2%).
+351: analyzed 3 loci; filtered 76 loci; 79 loci seen.
+    2740 genomic sites, of which 4 were covered by multiple loci (0.1%).
+352: analyzed 2 loci; filtered 138 loci; 140 loci seen.
+    1909 genomic sites, of which 4 were covered by multiple loci (0.2%).
+354: analyzed 2 loci; filtered 173 loci; 175 loci seen.
+    1787 genomic sites, of which 4 were covered by multiple loci (0.2%).
+357: analyzed 2 loci; filtered 8 loci; 10 loci seen.
+    1803 genomic sites, of which 4 were covered by multiple loci (0.2%).
+358: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+    1034 genomic sites, of which 4 were covered by multiple loci (0.4%).
+359: analyzed 5 loci; filtered 261 loci; 266 loci seen.
+    4538 genomic sites, of which 8 were covered by multiple loci (0.2%).
+363: analyzed 2 loci; filtered 20 loci; 22 loci seen.
+    1908 genomic sites, of which 4 were covered by multiple loci (0.2%).
+364: analyzed 2 loci; filtered 87 loci; 89 loci seen.
+    1667 genomic sites, of which 4 were covered by multiple loci (0.2%).
+365: analyzed 2 loci; filtered 46 loci; 48 loci seen.
+    1663 genomic sites, of which 4 were covered by multiple loci (0.2%).
+366: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    1757 genomic sites, of which 4 were covered by multiple loci (0.2%).
+367: analyzed 3 loci; filtered 142 loci; 145 loci seen.
+    2750 genomic sites, of which 4 were covered by multiple loci (0.1%).
+370: analyzed 2 loci; filtered 40 loci; 42 loci seen.
+    1780 genomic sites, of which 4 were covered by multiple loci (0.2%).
+371: analyzed 2 loci; filtered 379 loci; 381 loci seen.
+    1844 genomic sites, of which 4 were covered by multiple loci (0.2%).
+377: analyzed 2 loci; filtered 23 loci; 25 loci seen.
+    1825 genomic sites, of which 4 were covered by multiple loci (0.2%).
+378: analyzed 4 loci; filtered 90 loci; 94 loci seen.
+    3595 genomic sites, of which 8 were covered by multiple loci (0.2%).
+379: analyzed 2 loci; filtered 70 loci; 72 loci seen.
+    1716 genomic sites, of which 4 were covered by multiple loci (0.2%).
+380: analyzed 2 loci; filtered 28 loci; 30 loci seen.
+    1777 genomic sites, of which 4 were covered by multiple loci (0.2%).
+381: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    1857 genomic sites, of which 4 were covered by multiple loci (0.2%).
+383: analyzed 2 loci; filtered 57 loci; 59 loci seen.
+    1700 genomic sites, of which 4 were covered by multiple loci (0.2%).
+384: analyzed 2 loci; filtered 149 loci; 151 loci seen.
+    1735 genomic sites, of which 4 were covered by multiple loci (0.2%).
+387: analyzed 2 loci; filtered 74 loci; 76 loci seen.
+    1297 genomic sites, of which 4 were covered by multiple loci (0.3%).
+388: analyzed 2 loci; filtered 18 loci; 20 loci seen.
+    1802 genomic sites, of which 4 were covered by multiple loci (0.2%).
+389: analyzed 4 loci; filtered 247 loci; 251 loci seen.
+    3351 genomic sites, of which 8 were covered by multiple loci (0.2%).
+393: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    1777 genomic sites, of which 4 were covered by multiple loci (0.2%).
+394: analyzed 2 loci; filtered 67 loci; 69 loci seen.
+    1799 genomic sites, of which 4 were covered by multiple loci (0.2%).
+396: analyzed 5 loci; filtered 196 loci; 201 loci seen.
+    4570 genomic sites, of which 8 were covered by multiple loci (0.2%).
+399: analyzed 2 loci; filtered 70 loci; 72 loci seen.
+    1718 genomic sites, of which 4 were covered by multiple loci (0.2%).
+400: analyzed 3 loci; filtered 55 loci; 58 loci seen.
+    1757 genomic sites, of which 839 were covered by multiple loci (47.8%).
+405: analyzed 5 loci; filtered 408 loci; 413 loci seen.
+    4672 genomic sites, of which 8 were covered by multiple loci (0.2%).
+408: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    1648 genomic sites, of which 4 were covered by multiple loci (0.2%).
+410: analyzed 2 loci; filtered 166 loci; 168 loci seen.
+    1889 genomic sites, of which 4 were covered by multiple loci (0.2%).
+413: analyzed 4 loci; filtered 76 loci; 80 loci seen.
+    3508 genomic sites, of which 8 were covered by multiple loci (0.2%).
+414: analyzed 2 loci; filtered 185 loci; 187 loci seen.
+    1761 genomic sites, of which 4 were covered by multiple loci (0.2%).
+418: analyzed 2 loci; filtered 33 loci; 35 loci seen.
+    1884 genomic sites, of which 4 were covered by multiple loci (0.2%).
+419: analyzed 2 loci; filtered 366 loci; 368 loci seen.
+    1708 genomic sites, of which 4 were covered by multiple loci (0.2%).
+426: analyzed 2 loci; filtered 19 loci; 21 loci seen.
+    1603 genomic sites, of which 4 were covered by multiple loci (0.2%).
+427: analyzed 2 loci; filtered 113 loci; 115 loci seen.
+    1873 genomic sites, of which 4 were covered by multiple loci (0.2%).
+428: analyzed 2 loci; filtered 172 loci; 174 loci seen.
+    1955 genomic sites, of which 4 were covered by multiple loci (0.2%).
+431: analyzed 3 loci; filtered 390 loci; 393 loci seen.
+    2548 genomic sites, of which 4 were covered by multiple loci (0.2%).
+438: analyzed 2 loci; filtered 28 loci; 30 loci seen.
+    1752 genomic sites, of which 4 were covered by multiple loci (0.2%).
+439: analyzed 2 loci; filtered 52 loci; 54 loci seen.
+    1921 genomic sites, of which 4 were covered by multiple loci (0.2%).
+440: analyzed 2 loci; filtered 441 loci; 443 loci seen.
+    1677 genomic sites, of which 4 were covered by multiple loci (0.2%).
+448: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    1874 genomic sites, of which 4 were covered by multiple loci (0.2%).
+449: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    1644 genomic sites, of which 4 were covered by multiple loci (0.2%).
+450: analyzed 2 loci; filtered 136 loci; 138 loci seen.
+    1935 genomic sites, of which 4 were covered by multiple loci (0.2%).
+452: analyzed 2 loci; filtered 85 loci; 87 loci seen.
+    1831 genomic sites, of which 4 were covered by multiple loci (0.2%).
+454: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    1851 genomic sites, of which 4 were covered by multiple loci (0.2%).
+455: analyzed 4 loci; filtered 179 loci; 183 loci seen.
+    3691 genomic sites, of which 8 were covered by multiple loci (0.2%).
+462: analyzed 4 loci; filtered 269 loci; 273 loci seen.
+    3601 genomic sites, of which 4 were covered by multiple loci (0.1%).
+464: analyzed 6 loci; filtered 623 loci; 629 loci seen.
+    5612 genomic sites, of which 12 were covered by multiple loci (0.2%).
+477: analyzed 2 loci; filtered 88 loci; 90 loci seen.
+    1938 genomic sites, of which 4 were covered by multiple loci (0.2%).
+480: analyzed 3 loci; filtered 154 loci; 157 loci seen.
+    2560 genomic sites, of which 4 were covered by multiple loci (0.2%).
+482: analyzed 2 loci; filtered 263 loci; 265 loci seen.
+    1745 genomic sites, of which 4 were covered by multiple loci (0.2%).
+487: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    1828 genomic sites, of which 4 were covered by multiple loci (0.2%).
+488: analyzed 3 loci; filtered 97 loci; 100 loci seen.
+    2640 genomic sites, of which 4 were covered by multiple loci (0.2%).
+490: analyzed 3 loci; filtered 127 loci; 130 loci seen.
+    2665 genomic sites, of which 4 were covered by multiple loci (0.2%).
+492: analyzed 4 loci; filtered 211 loci; 215 loci seen.
+    3233 genomic sites, of which 8 were covered by multiple loci (0.2%).
+500: analyzed 3 loci; filtered 148 loci; 151 loci seen.
+    2408 genomic sites, of which 4 were covered by multiple loci (0.2%).
+501: analyzed 2 loci; filtered 376 loci; 378 loci seen.
+    1851 genomic sites, of which 4 were covered by multiple loci (0.2%).
+509: analyzed 2 loci; filtered 135 loci; 137 loci seen.
+    1930 genomic sites, of which 4 were covered by multiple loci (0.2%).
+512: analyzed 2 loci; filtered 17 loci; 19 loci seen.
+    1763 genomic sites, of which 4 were covered by multiple loci (0.2%).
+513: analyzed 2 loci; filtered 210 loci; 212 loci seen.
+    1761 genomic sites, of which 4 were covered by multiple loci (0.2%).
+517: analyzed 2 loci; filtered 333 loci; 335 loci seen.
+    1843 genomic sites, of which 4 were covered by multiple loci (0.2%).
+525: analyzed 4 loci; filtered 281 loci; 285 loci seen.
+    3829 genomic sites, of which 8 were covered by multiple loci (0.2%).
+530: analyzed 2 loci; filtered 119 loci; 121 loci seen.
+    1716 genomic sites, of which 4 were covered by multiple loci (0.2%).
+533: analyzed 2 loci; filtered 135 loci; 137 loci seen.
+    1933 genomic sites, of which 4 were covered by multiple loci (0.2%).
+536: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    1889 genomic sites, of which 4 were covered by multiple loci (0.2%).
+538: analyzed 2 loci; filtered 77 loci; 79 loci seen.
+    1787 genomic sites, of which 4 were covered by multiple loci (0.2%).
+540: analyzed 2 loci; filtered 240 loci; 242 loci seen.
+    1821 genomic sites, of which 4 were covered by multiple loci (0.2%).
+545: analyzed 2 loci; filtered 128 loci; 130 loci seen.
+    1856 genomic sites, of which 4 were covered by multiple loci (0.2%).
+550: analyzed 3 loci; filtered 196 loci; 199 loci seen.
+    2739 genomic sites, of which 4 were covered by multiple loci (0.1%).
+551: analyzed 2 loci; filtered 111 loci; 113 loci seen.
+    1953 genomic sites, of which 4 were covered by multiple loci (0.2%).
+553: analyzed 4 loci; filtered 63 loci; 67 loci seen.
+    3730 genomic sites, of which 8 were covered by multiple loci (0.2%).
+554: analyzed 4 loci; filtered 46 loci; 50 loci seen.
+    3674 genomic sites, of which 8 were covered by multiple loci (0.2%).
+558: analyzed 3 loci; filtered 234 loci; 237 loci seen.
+    2635 genomic sites, of which 4 were covered by multiple loci (0.2%).
+559: analyzed 5 loci; filtered 31 loci; 36 loci seen.
+    3605 genomic sites, of which 370 were covered by multiple loci (10.3%).
+560: analyzed 2 loci; filtered 123 loci; 125 loci seen.
+    1476 genomic sites, of which 4 were covered by multiple loci (0.3%).
+562: analyzed 4 loci; filtered 102 loci; 106 loci seen.
+    2445 genomic sites, of which 8 were covered by multiple loci (0.3%).
+564: analyzed 2 loci; filtered 40 loci; 42 loci seen.
+    1898 genomic sites, of which 4 were covered by multiple loci (0.2%).
+565: analyzed 2 loci; filtered 131 loci; 133 loci seen.
+    1819 genomic sites, of which 4 were covered by multiple loci (0.2%).
+568: analyzed 2 loci; filtered 603 loci; 605 loci seen.
+    1817 genomic sites, of which 4 were covered by multiple loci (0.2%).
+581: analyzed 4 loci; filtered 87 loci; 91 loci seen.
+    2463 genomic sites, of which 804 were covered by multiple loci (32.6%).
+582: analyzed 2 loci; filtered 116 loci; 118 loci seen.
+    1788 genomic sites, of which 4 were covered by multiple loci (0.2%).
+585: analyzed 2 loci; filtered 132 loci; 134 loci seen.
+    917 genomic sites, of which 760 were covered by multiple loci (82.9%).
+588: analyzed 2 loci; filtered 95 loci; 97 loci seen.
+    1842 genomic sites, of which 4 were covered by multiple loci (0.2%).
+590: analyzed 4 loci; filtered 9 loci; 13 loci seen.
+    1782 genomic sites, of which 786 were covered by multiple loci (44.1%).
+592: analyzed 3 loci; filtered 116 loci; 119 loci seen.
+    2832 genomic sites, of which 4 were covered by multiple loci (0.1%).
+593: analyzed 2 loci; filtered 11 loci; 13 loci seen.
+    1856 genomic sites, of which 4 were covered by multiple loci (0.2%).
+594: analyzed 2 loci; filtered 250 loci; 252 loci seen.
+    1664 genomic sites, of which 4 were covered by multiple loci (0.2%).
+599: analyzed 2 loci; filtered 129 loci; 131 loci seen.
+    1742 genomic sites, of which 4 were covered by multiple loci (0.2%).
+602: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    1646 genomic sites, of which 4 were covered by multiple loci (0.2%).
+604: analyzed 4 loci; filtered 320 loci; 324 loci seen.
+    1953 genomic sites, of which 1415 were covered by multiple loci (72.5%).
+612: analyzed 2 loci; filtered 214 loci; 216 loci seen.
+    1823 genomic sites, of which 4 were covered by multiple loci (0.2%).
+617: analyzed 2 loci; filtered 6 loci; 8 loci seen.
+    1710 genomic sites, of which 4 were covered by multiple loci (0.2%).
+618: analyzed 2 loci; filtered 46 loci; 48 loci seen.
+    1940 genomic sites, of which 4 were covered by multiple loci (0.2%).
+619: analyzed 4 loci; filtered 185 loci; 189 loci seen.
+    3677 genomic sites, of which 8 were covered by multiple loci (0.2%).
+622: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    1862 genomic sites, of which 4 were covered by multiple loci (0.2%).
+623: analyzed 2 loci; filtered 59 loci; 61 loci seen.
+    1664 genomic sites, of which 4 were covered by multiple loci (0.2%).
+624: analyzed 2 loci; filtered 109 loci; 111 loci seen.
+    1663 genomic sites, of which 4 were covered by multiple loci (0.2%).
+627: analyzed 4 loci; filtered 245 loci; 249 loci seen.
+    2163 genomic sites, of which 1016 were covered by multiple loci (47.0%).
+633: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1810 genomic sites, of which 4 were covered by multiple loci (0.2%).
+635: analyzed 2 loci; filtered 53 loci; 55 loci seen.
+    1875 genomic sites, of which 4 were covered by multiple loci (0.2%).
+636: analyzed 2 loci; filtered 287 loci; 289 loci seen.
+    1706 genomic sites, of which 4 were covered by multiple loci (0.2%).
+642: analyzed 2 loci; filtered 99 loci; 101 loci seen.
+    1937 genomic sites, of which 4 were covered by multiple loci (0.2%).
+645: analyzed 2 loci; filtered 85 loci; 87 loci seen.
+    1803 genomic sites, of which 4 were covered by multiple loci (0.2%).
+646: analyzed 2 loci; filtered 124 loci; 126 loci seen.
+    1700 genomic sites, of which 4 were covered by multiple loci (0.2%).
+648: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    1952 genomic sites, of which 4 were covered by multiple loci (0.2%).
+649: analyzed 2 loci; filtered 53 loci; 55 loci seen.
+    1908 genomic sites, of which 4 were covered by multiple loci (0.2%).
+650: analyzed 2 loci; filtered 301 loci; 303 loci seen.
+    1741 genomic sites, of which 4 were covered by multiple loci (0.2%).
+658: analyzed 2 loci; filtered 62 loci; 64 loci seen.
+    1917 genomic sites, of which 4 were covered by multiple loci (0.2%).
+661: analyzed 3 loci; filtered 128 loci; 131 loci seen.
+    2621 genomic sites, of which 4 were covered by multiple loci (0.2%).
+662: analyzed 2 loci; filtered 63 loci; 65 loci seen.
+    1965 genomic sites, of which 4 were covered by multiple loci (0.2%).
+667: analyzed 3 loci; filtered 472 loci; 475 loci seen.
+    2479 genomic sites, of which 4 were covered by multiple loci (0.2%).
+674: analyzed 2 loci; filtered 60 loci; 62 loci seen.
+    1852 genomic sites, of which 4 were covered by multiple loci (0.2%).
+675: analyzed 2 loci; filtered 210 loci; 212 loci seen.
+    1852 genomic sites, of which 4 were covered by multiple loci (0.2%).
+680: analyzed 2 loci; filtered 263 loci; 265 loci seen.
+    1761 genomic sites, of which 4 were covered by multiple loci (0.2%).
+686: analyzed 3 loci; filtered 152 loci; 155 loci seen.
+    2796 genomic sites, of which 4 were covered by multiple loci (0.1%).
+688: analyzed 2 loci; filtered 102 loci; 104 loci seen.
+    1617 genomic sites, of which 4 were covered by multiple loci (0.2%).
+695: analyzed 6 loci; filtered 360 loci; 366 loci seen.
+    4656 genomic sites, of which 455 were covered by multiple loci (9.8%).
+700: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1664 genomic sites, of which 4 were covered by multiple loci (0.2%).
+701: analyzed 2 loci; filtered 195 loci; 197 loci seen.
+    1711 genomic sites, of which 4 were covered by multiple loci (0.2%).
+706: analyzed 4 loci; filtered 46 loci; 50 loci seen.
+    3496 genomic sites, of which 8 were covered by multiple loci (0.2%).
+707: analyzed 2 loci; filtered 321 loci; 323 loci seen.
+    1660 genomic sites, of which 4 were covered by multiple loci (0.2%).
+714: analyzed 2 loci; filtered 19 loci; 21 loci seen.
+    1944 genomic sites, of which 4 were covered by multiple loci (0.2%).
+715: analyzed 6 loci; filtered 83 loci; 89 loci seen.
+    5201 genomic sites, of which 12 were covered by multiple loci (0.2%).
+716: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    1964 genomic sites, of which 4 were covered by multiple loci (0.2%).
+718: analyzed 3 loci; filtered 90 loci; 93 loci seen.
+    2383 genomic sites, of which 4 were covered by multiple loci (0.2%).
+721: analyzed 6 loci; filtered 60 loci; 66 loci seen.
+    4103 genomic sites, of which 771 were covered by multiple loci (18.8%).
+722: analyzed 2 loci; filtered 271 loci; 273 loci seen.
+    1772 genomic sites, of which 4 were covered by multiple loci (0.2%).
+727: analyzed 4 loci; filtered 523 loci; 527 loci seen.
+    3518 genomic sites, of which 8 were covered by multiple loci (0.2%).
+739: analyzed 2 loci; filtered 44 loci; 46 loci seen.
+    1759 genomic sites, of which 4 were covered by multiple loci (0.2%).
+741: analyzed 2 loci; filtered 113 loci; 115 loci seen.
+    1894 genomic sites, of which 4 were covered by multiple loci (0.2%).
+745: analyzed 3 loci; filtered 76 loci; 79 loci seen.
+    2080 genomic sites, of which 202 were covered by multiple loci (9.7%).
+746: analyzed 2 loci; filtered 92 loci; 94 loci seen.
+    1783 genomic sites, of which 4 were covered by multiple loci (0.2%).
+748: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1553 genomic sites, of which 4 were covered by multiple loci (0.3%).
+752: analyzed 3 loci; filtered 388 loci; 391 loci seen.
+    2899 genomic sites, of which 4 were covered by multiple loci (0.1%).
+759: analyzed 2 loci; filtered 182 loci; 184 loci seen.
+    1698 genomic sites, of which 4 were covered by multiple loci (0.2%).
+763: analyzed 2 loci; filtered 47 loci; 49 loci seen.
+    1873 genomic sites, of which 4 were covered by multiple loci (0.2%).
+766: analyzed 3 loci; filtered 261 loci; 264 loci seen.
+    2033 genomic sites, of which 868 were covered by multiple loci (42.7%).
+776: analyzed 3 loci; filtered 411 loci; 414 loci seen.
+    2367 genomic sites, of which 4 were covered by multiple loci (0.2%).
+779: analyzed 4 loci; filtered 41 loci; 45 loci seen.
+    3755 genomic sites, of which 8 were covered by multiple loci (0.2%).
+780: analyzed 2 loci; filtered 101 loci; 103 loci seen.
+    1857 genomic sites, of which 0 were covered by multiple loci (0.0%).
+782: analyzed 2 loci; filtered 161 loci; 163 loci seen.
+    1667 genomic sites, of which 4 were covered by multiple loci (0.2%).
+786: analyzed 2 loci; filtered 53 loci; 55 loci seen.
+    1920 genomic sites, of which 4 were covered by multiple loci (0.2%).
+787: analyzed 2 loci; filtered 31 loci; 33 loci seen.
+    1717 genomic sites, of which 4 were covered by multiple loci (0.2%).
+791: analyzed 3 loci; filtered 356 loci; 359 loci seen.
+    2682 genomic sites, of which 4 were covered by multiple loci (0.1%).
+797: analyzed 2 loci; filtered 113 loci; 115 loci seen.
+    1534 genomic sites, of which 4 were covered by multiple loci (0.3%).
+800: analyzed 2 loci; filtered 7 loci; 9 loci seen.
+    1755 genomic sites, of which 4 were covered by multiple loci (0.2%).
+801: analyzed 3 loci; filtered 82 loci; 85 loci seen.
+    2371 genomic sites, of which 4 were covered by multiple loci (0.2%).
+802: analyzed 2 loci; filtered 174 loci; 176 loci seen.
+    1749 genomic sites, of which 4 were covered by multiple loci (0.2%).
+807: analyzed 2 loci; filtered 24 loci; 26 loci seen.
+    1934 genomic sites, of which 4 were covered by multiple loci (0.2%).
+809: analyzed 5 loci; filtered 72 loci; 77 loci seen.
+    3729 genomic sites, of which 508 were covered by multiple loci (13.6%).
+810: analyzed 2 loci; filtered 74 loci; 76 loci seen.
+    1798 genomic sites, of which 4 were covered by multiple loci (0.2%).
+812: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1908 genomic sites, of which 4 were covered by multiple loci (0.2%).
+814: analyzed 2 loci; filtered 31 loci; 33 loci seen.
+    1848 genomic sites, of which 4 were covered by multiple loci (0.2%).
+815: analyzed 2 loci; filtered 38 loci; 40 loci seen.
+    1675 genomic sites, of which 4 were covered by multiple loci (0.2%).
+816: analyzed 2 loci; filtered 69 loci; 71 loci seen.
+    1633 genomic sites, of which 4 were covered by multiple loci (0.2%).
+817: analyzed 2 loci; filtered 86 loci; 88 loci seen.
+    1740 genomic sites, of which 4 were covered by multiple loci (0.2%).
+819: analyzed 2 loci; filtered 163 loci; 165 loci seen.
+    1794 genomic sites, of which 4 were covered by multiple loci (0.2%).
+822: analyzed 2 loci; filtered 47 loci; 49 loci seen.
+    1967 genomic sites, of which 4 were covered by multiple loci (0.2%).
+823: analyzed 4 loci; filtered 324 loci; 328 loci seen.
+    3448 genomic sites, of which 8 were covered by multiple loci (0.2%).
+831: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    1741 genomic sites, of which 4 were covered by multiple loci (0.2%).
+834: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1569 genomic sites, of which 4 were covered by multiple loci (0.3%).
+835: analyzed 2 loci; filtered 198 loci; 200 loci seen.
+    1631 genomic sites, of which 4 were covered by multiple loci (0.2%).
+841: analyzed 2 loci; filtered 57 loci; 59 loci seen.
+    1739 genomic sites, of which 4 were covered by multiple loci (0.2%).
+844: analyzed 2 loci; filtered 409 loci; 411 loci seen.
+    1749 genomic sites, of which 0 were covered by multiple loci (0.0%).
+852: analyzed 2 loci; filtered 107 loci; 109 loci seen.
+    1808 genomic sites, of which 4 were covered by multiple loci (0.2%).
+855: analyzed 2 loci; filtered 55 loci; 57 loci seen.
+    1818 genomic sites, of which 4 were covered by multiple loci (0.2%).
+856: analyzed 2 loci; filtered 85 loci; 87 loci seen.
+    1885 genomic sites, of which 4 were covered by multiple loci (0.2%).
+860: analyzed 2 loci; filtered 153 loci; 155 loci seen.
+    1820 genomic sites, of which 4 were covered by multiple loci (0.2%).
+864: analyzed 2 loci; filtered 67 loci; 69 loci seen.
+    1803 genomic sites, of which 4 were covered by multiple loci (0.2%).
+865: analyzed 2 loci; filtered 274 loci; 276 loci seen.
+    1728 genomic sites, of which 4 were covered by multiple loci (0.2%).
+871: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    1873 genomic sites, of which 4 were covered by multiple loci (0.2%).
+872: analyzed 2 loci; filtered 77 loci; 79 loci seen.
+    1578 genomic sites, of which 4 were covered by multiple loci (0.3%).
+875: analyzed 2 loci; filtered 225 loci; 227 loci seen.
+    1832 genomic sites, of which 4 were covered by multiple loci (0.2%).
+881: analyzed 2 loci; filtered 119 loci; 121 loci seen.
+    1838 genomic sites, of which 4 were covered by multiple loci (0.2%).
+885: analyzed 2 loci; filtered 273 loci; 275 loci seen.
+    1687 genomic sites, of which 4 were covered by multiple loci (0.2%).
+895: analyzed 3 loci; filtered 313 loci; 316 loci seen.
+    2675 genomic sites, of which 4 were covered by multiple loci (0.1%).
+900: analyzed 2 loci; filtered 193 loci; 195 loci seen.
+    1897 genomic sites, of which 4 were covered by multiple loci (0.2%).
+905: analyzed 2 loci; filtered 24 loci; 26 loci seen.
+    1712 genomic sites, of which 4 were covered by multiple loci (0.2%).
+906: analyzed 4 loci; filtered 134 loci; 138 loci seen.
+    3518 genomic sites, of which 8 were covered by multiple loci (0.2%).
+909: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1690 genomic sites, of which 4 were covered by multiple loci (0.2%).
+911: analyzed 2 loci; filtered 147 loci; 149 loci seen.
+    1404 genomic sites, of which 4 were covered by multiple loci (0.3%).
+915: analyzed 2 loci; filtered 150 loci; 152 loci seen.
+    1881 genomic sites, of which 4 were covered by multiple loci (0.2%).
+919: analyzed 2 loci; filtered 121 loci; 123 loci seen.
+    1794 genomic sites, of which 4 were covered by multiple loci (0.2%).
+923: analyzed 2 loci; filtered 428 loci; 430 loci seen.
+    1657 genomic sites, of which 4 were covered by multiple loci (0.2%).
+938: analyzed 2 loci; filtered 153 loci; 155 loci seen.
+    1232 genomic sites, of which 0 were covered by multiple loci (0.0%).
+946: analyzed 3 loci; filtered 338 loci; 341 loci seen.
+    2658 genomic sites, of which 4 were covered by multiple loci (0.2%).
+950: analyzed 2 loci; filtered 54 loci; 56 loci seen.
+    1719 genomic sites, of which 4 were covered by multiple loci (0.2%).
+952: analyzed 4 loci; filtered 28 loci; 32 loci seen.
+    3580 genomic sites, of which 8 were covered by multiple loci (0.2%).
+953: analyzed 4 loci; filtered 195 loci; 199 loci seen.
+    3772 genomic sites, of which 8 were covered by multiple loci (0.2%).
+958: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    1906 genomic sites, of which 4 were covered by multiple loci (0.2%).
+959: analyzed 4 loci; filtered 99 loci; 103 loci seen.
+    3724 genomic sites, of which 8 were covered by multiple loci (0.2%).
+961: analyzed 2 loci; filtered 115 loci; 117 loci seen.
+    1892 genomic sites, of which 4 were covered by multiple loci (0.2%).
+963: analyzed 2 loci; filtered 81 loci; 83 loci seen.
+    1750 genomic sites, of which 4 were covered by multiple loci (0.2%).
+965: analyzed 2 loci; filtered 188 loci; 190 loci seen.
+    1773 genomic sites, of which 4 were covered by multiple loci (0.2%).
+970: analyzed 2 loci; filtered 208 loci; 210 loci seen.
+    1753 genomic sites, of which 4 were covered by multiple loci (0.2%).
+976: analyzed 2 loci; filtered 67 loci; 69 loci seen.
+    1964 genomic sites, of which 4 were covered by multiple loci (0.2%).
+978: analyzed 2 loci; filtered 61 loci; 63 loci seen.
+    1690 genomic sites, of which 4 were covered by multiple loci (0.2%).
+980: analyzed 2 loci; filtered 241 loci; 243 loci seen.
+    1699 genomic sites, of which 0 were covered by multiple loci (0.0%).
+986: analyzed 2 loci; filtered 12 loci; 14 loci seen.
+    1707 genomic sites, of which 4 were covered by multiple loci (0.2%).
+987: analyzed 4 loci; filtered 310 loci; 314 loci seen.
+    3515 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1001: analyzed 2 loci; filtered 282 loci; 284 loci seen.
+    1883 genomic sites, of which 0 were covered by multiple loci (0.0%).
+1005: analyzed 6 loci; filtered 423 loci; 429 loci seen.
+    5486 genomic sites, of which 12 were covered by multiple loci (0.2%).
+1017: analyzed 4 loci; filtered 56 loci; 60 loci seen.
+    3317 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1019: analyzed 2 loci; filtered 169 loci; 171 loci seen.
+    1754 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1024: analyzed 2 loci; filtered 168 loci; 170 loci seen.
+    1743 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1028: analyzed 2 loci; filtered 96 loci; 98 loci seen.
+    1827 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1030: analyzed 2 loci; filtered 71 loci; 73 loci seen.
+    1914 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1032: analyzed 2 loci; filtered 304 loci; 306 loci seen.
+    1881 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1043: analyzed 2 loci; filtered 58 loci; 60 loci seen.
+    1606 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1045: analyzed 2 loci; filtered 131 loci; 133 loci seen.
+    1792 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1049: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    1693 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1052: analyzed 2 loci; filtered 298 loci; 300 loci seen.
+    1779 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1063: analyzed 2 loci; filtered 158 loci; 160 loci seen.
+    1916 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1069: analyzed 2 loci; filtered 257 loci; 259 loci seen.
+    1205 genomic sites, of which 0 were covered by multiple loci (0.0%).
+1073: analyzed 2 loci; filtered 7 loci; 9 loci seen.
+    1891 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1074: analyzed 2 loci; filtered 150 loci; 152 loci seen.
+    1836 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1078: analyzed 2 loci; filtered 291 loci; 293 loci seen.
+    1793 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1088: analyzed 2 loci; filtered 19 loci; 21 loci seen.
+    1700 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1097: analyzed 2 loci; filtered 262 loci; 264 loci seen.
+    1843 genomic sites, of which 0 were covered by multiple loci (0.0%).
+1098: analyzed 4 loci; filtered 154 loci; 158 loci seen.
+    3690 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1103: analyzed 3 loci; filtered 133 loci; 136 loci seen.
+    2865 genomic sites, of which 4 were covered by multiple loci (0.1%).
+1105: analyzed 2 loci; filtered 236 loci; 238 loci seen.
+    1896 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1113: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    1650 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1114: analyzed 2 loci; filtered 38 loci; 40 loci seen.
+    1789 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1115: analyzed 2 loci; filtered 138 loci; 140 loci seen.
+    1830 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1120: analyzed 2 loci; filtered 186 loci; 188 loci seen.
+    1729 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1125: analyzed 2 loci; filtered 202 loci; 204 loci seen.
+    1812 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1133: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    1858 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1134: analyzed 2 loci; filtered 202 loci; 204 loci seen.
+    1909 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1140: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    1941 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1142: analyzed 2 loci; filtered 86 loci; 88 loci seen.
+    1853 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1146: analyzed 2 loci; filtered 158 loci; 160 loci seen.
+    1625 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1149: analyzed 2 loci; filtered 437 loci; 439 loci seen.
+    1866 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1167: analyzed 2 loci; filtered 35 loci; 37 loci seen.
+    1789 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1168: analyzed 2 loci; filtered 189 loci; 191 loci seen.
+    1920 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1174: analyzed 2 loci; filtered 135 loci; 137 loci seen.
+    1842 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1178: analyzed 2 loci; filtered 67 loci; 69 loci seen.
+    1854 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1180: analyzed 2 loci; filtered 557 loci; 559 loci seen.
+    1870 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1195: analyzed 2 loci; filtered 35 loci; 37 loci seen.
+    1675 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1196: analyzed 2 loci; filtered 122 loci; 124 loci seen.
+    1749 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1200: analyzed 2 loci; filtered 232 loci; 234 loci seen.
+    1907 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1210: analyzed 3 loci; filtered 63 loci; 66 loci seen.
+    2480 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1211: analyzed 2 loci; filtered 281 loci; 283 loci seen.
+    1743 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1220: analyzed 2 loci; filtered 21 loci; 23 loci seen.
+    1804 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1221: analyzed 2 loci; filtered 111 loci; 113 loci seen.
+    1916 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1223: analyzed 2 loci; filtered 30 loci; 32 loci seen.
+    1916 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1226: analyzed 3 loci; filtered 87 loci; 90 loci seen.
+    2492 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1227: analyzed 2 loci; filtered 168 loci; 170 loci seen.
+    1926 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1232: analyzed 2 loci; filtered 24 loci; 26 loci seen.
+    1907 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1233: analyzed 2 loci; filtered 424 loci; 426 loci seen.
+    1768 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1248: analyzed 2 loci; filtered 255 loci; 257 loci seen.
+    1655 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1261: analyzed 3 loci; filtered 224 loci; 227 loci seen.
+    2803 genomic sites, of which 4 were covered by multiple loci (0.1%).
+1263: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1949 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1265: analyzed 2 loci; filtered 464 loci; 466 loci seen.
+    1855 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1280: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    1851 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1281: analyzed 4 loci; filtered 54 loci; 58 loci seen.
+    3510 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1282: analyzed 2 loci; filtered 92 loci; 94 loci seen.
+    1951 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1286: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    1759 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1289: analyzed 2 loci; filtered 103 loci; 105 loci seen.
+    1773 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1296: analyzed 3 loci; filtered 152 loci; 155 loci seen.
+    2711 genomic sites, of which 4 were covered by multiple loci (0.1%).
+1297: analyzed 2 loci; filtered 168 loci; 170 loci seen.
+    1898 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1303: analyzed 2 loci; filtered 163 loci; 165 loci seen.
+    1782 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1308: analyzed 2 loci; filtered 73 loci; 75 loci seen.
+    1866 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1310: analyzed 2 loci; filtered 63 loci; 65 loci seen.
+    1922 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1312: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    1865 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1317: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1621 genomic sites, of which 0 were covered by multiple loci (0.0%).
+1318: analyzed 2 loci; filtered 59 loci; 61 loci seen.
+    1726 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1320: analyzed 2 loci; filtered 25 loci; 27 loci seen.
+    1814 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1323: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    1909 genomic sites, of which 0 were covered by multiple loci (0.0%).
+1325: analyzed 2 loci; filtered 73 loci; 75 loci seen.
+    1655 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1326: analyzed 2 loci; filtered 25 loci; 27 loci seen.
+    1834 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1328: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1727 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1331: analyzed 2 loci; filtered 64 loci; 66 loci seen.
+    1931 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1333: analyzed 2 loci; filtered 470 loci; 472 loci seen.
+    1951 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1350: analyzed 2 loci; filtered 98 loci; 100 loci seen.
+    1752 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1353: analyzed 2 loci; filtered 32 loci; 34 loci seen.
+    1824 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1354: analyzed 4 loci; filtered 57 loci; 61 loci seen.
+    2480 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1355: analyzed 2 loci; filtered 59 loci; 61 loci seen.
+    1795 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1358: analyzed 3 loci; filtered 128 loci; 131 loci seen.
+    2202 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1370: analyzed 3 loci; filtered 633 loci; 636 loci seen.
+    2430 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1386: analyzed 2 loci; filtered 30 loci; 32 loci seen.
+    1740 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1387: analyzed 2 loci; filtered 360 loci; 362 loci seen.
+    1733 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1400: analyzed 2 loci; filtered 184 loci; 186 loci seen.
+    1940 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1412: analyzed 3 loci; filtered 177 loci; 180 loci seen.
+    2599 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1414: analyzed 2 loci; filtered 31 loci; 33 loci seen.
+    1555 genomic sites, of which 4 were covered by multiple loci (0.3%).
+1416: analyzed 3 loci; filtered 187 loci; 190 loci seen.
+    2608 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1422: analyzed 4 loci; filtered 47 loci; 51 loci seen.
+    3336 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1423: analyzed 2 loci; filtered 52 loci; 54 loci seen.
+    1866 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1425: analyzed 4 loci; filtered 197 loci; 201 loci seen.
+    3335 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1432: analyzed 2 loci; filtered 25 loci; 27 loci seen.
+    1824 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1433: analyzed 2 loci; filtered 255 loci; 257 loci seen.
+    1819 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1442: analyzed 2 loci; filtered 38 loci; 40 loci seen.
+    1927 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1443: analyzed 3 loci; filtered 73 loci; 76 loci seen.
+    2087 genomic sites, of which 619 were covered by multiple loci (29.7%).
+1445: analyzed 3 loci; filtered 110 loci; 113 loci seen.
+    2772 genomic sites, of which 4 were covered by multiple loci (0.1%).
+1452: analyzed 3 loci; filtered 406 loci; 409 loci seen.
+    2660 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1463: analyzed 3 loci; filtered 106 loci; 109 loci seen.
+    2537 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1466: analyzed 2 loci; filtered 116 loci; 118 loci seen.
+    1875 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1470: analyzed 4 loci; filtered 34 loci; 38 loci seen.
+    3609 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1478: analyzed 3 loci; filtered 200 loci; 203 loci seen.
+    2757 genomic sites, of which 4 were covered by multiple loci (0.1%).
+1479: analyzed 4 loci; filtered 91 loci; 95 loci seen.
+    3832 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1482: analyzed 2 loci; filtered 122 loci; 124 loci seen.
+    1893 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1490: analyzed 3 loci; filtered 270 loci; 273 loci seen.
+    2837 genomic sites, of which 4 were covered by multiple loci (0.1%).
+1500: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    1790 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1504: analyzed 3 loci; filtered 189 loci; 192 loci seen.
+    2283 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1509: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    1761 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1511: analyzed 2 loci; filtered 55 loci; 57 loci seen.
+    1599 genomic sites, of which 4 were covered by multiple loci (0.3%).
+1513: analyzed 2 loci; filtered 49 loci; 51 loci seen.
+    1871 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1521: analyzed 3 loci; filtered 379 loci; 382 loci seen.
+    2577 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1526: analyzed 2 loci; filtered 190 loci; 192 loci seen.
+    1707 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1534: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    1791 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1535: analyzed 2 loci; filtered 346 loci; 348 loci seen.
+    1790 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1547: analyzed 4 loci; filtered 120 loci; 124 loci seen.
+    3277 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1549: analyzed 2 loci; filtered 176 loci; 178 loci seen.
+    1981 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1555: analyzed 4 loci; filtered 31 loci; 35 loci seen.
+    3574 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1556: analyzed 2 loci; filtered 76 loci; 78 loci seen.
+    1890 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1558: analyzed 2 loci; filtered 135 loci; 137 loci seen.
+    648 genomic sites, of which 4 were covered by multiple loci (0.6%).
+1564: analyzed 4 loci; filtered 43 loci; 47 loci seen.
+    3868 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1565: analyzed 2 loci; filtered 61 loci; 63 loci seen.
+    1671 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1567: analyzed 4 loci; filtered 70 loci; 74 loci seen.
+    3434 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1571: analyzed 2 loci; filtered 34 loci; 36 loci seen.
+    1238 genomic sites, of which 4 were covered by multiple loci (0.3%).
+1572: analyzed 2 loci; filtered 118 loci; 120 loci seen.
+    1663 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1577: analyzed 2 loci; filtered 16 loci; 18 loci seen.
+    1589 genomic sites, of which 4 were covered by multiple loci (0.3%).
+1578: analyzed 2 loci; filtered 100 loci; 102 loci seen.
+    1906 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1581: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+    1689 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1583: analyzed 2 loci; filtered 28 loci; 30 loci seen.
+    1818 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1584: analyzed 2 loci; filtered 116 loci; 118 loci seen.
+    1782 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1593: analyzed 3 loci; filtered 183 loci; 186 loci seen.
+    2531 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1613: analyzed 3 loci; filtered 468 loci; 471 loci seen.
+    2691 genomic sites, of which 4 were covered by multiple loci (0.1%).
+1615: analyzed 2 loci; filtered 275 loci; 277 loci seen.
+    1708 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1627: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    1832 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1630: analyzed 2 loci; filtered 402 loci; 404 loci seen.
+    1867 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1645: analyzed 2 loci; filtered 270 loci; 272 loci seen.
+    1697 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1656: analyzed 4 loci; filtered 141 loci; 145 loci seen.
+    3499 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1662: analyzed 2 loci; filtered 206 loci; 208 loci seen.
+    1467 genomic sites, of which 0 were covered by multiple loci (0.0%).
+1669: analyzed 2 loci; filtered 55 loci; 57 loci seen.
+    1886 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1672: analyzed 3 loci; filtered 131 loci; 134 loci seen.
+    2575 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1677: analyzed 4 loci; filtered 62 loci; 66 loci seen.
+    3529 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1680: analyzed 2 loci; filtered 148 loci; 150 loci seen.
+    1693 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1687: analyzed 5 loci; filtered 193 loci; 198 loci seen.
+    4224 genomic sites, of which 4 were covered by multiple loci (0.1%).
+1692: analyzed 2 loci; filtered 39 loci; 41 loci seen.
+    1768 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1693: analyzed 2 loci; filtered 99 loci; 101 loci seen.
+    1868 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1696: analyzed 4 loci; filtered 12 loci; 16 loci seen.
+    3423 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1697: analyzed 2 loci; filtered 190 loci; 192 loci seen.
+    1911 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1705: analyzed 2 loci; filtered 244 loci; 246 loci seen.
+    1873 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1715: analyzed 2 loci; filtered 10 loci; 12 loci seen.
+    1758 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1716: analyzed 2 loci; filtered 174 loci; 176 loci seen.
+    1772 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1722: analyzed 2 loci; filtered 138 loci; 140 loci seen.
+    1823 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1730: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    1725 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1734: analyzed 3 loci; filtered 165 loci; 168 loci seen.
+    1542 genomic sites, of which 4 were covered by multiple loci (0.3%).
+1740: analyzed 4 loci; filtered 23 loci; 27 loci seen.
+    3531 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1741: analyzed 2 loci; filtered 161 loci; 163 loci seen.
+    1944 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1746: analyzed 2 loci; filtered 11 loci; 13 loci seen.
+    1969 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1747: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    1787 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1751: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1675 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1752: analyzed 2 loci; filtered 15 loci; 17 loci seen.
+    1727 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1753: analyzed 2 loci; filtered 238 loci; 240 loci seen.
+    1786 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1762: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    1920 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1767: analyzed 4 loci; filtered 42 loci; 46 loci seen.
+    3466 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1770: analyzed 2 loci; filtered 263 loci; 265 loci seen.
+    1797 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1782: analyzed 2 loci; filtered 24 loci; 26 loci seen.
+    1181 genomic sites, of which 4 were covered by multiple loci (0.3%).
+1798: analyzed 3 loci; filtered 347 loci; 350 loci seen.
+    2782 genomic sites, of which 4 were covered by multiple loci (0.1%).
+1800: analyzed 2 loci; filtered 27 loci; 29 loci seen.
+    1830 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1801: analyzed 2 loci; filtered 15 loci; 17 loci seen.
+    1636 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1804: analyzed 3 loci; filtered 398 loci; 401 loci seen.
+    2295 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1822: analyzed 2 loci; filtered 44 loci; 46 loci seen.
+    1685 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1824: analyzed 2 loci; filtered 48 loci; 50 loci seen.
+    1891 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1825: analyzed 2 loci; filtered 246 loci; 248 loci seen.
+    1717 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1837: analyzed 2 loci; filtered 31 loci; 33 loci seen.
+    1906 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1838: analyzed 4 loci; filtered 54 loci; 58 loci seen.
+    3492 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1840: analyzed 2 loci; filtered 23 loci; 25 loci seen.
+    1525 genomic sites, of which 4 were covered by multiple loci (0.3%).
+1851: analyzed 2 loci; filtered 247 loci; 249 loci seen.
+    1598 genomic sites, of which 0 were covered by multiple loci (0.0%).
+1886: analyzed 3 loci; filtered 920 loci; 923 loci seen.
+    2773 genomic sites, of which 4 were covered by multiple loci (0.1%).
+1893: analyzed 2 loci; filtered 100 loci; 102 loci seen.
+    1863 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1898: analyzed 2 loci; filtered 136 loci; 138 loci seen.
+    1604 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1905: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    1796 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1908: analyzed 2 loci; filtered 64 loci; 66 loci seen.
+    1682 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1910: analyzed 3 loci; filtered 24 loci; 27 loci seen.
+    946 genomic sites, of which 689 were covered by multiple loci (72.8%).
+1912: analyzed 2 loci; filtered 165 loci; 167 loci seen.
+    1606 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1919: analyzed 2 loci; filtered 100 loci; 102 loci seen.
+    1873 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1926: analyzed 3 loci; filtered 143 loci; 146 loci seen.
+    2274 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1928: analyzed 2 loci; filtered 276 loci; 278 loci seen.
+    1868 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1945: analyzed 4 loci; filtered 132 loci; 136 loci seen.
+    3522 genomic sites, of which 8 were covered by multiple loci (0.2%).
+1950: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+    1730 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1952: analyzed 2 loci; filtered 10 loci; 12 loci seen.
+    1840 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1953: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    1843 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1955: analyzed 2 loci; filtered 255 loci; 257 loci seen.
+    1827 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1967: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+    1785 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1970: analyzed 2 loci; filtered 85 loci; 87 loci seen.
+    1855 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1973: analyzed 2 loci; filtered 166 loci; 168 loci seen.
+    1728 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1979: analyzed 2 loci; filtered 18 loci; 20 loci seen.
+    1311 genomic sites, of which 4 were covered by multiple loci (0.3%).
+1980: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    1880 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1983: analyzed 2 loci; filtered 163 loci; 165 loci seen.
+    1819 genomic sites, of which 4 were covered by multiple loci (0.2%).
+1996: analyzed 3 loci; filtered 247 loci; 250 loci seen.
+    2187 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2001: analyzed 2 loci; filtered 15 loci; 17 loci seen.
+    1570 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2002: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    1716 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2006: analyzed 4 loci; filtered 244 loci; 248 loci seen.
+    3005 genomic sites, of which 4 were covered by multiple loci (0.1%).
+2016: analyzed 3 loci; filtered 68 loci; 71 loci seen.
+    2690 genomic sites, of which 4 were covered by multiple loci (0.1%).
+2018: analyzed 2 loci; filtered 238 loci; 240 loci seen.
+    1748 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2028: analyzed 2 loci; filtered 222 loci; 224 loci seen.
+    1838 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2040: analyzed 2 loci; filtered 134 loci; 136 loci seen.
+    1706 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2048: analyzed 2 loci; filtered 96 loci; 98 loci seen.
+    1912 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2053: analyzed 2 loci; filtered 47 loci; 49 loci seen.
+    1690 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2056: analyzed 2 loci; filtered 18 loci; 20 loci seen.
+    1755 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2057: analyzed 2 loci; filtered 222 loci; 224 loci seen.
+    1943 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2066: analyzed 2 loci; filtered 142 loci; 144 loci seen.
+    1816 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2073: analyzed 4 loci; filtered 73 loci; 77 loci seen.
+    3235 genomic sites, of which 104 were covered by multiple loci (3.2%).
+2076: analyzed 2 loci; filtered 49 loci; 51 loci seen.
+    1913 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2083: analyzed 3 loci; filtered 104 loci; 107 loci seen.
+    2463 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2084: analyzed 2 loci; filtered 15 loci; 17 loci seen.
+    1950 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2085: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1966 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2088: analyzed 2 loci; filtered 186 loci; 188 loci seen.
+    1801 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2097: analyzed 2 loci; filtered 305 loci; 307 loci seen.
+    1860 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2114: analyzed 2 loci; filtered 181 loci; 183 loci seen.
+    1366 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2121: analyzed 4 loci; filtered 16 loci; 20 loci seen.
+    3317 genomic sites, of which 8 were covered by multiple loci (0.2%).
+2122: analyzed 2 loci; filtered 170 loci; 172 loci seen.
+    1893 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2142: analyzed 5 loci; filtered 300 loci; 305 loci seen.
+    4106 genomic sites, of which 8 were covered by multiple loci (0.2%).
+2144: analyzed 2 loci; filtered 17 loci; 19 loci seen.
+    1826 genomic sites, of which 0 were covered by multiple loci (0.0%).
+2145: analyzed 2 loci; filtered 59 loci; 61 loci seen.
+    1862 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2146: analyzed 2 loci; filtered 31 loci; 33 loci seen.
+    1521 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2148: analyzed 3 loci; filtered 169 loci; 172 loci seen.
+    2523 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2157: analyzed 2 loci; filtered 200 loci; 202 loci seen.
+    1443 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2175: analyzed 3 loci; filtered 293 loci; 296 loci seen.
+    2735 genomic sites, of which 4 were covered by multiple loci (0.1%).
+2185: analyzed 2 loci; filtered 31 loci; 33 loci seen.
+    1890 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2187: analyzed 2 loci; filtered 506 loci; 508 loci seen.
+    1730 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2215: analyzed 2 loci; filtered 158 loci; 160 loci seen.
+    1900 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2224: analyzed 4 loci; filtered 57 loci; 61 loci seen.
+    3585 genomic sites, of which 8 were covered by multiple loci (0.2%).
+2226: analyzed 4 loci; filtered 348 loci; 352 loci seen.
+    3122 genomic sites, of which 8 were covered by multiple loci (0.3%).
+2246: analyzed 2 loci; filtered 165 loci; 167 loci seen.
+    1760 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2253: analyzed 2 loci; filtered 80 loci; 82 loci seen.
+    1501 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2258: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    1732 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2259: analyzed 4 loci; filtered 80 loci; 84 loci seen.
+    2177 genomic sites, of which 634 were covered by multiple loci (29.1%).
+2268: analyzed 3 loci; filtered 102 loci; 105 loci seen.
+    2282 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2270: analyzed 2 loci; filtered 70 loci; 72 loci seen.
+    1618 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2273: analyzed 2 loci; filtered 153 loci; 155 loci seen.
+    1930 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2283: analyzed 2 loci; filtered 9 loci; 11 loci seen.
+    1930 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2284: analyzed 2 loci; filtered 9 loci; 11 loci seen.
+    1936 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2285: analyzed 2 loci; filtered 111 loci; 113 loci seen.
+    1349 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2289: analyzed 2 loci; filtered 137 loci; 139 loci seen.
+    1841 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2296: analyzed 2 loci; filtered 107 loci; 109 loci seen.
+    1800 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2302: analyzed 2 loci; filtered 14 loci; 16 loci seen.
+    1646 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2305: analyzed 3 loci; filtered 195 loci; 198 loci seen.
+    2454 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2314: analyzed 2 loci; filtered 46 loci; 48 loci seen.
+    1878 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2317: analyzed 2 loci; filtered 195 loci; 197 loci seen.
+    1940 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2332: analyzed 3 loci; filtered 184 loci; 187 loci seen.
+    2445 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2339: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1783 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2340: analyzed 2 loci; filtered 147 loci; 149 loci seen.
+    1831 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2346: analyzed 4 loci; filtered 376 loci; 380 loci seen.
+    2098 genomic sites, of which 200 were covered by multiple loci (9.5%).
+2364: analyzed 2 loci; filtered 33 loci; 35 loci seen.
+    1703 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2370: analyzed 3 loci; filtered 332 loci; 335 loci seen.
+    1991 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2384: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    1911 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2386: analyzed 2 loci; filtered 105 loci; 107 loci seen.
+    1688 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2393: analyzed 2 loci; filtered 11 loci; 13 loci seen.
+    1943 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2394: analyzed 2 loci; filtered 175 loci; 177 loci seen.
+    1787 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2403: analyzed 2 loci; filtered 69 loci; 71 loci seen.
+    1927 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2407: analyzed 2 loci; filtered 67 loci; 69 loci seen.
+    1560 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2411: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1714 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2412: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    1364 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2415: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    1925 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2418: analyzed 2 loci; filtered 232 loci; 234 loci seen.
+    1961 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2430: analyzed 2 loci; filtered 149 loci; 151 loci seen.
+    1495 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2438: analyzed 2 loci; filtered 187 loci; 189 loci seen.
+    1715 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2451: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    1842 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2456: analyzed 2 loci; filtered 65 loci; 67 loci seen.
+    1122 genomic sites, of which 4 were covered by multiple loci (0.4%).
+2466: analyzed 3 loci; filtered 105 loci; 108 loci seen.
+    2667 genomic sites, of which 4 were covered by multiple loci (0.1%).
+2468: analyzed 4 loci; filtered 187 loci; 191 loci seen.
+    3608 genomic sites, of which 8 were covered by multiple loci (0.2%).
+2479: analyzed 2 loci; filtered 25 loci; 27 loci seen.
+    1994 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2480: analyzed 2 loci; filtered 64 loci; 66 loci seen.
+    1889 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2485: analyzed 3 loci; filtered 449 loci; 452 loci seen.
+    2527 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2508: analyzed 2 loci; filtered 28 loci; 30 loci seen.
+    1921 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2509: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    1730 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2513: analyzed 2 loci; filtered 107 loci; 109 loci seen.
+    1718 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2519: analyzed 2 loci; filtered 97 loci; 99 loci seen.
+    1412 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2525: analyzed 2 loci; filtered 105 loci; 107 loci seen.
+    1453 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2529: analyzed 2 loci; filtered 12 loci; 14 loci seen.
+    1806 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2530: analyzed 4 loci; filtered 55 loci; 59 loci seen.
+    3547 genomic sites, of which 4 were covered by multiple loci (0.1%).
+2532: analyzed 2 loci; filtered 265 loci; 267 loci seen.
+    1668 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2558: analyzed 3 loci; filtered 274 loci; 277 loci seen.
+    2513 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2564: analyzed 2 loci; filtered 123 loci; 125 loci seen.
+    1755 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2569: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    1740 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2579: analyzed 2 loci; filtered 220 loci; 222 loci seen.
+    1669 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2591: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    1907 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2596: analyzed 2 loci; filtered 70 loci; 72 loci seen.
+    1613 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2601: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    1636 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2604: analyzed 3 loci; filtered 136 loci; 139 loci seen.
+    2609 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2610: analyzed 4 loci; filtered 94 loci; 98 loci seen.
+    3568 genomic sites, of which 8 were covered by multiple loci (0.2%).
+2616: analyzed 2 loci; filtered 14 loci; 16 loci seen.
+    1782 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2617: analyzed 2 loci; filtered 52 loci; 54 loci seen.
+    1695 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2621: analyzed 2 loci; filtered 168 loci; 170 loci seen.
+    1698 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2630: analyzed 2 loci; filtered 93 loci; 95 loci seen.
+    1895 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2635: analyzed 2 loci; filtered 57 loci; 59 loci seen.
+    1736 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2639: analyzed 2 loci; filtered 64 loci; 66 loci seen.
+    1769 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2642: analyzed 2 loci; filtered 9 loci; 11 loci seen.
+    1736 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2643: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    1729 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2648: analyzed 4 loci; filtered 242 loci; 246 loci seen.
+    3539 genomic sites, of which 8 were covered by multiple loci (0.2%).
+2663: analyzed 2 loci; filtered 87 loci; 89 loci seen.
+    1653 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2673: analyzed 3 loci; filtered 535 loci; 538 loci seen.
+    2801 genomic sites, of which 4 were covered by multiple loci (0.1%).
+2699: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1826 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2703: analyzed 2 loci; filtered 21 loci; 23 loci seen.
+    1669 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2704: analyzed 2 loci; filtered 131 loci; 133 loci seen.
+    1764 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2712: analyzed 2 loci; filtered 93 loci; 95 loci seen.
+    1820 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2718: analyzed 2 loci; filtered 48 loci; 50 loci seen.
+    1814 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2720: analyzed 2 loci; filtered 281 loci; 283 loci seen.
+    1949 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2739: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    1930 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2741: analyzed 2 loci; filtered 109 loci; 111 loci seen.
+    1858 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2748: analyzed 2 loci; filtered 14 loci; 16 loci seen.
+    1786 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2756: analyzed 3 loci; filtered 315 loci; 318 loci seen.
+    2590 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2772: analyzed 2 loci; filtered 40 loci; 42 loci seen.
+    1770 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2775: analyzed 2 loci; filtered 36 loci; 38 loci seen.
+    1865 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2778: analyzed 2 loci; filtered 121 loci; 123 loci seen.
+    1799 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2785: analyzed 2 loci; filtered 263 loci; 265 loci seen.
+    1671 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2815: analyzed 3 loci; filtered 520 loci; 523 loci seen.
+    2411 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2841: analyzed 2 loci; filtered 113 loci; 115 loci seen.
+    1888 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2848: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    1757 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2853: analyzed 2 loci; filtered 193 loci; 195 loci seen.
+    1703 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2865: analyzed 2 loci; filtered 267 loci; 269 loci seen.
+    1847 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2884: analyzed 2 loci; filtered 120 loci; 122 loci seen.
+    1896 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2892: analyzed 2 loci; filtered 304 loci; 306 loci seen.
+    1745 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2914: analyzed 3 loci; filtered 82 loci; 85 loci seen.
+    2361 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2918: analyzed 2 loci; filtered 20 loci; 22 loci seen.
+    1503 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2920: analyzed 4 loci; filtered 156 loci; 160 loci seen.
+    3517 genomic sites, of which 8 were covered by multiple loci (0.2%).
+2934: analyzed 2 loci; filtered 200 loci; 202 loci seen.
+    1811 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2947: analyzed 2 loci; filtered 139 loci; 141 loci seen.
+    1284 genomic sites, of which 4 were covered by multiple loci (0.3%).
+2959: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    1934 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2969: analyzed 7 loci; filtered 575 loci; 582 loci seen.
+    5537 genomic sites, of which 12 were covered by multiple loci (0.2%).
+3013: analyzed 3 loci; filtered 212 loci; 215 loci seen.
+    2194 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3018: analyzed 2 loci; filtered 190 loci; 192 loci seen.
+    1947 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3030: analyzed 2 loci; filtered 45 loci; 47 loci seen.
+    1895 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3040: analyzed 3 loci; filtered 383 loci; 386 loci seen.
+    2723 genomic sites, of which 4 were covered by multiple loci (0.1%).
+3063: analyzed 2 loci; filtered 12 loci; 14 loci seen.
+    1853 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3064: analyzed 2 loci; filtered 21 loci; 23 loci seen.
+    1849 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3066: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1806 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3073: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    1913 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3097: analyzed 3 loci; filtered 192 loci; 195 loci seen.
+    2765 genomic sites, of which 4 were covered by multiple loci (0.1%).
+3102: analyzed 2 loci; filtered 9 loci; 11 loci seen.
+    1568 genomic sites, of which 4 were covered by multiple loci (0.3%).
+3105: analyzed 3 loci; filtered 175 loci; 178 loci seen.
+    2770 genomic sites, of which 4 were covered by multiple loci (0.1%).
+3112: analyzed 2 loci; filtered 98 loci; 100 loci seen.
+    1765 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3120: analyzed 2 loci; filtered 69 loci; 71 loci seen.
+    1652 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3123: analyzed 2 loci; filtered 80 loci; 82 loci seen.
+    1780 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3128: analyzed 2 loci; filtered 59 loci; 61 loci seen.
+    1825 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3133: analyzed 2 loci; filtered 16 loci; 18 loci seen.
+    1899 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3134: analyzed 2 loci; filtered 15 loci; 17 loci seen.
+    1807 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3136: analyzed 2 loci; filtered 71 loci; 73 loci seen.
+    1646 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3141: analyzed 2 loci; filtered 58 loci; 60 loci seen.
+    1834 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3149: analyzed 3 loci; filtered 57 loci; 60 loci seen.
+    2355 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3150: analyzed 2 loci; filtered 368 loci; 370 loci seen.
+    1931 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3174: analyzed 2 loci; filtered 23 loci; 25 loci seen.
+    1921 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3175: analyzed 2 loci; filtered 34 loci; 36 loci seen.
+    1858 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3177: analyzed 2 loci; filtered 32 loci; 34 loci seen.
+    1643 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3180: analyzed 2 loci; filtered 8 loci; 10 loci seen.
+    1106 genomic sites, of which 4 were covered by multiple loci (0.4%).
+3223: analyzed 5 loci; filtered 642 loci; 647 loci seen.
+    3860 genomic sites, of which 8 were covered by multiple loci (0.2%).
+3232: analyzed 4 loci; filtered 49 loci; 53 loci seen.
+    3514 genomic sites, of which 8 were covered by multiple loci (0.2%).
+3235: analyzed 2 loci; filtered 93 loci; 95 loci seen.
+    1811 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3243: analyzed 2 loci; filtered 6 loci; 8 loci seen.
+    1774 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3244: analyzed 2 loci; filtered 139 loci; 141 loci seen.
+    1974 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3256: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    1858 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3258: analyzed 2 loci; filtered 441 loci; 443 loci seen.
+    1872 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3295: analyzed 2 loci; filtered 16 loci; 18 loci seen.
+    1903 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3296: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    1887 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3307: analyzed 3 loci; filtered 166 loci; 169 loci seen.
+    1434 genomic sites, of which 4 were covered by multiple loci (0.3%).
+3325: analyzed 3 loci; filtered 131 loci; 134 loci seen.
+    2670 genomic sites, of which 4 were covered by multiple loci (0.1%).
+3326: analyzed 2 loci; filtered 62 loci; 64 loci seen.
+    1696 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3330: analyzed 2 loci; filtered 143 loci; 145 loci seen.
+    1918 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3341: analyzed 2 loci; filtered 79 loci; 81 loci seen.
+    1873 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3347: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    1910 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3355: analyzed 2 loci; filtered 198 loci; 200 loci seen.
+    1762 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3371: analyzed 2 loci; filtered 81 loci; 83 loci seen.
+    1859 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3379: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    1742 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3388: analyzed 2 loci; filtered 126 loci; 128 loci seen.
+    1847 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3398: analyzed 2 loci; filtered 132 loci; 134 loci seen.
+    1824 genomic sites, of which 0 were covered by multiple loci (0.0%).
+3410: analyzed 2 loci; filtered 72 loci; 74 loci seen.
+    1839 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3415: analyzed 2 loci; filtered 71 loci; 73 loci seen.
+    1878 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3420: analyzed 2 loci; filtered 271 loci; 273 loci seen.
+    1589 genomic sites, of which 4 were covered by multiple loci (0.3%).
+3441: analyzed 2 loci; filtered 200 loci; 202 loci seen.
+    1853 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3470: analyzed 2 loci; filtered 538 loci; 540 loci seen.
+    1909 genomic sites, of which 0 were covered by multiple loci (0.0%).
+3505: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    1032 genomic sites, of which 4 were covered by multiple loci (0.4%).
+3506: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    1786 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3512: analyzed 2 loci; filtered 129 loci; 131 loci seen.
+    1871 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3522: analyzed 2 loci; filtered 79 loci; 81 loci seen.
+    1877 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3527: analyzed 2 loci; filtered 27 loci; 29 loci seen.
+    1813 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3528: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    1815 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3537: analyzed 2 loci; filtered 269 loci; 271 loci seen.
+    1359 genomic sites, of which 4 were covered by multiple loci (0.3%).
+3557: analyzed 2 loci; filtered 162 loci; 164 loci seen.
+    1815 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3571: analyzed 2 loci; filtered 141 loci; 143 loci seen.
+    1820 genomic sites, of which 0 were covered by multiple loci (0.0%).
+3581: analyzed 2 loci; filtered 187 loci; 189 loci seen.
+    1898 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3596: analyzed 2 loci; filtered 108 loci; 110 loci seen.
+    1311 genomic sites, of which 0 were covered by multiple loci (0.0%).
+3605: analyzed 2 loci; filtered 40 loci; 42 loci seen.
+    1880 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3608: analyzed 2 loci; filtered 46 loci; 48 loci seen.
+    1752 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3612: analyzed 2 loci; filtered 298 loci; 300 loci seen.
+    1343 genomic sites, of which 4 were covered by multiple loci (0.3%).
+3639: analyzed 2 loci; filtered 71 loci; 73 loci seen.
+    1822 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3645: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    1669 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3649: analyzed 2 loci; filtered 576 loci; 578 loci seen.
+    1573 genomic sites, of which 4 were covered by multiple loci (0.3%).
+3700: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    1883 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3705: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1735 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3706: analyzed 2 loci; filtered 17 loci; 19 loci seen.
+    1899 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3707: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    1728 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3715: analyzed 2 loci; filtered 169 loci; 171 loci seen.
+    1911 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3732: analyzed 2 loci; filtered 170 loci; 172 loci seen.
+    1806 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3752: analyzed 2 loci; filtered 15 loci; 17 loci seen.
+    1712 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3764: analyzed 3 loci; filtered 182 loci; 185 loci seen.
+    1989 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3771: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    1791 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3779: analyzed 2 loci; filtered 71 loci; 73 loci seen.
+    1749 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3785: analyzed 2 loci; filtered 307 loci; 309 loci seen.
+    1677 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3813: analyzed 2 loci; filtered 69 loci; 71 loci seen.
+    1755 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3818: analyzed 2 loci; filtered 108 loci; 110 loci seen.
+    1409 genomic sites, of which 4 were covered by multiple loci (0.3%).
+3829: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    1894 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3832: analyzed 2 loci; filtered 183 loci; 185 loci seen.
+    1711 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3849: analyzed 2 loci; filtered 123 loci; 125 loci seen.
+    1500 genomic sites, of which 4 were covered by multiple loci (0.3%).
+3860: analyzed 2 loci; filtered 44 loci; 46 loci seen.
+    1676 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3875: analyzed 3 loci; filtered 158 loci; 161 loci seen.
+    2161 genomic sites, of which 74 were covered by multiple loci (3.4%).
+3879: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    1554 genomic sites, of which 4 were covered by multiple loci (0.3%).
+3880: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1726 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3882: analyzed 2 loci; filtered 935 loci; 937 loci seen.
+    1071 genomic sites, of which 4 were covered by multiple loci (0.4%).
+3959: analyzed 4 loci; filtered 24 loci; 28 loci seen.
+    3263 genomic sites, of which 8 were covered by multiple loci (0.2%).
+3961: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    1680 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3972: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1938 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3977: analyzed 2 loci; filtered 6 loci; 8 loci seen.
+    1964 genomic sites, of which 4 were covered by multiple loci (0.2%).
+3978: analyzed 2 loci; filtered 6 loci; 8 loci seen.
+    1240 genomic sites, of which 4 were covered by multiple loci (0.3%).
+3986: analyzed 3 loci; filtered 294 loci; 297 loci seen.
+    2618 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4027: analyzed 3 loci; filtered 227 loci; 230 loci seen.
+    2447 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4030: analyzed 2 loci; filtered 143 loci; 145 loci seen.
+    1914 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4044: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    1712 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4047: analyzed 2 loci; filtered 64 loci; 66 loci seen.
+    1916 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4052: analyzed 2 loci; filtered 259 loci; 261 loci seen.
+    1388 genomic sites, of which 4 were covered by multiple loci (0.3%).
+4081: analyzed 2 loci; filtered 20 loci; 22 loci seen.
+    1681 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4083: analyzed 2 loci; filtered 129 loci; 131 loci seen.
+    1744 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4102: analyzed 3 loci; filtered 127 loci; 130 loci seen.
+    2307 genomic sites, of which 435 were covered by multiple loci (18.9%).
+4167: analyzed 3 loci; filtered 519 loci; 522 loci seen.
+    2626 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4170: analyzed 2 loci; filtered 55 loci; 57 loci seen.
+    1796 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4176: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    1831 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4181: analyzed 2 loci; filtered 128 loci; 130 loci seen.
+    1979 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4191: analyzed 2 loci; filtered 166 loci; 168 loci seen.
+    1837 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4205: analyzed 2 loci; filtered 95 loci; 97 loci seen.
+    1678 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4217: analyzed 2 loci; filtered 260 loci; 262 loci seen.
+    1704 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4245: analyzed 2 loci; filtered 41 loci; 43 loci seen.
+    1827 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4249: analyzed 2 loci; filtered 11 loci; 13 loci seen.
+    1397 genomic sites, of which 4 were covered by multiple loci (0.3%).
+4263: analyzed 3 loci; filtered 177 loci; 180 loci seen.
+    2015 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4279: analyzed 2 loci; filtered 150 loci; 152 loci seen.
+    1861 genomic sites, of which 0 were covered by multiple loci (0.0%).
+4307: analyzed 3 loci; filtered 468 loci; 471 loci seen.
+    2385 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4323: analyzed 2 loci; filtered 123 loci; 125 loci seen.
+    1625 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4338: analyzed 2 loci; filtered 9 loci; 11 loci seen.
+    1865 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4340: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1760 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4341: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    1825 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4350: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    1502 genomic sites, of which 4 were covered by multiple loci (0.3%).
+4353: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1763 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4361: analyzed 2 loci; filtered 8 loci; 10 loci seen.
+    1890 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4362: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    1679 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4380: analyzed 2 loci; filtered 214 loci; 216 loci seen.
+    952 genomic sites, of which 707 were covered by multiple loci (74.3%).
+4400: analyzed 2 loci; filtered 101 loci; 103 loci seen.
+    1791 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4436: analyzed 3 loci; filtered 260 loci; 263 loci seen.
+    2194 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4439: analyzed 2 loci; filtered 35 loci; 37 loci seen.
+    1886 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4443: analyzed 3 loci; filtered 194 loci; 197 loci seen.
+    1856 genomic sites, of which 748 were covered by multiple loci (40.3%).
+4461: analyzed 2 loci; filtered 12 loci; 14 loci seen.
+    1931 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4463: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1798 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4475: analyzed 3 loci; filtered 284 loci; 287 loci seen.
+    2734 genomic sites, of which 4 were covered by multiple loci (0.1%).
+4493: analyzed 2 loci; filtered 30 loci; 32 loci seen.
+    1788 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4495: analyzed 2 loci; filtered 177 loci; 179 loci seen.
+    1879 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4513: analyzed 2 loci; filtered 81 loci; 83 loci seen.
+    1276 genomic sites, of which 4 were covered by multiple loci (0.3%).
+4521: analyzed 2 loci; filtered 366 loci; 368 loci seen.
+    1717 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4566: analyzed 2 loci; filtered 126 loci; 128 loci seen.
+    1872 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4581: analyzed 2 loci; filtered 184 loci; 186 loci seen.
+    1771 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4598: analyzed 2 loci; filtered 89 loci; 91 loci seen.
+    1729 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4609: analyzed 2 loci; filtered 18 loci; 20 loci seen.
+    1773 genomic sites, of which 0 were covered by multiple loci (0.0%).
+4610: analyzed 2 loci; filtered 29 loci; 31 loci seen.
+    1932 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4616: analyzed 4 loci; filtered 220 loci; 224 loci seen.
+    2238 genomic sites, of which 597 were covered by multiple loci (26.7%).
+4639: analyzed 2 loci; filtered 158 loci; 160 loci seen.
+    1643 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4653: analyzed 2 loci; filtered 48 loci; 50 loci seen.
+    1881 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4659: analyzed 2 loci; filtered 107 loci; 109 loci seen.
+    1800 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4672: analyzed 2 loci; filtered 154 loci; 156 loci seen.
+    1599 genomic sites, of which 4 were covered by multiple loci (0.3%).
+4694: analyzed 3 loci; filtered 295 loci; 298 loci seen.
+    1884 genomic sites, of which 858 were covered by multiple loci (45.5%).
+4730: analyzed 2 loci; filtered 169 loci; 171 loci seen.
+    1283 genomic sites, of which 4 were covered by multiple loci (0.3%).
+4747: analyzed 3 loci; filtered 75 loci; 78 loci seen.
+    2500 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4757: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1827 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4765: analyzed 2 loci; filtered 85 loci; 87 loci seen.
+    1893 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4773: analyzed 2 loci; filtered 97 loci; 99 loci seen.
+    1820 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4786: analyzed 3 loci; filtered 62 loci; 65 loci seen.
+    2091 genomic sites, of which 439 were covered by multiple loci (21.0%).
+4788: analyzed 2 loci; filtered 98 loci; 100 loci seen.
+    1913 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4802: analyzed 4 loci; filtered 29 loci; 33 loci seen.
+    3562 genomic sites, of which 8 were covered by multiple loci (0.2%).
+4805: analyzed 2 loci; filtered 64 loci; 66 loci seen.
+    1659 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4811: analyzed 2 loci; filtered 49 loci; 51 loci seen.
+    1704 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4836: analyzed 3 loci; filtered 180 loci; 183 loci seen.
+    2763 genomic sites, of which 4 were covered by multiple loci (0.1%).
+4842: analyzed 2 loci; filtered 39 loci; 41 loci seen.
+    1726 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4846: analyzed 2 loci; filtered 146 loci; 148 loci seen.
+    1806 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4867: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    1871 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4882: analyzed 2 loci; filtered 30 loci; 32 loci seen.
+    1928 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4883: analyzed 2 loci; filtered 125 loci; 127 loci seen.
+    1578 genomic sites, of which 4 were covered by multiple loci (0.3%).
+4898: analyzed 2 loci; filtered 7 loci; 9 loci seen.
+    1864 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4901: analyzed 3 loci; filtered 16 loci; 19 loci seen.
+    2335 genomic sites, of which 473 were covered by multiple loci (20.3%).
+4902: analyzed 2 loci; filtered 241 loci; 243 loci seen.
+    1757 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4932: analyzed 2 loci; filtered 39 loci; 41 loci seen.
+    1950 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4936: analyzed 4 loci; filtered 47 loci; 51 loci seen.
+    3149 genomic sites, of which 8 were covered by multiple loci (0.3%).
+4942: analyzed 2 loci; filtered 105 loci; 107 loci seen.
+    967 genomic sites, of which 4 were covered by multiple loci (0.4%).
+4957: analyzed 3 loci; filtered 36 loci; 39 loci seen.
+    2358 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4961: analyzed 2 loci; filtered 76 loci; 78 loci seen.
+    1755 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4969: analyzed 2 loci; filtered 36 loci; 38 loci seen.
+    1667 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4973: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1867 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4978: analyzed 2 loci; filtered 60 loci; 62 loci seen.
+    1280 genomic sites, of which 4 were covered by multiple loci (0.3%).
+4984: analyzed 2 loci; filtered 124 loci; 126 loci seen.
+    1813 genomic sites, of which 4 were covered by multiple loci (0.2%).
+4999: analyzed 2 loci; filtered 65 loci; 67 loci seen.
+    1897 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5005: analyzed 2 loci; filtered 21 loci; 23 loci seen.
+    1638 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5007: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1893 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5014: analyzed 2 loci; filtered 48 loci; 50 loci seen.
+    1757 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5019: analyzed 2 loci; filtered 445 loci; 447 loci seen.
+    1912 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5075: analyzed 2 loci; filtered 33 loci; 35 loci seen.
+    1424 genomic sites, of which 4 were covered by multiple loci (0.3%).
+5080: analyzed 2 loci; filtered 132 loci; 134 loci seen.
+    1427 genomic sites, of which 0 were covered by multiple loci (0.0%).
+5097: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    1874 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5115: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1817 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5124: analyzed 2 loci; filtered 46 loci; 48 loci seen.
+    1547 genomic sites, of which 4 were covered by multiple loci (0.3%).
+5129: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    1385 genomic sites, of which 4 were covered by multiple loci (0.3%).
+5140: analyzed 2 loci; filtered 15 loci; 17 loci seen.
+    1776 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5144: analyzed 3 loci; filtered 76 loci; 79 loci seen.
+    2112 genomic sites, of which 462 were covered by multiple loci (21.9%).
+5152: analyzed 2 loci; filtered 70 loci; 72 loci seen.
+    1685 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5165: analyzed 2 loci; filtered 75 loci; 77 loci seen.
+    1901 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5177: analyzed 2 loci; filtered 47 loci; 49 loci seen.
+    1815 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5183: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    1801 genomic sites, of which 7 were covered by multiple loci (0.4%).
+5187: analyzed 2 loci; filtered 226 loci; 228 loci seen.
+    1838 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5220: analyzed 2 loci; filtered 20 loci; 22 loci seen.
+    1174 genomic sites, of which 4 were covered by multiple loci (0.3%).
+5222: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    1911 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5230: analyzed 5 loci; filtered 236 loci; 241 loci seen.
+    3285 genomic sites, of which 728 were covered by multiple loci (22.2%).
+5262: analyzed 2 loci; filtered 44 loci; 46 loci seen.
+    1594 genomic sites, of which 4 were covered by multiple loci (0.3%).
+5267: analyzed 2 loci; filtered 57 loci; 59 loci seen.
+    1874 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5274: analyzed 4 loci; filtered 55 loci; 59 loci seen.
+    2322 genomic sites, of which 630 were covered by multiple loci (27.1%).
+5282: analyzed 4 loci; filtered 250 loci; 254 loci seen.
+    3440 genomic sites, of which 8 were covered by multiple loci (0.2%).
+5315: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    1844 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5333: analyzed 3 loci; filtered 118 loci; 121 loci seen.
+    2790 genomic sites, of which 4 were covered by multiple loci (0.1%).
+5339: analyzed 2 loci; filtered 165 loci; 167 loci seen.
+    1764 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5362: analyzed 4 loci; filtered 51 loci; 55 loci seen.
+    3533 genomic sites, of which 8 were covered by multiple loci (0.2%).
+5373: analyzed 3 loci; filtered 147 loci; 150 loci seen.
+    1741 genomic sites, of which 819 were covered by multiple loci (47.0%).
+5391: analyzed 2 loci; filtered 143 loci; 145 loci seen.
+    1800 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5412: analyzed 2 loci; filtered 7 loci; 9 loci seen.
+    1896 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5413: analyzed 2 loci; filtered 12 loci; 14 loci seen.
+    1756 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5415: analyzed 2 loci; filtered 19 loci; 21 loci seen.
+    1708 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5418: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1842 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5430: analyzed 2 loci; filtered 86 loci; 88 loci seen.
+    1876 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5441: analyzed 2 loci; filtered 24 loci; 26 loci seen.
+    1753 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5444: analyzed 2 loci; filtered 124 loci; 126 loci seen.
+    1784 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5462: analyzed 2 loci; filtered 63 loci; 65 loci seen.
+    1511 genomic sites, of which 4 were covered by multiple loci (0.3%).
+5472: analyzed 4 loci; filtered 91 loci; 95 loci seen.
+    3193 genomic sites, of which 231 were covered by multiple loci (7.2%).
+5485: analyzed 2 loci; filtered 54 loci; 56 loci seen.
+    1829 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5497: analyzed 2 loci; filtered 100 loci; 102 loci seen.
+    1819 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5514: analyzed 2 loci; filtered 109 loci; 111 loci seen.
+    1817 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5529: analyzed 2 loci; filtered 36 loci; 38 loci seen.
+    1806 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5535: analyzed 2 loci; filtered 309 loci; 311 loci seen.
+    1343 genomic sites, of which 4 were covered by multiple loci (0.3%).
+5585: analyzed 3 loci; filtered 140 loci; 143 loci seen.
+    2086 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5603: analyzed 2 loci; filtered 244 loci; 246 loci seen.
+    1554 genomic sites, of which 4 were covered by multiple loci (0.3%).
+5639: analyzed 2 loci; filtered 75 loci; 77 loci seen.
+    1705 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5674: analyzed 3 loci; filtered 415 loci; 418 loci seen.
+    2221 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5724: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    1716 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5734: analyzed 2 loci; filtered 95 loci; 97 loci seen.
+    1556 genomic sites, of which 4 were covered by multiple loci (0.3%).
+5746: analyzed 4 loci; filtered 136 loci; 140 loci seen.
+    2186 genomic sites, of which 605 were covered by multiple loci (27.7%).
+5769: analyzed 2 loci; filtered 21 loci; 23 loci seen.
+    1756 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5771: analyzed 2 loci; filtered 60 loci; 62 loci seen.
+    1737 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5779: analyzed 2 loci; filtered 27 loci; 29 loci seen.
+    1580 genomic sites, of which 4 were covered by multiple loci (0.3%).
+5785: analyzed 2 loci; filtered 81 loci; 83 loci seen.
+    1758 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5798: analyzed 2 loci; filtered 10 loci; 12 loci seen.
+    1616 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5799: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    1623 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5803: analyzed 2 loci; filtered 163 loci; 165 loci seen.
+    1754 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5831: analyzed 2 loci; filtered 775 loci; 777 loci seen.
+    1717 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5960: analyzed 2 loci; filtered 52 loci; 54 loci seen.
+    839 genomic sites, of which 0 were covered by multiple loci (0.0%).
+5989: analyzed 5 loci; filtered 176 loci; 181 loci seen.
+    3210 genomic sites, of which 914 were covered by multiple loci (28.5%).
+5998: analyzed 2 loci; filtered 2 loci; 4 loci seen.
+    1645 genomic sites, of which 4 were covered by multiple loci (0.2%).
+5999: analyzed 2 loci; filtered 78 loci; 80 loci seen.
+    1793 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6009: analyzed 2 loci; filtered 40 loci; 42 loci seen.
+    1898 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6015: analyzed 2 loci; filtered 129 loci; 131 loci seen.
+    1921 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6038: analyzed 2 loci; filtered 72 loci; 74 loci seen.
+    1644 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6049: analyzed 2 loci; filtered 15 loci; 17 loci seen.
+    1783 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6050: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    1784 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6053: analyzed 2 loci; filtered 23 loci; 25 loci seen.
+    1691 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6061: analyzed 2 loci; filtered 195 loci; 197 loci seen.
+    1866 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6093: analyzed 2 loci; filtered 278 loci; 280 loci seen.
+    1799 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6144: analyzed 2 loci; filtered 111 loci; 113 loci seen.
+    1833 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6160: analyzed 2 loci; filtered 217 loci; 219 loci seen.
+    1892 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6202: analyzed 2 loci; filtered 32 loci; 34 loci seen.
+    1668 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6206: analyzed 2 loci; filtered 93 loci; 95 loci seen.
+    1352 genomic sites, of which 4 were covered by multiple loci (0.3%).
+6222: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1589 genomic sites, of which 4 were covered by multiple loci (0.3%).
+6232: analyzed 2 loci; filtered 105 loci; 107 loci seen.
+    1880 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6248: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1682 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6250: analyzed 2 loci; filtered 253 loci; 255 loci seen.
+    1642 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6297: analyzed 2 loci; filtered 78 loci; 80 loci seen.
+    1801 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6315: analyzed 2 loci; filtered 71 loci; 73 loci seen.
+    1722 genomic sites, of which 0 were covered by multiple loci (0.0%).
+6331: analyzed 2 loci; filtered 131 loci; 133 loci seen.
+    1460 genomic sites, of which 4 were covered by multiple loci (0.3%).
+6359: analyzed 2 loci; filtered 2 loci; 4 loci seen.
+    1920 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6360: analyzed 3 loci; filtered 26 loci; 29 loci seen.
+    2151 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6362: analyzed 2 loci; filtered 131 loci; 133 loci seen.
+    1794 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6385: analyzed 2 loci; filtered 94 loci; 96 loci seen.
+    1906 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6398: analyzed 2 loci; filtered 7 loci; 9 loci seen.
+    1840 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6400: analyzed 2 loci; filtered 78 loci; 80 loci seen.
+    1746 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6411: analyzed 2 loci; filtered 154 loci; 156 loci seen.
+    1442 genomic sites, of which 4 were covered by multiple loci (0.3%).
+6439: analyzed 2 loci; filtered 164 loci; 166 loci seen.
+    1631 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6470: analyzed 2 loci; filtered 381 loci; 383 loci seen.
+    1853 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6549: analyzed 2 loci; filtered 35 loci; 37 loci seen.
+    1692 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6557: analyzed 2 loci; filtered 115 loci; 117 loci seen.
+    1755 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6577: analyzed 2 loci; filtered 202 loci; 204 loci seen.
+    1799 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6612: analyzed 2 loci; filtered 138 loci; 140 loci seen.
+    1762 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6635: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    1738 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6639: analyzed 4 loci; filtered 95 loci; 99 loci seen.
+    3209 genomic sites, of which 8 were covered by multiple loci (0.2%).
+6658: analyzed 2 loci; filtered 339 loci; 341 loci seen.
+    1533 genomic sites, of which 0 were covered by multiple loci (0.0%).
+6722: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    1917 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6744: analyzed 2 loci; filtered 58 loci; 60 loci seen.
+    1031 genomic sites, of which 0 were covered by multiple loci (0.0%).
+6756: analyzed 2 loci; filtered 23 loci; 25 loci seen.
+    1805 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6788: analyzed 3 loci; filtered 236 loci; 239 loci seen.
+    2113 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6814: analyzed 2 loci; filtered 21 loci; 23 loci seen.
+    1901 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6842: analyzed 3 loci; filtered 224 loci; 227 loci seen.
+    2387 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6866: analyzed 2 loci; filtered 15 loci; 17 loci seen.
+    1888 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6870: analyzed 2 loci; filtered 98 loci; 100 loci seen.
+    1838 genomic sites, of which 4 were covered by multiple loci (0.2%).
+6890: analyzed 2 loci; filtered 252 loci; 254 loci seen.
+    952 genomic sites, of which 4 were covered by multiple loci (0.4%).
+6946: analyzed 2 loci; filtered 408 loci; 410 loci seen.
+    1531 genomic sites, of which 4 were covered by multiple loci (0.3%).
+7030: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    1915 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7038: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    1270 genomic sites, of which 4 were covered by multiple loci (0.3%).
+7063: analyzed 2 loci; filtered 89 loci; 91 loci seen.
+    1479 genomic sites, of which 4 were covered by multiple loci (0.3%).
+7083: analyzed 2 loci; filtered 251 loci; 253 loci seen.
+    1650 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7144: analyzed 2 loci; filtered 122 loci; 124 loci seen.
+    1721 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7164: analyzed 2 loci; filtered 148 loci; 150 loci seen.
+    1868 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7198: analyzed 2 loci; filtered 20 loci; 22 loci seen.
+    1737 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7203: analyzed 2 loci; filtered 135 loci; 137 loci seen.
+    1969 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7241: analyzed 2 loci; filtered 58 loci; 60 loci seen.
+    1018 genomic sites, of which 0 were covered by multiple loci (0.0%).
+7247: analyzed 2 loci; filtered 176 loci; 178 loci seen.
+    1093 genomic sites, of which 4 were covered by multiple loci (0.4%).
+7286: analyzed 2 loci; filtered 125 loci; 127 loci seen.
+    1904 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7314: analyzed 2 loci; filtered 10 loci; 12 loci seen.
+    1627 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7316: analyzed 2 loci; filtered 33 loci; 35 loci seen.
+    1712 genomic sites, of which 12 were covered by multiple loci (0.7%).
+7320: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    1774 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7326: analyzed 2 loci; filtered 57 loci; 59 loci seen.
+    1451 genomic sites, of which 4 were covered by multiple loci (0.3%).
+7392: analyzed 2 loci; filtered 211 loci; 213 loci seen.
+    1755 genomic sites, of which 0 were covered by multiple loci (0.0%).
+7393: analyzed 2 loci; filtered 78 loci; 80 loci seen.
+    1439 genomic sites, of which 4 were covered by multiple loci (0.3%).
+7414: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    1837 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7441: analyzed 2 loci; filtered 261 loci; 263 loci seen.
+    1735 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7515: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    1692 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7521: analyzed 2 loci; filtered 149 loci; 151 loci seen.
+    1803 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7562: analyzed 2 loci; filtered 153 loci; 155 loci seen.
+    1607 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7601: analyzed 2 loci; filtered 59 loci; 61 loci seen.
+    1682 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7616: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1741 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7630: analyzed 2 loci; filtered 27 loci; 29 loci seen.
+    1788 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7636: analyzed 4 loci; filtered 171 loci; 175 loci seen.
+    2867 genomic sites, of which 394 were covered by multiple loci (13.7%).
+7689: analyzed 2 loci; filtered 123 loci; 125 loci seen.
+    1900 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7719: analyzed 2 loci; filtered 72 loci; 74 loci seen.
+    1183 genomic sites, of which 4 were covered by multiple loci (0.3%).
+7737: analyzed 2 loci; filtered 16 loci; 18 loci seen.
+    1929 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7745: analyzed 3 loci; filtered 63 loci; 66 loci seen.
+    2539 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7759: analyzed 2 loci; filtered 155 loci; 157 loci seen.
+    1730 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7799: analyzed 2 loci; filtered 177 loci; 179 loci seen.
+    1631 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7843: analyzed 2 loci; filtered 64 loci; 66 loci seen.
+    1573 genomic sites, of which 4 were covered by multiple loci (0.3%).
+7857: analyzed 2 loci; filtered 128 loci; 130 loci seen.
+    1852 genomic sites, of which 4 were covered by multiple loci (0.2%).
+7931: analyzed 3 loci; filtered 164 loci; 167 loci seen.
+    1690 genomic sites, of which 705 were covered by multiple loci (41.7%).
+8013: analyzed 3 loci; filtered 283 loci; 286 loci seen.
+    1803 genomic sites, of which 652 were covered by multiple loci (36.2%).
+8030: analyzed 2 loci; filtered 52 loci; 54 loci seen.
+    1672 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8047: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    1883 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8055: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1463 genomic sites, of which 4 were covered by multiple loci (0.3%).
+8059: analyzed 2 loci; filtered 257 loci; 259 loci seen.
+    1739 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8141: analyzed 2 loci; filtered 178 loci; 180 loci seen.
+    1588 genomic sites, of which 4 were covered by multiple loci (0.3%).
+8197: analyzed 2 loci; filtered 72 loci; 74 loci seen.
+    1801 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8216: analyzed 2 loci; filtered 235 loci; 237 loci seen.
+    1753 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8278: analyzed 2 loci; filtered 179 loci; 181 loci seen.
+    1845 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8341: analyzed 2 loci; filtered 25 loci; 27 loci seen.
+    1739 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8347: analyzed 2 loci; filtered 60 loci; 62 loci seen.
+    1835 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8374: analyzed 3 loci; filtered 45 loci; 48 loci seen.
+    2200 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8377: analyzed 2 loci; filtered 107 loci; 109 loci seen.
+    1912 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8406: analyzed 2 loci; filtered 57 loci; 59 loci seen.
+    1761 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8424: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1751 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8447: analyzed 2 loci; filtered 170 loci; 172 loci seen.
+    1717 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8499: analyzed 2 loci; filtered 7 loci; 9 loci seen.
+    1762 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8501: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    1824 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8539: analyzed 2 loci; filtered 69 loci; 71 loci seen.
+    1814 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8558: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    1358 genomic sites, of which 4 were covered by multiple loci (0.3%).
+8570: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1927 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8617: analyzed 3 loci; filtered 95 loci; 98 loci seen.
+    1823 genomic sites, of which 899 were covered by multiple loci (49.3%).
+8631: analyzed 2 loci; filtered 228 loci; 230 loci seen.
+    1957 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8709: analyzed 2 loci; filtered 69 loci; 71 loci seen.
+    1860 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8739: analyzed 2 loci; filtered 38 loci; 40 loci seen.
+    1899 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8753: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    1880 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8767: analyzed 2 loci; filtered 57 loci; 59 loci seen.
+    1092 genomic sites, of which 4 were covered by multiple loci (0.4%).
+8785: analyzed 2 loci; filtered 75 loci; 77 loci seen.
+    1941 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8830: analyzed 3 loci; filtered 72 loci; 75 loci seen.
+    2536 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8848: analyzed 2 loci; filtered 115 loci; 117 loci seen.
+    1728 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8883: analyzed 2 loci; filtered 178 loci; 180 loci seen.
+    1817 genomic sites, of which 4 were covered by multiple loci (0.2%).
+8953: analyzed 2 loci; filtered 31 loci; 33 loci seen.
+    1113 genomic sites, of which 4 were covered by multiple loci (0.4%).
+8963: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    1595 genomic sites, of which 4 were covered by multiple loci (0.3%).
+9006: analyzed 3 loci; filtered 82 loci; 85 loci seen.
+    2859 genomic sites, of which 4 were covered by multiple loci (0.1%).
+9040: analyzed 3 loci; filtered 31 loci; 34 loci seen.
+    2706 genomic sites, of which 4 were covered by multiple loci (0.1%).
+9041: analyzed 2 loci; filtered 192 loci; 194 loci seen.
+    1632 genomic sites, of which 4 were covered by multiple loci (0.2%).
+9110: analyzed 2 loci; filtered 32 loci; 34 loci seen.
+    1852 genomic sites, of which 4 were covered by multiple loci (0.2%).
+9128: analyzed 2 loci; filtered 27 loci; 29 loci seen.
+    1736 genomic sites, of which 4 were covered by multiple loci (0.2%).
+9136: analyzed 2 loci; filtered 89 loci; 91 loci seen.
+    1833 genomic sites, of which 4 were covered by multiple loci (0.2%).
+9172: analyzed 2 loci; filtered 17 loci; 19 loci seen.
+    1684 genomic sites, of which 4 were covered by multiple loci (0.2%).
+9176: analyzed 2 loci; filtered 192 loci; 194 loci seen.
+    1799 genomic sites, of which 4 were covered by multiple loci (0.2%).
+9243: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1881 genomic sites, of which 4 were covered by multiple loci (0.2%).
+9272: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    1008 genomic sites, of which 4 were covered by multiple loci (0.4%).
+9325: analyzed 3 loci; filtered 212 loci; 215 loci seen.
+    1689 genomic sites, of which 910 were covered by multiple loci (53.9%).
+9494: analyzed 3 loci; filtered 448 loci; 451 loci seen.
+    1643 genomic sites, of which 447 were covered by multiple loci (27.2%).
+9565: analyzed 2 loci; filtered 147 loci; 149 loci seen.
+    1663 genomic sites, of which 4 were covered by multiple loci (0.2%).
+9635: analyzed 2 loci; filtered 10 loci; 12 loci seen.
+    1849 genomic sites, of which 4 were covered by multiple loci (0.2%).
+9640: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1594 genomic sites, of which 4 were covered by multiple loci (0.3%).
+9670: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    1923 genomic sites, of which 4 were covered by multiple loci (0.2%).
+9719: analyzed 2 loci; filtered 19 loci; 21 loci seen.
+    610 genomic sites, of which 4 were covered by multiple loci (0.7%).
+9728: analyzed 2 loci; filtered 69 loci; 71 loci seen.
+    1635 genomic sites, of which 4 were covered by multiple loci (0.2%).
+9759: analyzed 2 loci; filtered 442 loci; 444 loci seen.
+    1855 genomic sites, of which 4 were covered by multiple loci (0.2%).
+10003: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1932 genomic sites, of which 4 were covered by multiple loci (0.2%).
+10033: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    961 genomic sites, of which 4 were covered by multiple loci (0.4%).
+10075: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    1771 genomic sites, of which 4 were covered by multiple loci (0.2%).
+10116: analyzed 2 loci; filtered 80 loci; 82 loci seen.
+    1528 genomic sites, of which 4 were covered by multiple loci (0.3%).
+10235: analyzed 3 loci; filtered 207 loci; 210 loci seen.
+    2444 genomic sites, of which 257 were covered by multiple loci (10.5%).
+10343: analyzed 2 loci; filtered 303 loci; 305 loci seen.
+    807 genomic sites, of which 0 were covered by multiple loci (0.0%).
+10484: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    1739 genomic sites, of which 4 were covered by multiple loci (0.2%).
+10550: analyzed 2 loci; filtered 101 loci; 103 loci seen.
+    1753 genomic sites, of which 4 were covered by multiple loci (0.2%).
+10659: analyzed 3 loci; filtered 137 loci; 140 loci seen.
+    2147 genomic sites, of which 4 were covered by multiple loci (0.2%).
+10688: analyzed 2 loci; filtered 220 loci; 222 loci seen.
+    1691 genomic sites, of which 4 were covered by multiple loci (0.2%).
+10819: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1907 genomic sites, of which 4 were covered by multiple loci (0.2%).
+10829: analyzed 2 loci; filtered 7 loci; 9 loci seen.
+    1408 genomic sites, of which 4 were covered by multiple loci (0.3%).
+10839: analyzed 2 loci; filtered 32 loci; 34 loci seen.
+    1502 genomic sites, of which 4 were covered by multiple loci (0.3%).
+10869: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1802 genomic sites, of which 4 were covered by multiple loci (0.2%).
+10875: analyzed 2 loci; filtered 134 loci; 136 loci seen.
+    1424 genomic sites, of which 4 were covered by multiple loci (0.3%).
+10987: analyzed 3 loci; filtered 382 loci; 385 loci seen.
+    1311 genomic sites, of which 736 were covered by multiple loci (56.1%).
+11227: analyzed 2 loci; filtered 378 loci; 380 loci seen.
+    1637 genomic sites, of which 4 were covered by multiple loci (0.2%).
+11533: analyzed 3 loci; filtered 112 loci; 115 loci seen.
+    1964 genomic sites, of which 4 were covered by multiple loci (0.2%).
+11617: analyzed 3 loci; filtered 40 loci; 43 loci seen.
+    2722 genomic sites, of which 4 were covered by multiple loci (0.1%).
+11621: analyzed 2 loci; filtered 57 loci; 59 loci seen.
+    1946 genomic sites, of which 4 were covered by multiple loci (0.2%).
+11696: analyzed 2 loci; filtered 47 loci; 49 loci seen.
+    1706 genomic sites, of which 4 were covered by multiple loci (0.2%).
+11735: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    1559 genomic sites, of which 4 were covered by multiple loci (0.3%).
+11752: analyzed 2 loci; filtered 87 loci; 89 loci seen.
+    1113 genomic sites, of which 0 were covered by multiple loci (0.0%).
+11841: analyzed 3 loci; filtered 93 loci; 96 loci seen.
+    2352 genomic sites, of which 411 were covered by multiple loci (17.5%).
+11864: analyzed 2 loci; filtered 205 loci; 207 loci seen.
+    1616 genomic sites, of which 4 were covered by multiple loci (0.2%).
+12196: analyzed 2 loci; filtered 142 loci; 144 loci seen.
+    895 genomic sites, of which 464 were covered by multiple loci (51.8%).
+12424: analyzed 3 loci; filtered 236 loci; 239 loci seen.
+    1471 genomic sites, of which 954 were covered by multiple loci (64.9%).
+12522: analyzed 2 loci; filtered 389 loci; 391 loci seen.
+    1377 genomic sites, of which 0 were covered by multiple loci (0.0%).
+13040: analyzed 3 loci; filtered 140 loci; 143 loci seen.
+    2244 genomic sites, of which 400 were covered by multiple loci (17.8%).
+13079: analyzed 2 loci; filtered 144 loci; 146 loci seen.
+    1635 genomic sites, of which 4 were covered by multiple loci (0.2%).
+13482: analyzed 3 loci; filtered 467 loci; 470 loci seen.
+    1511 genomic sites, of which 395 were covered by multiple loci (26.1%).
+13910: analyzed 2 loci; filtered 381 loci; 383 loci seen.
+    1322 genomic sites, of which 4 were covered by multiple loci (0.3%).
+14540: analyzed 2 loci; filtered 240 loci; 242 loci seen.
+    1343 genomic sites, of which 4 were covered by multiple loci (0.3%).
+15778: analyzed 2 loci; filtered 184 loci; 186 loci seen.
+    1055 genomic sites, of which 407 were covered by multiple loci (38.6%).
+15851: analyzed 2 loci; filtered 53 loci; 55 loci seen.
+    654 genomic sites, of which 484 were covered by multiple loci (74.0%).
+15993: analyzed 2 loci; filtered 475 loci; 477 loci seen.
+    921 genomic sites, of which 4 were covered by multiple loci (0.4%).
+20399: analyzed 2 loci; filtered 315 loci; 317 loci seen.
+    432 genomic sites, of which 202 were covered by multiple loci (46.8%).
+28123: analyzed 2 loci; filtered 140 loci; 142 loci seen.
+    400 genomic sites, of which 183 were covered by multiple loci (45.8%).
+30674: analyzed 2 loci; filtered 33 loci; 35 loci seen.
+    309 genomic sites, of which 142 were covered by multiple loci (46.0%).
+37065: analyzed 2 loci; filtered 130 loci; 132 loci seen.
+    256 genomic sites, of which 165 were covered by multiple loci (64.5%).
+49901: analyzed 2 loci; filtered 59 loci; 61 loci seen.
+    209 genomic sites, of which 149 were covered by multiple loci (71.3%).
+END batch_progress
+
+BEGIN samples_per_loc_prefilters
+# Distribution of valid samples matched to a catalog locus prior to filtering.
+n_samples	n_loci
+1	73398
+2	28487
+3	6800
+4	6973
+5	826
+6	5129
+7	715
+8	22424
+9	613
+10	3468
+11	122
+12	643
+13	60
+14	228
+15	18
+16	102
+17	13
+18	71
+19	7
+20	29
+21	8
+22	31
+23	6
+24	20
+25	7
+26	15
+27	6
+28	13
+29	3
+30	9
+31	7
+32	9
+33	8
+34	9
+35	2
+36	8
+37	4
+38	8
+39	11
+40	6
+41	4
+42	2
+43	5
+44	9
+45	5
+46	12
+47	5
+48	3
+49	3
+50	2
+51	2
+52	2
+53	1
+54	5
+55	5
+56	2
+57	1
+58	3
+59	4
+61	1
+62	4
+63	2
+64	5
+65	3
+66	5
+67	2
+68	3
+69	4
+70	3
+71	1
+72	2
+73	5
+74	5
+75	3
+76	1
+77	5
+78	2
+79	1
+80	2
+81	6
+82	2
+83	2
+84	1
+85	2
+86	3
+87	1
+88	1
+90	4
+91	5
+92	3
+93	4
+94	2
+95	4
+96	3
+98	1
+99	4
+100	3
+101	4
+102	1
+103	2
+104	2
+105	4
+106	3
+108	2
+109	1
+110	1
+111	2
+112	2
+113	1
+114	1
+115	2
+116	1
+117	2
+118	1
+119	1
+121	1
+122	1
+124	2
+125	1
+126	5
+128	3
+129	1
+130	3
+131	4
+132	5
+133	3
+134	3
+135	3
+136	1
+137	4
+138	2
+139	2
+140	2
+142	2
+144	2
+145	4
+146	2
+147	3
+148	3
+149	1
+150	1
+151	5
+152	2
+153	6
+154	4
+155	2
+156	3
+157	1
+159	4
+160	2
+161	3
+162	3
+163	2
+164	3
+165	2
+166	3
+167	6
+168	7
+169	2
+170	3
+171	6
+172	4
+173	4
+174	3
+175	4
+176	1
+177	6
+178	2
+179	4
+180	1
+181	1
+182	2
+183	2
+184	4
+185	5
+186	1
+187	2
+189	3
+190	3
+192	2
+193	3
+194	5
+195	2
+197	3
+198	1
+199	1
+200	1
+201	2
+202	4
+203	4
+205	1
+206	2
+207	5
+208	1
+211	2
+213	3
+214	1
+215	2
+216	3
+219	1
+220	2
+221	1
+224	1
+225	1
+226	5
+227	2
+228	1
+229	4
+230	2
+231	2
+232	1
+233	1
+235	1
+236	1
+237	3
+238	1
+239	2
+240	4
+241	3
+242	2
+243	2
+244	3
+245	2
+246	2
+247	2
+248	2
+249	1
+250	1
+251	1
+253	3
+254	3
+257	4
+258	4
+259	1
+260	2
+261	6
+262	3
+263	4
+264	3
+266	4
+267	2
+268	2
+269	2
+270	4
+271	2
+272	2
+273	3
+274	4
+275	1
+277	3
+278	3
+279	3
+280	1
+281	2
+282	3
+283	7
+284	3
+285	5
+286	1
+287	3
+288	3
+289	4
+290	3
+291	6
+292	4
+293	2
+294	4
+295	4
+296	4
+297	3
+298	4
+299	5
+300	7
+301	4
+302	7
+303	2
+304	5
+305	5
+306	10
+307	5
+308	10
+309	7
+310	12
+311	10
+312	16
+313	11
+314	11
+315	16
+316	17
+317	30
+318	23
+319	32
+320	23
+321	35
+322	39
+323	42
+324	26
+325	39
+326	43
+327	38
+328	40
+329	41
+330	33
+331	34
+332	24
+333	22
+334	13
+335	27
+336	16
+337	6
+338	10
+339	15
+340	2
+341	1
+342	4
+343	3
+344	3
+345	5
+346	5
+347	3
+348	1
+349	5
+350	1
+351	3
+352	1
+353	2
+354	3
+355	2
+356	3
+357	4
+358	4
+359	2
+360	6
+361	2
+362	3
+363	7
+364	1
+366	2
+367	2
+368	3
+369	7
+370	2
+371	2
+372	4
+373	2
+374	1
+375	4
+376	5
+377	3
+378	3
+379	2
+380	2
+381	6
+382	2
+383	5
+384	3
+385	4
+388	5
+389	5
+390	5
+391	4
+392	3
+393	2
+394	3
+395	1
+396	3
+397	3
+398	7
+399	3
+400	5
+401	3
+402	4
+403	4
+404	4
+405	1
+406	4
+407	4
+408	5
+409	3
+410	3
+411	2
+412	3
+413	2
+414	5
+415	7
+416	3
+417	6
+418	8
+419	2
+420	4
+421	3
+422	5
+423	7
+424	9
+425	8
+426	3
+427	5
+428	4
+429	6
+430	9
+431	10
+432	6
+433	9
+434	4
+435	4
+436	7
+437	6
+438	8
+439	5
+440	4
+441	5
+443	3
+444	6
+445	5
+446	4
+447	3
+448	3
+449	6
+450	2
+451	2
+452	2
+453	1
+454	3
+455	7
+456	5
+457	2
+458	5
+459	5
+460	5
+461	2
+462	2
+463	2
+464	3
+465	6
+466	6
+467	3
+468	4
+470	3
+471	1
+472	3
+473	1
+474	6
+475	2
+476	5
+477	2
+478	1
+479	6
+480	6
+481	5
+482	3
+483	4
+484	5
+485	3
+486	10
+487	8
+488	6
+489	3
+490	5
+491	5
+492	3
+493	9
+494	7
+495	4
+496	8
+497	7
+498	8
+499	4
+500	4
+501	8
+502	5
+503	10
+504	6
+505	10
+506	6
+507	3
+508	4
+509	10
+510	6
+511	10
+512	4
+513	5
+514	4
+515	3
+516	7
+517	3
+518	6
+519	6
+520	6
+521	3
+522	12
+523	9
+524	5
+525	8
+526	10
+527	11
+528	15
+529	17
+530	19
+531	15
+532	10
+533	10
+534	11
+535	6
+536	10
+537	8
+538	6
+539	8
+540	9
+541	14
+542	9
+543	14
+544	3
+545	7
+546	18
+547	13
+548	14
+549	14
+550	31
+551	33
+552	72
+553	517
+END samples_per_loc_prefilters
+
+BEGIN missing_samples_per_loc_prefilters
+# Distribution of missing samples for each catalog locus prior to filtering.
+# Absent samples at locus	Count
+0	517
+1	72
+2	33
+3	31
+4	14
+5	14
+6	13
+7	18
+8	7
+9	3
+10	14
+11	9
+12	14
+13	9
+14	8
+15	6
+16	8
+17	10
+18	6
+19	11
+20	10
+21	10
+22	15
+23	19
+24	17
+25	15
+26	11
+27	10
+28	8
+29	5
+30	9
+31	12
+32	3
+33	6
+34	6
+35	6
+36	3
+37	7
+38	3
+39	4
+40	5
+41	4
+42	10
+43	6
+44	10
+45	4
+46	3
+47	6
+48	10
+49	6
+50	10
+51	5
+52	8
+53	4
+54	4
+55	8
+56	7
+57	8
+58	4
+59	7
+60	9
+61	3
+62	5
+63	5
+64	3
+65	6
+66	8
+67	10
+68	3
+69	5
+70	4
+71	3
+72	5
+73	6
+74	6
+75	1
+76	2
+77	5
+78	2
+79	6
+80	1
+81	3
+82	1
+83	3
+85	4
+86	3
+87	6
+88	6
+89	3
+90	2
+91	2
+92	2
+93	5
+94	5
+95	5
+96	2
+97	5
+98	7
+99	3
+100	1
+101	2
+102	2
+103	2
+104	6
+105	3
+106	3
+107	4
+108	5
+109	6
+110	3
+112	5
+113	4
+114	5
+115	8
+116	6
+117	7
+118	4
+119	4
+120	9
+121	6
+122	10
+123	9
+124	6
+125	4
+126	5
+127	3
+128	8
+129	9
+130	7
+131	5
+132	3
+133	4
+134	2
+135	8
+136	6
+137	3
+138	7
+139	5
+140	2
+141	3
+142	2
+143	3
+144	3
+145	5
+146	4
+147	4
+148	1
+149	4
+150	4
+151	4
+152	3
+153	5
+154	3
+155	7
+156	3
+157	3
+158	1
+159	3
+160	2
+161	3
+162	4
+163	5
+164	5
+165	5
+168	4
+169	3
+170	5
+171	2
+172	6
+173	2
+174	2
+175	3
+176	3
+177	5
+178	4
+179	1
+180	2
+181	4
+182	2
+183	2
+184	7
+185	3
+186	2
+187	2
+189	1
+190	7
+191	3
+192	2
+193	6
+194	2
+195	4
+196	4
+197	3
+198	2
+199	3
+200	2
+201	1
+202	3
+203	1
+204	5
+205	1
+206	3
+207	5
+208	5
+209	3
+210	3
+211	4
+212	1
+213	2
+214	15
+215	10
+216	6
+217	16
+218	27
+219	13
+220	22
+221	24
+222	34
+223	33
+224	41
+225	40
+226	38
+227	43
+228	39
+229	26
+230	42
+231	39
+232	35
+233	23
+234	32
+235	23
+236	30
+237	17
+238	16
+239	11
+240	11
+241	16
+242	10
+243	12
+244	7
+245	10
+246	5
+247	10
+248	5
+249	5
+250	2
+251	7
+252	4
+253	7
+254	5
+255	4
+256	3
+257	4
+258	4
+259	4
+260	2
+261	4
+262	6
+263	3
+264	4
+265	3
+266	3
+267	1
+268	5
+269	3
+270	7
+271	3
+272	2
+273	1
+274	3
+275	3
+276	3
+278	1
+279	4
+280	3
+281	2
+282	2
+283	4
+284	2
+285	2
+286	2
+287	4
+289	3
+290	4
+291	3
+292	6
+293	2
+294	1
+295	4
+296	4
+299	3
+300	3
+302	1
+303	1
+304	1
+305	2
+306	2
+307	2
+308	2
+309	3
+310	2
+311	2
+312	3
+313	4
+314	2
+315	1
+316	3
+317	1
+318	1
+320	1
+321	1
+322	2
+323	2
+324	4
+325	1
+326	2
+327	5
+328	1
+329	1
+332	1
+333	2
+334	1
+337	3
+338	2
+339	1
+340	3
+342	2
+345	1
+346	5
+347	2
+348	1
+350	4
+351	4
+352	2
+353	1
+354	1
+355	1
+356	3
+358	2
+359	5
+360	3
+361	2
+363	3
+364	3
+366	2
+367	1
+368	5
+369	4
+370	2
+371	2
+372	1
+373	1
+374	4
+375	2
+376	6
+377	1
+378	4
+379	3
+380	4
+381	4
+382	6
+383	3
+384	2
+385	7
+386	6
+387	3
+388	2
+389	3
+390	2
+391	3
+392	3
+393	2
+394	4
+396	1
+397	3
+398	2
+399	4
+400	6
+401	2
+402	5
+403	1
+404	1
+405	3
+406	3
+407	2
+408	4
+409	2
+411	2
+413	2
+414	2
+415	2
+416	4
+417	1
+418	3
+419	3
+420	3
+421	5
+422	4
+423	3
+424	1
+425	3
+427	5
+428	1
+429	2
+431	1
+432	1
+434	1
+435	1
+436	2
+437	1
+438	2
+439	1
+440	1
+441	2
+442	2
+443	1
+444	1
+445	2
+447	3
+448	4
+449	2
+450	2
+451	1
+452	4
+453	3
+454	4
+455	1
+457	3
+458	4
+459	2
+460	4
+461	3
+462	5
+463	4
+465	1
+466	1
+467	3
+468	2
+469	1
+470	2
+471	2
+472	6
+473	2
+474	1
+475	2
+476	5
+477	1
+478	3
+479	5
+480	5
+481	2
+482	1
+483	3
+484	4
+485	3
+486	2
+487	5
+488	3
+489	5
+490	2
+491	4
+492	1
+494	4
+495	3
+496	1
+497	2
+498	5
+499	5
+500	1
+501	2
+502	2
+503	2
+504	3
+505	3
+506	5
+507	12
+508	5
+509	9
+510	5
+511	2
+512	4
+513	6
+514	11
+515	8
+516	4
+517	8
+518	2
+519	9
+520	8
+521	9
+522	7
+523	9
+524	3
+525	13
+526	6
+527	15
+528	7
+529	20
+530	6
+531	31
+532	8
+533	29
+534	7
+535	71
+536	13
+537	102
+538	18
+539	228
+540	60
+541	643
+542	122
+543	3468
+544	613
+545	22424
+546	715
+547	5129
+548	826
+549	6973
+550	6800
+551	28487
+552	73398
+END missing_samples_per_loc_prefilters
+
+BEGIN snps_per_loc_prefilters
+# Distribution of the number of SNPs per catalog locus prior to filtering.
+n_snps	n_loci
+0	110967
+1	6276
+2	5108
+3	4639
+4	3882
+5	3423
+6	3008
+7	2587
+8	2243
+9	1898
+10	1521
+11	1329
+12	1103
+13	889
+14	719
+15	547
+16	425
+17	343
+18	276
+19	192
+20	142
+21	111
+22	104
+23	71
+24	57
+25	59
+26	70
+27	45
+28	51
+29	65
+30	46
+31	65
+32	36
+33	48
+34	38
+35	52
+36	32
+37	30
+38	47
+39	44
+40	44
+41	36
+42	42
+43	30
+44	44
+45	38
+46	43
+47	39
+48	39
+49	38
+50	31
+51	32
+52	48
+53	40
+54	30
+55	25
+56	26
+57	16
+58	15
+59	19
+60	26
+61	20
+62	18
+63	14
+64	18
+65	13
+66	13
+67	11
+68	9
+69	7
+70	7
+71	5
+72	6
+73	5
+74	6
+75	6
+76	5
+77	6
+78	5
+79	5
+80	5
+81	1
+82	2
+83	1
+85	1
+86	1
+87	2
+89	2
+90	2
+91	2
+97	1
+102	1
+END snps_per_loc_prefilters
+
+BEGIN samples_per_loc_postfilters
+# Distribution of valid samples matched to a catalog locus after filtering.
+n_samples	n_loci
+277	3
+278	3
+279	3
+280	1
+281	2
+282	3
+283	7
+284	3
+285	5
+286	1
+287	3
+288	3
+289	4
+290	3
+291	6
+292	4
+293	2
+294	4
+295	4
+296	4
+297	3
+298	4
+299	5
+300	7
+301	4
+302	7
+303	2
+304	5
+305	5
+306	10
+307	5
+308	10
+309	7
+310	12
+311	10
+312	16
+313	11
+314	11
+315	16
+316	17
+317	30
+318	23
+319	32
+320	23
+321	35
+322	39
+323	42
+324	26
+325	39
+326	43
+327	38
+328	40
+329	41
+330	33
+331	34
+332	24
+333	22
+334	13
+335	27
+336	16
+337	6
+338	10
+339	15
+340	2
+341	1
+342	4
+343	3
+344	3
+345	5
+346	5
+347	3
+348	1
+349	5
+350	1
+351	3
+352	1
+353	2
+354	3
+355	2
+356	3
+357	4
+358	4
+359	2
+360	6
+361	2
+362	3
+363	7
+364	1
+366	2
+367	2
+368	3
+369	7
+370	2
+371	2
+372	4
+373	2
+374	1
+375	4
+376	5
+377	3
+378	3
+379	2
+380	2
+381	6
+382	2
+383	5
+384	3
+385	4
+388	5
+389	5
+390	5
+391	4
+392	3
+393	2
+394	3
+395	1
+396	3
+397	3
+398	7
+399	3
+400	5
+401	3
+402	4
+403	4
+404	4
+405	1
+406	4
+407	4
+408	5
+409	3
+410	3
+411	2
+412	3
+413	2
+414	5
+415	7
+416	3
+417	6
+418	8
+419	2
+420	4
+421	3
+422	5
+423	7
+424	9
+425	8
+426	3
+427	5
+428	4
+429	6
+430	9
+431	10
+432	6
+433	9
+434	4
+435	4
+436	7
+437	6
+438	8
+439	5
+440	4
+441	5
+443	3
+444	6
+445	5
+446	4
+447	3
+448	3
+449	6
+450	2
+451	2
+452	2
+453	1
+454	3
+455	7
+456	5
+457	2
+458	5
+459	5
+460	5
+461	2
+462	2
+463	2
+464	3
+465	6
+466	6
+467	3
+468	4
+470	3
+471	1
+472	3
+473	1
+474	6
+475	2
+476	5
+477	2
+478	1
+479	6
+480	6
+481	5
+482	3
+483	4
+484	5
+485	3
+486	10
+487	8
+488	6
+489	3
+490	5
+491	5
+492	3
+493	9
+494	7
+495	4
+496	8
+497	7
+498	8
+499	4
+500	4
+501	8
+502	5
+503	10
+504	6
+505	10
+506	6
+507	3
+508	4
+509	10
+510	6
+511	10
+512	4
+513	5
+514	4
+515	3
+516	7
+517	3
+518	6
+519	6
+520	6
+521	3
+522	12
+523	9
+524	5
+525	8
+526	10
+527	11
+528	15
+529	17
+530	19
+531	15
+532	10
+533	10
+534	11
+535	6
+536	10
+537	8
+538	6
+539	8
+540	9
+541	14
+542	9
+543	14
+544	3
+545	7
+546	18
+547	13
+548	14
+549	14
+550	31
+551	33
+552	72
+553	517
+END samples_per_loc_postfilters
+
+BEGIN missing_samples_per_loc_postfilters
+# Distribution of missing samples for each catalog locus after filtering.
+# Absent samples at locus	Count
+0	517
+1	72
+2	33
+3	31
+4	14
+5	14
+6	13
+7	18
+8	7
+9	3
+10	14
+11	9
+12	14
+13	9
+14	8
+15	6
+16	8
+17	10
+18	6
+19	11
+20	10
+21	10
+22	15
+23	19
+24	17
+25	15
+26	11
+27	10
+28	8
+29	5
+30	9
+31	12
+32	3
+33	6
+34	6
+35	6
+36	3
+37	7
+38	3
+39	4
+40	5
+41	4
+42	10
+43	6
+44	10
+45	4
+46	3
+47	6
+48	10
+49	6
+50	10
+51	5
+52	8
+53	4
+54	4
+55	8
+56	7
+57	8
+58	4
+59	7
+60	9
+61	3
+62	5
+63	5
+64	3
+65	6
+66	8
+67	10
+68	3
+69	5
+70	4
+71	3
+72	5
+73	6
+74	6
+75	1
+76	2
+77	5
+78	2
+79	6
+80	1
+81	3
+82	1
+83	3
+85	4
+86	3
+87	6
+88	6
+89	3
+90	2
+91	2
+92	2
+93	5
+94	5
+95	5
+96	2
+97	5
+98	7
+99	3
+100	1
+101	2
+102	2
+103	2
+104	6
+105	3
+106	3
+107	4
+108	5
+109	6
+110	3
+112	5
+113	4
+114	5
+115	8
+116	6
+117	7
+118	4
+119	4
+120	9
+121	6
+122	10
+123	9
+124	6
+125	4
+126	5
+127	3
+128	8
+129	9
+130	7
+131	5
+132	3
+133	4
+134	2
+135	8
+136	6
+137	3
+138	7
+139	5
+140	2
+141	3
+142	2
+143	3
+144	3
+145	5
+146	4
+147	4
+148	1
+149	4
+150	4
+151	4
+152	3
+153	5
+154	3
+155	7
+156	3
+157	3
+158	1
+159	3
+160	2
+161	3
+162	4
+163	5
+164	5
+165	5
+168	4
+169	3
+170	5
+171	2
+172	6
+173	2
+174	2
+175	3
+176	3
+177	5
+178	4
+179	1
+180	2
+181	4
+182	2
+183	2
+184	7
+185	3
+186	2
+187	2
+189	1
+190	7
+191	3
+192	2
+193	6
+194	2
+195	4
+196	4
+197	3
+198	2
+199	3
+200	2
+201	1
+202	3
+203	1
+204	5
+205	1
+206	3
+207	5
+208	5
+209	3
+210	3
+211	4
+212	1
+213	2
+214	15
+215	10
+216	6
+217	16
+218	27
+219	13
+220	22
+221	24
+222	34
+223	33
+224	41
+225	40
+226	38
+227	43
+228	39
+229	26
+230	42
+231	39
+232	35
+233	23
+234	32
+235	23
+236	30
+237	17
+238	16
+239	11
+240	11
+241	16
+242	10
+243	12
+244	7
+245	10
+246	5
+247	10
+248	5
+249	5
+250	2
+251	7
+252	4
+253	7
+254	5
+255	4
+256	3
+257	4
+258	4
+259	4
+260	2
+261	4
+262	6
+263	3
+264	4
+265	3
+266	3
+267	1
+268	5
+269	3
+270	7
+271	3
+272	2
+273	1
+274	3
+275	3
+276	3
+END missing_samples_per_loc_postfilters
+
+BEGIN snps_per_loc_postfilters
+# Distribution of the number of SNPs per catalog locus (after filtering).
+n_snps	n_loci
+0	1150
+1	1456
+END snps_per_loc_postfilters

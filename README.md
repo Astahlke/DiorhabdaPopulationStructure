@@ -41,5 +41,6 @@ https://docs.google.com/spreadsheets/d/1s_31zzCnG2Orny9uoOTxPE4iI0ZpVWUXuOm5Ja10
     * pi
     * exp_het
     * FIS
+    * private alleles
 
 #### Next Steps
