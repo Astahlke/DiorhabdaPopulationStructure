@@ -1,4 +1,4 @@
-# spid-file generated: Thu Apr 02 13:33:16 MDT 2020
+# spid-file generated: Fri Apr 03 13:20:22 MDT 2020
 
 # VCF Parser questions
 PARSER_FORMAT=VCF
@@ -6,7 +6,7 @@ PARSER_FORMAT=VCF
 # Only output SNPs with a phred-scaled quality of at least:
 VCF_PARSER_QUAL_QUESTION=
 # Select population definition file:
-VCF_PARSER_POP_FILE_QUESTION=/Users/amandastahlke/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/info/globalpopmap_R5075mm4cov.tsv
+VCF_PARSER_POP_FILE_QUESTION=/Users/amandastahlke/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/info/masterpopmap.tsv
 # What is the ploidy of the data?
 VCF_PARSER_PLOIDY_QUESTION=DIPLOID
 # Do you want to include a file with population definitions?
