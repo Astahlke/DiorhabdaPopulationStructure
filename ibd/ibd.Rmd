@@ -7,4 +7,263 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(ggplot2)
+library(geosphere)
+
+options(scipen = 999)
+```
+
+
+```{r}
+# Convert degrees to radians
+deg2rad <- function(deg) return(deg*pi/180)
+# Calculates the geodesic distance between two points specified by
+# radian latitude/longitude using the Haversine formula
+# Ouputs distance between sites 1 and 2 as meters
+gcd.hf <- function(long1, lat1, long2, lat2) {
+  R <- 6371 # Earth mean radius [km]
+  delta.long <- (long2 - long1)
+  delta.lat <- (lat2 - lat1)
+  a <- sin(delta.lat/2)^2 + cos(lat1) * cos(lat2) * sin(delta.long/2)^2
+  c <- 2 * asin(min(1,sqrt(a)))
+  d = (R * c)
+  return(d) # Distance in meters
+}
+CalcDists <- function(longlats) {
+  name <- list(rownames(longlats), rownames(longlats))
+  n <- nrow(longlats)
+  z <- matrix(0, n, n, dimnames = name)
+  for (i in 1:n) {
+    for (j in 1:n) z[i, j] <- gcd.hf(long1 = deg2rad(longlats[i, 2]),
+                                     lat1 = deg2rad(longlats[i, 1]), long2 = deg2rad(longlats[j, 2]),
+                                     lat2 = deg2rad(longlats[j, 1]))
+  }
+  z <- as.dist(z)
+  return(z)
+}
+```
+
+
+```{r}
+## geographic distances
+metadat <- read.csv("../info/pop_metadata.csv")
+colnames(metadat)
+popID_pos <- metadat[,c('Latitude', 'Longitude')]
+rownames(popID_pos) <- metadat[,'popID']
+
+
+popID_dist <- CalcDists(popID_pos)
+popID_mat <- as.matrix(popID_dist)
+ind <- which(upper.tri(popID_mat, diag = F), arr.ind = TRUE)
+nn <- cbind(labels(popID_mat), labels(popID_dist))
+popID_long_dist <- data.frame(row = nn[[1]][ind[, 1]],
+                              col = nn[[2]][ind[, 2]],
+                              km = popID_mat[ind])
+head(popID_long_dist)
+
+```
+
+```{r fst}
+fst <- read.csv("../5populations/R50/populations.fst_summary.tsv",
+                sep = "\t", stringsAsFactors = F)
+
+rownames(fst) <- fst[,1]
+fst <- fst[,2:ncol(fst)]
+colnames(fst) <- sub('[X^]', '', colnames(fst))
+ind <- which(upper.tri(fst, diag = TRUE), arr.ind = TRUE)
+nn <- dimnames(fst)
+fst_long <- data.frame(row = nn[[1]][ind[, 1]],
+           col = nn[[2]][ind[, 2]],
+           fst = fst[ind])
+arrange(fst_long)
+
+ibd <- merge(popID_long_dist, fst_long)
+ibd
+colnames(fst_long)[1:2] <- c('col', 'row')
+ibd2 <- merge(popID_long_dist, fst_long)
+
+ibd_test <- rbind(ibd,ibd2)
+
+ibd_test <- ibd_test[!is.na(ibd_test$km),]
+ibd_test <- mutate(ibd_test, g_dist=fst/(1-fst), label=paste(row, col, sep = "-"))
+arrange(ibd_test, km)
+```
+
+
+Seperate relevant pops
+
+```{r}
+
+carinu_pops <- filter(metadat, Grp=="carinulata") %>%
+  select("popID")
+carinu_pops
+colnames(carinu_pops)[1] <- "row"
+carinu_ibd <- semi_join(ibd_test, carinu_pops)
+colnames(carinu_pops)[1] <- "col"
+carinu_ibd <- semi_join(carinu_ibd, carinu_pops)
+carinu_ibd$Group <- "carinulata"
+
+arrange(carinu_ibd, desc(g_dist))
+```
+
+```{r}
+### Manually designated pops as either Fukang, Chilik, or Admixed
+carinu_ibd <- read.delim("carinu_ibd.txt")
+carinu_ibd
+
+carinu_ibd.plot <- ggplot(data = carinu_ibd, aes(x=km, y = g_dist, label = label)) +
+  stat_smooth(method = "lm", col = "red") +
+  # annotate(geom="text", x=250, y=.09, label=paste("Adj R2 = ",signif(summary(carinulata_ibd.lm)$adj.r.squared, 5),
+  #                    "Intercept =",signif(carinulata_ibd.lm$coef[[1]],5 ),
+  #          " Slope =",signif(carinulata_ibd.lm$coef[[2]], 5),
+  #          " P =",signif(summary(carinulata_ibd.lm)$coef[2,4], 5)),
+  #          color="red", size = 2) +
+  ggrepel::geom_label_repel(size = 2) +
+  geom_point(size = 3, aes(shape = Ecotype)) +
+  scale_shape_manual(name= "",
+                     values = c(15, 12),
+                      labels = c("Across Ecotypes",
+                                 "Within Ecotypes")) +
+  theme_bw() +
+  ylab("FST/(1-FST)") +
+  xlab("Distance between sites (km)")
+carinu_ibd.plot
+ggsave("carinulata_ibd.jpg", dpi = 300, height = 5, width = 10, units = "in")
+
+```
+
+Is it more appropriate to report the linear model or correlation?
+
+```{r}
+carinu_ibd.lm = lm(g_dist ~ km, data=carinu_ibd)
+summary(carinu_ibd.lm)
+cor.test(carinu_ibd$g_dist, carinu_ibd$km)
+```
+```{r}
+fukang_ibd <- filter(carinu_ibd, Ecotype=="within" & eco1==1)
+chilik_ibd <- filter(carinu_ibd, Ecotype=="within" & eco1==2)
+
+fukang_ibd.lm = lm(g_dist ~ km, data=fukang_ibd)
+summary(fukang_ibd.lm)
+cor.test(fukang_ibd$g_dist, fukang_ibd$km)
+
+chilik_ibd.lm = lm(g_dist ~ km, data=chilik_ibd)
+summary(chilik_ibd.lm)
+cor.test(chilik_ibd$g_dist, chilik_ibd$km)
+```
+
+```{r}
+elongata_pops <- filter(metadat, Grp=="native_elongata") %>%
+  select("popID")
+colnames(elongata_pops)[1] <- "row"
+elongata_ibd <- semi_join(ibd_test, elongata_pops)
+colnames(elongata_pops)[1] <- "col"
+elongata_ibd <- semi_join(elongata_ibd, elongata_pops)
+head(elongata_ibd)
+elongata_ibd$Group <- "elongata"
+
+write.table(elongata_ibd, "elongata_ibd.tsv",
+          sep = "\t",
+          row.names =F,
+          quote = F)
+### Manually designated pops as either Fukang, Chilik, or Admixed
+elongata_ibd <- read.delim("elongata_ibd.txt")
+elongata_ibd
+
+elongata_ibd.plot <- ggplot(data = elongata_ibd, aes(x=km, y = g_dist, label = label)) +
+  stat_smooth(method = "lm", col = "red") +
+  # annotate(geom="text", x=250, y=.09, label=paste("Adj R2 = ",signif(summary(carinulata_ibd.lm)$adj.r.squared, 5),
+  #                    "Intercept =",signif(carinulata_ibd.lm$coef[[1]],5 ),
+  #          " Slope =",signif(carinulata_ibd.lm$coef[[2]], 5),
+  #          " P =",signif(summary(carinulata_ibd.lm)$coef[2,4], 5)),
+  #          color="red", size = 2) +
+  ggrepel::geom_label_repel(size = 2) +
+  geom_point(size = 3, aes(shape = Ecotype)) +
+  scale_shape_manual(name= "",
+                     values = c(15, 12),
+                      labels = c("Across Ecotypes",
+                                 "Within Ecotypes")) +
+  theme_bw() +
+  ylab("FST/(1-FST)") +
+  xlab("Distance between sites (km)")
+elongata_ibd.plot
+ggsave("elongata_ibd.jpg", dpi = 300, height = 5, width = 10, units = "in")
+```
+
+
+```{r}
+elongata_ibd.lm = lm(g_dist ~ km, data=elongata_ibd)
+summary(elongata_ibd.lm)
+cor.test(elongata_ibd$g_dist, elongata_ibd$km)
+```
+
+```{r}
+crete_ibd <- filter(elongata_ibd, Ecotype=="within" & eco1==1)
+
+crete_ibd.lm = lm(g_dist ~ km, data=crete_ibd)
+summary(crete_ibd.lm)
+cor.test(crete_ibd$g_dist, crete_ibd$km)
+```
+
+
+```{r}
+hybrid_pops <- filter(metadat, cat=="potential_hybrid_zone") %>%
+  select("popID")
+colnames(hybrid_pops)[1] <- "row"
+hybrid_ibd <- semi_join(ibd_test, hybrid_pops)
+colnames(hybrid_pops)[1] <- "col"
+hybrid_ibd <- semi_join(hybrid_ibd, hybrid_pops)
+hybrid_ibd$Group <- "hybrid"
+hybrid_ibd
+
+
+hybridzone_ibd <- ggplot(data = hybrid_ibd, aes(x=km, y = g_dist, label = label)) +
+  stat_smooth(method = "lm", col = "red") +
+  # annotate(geom="text", x=250, y=.09, label=paste("Adj R2 = ",signif(summary(carinulata_ibd.lm)$adj.r.squared, 5),
+  #                    "Intercept =",signif(carinulata_ibd.lm$coef[[1]],5 ),
+  #          " Slope =",signif(carinulata_ibd.lm$coef[[2]], 5),
+  #          " P =",signif(summary(carinulata_ibd.lm)$coef[2,4], 5)),
+  #          color="red", size = 2) +
+  ggrepel::geom_label_repel(size = 2) +
+  geom_point()  +
+  theme_bw() +
+  ylab("FST/(1-FST)") +
+  xlab("Distance between sites (km)")
+hybridzone_ibd
+ggsave("hybridzone_ibd.jpg", dpi = 300, height = 5, width = 10, units = "in")
+```
+
+```{r}
+hybrid_ibd.lm = lm(g_dist ~ km, data=hybrid_ibd)
+summary(hybrid_ibd.lm)
+cor.test(hybrid_ibd$g_dist, hybrid_ibd$km)
+```
+
+
+```{r}
+library(cowplot)
+plot_grid(carinu_ibd.plot, elongata_ibd.plot)
+
+legend_b <- get_legend(
+  carinu_ibd.plot +
+    guides(shape = guide_legend(nrow = 1)) +
+    theme(legend.position = "bottom")
+)
+
+prow <- plot_grid(carinu_ibd.plot + theme(legend.position="none") ,
+          elongata_ibd.plot + theme(legend.position="none") + ylab(NULL),
+          align = 'vh',
+          labels = c("A", "B"),
+           hjust = -1)
+
+plot_grid(prow, legend_b, ncol = 1, rel_heights = c(1, .1))
+ggsave("carinulata_elongata_ibd.jpg", dpi = 300, height = 5, width = 10, units = "in")
+
+
+plot_grid(prow,  hybridzone_ibd, legend_b ,ncol = 1, labels = c('', 'C'),  rel_heights = c(1, 1.5, .1))
+ggsave("hybrid_carinulata_elongata_ibd.jpg", dpi = 300, height = 10, width = 10, units = "in")
+
+
 ```

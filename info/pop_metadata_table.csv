@@ -1,0 +1,39 @@
+popID,Name,Latitude,Longitude,Date Collected,Order,Grp,cat
+46CH,"Bitun, China",47.303278,87.751306,7/3/16,1,native_carinulata,native
+1WY,Lovell,44.8553111,-108.1755222,9/3/14,2,carinulata,original_release
+34UT,Delta,39.2305,-112.9308,10/15/14,3,carinulata,original_release
+2CO,Fountain Creek,38.34107,-104.610672,9/2/14,4,carinulata,original_release
+4CO,"Adobe Reservoir (Blue Lake)
+",38.26137,-103.24539,9/4/14,5,carinulata,carinulata_expansion
+5CO,SE corner,37.699015,-103.424543,8/21/14,6,carinulata,carinulata_expansion
+11CO,Wilkinson,37.336748,-104.161755,9/18/14,7,carinulata,carinulata_expansion
+32UT,St. George,37.0749,-113.5811,10/15/14,8,carinulata,carinulata_expansion
+31NV,Virgin River - Gold Butte,36.6892,-114.2637,10/15/14,9,carinulata,carinulata_expansion
+33NV,"Lake Mead, Stewarts Pt",36.3783,-114.3983,10/15/14,10,carinulata,carinulata_expansion
+12AZ,Big Bend,35.1203,-114.6422,9/18/14,11,carinulata,carinulata_expansion
+CARINA_LAB,D. carinata Lab Culture,,,,12,lab,lab
+SUB_LAB,D. sublineata Lab Culture,,,,13,lab,lab
+43GR,"Posidi, Greece",39.9679,23.3658,7/6/15,14,native_elongata,native
+44GR,"Delta Aksiou, Greece",40.55,22.7413,7/6/15,15,native_elongata,native
+40CR,"Sfkaki, Crete, Greece",35.3507,24.3365,7/4/15,16,native_elongata,native
+41CR,"Plakias, Crete, Greece",35.18829,24.3999,7/4/15,17,native_elongata,native
+37CR,"Rethimno, Crete, Greece",35.3733,24.4715,7/2/15,18,native_elongata,native
+39CR,"Panaramnos, Crete, Greece",35.416159,24.684193,7/4/15,19,native_elongata,native
+42CR,"Agia Galini, Crete, Greece",35.0958,24.6883,7/4/15,20,native_elongata,native
+38CR,"Crete, GR",35.415,24.689,7/4/15,21,native_elongata,native
+6KS,W Finney County,37.987307,-101.08174,8/8/14,22,mixed,potential_hybrid_zone
+8OK,Guymon,36.696128,-101.55122,9/16/14,23,pure_carinata,potential_hybrid_zone
+28NM,Tucumcari Lake,35.18598,-103.6924,10/6/14,24,mixed,potential_hybrid_zone
+26NM,Lake Sumner,34.15059,-104.48394,9/29/14,25,mixed,potential_hybrid_zone
+27NM,Roswell E,33.39766,-104.41356,9/29/14,26,mixed,potential_hybrid_zone
+15TX,NE Post,33.31729,-101.26086,9/26/14,27,mixed,potential_hybrid_zone
+19TX,Aspermont,33.16595,-100.23691,9/27/14,28,mixed,potential_hybrid_zone
+21NM,Artesia Wildlife Reserve,32.97915,-104.43588,10/7/14,29,mixed,potential_hybrid_zone
+16TX,Lake JB Thomas,32.61069,-101.22063,9/26/14,30,intro_elongata,original_release
+20NM,Malaga,32.22445,-104.08194,9/27/14,31,mixed,potential_hybrid_zone
+18TX,Orla,31.48938,-103.47869,9/27/14,32,mixed,potential_hybrid_zone
+52TX,Tornillo,31.441,-106.0906,8/3/17,33,pure_sublineata,potential_hybrid_zone
+50TX,Presidio Hwy,29.34438,-104.070182,8/3/17,34,pure_sublineata,potential_hybrid_zone
+51TX,CO Canyon Boat Ramp,29.3362,-104.0555,8/3/17,35,pure_sublineata,potential_hybrid_zone
+47TX,Rio Grande Village - from T. cheninsis x T. ramosissima hybrids,29.178993,-102.956613,8/3/17,36,pure_sublineata,original_release
+49TX,Santa Elana,29.155639,-103.598583,8/3/17,37,pure_sublineata,potential_hybrid_zone

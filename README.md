@@ -35,6 +35,7 @@ https://docs.google.com/spreadsheets/d/1s_31zzCnG2Orny9uoOTxPE4iI0ZpVWUXuOm5Ja10
    * ran K= 1-10 for 10 reps each
 
 #### Visualizations
+  * Alignment Rates
   * Coverage
   * Missing Data
   * Population genetic stats

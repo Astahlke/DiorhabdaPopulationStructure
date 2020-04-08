@@ -36,7 +36,7 @@ CalcDists <- function(longlats) {
 }
 
 ## geographic distances
-metadat <- read.csv("Git_Repo/pop_metadata.csv")
+metadat <- read.csv("Git_Repo/info/pop_metadata.csv")
 colnames(metadat)
 popID_pos <- metadat[,c('Latitude', 'Longitude')]
 rownames(popID_pos) <- metadat[,'popID']
@@ -114,7 +114,6 @@ ggplot(data = carinu_ibd, aes(x=km, y = g_dist, label = label)) +
   xlab("Distance between sites (km)")
 ggsave("carinulata_ibd.jpg", dpi = 300)
 
-grep
 carinu_ibd.lm = lm(g_dist ~ km, data=carinu_ibd) 
 summary(carinu_ibd.lm) 
 cor.test(carinu_ibd$g_dist, carinu_ibd$km)
@@ -237,8 +236,11 @@ rownames(popID_pos) <- metadat[,'PopID']
 
 popmap <- read.csv("popmap_StahlkeBitume_etal_2019_final.tsv", sep = "\t",  
                    col.names = c("sampID", "PopID"), stringsAsFactors = FALSE, header = FALSE)
+length(unique(popmap$popID))
+varstats <- read.csv("Git_Repo/5populations/R50/populations.sumstats_summary.tsv", 
+                      sep = "\t", nrows = 35, skip = 1)
+varstats
 
-varstats <- read.csv("popgen_stats/StahlkeBitume_etal_2019.snps.mm50indmissing75.recode.p.sumstats_summary.variant.csv")
 varstats <- read.csv("popgen_stats/others_StahlkeBitume_etal_2019.snps.mm50indmissing75.recode.p.sumstats_summary.variant.csv")
 varstats <- read.csv("popgen_stats/heir_carinu/carinu.snps.mm50indmissing75.recode.p.sumstats_summary.csv")
 

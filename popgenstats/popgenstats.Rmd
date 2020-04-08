@@ -1,0 +1,199 @@
+---
+title: "popgenstats"
+author: "Amanda Stahlke"
+date: "4/4/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+
+metadat <- read.csv("../info/pop_metadata.csv", stringsAsFactors = F)
+metadat
+```
+
+Can we capture more variation by partitioning carinulata, elongata, others? 
+
+```{r sumstats}
+sumstats_global <- read.csv("../5populations/R50/populations.sumstats_summary.tsv", 
+                      sep = "\t", nrows = 35, skip = 1)
+sumstats_global$ID <- 'global'
+
+sumstats_carinulata <- read.csv("../substructure/carinulata/5populations/R50/populations.sumstats_summary.tsv", 
+                      sep = "\t", nrows = 15, skip = 1)
+sumstats_carinulata$ID <- 'carinulata'
+
+sumstats_others <- read.csv("../substructure/others/5populations/R50/populations.sumstats_summary.tsv", 
+                      sep = "\t", nrows = 24, skip = 1)
+sumstats_others$ID <- 'others'
+
+sumstats_elongata <- read.csv("../substructure/elongata/5populations/R50/populations.sumstats_summary.tsv", 
+                      sep = "\t", nrows = 9, skip = 1)
+sumstats_elongata$ID <- 'elongata'
+
+popgenstats <- list(sumstats_carinulata, sumstats_elongata, sumstats_global, sumstats_others)
+popgenstats <- do.call(rbind,popgenstats)
+colnames(popgenstats)[1] <- 'popID'
+popgenstats <- merge(popgenstats, metadat)
+popgenstats
+```
+
+```{r poly_sumstats}
+poly_sumstats_global <- read.csv("../5populations/R50/populations.sumstats_summary.tsv", 
+                      sep = "\t",  skip = 38)
+poly_sumstats_global$ID <- 'global'
+poly_sumstats_global
+
+poly_sumstats_carinulata <- read.csv("../substructure/carinulata/5populations/R50/populations.sumstats_summary.tsv", 
+                      sep = "\t",  skip = 18)
+poly_sumstats_carinulata$ID <- 'carinulata'
+
+poly_sumstats_others<- read.csv("../substructure/others/5populations/R50/populations.sumstats_summary.tsv", 
+                      sep = "\t",  skip = 27)
+poly_sumstats_others$ID <- 'others'
+
+poly_sumstats_elongata <- read.csv("../substructure/elongata/5populations/R50/populations.sumstats_summary.tsv", 
+                      sep = "\t",  skip = 12)
+poly_sumstats_elongata$ID <- 'elongata'
+
+poly_sumstats <- list(poly_sumstats_global, poly_sumstats_elongata, poly_sumstats_carinulata, poly_sumstats_others)
+poly_sumstats <- do.call(rbind,poly_sumstats)
+colnames(poly_sumstats)[c(1, 6)] <- c('popID', "Perc.Polymorphic_Loci")
+poly_sumstats <- merge(poly_sumstats, metadat)
+
+```
+
+
+```{r, cache=TRUE}
+ggplot(popgenstats, aes(x=popID, y=Exp_Het, fill = ID))  +
+  geom_bar(stat = "identity", width = 0.9, position = "dodge") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        legend.position = "bottom") +
+  facet_grid(~Grp, scales = "free_x", space = "free") 
+
+ggplot(popgenstats, aes(x=popID, y=Private, fill = ID))  +
+  geom_bar(stat = "identity", width = 0.9, position = "dodge") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        legend.position = "bottom") +
+  facet_grid(~Grp, scales = "free_x", space = "free") 
+
+ggplot(popgenstats, aes(x=popID, y=Fis, fill = ID))  +
+  geom_bar(stat = "identity", width = 0.9, position = "dodge") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        legend.position = "bottom") +
+  facet_grid(~Grp, scales = "free_x", space = "free") 
+
+ggplot(popgenstats, aes(x=popID, y=Pi, fill = ID))  +
+  geom_bar(stat = "identity", width = 0.9, position = "dodge") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        legend.position = "bottom") +
+  facet_grid(~Grp, scales = "free_x", space = "free") 
+
+ggplot(poly_sumstats, aes(x=popID, y=Perc.Polymorphic_Loci, fill = ID))  +
+  geom_bar(stat = "identity", width = 0.9, position = "dodge") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        legend.position = "bottom") +
+  facet_grid(~Grp, scales = "free_x", space = "free") 
+```
+
+```{r, cache=TRUE}
+popgenstats <- filter(popgenstats, ID == "global")
+popgenstats$popID <- factor(popgenstats$popID,levels = 
+          popgenstats$popID[order(popgenstats$Order)])
+
+poly_sumstats <- filter(poly_sumstats, ID == "global")
+poly_sumstats$popID <- factor(poly_sumstats$popID,levels = 
+          poly_sumstats$popID[order(poly_sumstats$Order)])
+ 
+het <- ggplot(popgenstats, aes(x=popID, y=Exp_Het, fill = cat))  +
+  geom_bar(stat = "identity", width = 0.9) +
+  geom_errorbar( aes(ymin=Exp_Het-StdErr.4, ymax=Exp_Het+StdErr.4),  alpha=0.5) +
+  facet_grid(~ Grp, scales = "free_x", space = "free") +
+  scale_fill_grey() +
+  theme_bw() +
+  theme(
+    # strip.background = element_blank(),
+    # strip.text.x = element_blank(),
+    axis.text.x = element_text(angle = 90, hjust = 1),
+    legend.position = "bottom")
+het
+
+unique(popgenstats$Grp)
+labels <- c(carinulata = "D. carinulata Range", 
+            potential_hybrid_zone = "Suspected Hybrid Zone",
+            native_elongata = "Native D. elongata",
+            lab = "Lab")
+
+Pi <- ggplot(popgenstats, aes(x=popID, y=Pi, fill = cat))  +
+  geom_bar(stat = "identity", width = 0.9) +
+  geom_errorbar( aes(ymin=Pi - StdErr.6, ymax=Pi + StdErr.6),  alpha=0.5) +
+  facet_grid(~ Grp, scales = "free_x", space = "free", 
+             labeller=labeller(Grp = labels)) +
+  scale_fill_grey() +
+  theme_bw() +
+  theme(
+    # strip.background = element_blank(),
+    # strip.text.x = element_blank(),
+    legend.position = "none",
+    axis.text.x=element_blank(),
+    axis.title.x=element_blank())
+Pi
+
+Fis <- ggplot(popgenstats, aes(x=popID, y=Fis, fill = cat))  +
+  geom_bar(stat = "identity", width = 0.9) +
+  geom_errorbar( aes(ymin=Fis - StdErr.7, ymax=Fis + StdErr.7),  alpha=0.5) +
+  facet_grid(~ Grp, scales = "free_x", space = "free") +
+  scale_fill_grey() +
+  theme_bw() +
+  theme(
+    # strip.background = element_blank(),
+    # strip.text.x = element_blank(),
+    # legend.position = "none",
+    axis.text.x = element_text(angle = 90, hjust = 1),
+    legend.position = "bottom")
+Fis
+
+Private <- ggplot(popgenstats, aes(x=popID, y=Private, fill = cat))  +
+  geom_bar(stat = "identity", width = 0.9) +
+  facet_grid(~ Grp, scales = "free_x", space = "free") +
+  scale_fill_grey() +
+  theme_bw() +
+  theme(
+    strip.background = element_blank(),
+    strip.text.x = element_blank(),
+    # axis.text.x=element_blank(),
+    axis.text.x = element_text(angle = 90, hjust = 1),
+    axis.title.x=element_blank(),
+    legend.position = "bottom")
+Private
+
+
+polymorphic_loci <- ggplot(poly_sumstats, aes(x=popID, y=Perc.Polymorphic_Loci, fill = cat))  +
+  geom_bar(stat = "identity", width = 0.9) +
+  facet_grid(~ Grp, scales = "free_x", space = "free") +
+  scale_fill_grey() +
+  theme_bw() +
+  theme(
+    strip.background = element_blank(),
+    strip.text.x = element_blank(),
+    axis.title.x=element_blank(),
+     legend.position = "bottom",
+    axis.text.x = element_text(angle = 90, hjust = 1))
+polymorphic_loci
+```
+
+```{r}
+plots <- align_plots(Pi, Private, polymorphic_loci, align = 'v', axis = 'l')
+plot_grid(plots[[1]],
+          plots[[2]],
+          # plots[[3]],
+          ncol = 1, 
+          labels = c('A', 'B', 'C'))
+ggsave("popgenstats.jpg", dpi = 300, height = 8, width = 10, units = "in")
+```
+
+
+
+
