@@ -118,7 +118,7 @@ BEGIN batch_progress
     1798 genomic sites, of which 4 were covered by multiple loci (0.2%).
 97: analyzed 2 loci; filtered 507 loci; 509 loci seen.
     1550 genomic sites, of which 4 were covered by multiple loci (0.3%).
-103: analyzed 4 loci; filtered 357 loci; 361 loci seen.
+103: analyzed 4 loci; filtered 356 loci; 360 loci seen.
     3774 genomic sites, of which 8 were covered by multiple loci (0.2%).
 107: analyzed 2 loci; filtered 74 loci; 76 loci seen.
     1597 genomic sites, of which 0 were covered by multiple loci (0.0%).
@@ -168,7 +168,7 @@ BEGIN batch_progress
     5397 genomic sites, of which 12 were covered by multiple loci (0.2%).
 150: analyzed 2 loci; filtered 566 loci; 568 loci seen.
     1668 genomic sites, of which 0 were covered by multiple loci (0.0%).
-156: analyzed 2 loci; filtered 400 loci; 402 loci seen.
+156: analyzed 2 loci; filtered 399 loci; 401 loci seen.
     1801 genomic sites, of which 4 were covered by multiple loci (0.2%).
 162: analyzed 2 loci; filtered 297 loci; 299 loci seen.
     1773 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -214,7 +214,7 @@ BEGIN batch_progress
     1824 genomic sites, of which 4 were covered by multiple loci (0.2%).
 220: analyzed 4 loci; filtered 137 loci; 141 loci seen.
     3394 genomic sites, of which 8 were covered by multiple loci (0.2%).
-222: analyzed 4 loci; filtered 356 loci; 360 loci seen.
+222: analyzed 4 loci; filtered 355 loci; 359 loci seen.
     3719 genomic sites, of which 8 were covered by multiple loci (0.2%).
 229: analyzed 3 loci; filtered 207 loci; 210 loci seen.
     2485 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -388,7 +388,7 @@ BEGIN batch_progress
     3691 genomic sites, of which 8 were covered by multiple loci (0.2%).
 462: analyzed 4 loci; filtered 269 loci; 273 loci seen.
     3601 genomic sites, of which 4 were covered by multiple loci (0.1%).
-464: analyzed 6 loci; filtered 623 loci; 629 loci seen.
+464: analyzed 6 loci; filtered 622 loci; 628 loci seen.
     5612 genomic sites, of which 12 were covered by multiple loci (0.2%).
 477: analyzed 2 loci; filtered 88 loci; 90 loci seen.
     1938 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -472,7 +472,7 @@ BEGIN batch_progress
     1742 genomic sites, of which 4 were covered by multiple loci (0.2%).
 602: analyzed 2 loci; filtered 91 loci; 93 loci seen.
     1646 genomic sites, of which 4 were covered by multiple loci (0.2%).
-604: analyzed 4 loci; filtered 320 loci; 324 loci seen.
+604: analyzed 4 loci; filtered 319 loci; 323 loci seen.
     1953 genomic sites, of which 1415 were covered by multiple loci (72.5%).
 612: analyzed 2 loci; filtered 214 loci; 216 loci seen.
     1823 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -516,7 +516,7 @@ BEGIN batch_progress
     1965 genomic sites, of which 4 were covered by multiple loci (0.2%).
 667: analyzed 3 loci; filtered 472 loci; 475 loci seen.
     2479 genomic sites, of which 4 were covered by multiple loci (0.2%).
-674: analyzed 2 loci; filtered 60 loci; 62 loci seen.
+674: analyzed 2 loci; filtered 59 loci; 61 loci seen.
     1852 genomic sites, of which 4 were covered by multiple loci (0.2%).
 675: analyzed 2 loci; filtered 210 loci; 212 loci seen.
     1852 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -558,10 +558,12 @@ BEGIN batch_progress
     2080 genomic sites, of which 202 were covered by multiple loci (9.7%).
 746: analyzed 2 loci; filtered 92 loci; 94 loci seen.
     1783 genomic sites, of which 4 were covered by multiple loci (0.2%).
-748: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+748: analyzed 2 loci; filtered 83 loci; 85 loci seen.
     1553 genomic sites, of which 4 were covered by multiple loci (0.3%).
-752: analyzed 3 loci; filtered 388 loci; 391 loci seen.
-    2899 genomic sites, of which 4 were covered by multiple loci (0.1%).
+750: analyzed 2 loci; filtered 88 loci; 90 loci seen.
+    1833 genomic sites, of which 4 were covered by multiple loci (0.2%).
+752: analyzed 2 loci; filtered 300 loci; 302 loci seen.
+    1946 genomic sites, of which 4 were covered by multiple loci (0.2%).
 759: analyzed 2 loci; filtered 182 loci; 184 loci seen.
     1698 genomic sites, of which 4 were covered by multiple loci (0.2%).
 763: analyzed 2 loci; filtered 47 loci; 49 loci seen.
@@ -612,10 +614,8 @@ BEGIN batch_progress
     1967 genomic sites, of which 4 were covered by multiple loci (0.2%).
 823: analyzed 4 loci; filtered 324 loci; 328 loci seen.
     3448 genomic sites, of which 8 were covered by multiple loci (0.2%).
-831: analyzed 2 loci; filtered 82 loci; 84 loci seen.
-    1741 genomic sites, of which 4 were covered by multiple loci (0.2%).
-834: analyzed 2 loci; filtered 56 loci; 58 loci seen.
-    1569 genomic sites, of which 4 were covered by multiple loci (0.3%).
+834: analyzed 3 loci; filtered 139 loci; 142 loci seen.
+    2430 genomic sites, of which 4 were covered by multiple loci (0.2%).
 835: analyzed 2 loci; filtered 198 loci; 200 loci seen.
     1631 genomic sites, of which 4 were covered by multiple loci (0.2%).
 841: analyzed 2 loci; filtered 57 loci; 59 loci seen.
@@ -696,9 +696,9 @@ BEGIN batch_progress
     3515 genomic sites, of which 8 were covered by multiple loci (0.2%).
 1001: analyzed 2 loci; filtered 282 loci; 284 loci seen.
     1883 genomic sites, of which 0 were covered by multiple loci (0.0%).
-1005: analyzed 6 loci; filtered 423 loci; 429 loci seen.
+1005: analyzed 6 loci; filtered 422 loci; 428 loci seen.
     5486 genomic sites, of which 12 were covered by multiple loci (0.2%).
-1017: analyzed 4 loci; filtered 56 loci; 60 loci seen.
+1017: analyzed 4 loci; filtered 55 loci; 59 loci seen.
     3317 genomic sites, of which 8 were covered by multiple loci (0.2%).
 1019: analyzed 2 loci; filtered 169 loci; 171 loci seen.
     1754 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -780,7 +780,7 @@ BEGIN batch_progress
     2480 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1211: analyzed 2 loci; filtered 281 loci; 283 loci seen.
     1743 genomic sites, of which 4 were covered by multiple loci (0.2%).
-1220: analyzed 2 loci; filtered 21 loci; 23 loci seen.
+1220: analyzed 2 loci; filtered 20 loci; 22 loci seen.
     1804 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1221: analyzed 2 loci; filtered 111 loci; 113 loci seen.
     1916 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -800,7 +800,7 @@ BEGIN batch_progress
     2803 genomic sites, of which 4 were covered by multiple loci (0.1%).
 1263: analyzed 2 loci; filtered 84 loci; 86 loci seen.
     1949 genomic sites, of which 4 were covered by multiple loci (0.2%).
-1265: analyzed 2 loci; filtered 464 loci; 466 loci seen.
+1265: analyzed 2 loci; filtered 463 loci; 465 loci seen.
     1855 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1280: analyzed 2 loci; filtered 50 loci; 52 loci seen.
     1851 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -840,7 +840,7 @@ BEGIN batch_progress
     1727 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1331: analyzed 2 loci; filtered 64 loci; 66 loci seen.
     1931 genomic sites, of which 4 were covered by multiple loci (0.2%).
-1333: analyzed 2 loci; filtered 470 loci; 472 loci seen.
+1333: analyzed 2 loci; filtered 469 loci; 471 loci seen.
     1951 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1350: analyzed 2 loci; filtered 98 loci; 100 loci seen.
     1752 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -856,7 +856,7 @@ BEGIN batch_progress
     2430 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1386: analyzed 2 loci; filtered 30 loci; 32 loci seen.
     1740 genomic sites, of which 4 were covered by multiple loci (0.2%).
-1387: analyzed 2 loci; filtered 360 loci; 362 loci seen.
+1387: analyzed 2 loci; filtered 359 loci; 361 loci seen.
     1733 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1400: analyzed 2 loci; filtered 184 loci; 186 loci seen.
     1940 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -940,7 +940,7 @@ BEGIN batch_progress
     1589 genomic sites, of which 4 were covered by multiple loci (0.3%).
 1578: analyzed 2 loci; filtered 100 loci; 102 loci seen.
     1906 genomic sites, of which 4 were covered by multiple loci (0.2%).
-1581: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+1581: analyzed 2 loci; filtered 50 loci; 52 loci seen.
     1689 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1583: analyzed 2 loci; filtered 28 loci; 30 loci seen.
     1818 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -978,7 +978,7 @@ BEGIN batch_progress
     1868 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1696: analyzed 4 loci; filtered 12 loci; 16 loci seen.
     3423 genomic sites, of which 8 were covered by multiple loci (0.2%).
-1697: analyzed 2 loci; filtered 190 loci; 192 loci seen.
+1697: analyzed 2 loci; filtered 189 loci; 191 loci seen.
     1911 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1705: analyzed 2 loci; filtered 244 loci; 246 loci seen.
     1873 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -1014,7 +1014,7 @@ BEGIN batch_progress
     1797 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1782: analyzed 2 loci; filtered 24 loci; 26 loci seen.
     1181 genomic sites, of which 4 were covered by multiple loci (0.3%).
-1798: analyzed 3 loci; filtered 347 loci; 350 loci seen.
+1798: analyzed 3 loci; filtered 346 loci; 349 loci seen.
     2782 genomic sites, of which 4 were covered by multiple loci (0.1%).
 1800: analyzed 2 loci; filtered 27 loci; 29 loci seen.
     1830 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -1034,7 +1034,7 @@ BEGIN batch_progress
     3492 genomic sites, of which 8 were covered by multiple loci (0.2%).
 1840: analyzed 2 loci; filtered 23 loci; 25 loci seen.
     1525 genomic sites, of which 4 were covered by multiple loci (0.3%).
-1851: analyzed 2 loci; filtered 247 loci; 249 loci seen.
+1851: analyzed 2 loci; filtered 246 loci; 248 loci seen.
     1598 genomic sites, of which 0 were covered by multiple loci (0.0%).
 1886: analyzed 3 loci; filtered 920 loci; 923 loci seen.
     2773 genomic sites, of which 4 were covered by multiple loci (0.1%).
@@ -1070,7 +1070,7 @@ BEGIN batch_progress
     1785 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1970: analyzed 2 loci; filtered 85 loci; 87 loci seen.
     1855 genomic sites, of which 4 were covered by multiple loci (0.2%).
-1973: analyzed 2 loci; filtered 166 loci; 168 loci seen.
+1973: analyzed 2 loci; filtered 165 loci; 167 loci seen.
     1728 genomic sites, of which 4 were covered by multiple loci (0.2%).
 1979: analyzed 2 loci; filtered 18 loci; 20 loci seen.
     1311 genomic sites, of which 4 were covered by multiple loci (0.3%).
@@ -1156,7 +1156,7 @@ BEGIN batch_progress
     1732 genomic sites, of which 4 were covered by multiple loci (0.2%).
 2259: analyzed 4 loci; filtered 80 loci; 84 loci seen.
     2177 genomic sites, of which 634 were covered by multiple loci (29.1%).
-2268: analyzed 3 loci; filtered 102 loci; 105 loci seen.
+2268: analyzed 3 loci; filtered 101 loci; 104 loci seen.
     2282 genomic sites, of which 4 were covered by multiple loci (0.2%).
 2270: analyzed 2 loci; filtered 70 loci; 72 loci seen.
     1618 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -1190,8 +1190,8 @@ BEGIN batch_progress
     2098 genomic sites, of which 200 were covered by multiple loci (9.5%).
 2364: analyzed 2 loci; filtered 33 loci; 35 loci seen.
     1703 genomic sites, of which 4 were covered by multiple loci (0.2%).
-2370: analyzed 3 loci; filtered 332 loci; 335 loci seen.
-    1991 genomic sites, of which 4 were covered by multiple loci (0.2%).
+2370: analyzed 2 loci; filtered 333 loci; 335 loci seen.
+    997 genomic sites, of which 0 were covered by multiple loci (0.0%).
 2384: analyzed 2 loci; filtered 37 loci; 39 loci seen.
     1911 genomic sites, of which 4 were covered by multiple loci (0.2%).
 2386: analyzed 2 loci; filtered 105 loci; 107 loci seen.
@@ -1322,7 +1322,7 @@ BEGIN batch_progress
     1757 genomic sites, of which 4 were covered by multiple loci (0.2%).
 2853: analyzed 2 loci; filtered 193 loci; 195 loci seen.
     1703 genomic sites, of which 4 were covered by multiple loci (0.2%).
-2865: analyzed 2 loci; filtered 267 loci; 269 loci seen.
+2865: analyzed 2 loci; filtered 265 loci; 267 loci seen.
     1847 genomic sites, of which 4 were covered by multiple loci (0.2%).
 2884: analyzed 2 loci; filtered 120 loci; 122 loci seen.
     1896 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -1404,7 +1404,7 @@ BEGIN batch_progress
     1974 genomic sites, of which 4 were covered by multiple loci (0.2%).
 3256: analyzed 2 loci; filtered 26 loci; 28 loci seen.
     1858 genomic sites, of which 4 were covered by multiple loci (0.2%).
-3258: analyzed 2 loci; filtered 441 loci; 443 loci seen.
+3258: analyzed 2 loci; filtered 440 loci; 442 loci seen.
     1872 genomic sites, of which 4 were covered by multiple loci (0.2%).
 3295: analyzed 2 loci; filtered 16 loci; 18 loci seen.
     1903 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -1546,7 +1546,7 @@ BEGIN batch_progress
     1744 genomic sites, of which 4 were covered by multiple loci (0.2%).
 4102: analyzed 3 loci; filtered 127 loci; 130 loci seen.
     2307 genomic sites, of which 435 were covered by multiple loci (18.9%).
-4167: analyzed 3 loci; filtered 519 loci; 522 loci seen.
+4167: analyzed 3 loci; filtered 518 loci; 521 loci seen.
     2626 genomic sites, of which 4 were covered by multiple loci (0.2%).
 4170: analyzed 2 loci; filtered 55 loci; 57 loci seen.
     1796 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -1554,7 +1554,7 @@ BEGIN batch_progress
     1831 genomic sites, of which 4 were covered by multiple loci (0.2%).
 4181: analyzed 2 loci; filtered 128 loci; 130 loci seen.
     1979 genomic sites, of which 4 were covered by multiple loci (0.2%).
-4191: analyzed 2 loci; filtered 166 loci; 168 loci seen.
+4191: analyzed 2 loci; filtered 165 loci; 167 loci seen.
     1837 genomic sites, of which 4 were covered by multiple loci (0.2%).
 4205: analyzed 2 loci; filtered 95 loci; 97 loci seen.
     1678 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -1598,7 +1598,7 @@ BEGIN batch_progress
     1856 genomic sites, of which 748 were covered by multiple loci (40.3%).
 4461: analyzed 2 loci; filtered 12 loci; 14 loci seen.
     1931 genomic sites, of which 4 were covered by multiple loci (0.2%).
-4463: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+4463: analyzed 2 loci; filtered 12 loci; 14 loci seen.
     1798 genomic sites, of which 4 were covered by multiple loci (0.2%).
 4475: analyzed 3 loci; filtered 284 loci; 287 loci seen.
     2734 genomic sites, of which 4 were covered by multiple loci (0.1%).
@@ -1776,7 +1776,7 @@ BEGIN batch_progress
     1817 genomic sites, of which 4 were covered by multiple loci (0.2%).
 5529: analyzed 2 loci; filtered 36 loci; 38 loci seen.
     1806 genomic sites, of which 4 were covered by multiple loci (0.2%).
-5535: analyzed 2 loci; filtered 309 loci; 311 loci seen.
+5535: analyzed 2 loci; filtered 308 loci; 310 loci seen.
     1343 genomic sites, of which 4 were covered by multiple loci (0.3%).
 5585: analyzed 3 loci; filtered 140 loci; 143 loci seen.
     2086 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -1856,7 +1856,7 @@ BEGIN batch_progress
     1460 genomic sites, of which 4 were covered by multiple loci (0.3%).
 6359: analyzed 2 loci; filtered 2 loci; 4 loci seen.
     1920 genomic sites, of which 4 were covered by multiple loci (0.2%).
-6360: analyzed 3 loci; filtered 26 loci; 29 loci seen.
+6360: analyzed 3 loci; filtered 25 loci; 28 loci seen.
     2151 genomic sites, of which 4 were covered by multiple loci (0.2%).
 6362: analyzed 2 loci; filtered 131 loci; 133 loci seen.
     1794 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -1868,7 +1868,7 @@ BEGIN batch_progress
     1746 genomic sites, of which 4 were covered by multiple loci (0.2%).
 6411: analyzed 2 loci; filtered 154 loci; 156 loci seen.
     1442 genomic sites, of which 4 were covered by multiple loci (0.3%).
-6439: analyzed 2 loci; filtered 164 loci; 166 loci seen.
+6439: analyzed 2 loci; filtered 163 loci; 165 loci seen.
     1631 genomic sites, of which 4 were covered by multiple loci (0.2%).
 6470: analyzed 2 loci; filtered 381 loci; 383 loci seen.
     1853 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -1990,7 +1990,7 @@ BEGIN batch_progress
     1588 genomic sites, of which 4 were covered by multiple loci (0.3%).
 8197: analyzed 2 loci; filtered 72 loci; 74 loci seen.
     1801 genomic sites, of which 4 were covered by multiple loci (0.2%).
-8216: analyzed 2 loci; filtered 235 loci; 237 loci seen.
+8216: analyzed 2 loci; filtered 234 loci; 236 loci seen.
     1753 genomic sites, of which 4 were covered by multiple loci (0.2%).
 8278: analyzed 2 loci; filtered 179 loci; 181 loci seen.
     1845 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -2016,7 +2016,7 @@ BEGIN batch_progress
     1814 genomic sites, of which 4 were covered by multiple loci (0.2%).
 8558: analyzed 2 loci; filtered 43 loci; 45 loci seen.
     1358 genomic sites, of which 4 were covered by multiple loci (0.3%).
-8570: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+8570: analyzed 2 loci; filtered 83 loci; 85 loci seen.
     1927 genomic sites, of which 4 were covered by multiple loci (0.2%).
 8617: analyzed 3 loci; filtered 95 loci; 98 loci seen.
     1823 genomic sites, of which 899 were covered by multiple loci (49.3%).
@@ -2066,7 +2066,7 @@ BEGIN batch_progress
     1689 genomic sites, of which 910 were covered by multiple loci (53.9%).
 9494: analyzed 3 loci; filtered 448 loci; 451 loci seen.
     1643 genomic sites, of which 447 were covered by multiple loci (27.2%).
-9565: analyzed 2 loci; filtered 147 loci; 149 loci seen.
+9565: analyzed 2 loci; filtered 146 loci; 148 loci seen.
     1663 genomic sites, of which 4 were covered by multiple loci (0.2%).
 9635: analyzed 2 loci; filtered 10 loci; 12 loci seen.
     1849 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -2110,9 +2110,9 @@ BEGIN batch_progress
     1802 genomic sites, of which 4 were covered by multiple loci (0.2%).
 10875: analyzed 2 loci; filtered 134 loci; 136 loci seen.
     1424 genomic sites, of which 4 were covered by multiple loci (0.3%).
-10987: analyzed 3 loci; filtered 382 loci; 385 loci seen.
+10987: analyzed 3 loci; filtered 381 loci; 384 loci seen.
     1311 genomic sites, of which 736 were covered by multiple loci (56.1%).
-11227: analyzed 2 loci; filtered 378 loci; 380 loci seen.
+11227: analyzed 2 loci; filtered 377 loci; 379 loci seen.
     1637 genomic sites, of which 4 were covered by multiple loci (0.2%).
 11533: analyzed 3 loci; filtered 112 loci; 115 loci seen.
     1964 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -2126,7 +2126,7 @@ BEGIN batch_progress
     1559 genomic sites, of which 4 were covered by multiple loci (0.3%).
 11752: analyzed 2 loci; filtered 87 loci; 89 loci seen.
     1113 genomic sites, of which 0 were covered by multiple loci (0.0%).
-11841: analyzed 3 loci; filtered 93 loci; 96 loci seen.
+11841: analyzed 3 loci; filtered 92 loci; 95 loci seen.
     2352 genomic sites, of which 411 were covered by multiple loci (17.5%).
 11864: analyzed 2 loci; filtered 205 loci; 207 loci seen.
     1616 genomic sites, of which 4 were covered by multiple loci (0.2%).
@@ -2134,11 +2134,11 @@ BEGIN batch_progress
     895 genomic sites, of which 464 were covered by multiple loci (51.8%).
 12424: analyzed 3 loci; filtered 236 loci; 239 loci seen.
     1471 genomic sites, of which 954 were covered by multiple loci (64.9%).
-12522: analyzed 2 loci; filtered 389 loci; 391 loci seen.
+12522: analyzed 2 loci; filtered 388 loci; 390 loci seen.
     1377 genomic sites, of which 0 were covered by multiple loci (0.0%).
 13040: analyzed 3 loci; filtered 140 loci; 143 loci seen.
     2244 genomic sites, of which 400 were covered by multiple loci (17.8%).
-13079: analyzed 2 loci; filtered 144 loci; 146 loci seen.
+13079: analyzed 2 loci; filtered 143 loci; 145 loci seen.
     1635 genomic sites, of which 4 were covered by multiple loci (0.2%).
 13482: analyzed 3 loci; filtered 467 loci; 470 loci seen.
     1511 genomic sites, of which 395 were covered by multiple loci (26.1%).
@@ -2152,7 +2152,7 @@ BEGIN batch_progress
     654 genomic sites, of which 484 were covered by multiple loci (74.0%).
 15993: analyzed 2 loci; filtered 475 loci; 477 loci seen.
     921 genomic sites, of which 4 were covered by multiple loci (0.4%).
-20399: analyzed 2 loci; filtered 315 loci; 317 loci seen.
+20399: analyzed 2 loci; filtered 314 loci; 316 loci seen.
     432 genomic sites, of which 202 were covered by multiple loci (46.8%).
 28123: analyzed 2 loci; filtered 140 loci; 142 loci seen.
     400 genomic sites, of which 183 were covered by multiple loci (45.8%).
@@ -2167,1709 +2167,1715 @@ END batch_progress
 BEGIN samples_per_loc_prefilters
 # Distribution of valid samples matched to a catalog locus prior to filtering.
 n_samples	n_loci
-1	73398
-2	28487
-3	6800
-4	6973
-5	826
-6	5129
-7	715
-8	22424
-9	613
-10	3468
-11	122
-12	643
-13	60
-14	228
-15	18
-16	102
-17	13
-18	71
+1	73381
+2	28480
+3	6791
+4	6974
+5	822
+6	5132
+7	712
+8	22429
+9	609
+10	3475
+11	120
+12	640
+13	62
+14	225
+15	19
+16	98
+17	20
+18	67
 19	7
-20	29
-21	8
-22	31
+20	27
+21	10
+22	29
 23	6
-24	20
-25	7
-26	15
+24	19
+25	9
+26	16
 27	6
 28	13
-29	3
-30	9
-31	7
-32	9
-33	8
-34	9
+29	5
+30	6
+31	6
+32	11
+33	9
+34	7
 35	2
-36	8
-37	4
-38	8
-39	11
+36	9
+37	6
+38	6
+39	9
 40	6
-41	4
-42	2
-43	5
-44	9
-45	5
-46	12
-47	5
-48	3
-49	3
+41	3
+42	4
+43	7
+44	6
+45	11
+46	7
+47	3
+48	5
+49	1
 50	2
 51	2
-52	2
-53	1
+52	3
+53	2
 54	5
 55	5
 56	2
 57	1
-58	3
+58	2
 59	4
-61	1
-62	4
+60	1
+61	2
+62	3
 63	2
-64	5
-65	3
-66	5
-67	2
-68	3
-69	4
-70	3
-71	1
+64	3
+65	6
+66	3
+67	1
+68	6
+69	3
+70	6
 72	2
-73	5
-74	5
-75	3
-76	1
-77	5
+73	4
+74	4
+75	6
+77	2
 78	2
-79	1
-80	2
-81	6
-82	2
-83	2
-84	1
-85	2
-86	3
+79	2
+80	5
+81	3
+82	1
+83	1
+84	5
+85	1
+86	1
 87	1
 88	1
-90	4
-91	5
-92	3
+89	5
+90	3
+91	3
+92	1
 93	4
-94	2
-95	4
+94	4
+95	2
 96	3
-98	1
-99	4
+97	1
+98	2
+99	1
 100	3
-101	4
-102	1
+101	3
+102	5
 103	2
-104	2
-105	4
-106	3
-108	2
-109	1
+104	3
+105	1
+106	1
+107	3
+108	1
+109	3
 110	1
-111	2
-112	2
+112	1
 113	1
-114	1
-115	2
+114	2
+115	1
 116	1
-117	2
-118	1
+117	3
 119	1
-121	1
+121	4
 122	1
-124	2
-125	1
-126	5
-128	3
+123	1
+124	1
+125	2
+126	1
+127	2
+128	5
 129	1
 130	3
-131	4
-132	5
-133	3
-134	3
+131	2
+132	4
+133	6
+134	1
 135	3
 136	1
 137	4
-138	2
+138	1
 139	2
-140	2
-142	2
+140	1
+142	1
+143	3
 144	2
-145	4
+145	6
 146	2
-147	3
-148	3
-149	1
-150	1
-151	5
+148	1
+149	2
+150	2
+151	6
 152	2
-153	6
+153	2
 154	4
-155	2
+155	3
 156	3
-157	1
-159	4
-160	2
-161	3
-162	3
-163	2
-164	3
-165	2
-166	3
-167	6
-168	7
-169	2
-170	3
-171	6
+157	3
+158	1
+159	2
+160	7
+161	1
+162	1
+163	4
+164	5
+165	4
+166	6
+167	1
+168	5
+169	4
+170	7
+171	1
 172	4
-173	4
+173	3
 174	3
 175	4
-176	1
-177	6
+176	2
+177	4
 178	2
 179	4
-180	1
-181	1
-182	2
-183	2
-184	4
-185	5
-186	1
-187	2
-189	3
-190	3
+180	2
+181	3
+182	1
+183	3
+184	1
+185	4
+186	3
+187	1
+188	3
+190	2
+191	2
 192	2
-193	3
-194	5
-195	2
-197	3
-198	1
-199	1
-200	1
-201	2
-202	4
+193	2
+194	3
+196	2
+198	2
+199	2
+200	5
+201	1
+202	2
 203	4
-205	1
+205	3
 206	2
-207	5
+207	1
 208	1
-211	2
-213	3
-214	1
-215	2
-216	3
-219	1
-220	2
-221	1
-224	1
+209	4
+212	2
+214	2
+215	3
+216	2
+217	2
+219	2
+220	1
+222	1
+223	3
 225	1
-226	5
-227	2
+226	3
+227	1
 228	1
-229	4
-230	2
-231	2
-232	1
-233	1
-235	1
-236	1
-237	3
-238	1
+229	2
+230	3
+231	3
+234	2
+236	3
+238	3
 239	2
-240	4
-241	3
-242	2
-243	2
-244	3
-245	2
-246	2
+240	1
+241	7
+242	1
+243	1
+244	2
 247	2
-248	2
-249	1
-250	1
+248	3
+249	4
+250	2
 251	1
-253	3
+252	2
 254	3
-257	4
-258	4
-259	1
+255	1
+256	5
+257	1
+258	2
+259	2
 260	2
-261	6
-262	3
-263	4
-264	3
-266	4
-267	2
-268	2
+261	2
+262	4
+263	1
+264	6
+265	3
+266	2
+267	1
+268	4
 269	2
-270	4
-271	2
-272	2
-273	3
-274	4
-275	1
-277	3
-278	3
+270	2
+271	5
+272	4
+273	1
+275	6
+276	2
+277	1
+278	4
 279	3
-280	1
-281	2
-282	3
-283	7
-284	3
-285	5
-286	1
-287	3
-288	3
-289	4
-290	3
-291	6
-292	4
+280	3
+281	1
+282	4
+283	4
+284	1
+285	2
+286	4
+287	4
+288	1
+289	3
+290	6
+291	4
+292	2
 293	2
-294	4
-295	4
-296	4
-297	3
-298	4
-299	5
-300	7
-301	4
-302	7
-303	2
-304	5
-305	5
-306	10
-307	5
-308	10
+294	6
+295	6
+296	6
+297	2
+298	5
+299	4
+300	6
+301	6
+302	4
+303	4
+304	4
+305	2
+306	7
+307	13
+308	4
 309	7
-310	12
-311	10
+310	11
+311	8
 312	16
-313	11
-314	11
+313	8
+314	15
 315	16
-316	17
-317	30
-318	23
-319	32
-320	23
-321	35
-322	39
-323	42
-324	26
-325	39
-326	43
-327	38
-328	40
-329	41
-330	33
-331	34
-332	24
-333	22
-334	13
-335	27
-336	16
-337	6
-338	10
-339	15
-340	2
-341	1
+316	18
+317	25
+318	28
+319	27
+320	27
+321	32
+322	31
+323	35
+324	40
+325	37
+326	39
+327	44
+328	39
+329	52
+330	31
+331	31
+332	26
+333	18
+334	19
+335	22
+336	19
+337	13
+338	11
+339	9
+340	1
+341	4
 342	4
-343	3
+343	5
 344	3
-345	5
-346	5
-347	3
-348	1
-349	5
+345	1
+346	2
+347	6
+348	3
+349	3
 350	1
-351	3
-352	1
-353	2
-354	3
-355	2
-356	3
-357	4
+351	5
+353	4
+354	4
+355	1
+356	1
+357	1
 358	4
-359	2
-360	6
-361	2
-362	3
-363	7
-364	1
+359	3
+360	4
+361	8
+362	6
+363	3
+364	3
+365	1
 366	2
-367	2
 368	3
-369	7
-370	2
-371	2
-372	4
+369	3
+370	3
+371	4
+372	2
 373	2
-374	1
-375	4
-376	5
-377	3
-378	3
+374	4
+375	2
+376	4
+377	6
+378	2
 379	2
-380	2
-381	6
-382	2
-383	5
-384	3
+380	4
+381	4
+382	1
+383	3
+384	2
 385	4
-388	5
-389	5
-390	5
-391	4
+386	2
+387	3
+388	4
+389	3
+390	4
+391	6
 392	3
-393	2
+393	3
 394	3
-395	1
-396	3
-397	3
-398	7
+395	3
+397	2
+398	8
 399	3
-400	5
-401	3
-402	4
+400	6
+401	2
+402	7
 403	4
-404	4
-405	1
+404	1
+405	2
 406	4
 407	4
-408	5
+408	3
 409	3
-410	3
-411	2
-412	3
-413	2
-414	5
-415	7
-416	3
+410	2
+411	5
+412	2
+413	3
+414	6
+415	2
+416	4
 417	6
-418	8
+418	10
 419	2
-420	4
-421	3
+420	3
+421	5
 422	5
-423	7
-424	9
-425	8
+423	5
+424	7
+425	10
 426	3
-427	5
-428	4
-429	6
-430	9
-431	10
-432	6
-433	9
-434	4
-435	4
-436	7
-437	6
+427	9
+428	5
+429	4
+430	8
+431	5
+432	10
+433	8
+434	3
+435	5
+436	5
+437	8
 438	8
-439	5
-440	4
+439	6
+440	5
 441	5
+442	5
 443	3
-444	6
-445	5
+444	3
+445	3
 446	4
-447	3
-448	3
-449	6
-450	2
+447	5
+448	4
+449	1
+450	5
 451	2
-452	2
-453	1
-454	3
-455	7
-456	5
-457	2
-458	5
-459	5
-460	5
+452	3
+453	6
+454	2
+455	3
+456	2
+457	5
+458	4
+459	4
+460	8
 461	2
-462	2
+462	3
 463	2
-464	3
 465	6
-466	6
-467	3
+466	5
+467	4
 468	4
+469	1
 470	3
-471	1
-472	3
-473	1
-474	6
-475	2
-476	5
-477	2
+471	3
+472	2
+473	2
+474	3
+475	4
+476	4
+477	8
 478	1
-479	6
-480	6
-481	5
-482	3
-483	4
-484	5
-485	3
-486	10
-487	8
-488	6
-489	3
-490	5
-491	5
-492	3
-493	9
-494	7
-495	4
-496	8
-497	7
-498	8
-499	4
-500	4
-501	8
-502	5
-503	10
-504	6
-505	10
-506	6
+479	3
+480	3
+481	6
+482	4
+483	3
+484	2
+485	7
+486	6
+487	9
+488	5
+489	5
+490	7
+491	7
+492	7
+493	5
+494	4
+495	7
+496	7
+497	5
+498	3
+499	7
+500	10
+501	6
+502	6
+503	6
+504	9
+505	5
+506	10
 507	3
-508	4
-509	10
-510	6
-511	10
-512	4
-513	5
-514	4
+508	10
+509	5
+510	5
+511	8
+512	9
+513	7
+514	7
 515	3
-516	7
-517	3
-518	6
-519	6
-520	6
-521	3
-522	12
-523	9
-524	5
-525	8
-526	10
-527	11
-528	15
-529	17
-530	19
-531	15
-532	10
-533	10
-534	11
-535	6
-536	10
-537	8
-538	6
-539	8
-540	9
-541	14
+516	10
+517	4
+518	5
+519	7
+520	3
+521	9
+522	7
+523	10
+524	10
+525	9
+526	14
+527	16
+528	16
+529	16
+530	12
+531	12
+532	8
+533	8
+534	7
+535	8
+536	7
+537	9
+538	8
+539	9
+540	11
+541	10
 542	9
-543	14
-544	3
-545	7
-546	18
-547	13
+543	12
+544	7
+545	14
+546	12
+547	15
 548	14
-549	14
-550	31
-551	33
-552	72
-553	517
+549	29
+550	33
+551	59
+552	527
 END samples_per_loc_prefilters
 
 BEGIN missing_samples_per_loc_prefilters
 # Distribution of missing samples for each catalog locus prior to filtering.
 # Absent samples at locus	Count
-0	517
-1	72
+0	527
+1	59
 2	33
-3	31
+3	29
 4	14
-5	14
-6	13
-7	18
+5	15
+6	12
+7	14
 8	7
-9	3
-10	14
-11	9
-12	14
+9	12
+10	9
+11	10
+12	11
 13	9
 14	8
-15	6
-16	8
-17	10
-18	6
-19	11
-20	10
-21	10
-22	15
-23	19
-24	17
-25	15
-26	11
-27	10
-28	8
-29	5
-30	9
-31	12
+15	9
+16	7
+17	8
+18	7
+19	8
+20	8
+21	12
+22	12
+23	16
+24	16
+25	16
+26	14
+27	9
+28	10
+29	10
+30	7
+31	9
 32	3
-33	6
-34	6
-35	6
-36	3
-37	7
-38	3
-39	4
-40	5
-41	4
-42	10
-43	6
+33	7
+34	5
+35	4
+36	10
+37	3
+38	7
+39	7
+40	9
+41	8
+42	5
+43	5
 44	10
-45	4
-46	3
-47	6
-48	10
+45	3
+46	10
+47	5
+48	9
 49	6
-50	10
-51	5
-52	8
-53	4
-54	4
-55	8
+50	6
+51	6
+52	10
+53	7
+54	3
+55	5
 56	7
-57	8
+57	7
 58	4
-59	7
-60	9
-61	3
-62	5
+59	5
+60	7
+61	7
+62	7
 63	5
-64	3
-65	6
-66	8
-67	10
-68	3
-69	5
+64	5
+65	9
+66	6
+67	7
+68	2
+69	3
 70	4
-71	3
-72	5
-73	6
-74	6
-75	1
-76	2
-77	5
-78	2
-79	6
-80	1
+71	6
+72	3
+73	3
+74	1
+75	8
+76	4
+77	4
+78	3
+79	2
+80	2
 81	3
-82	1
-83	3
+82	3
+83	1
+84	4
 85	4
-86	3
+86	5
 87	6
-88	6
-89	3
-90	2
+89	2
+90	3
 91	2
-92	2
-93	5
-94	5
+92	8
+93	4
+94	4
 95	5
 96	2
-97	5
-98	7
-99	3
-100	1
+97	3
+98	2
+99	6
+100	3
 101	2
-102	2
-103	2
-104	6
-105	3
-106	3
-107	4
-108	5
-109	6
-110	3
+102	5
+103	1
+104	4
+105	5
+106	4
+107	3
+108	3
+109	3
+110	5
+111	5
 112	5
-113	4
-114	5
+113	6
+114	8
 115	8
-116	6
-117	7
-118	4
-119	4
-120	9
-121	6
-122	10
-123	9
-124	6
-125	4
-126	5
-127	3
-128	8
-129	9
-130	7
+116	5
+117	5
+118	3
+119	8
+120	10
+121	5
+122	8
+123	4
+124	5
+125	9
+126	3
+127	10
+128	7
+129	5
+130	5
 131	5
 132	3
-133	4
-134	2
-135	8
-136	6
-137	3
-138	7
-139	5
+133	2
+134	10
+135	6
+136	4
+137	2
+138	6
+139	3
 140	2
-141	3
+141	5
 142	2
 143	3
 144	3
-145	5
+145	4
 146	4
-147	4
+147	2
 148	1
 149	4
-150	4
-151	4
-152	3
-153	5
-154	3
-155	7
-156	3
+150	7
+151	2
+152	6
+153	3
+154	8
+155	2
 157	3
-158	1
+158	3
 159	3
-160	2
-161	3
+160	3
+161	6
 162	4
-163	5
-164	5
-165	5
-168	4
+163	3
+164	4
+165	3
+166	2
+167	4
+168	2
 169	3
-170	5
-171	2
-172	6
+170	1
+171	4
+172	4
 173	2
 174	2
-175	3
-176	3
-177	5
+175	6
+176	4
+177	2
 178	4
-179	1
+179	2
 180	2
 181	4
-182	2
-183	2
-184	7
-185	3
+182	3
+183	3
+184	3
 186	2
-187	2
-189	1
-190	7
-191	3
-192	2
-193	6
-194	2
-195	4
-196	4
-197	3
-198	2
-199	3
-200	2
-201	1
-202	3
-203	1
-204	5
-205	1
-206	3
-207	5
-208	5
-209	3
-210	3
+187	1
+188	3
+189	3
+190	6
+191	8
+192	4
+193	3
+194	4
+195	1
+196	1
+197	1
+198	4
+199	4
+201	5
+202	1
+203	3
+204	3
+205	6
+206	2
+207	1
+208	3
+209	5
+210	4
 211	4
 212	1
-213	2
-214	15
-215	10
-216	6
-217	16
-218	27
-219	13
-220	22
-221	24
-222	34
-223	33
-224	41
-225	40
-226	38
-227	43
-228	39
-229	26
-230	42
-231	39
-232	35
-233	23
-234	32
-235	23
-236	30
-237	17
-238	16
-239	11
-240	11
-241	16
-242	10
-243	12
-244	7
-245	10
-246	5
-247	10
-248	5
-249	5
-250	2
-251	7
-252	4
-253	7
+213	9
+214	11
+215	13
+216	19
+217	22
+218	19
+219	18
+220	26
+221	31
+222	31
+223	52
+224	39
+225	44
+226	39
+227	37
+228	40
+229	35
+230	31
+231	32
+232	27
+233	27
+234	28
+235	25
+236	18
+237	16
+238	15
+239	8
+240	16
+241	8
+242	11
+243	7
+244	4
+245	13
+246	7
+247	2
+248	4
+249	4
+250	4
+251	6
+252	6
+253	4
 254	5
-255	4
-256	3
-257	4
-258	4
-259	4
+255	2
+256	6
+257	6
+258	6
+259	2
 260	2
 261	4
 262	6
 263	3
-264	4
-265	3
-266	3
-267	1
-268	5
-269	3
-270	7
-271	3
-272	2
-273	1
-274	3
-275	3
-276	3
-278	1
-279	4
-280	3
-281	2
+264	1
+265	4
+266	4
+267	2
+268	1
+269	4
+270	4
+271	1
+272	3
+273	3
+274	4
+275	1
+276	2
+277	6
+279	1
+280	4
+281	5
 282	2
-283	4
-284	2
-285	2
+283	2
+284	4
+285	1
 286	2
-287	4
-289	3
+287	3
+288	6
+289	1
 290	4
-291	3
-292	6
+291	2
+292	2
 293	2
-294	1
-295	4
-296	4
-299	3
-300	3
-302	1
-303	1
-304	1
+294	2
+295	1
+296	5
+297	1
+298	3
+300	2
+301	1
+302	2
+303	4
+304	3
 305	2
-306	2
-307	2
 308	2
-309	3
-310	2
-311	2
-312	3
-313	4
-314	2
-315	1
+309	1
+310	1
+311	7
+312	1
+313	2
+314	3
 316	3
-317	1
-318	1
-320	1
-321	1
-322	2
+318	2
+321	3
+322	3
 323	2
-324	4
+324	1
 325	1
-326	2
-327	5
-328	1
-329	1
+326	3
+327	1
+329	3
+330	1
 332	1
 333	2
-334	1
+335	2
+336	2
 337	3
 338	2
-339	1
-340	3
-342	2
+340	2
+343	4
+344	1
 345	1
-346	5
-347	2
-348	1
-350	4
-351	4
-352	2
-353	1
-354	1
-355	1
-356	3
-358	2
-359	5
-360	3
+346	2
+347	3
+349	4
+350	2
+351	1
+352	5
+353	2
+354	2
+356	2
+358	3
+359	2
+360	2
 361	2
-363	3
+362	2
 364	3
-366	2
-367	1
-368	5
-369	4
-370	2
-371	2
-372	1
-373	1
-374	4
-375	2
-376	6
-377	1
-378	4
+365	1
+366	3
+367	4
+368	1
+369	3
+370	1
+371	3
+372	2
+373	4
+374	2
+375	4
+376	2
+377	4
+378	3
 379	3
 380	4
-381	4
-382	6
-383	3
-384	2
-385	7
+381	1
+382	7
+383	4
+384	5
+385	1
 386	6
-387	3
-388	2
-389	3
-390	2
-391	3
-392	3
+387	4
+388	5
+389	4
+390	1
+391	1
+392	7
 393	2
-394	4
-396	1
+394	1
+395	3
+396	3
 397	3
-398	2
-399	4
-400	6
-401	2
-402	5
-403	1
+398	4
+399	2
+400	2
+401	6
+402	2
+403	2
 404	1
-405	3
-406	3
-407	2
-408	4
-409	2
-411	2
+406	2
+407	6
+408	2
+409	3
+410	1
+412	1
 413	2
-414	2
-415	2
-416	4
-417	1
-418	3
-419	3
-420	3
-421	5
-422	4
-423	3
-424	1
-425	3
-427	5
+414	1
+415	4
+416	1
+417	3
+418	1
+419	6
+420	4
+421	2
+422	3
+423	1
+424	5
+425	2
+426	1
+427	2
 428	1
-429	2
-431	1
-432	1
-434	1
-435	1
-436	2
+429	1
+430	1
+431	4
+433	1
+435	3
+436	1
 437	1
 438	2
 439	1
 440	1
-441	2
-442	2
-443	1
+442	1
+443	3
 444	1
-445	2
-447	3
-448	4
+445	3
+446	1
+447	1
+448	3
 449	2
-450	2
-451	1
-452	4
-453	3
-454	4
+450	5
+451	3
+452	3
+453	1
+454	2
 455	1
-457	3
+456	3
+457	2
 458	4
-459	2
-460	4
+459	4
+460	1
 461	3
-462	5
-463	4
+462	3
+463	5
+464	1
 465	1
 466	1
-467	3
-468	2
+467	1
+468	5
 469	1
-470	2
-471	2
-472	6
+470	1
+471	3
+472	5
 473	2
-474	1
+474	2
 475	2
-476	5
-477	1
-478	3
-479	5
-480	5
-481	2
-482	1
+477	6
+478	4
+479	4
+480	2
+482	6
 483	3
-484	4
-485	3
-486	2
-487	5
+484	6
+485	1
+486	3
+487	6
 488	3
-489	5
-490	2
-491	4
+489	2
+490	3
+491	2
 492	1
-494	4
-495	3
-496	1
-497	2
+493	4
+494	2
+495	1
+496	2
+497	5
 498	5
-499	5
-500	1
+499	2
+500	3
 501	2
 502	2
-503	2
-504	3
+503	1
+504	5
 505	3
-506	5
-507	12
-508	5
-509	9
-510	5
-511	2
-512	4
-513	6
-514	11
-515	8
-516	4
-517	8
-518	2
+506	7
+507	11
+508	6
+509	7
+510	4
+511	3
+512	6
+513	9
+514	6
+515	6
+516	9
+517	2
+518	7
 519	9
-520	8
-521	9
-522	7
-523	9
-524	3
-525	13
-526	6
-527	15
-528	7
-529	20
-530	6
-531	31
-532	8
-533	29
-534	7
-535	71
-536	13
-537	102
-538	18
-539	228
-540	60
-541	643
-542	122
-543	3468
-544	613
-545	22424
-546	715
-547	5129
-548	826
-549	6973
-550	6800
-551	28487
-552	73398
+520	11
+521	6
+522	6
+523	5
+524	13
+525	6
+526	16
+527	9
+528	19
+529	6
+530	29
+531	10
+532	27
+533	7
+534	67
+535	20
+536	98
+537	19
+538	225
+539	62
+540	640
+541	120
+542	3475
+543	609
+544	22429
+545	712
+546	5132
+547	822
+548	6974
+549	6791
+550	28480
+551	73381
 END missing_samples_per_loc_prefilters
 
 BEGIN snps_per_loc_prefilters
 # Distribution of the number of SNPs per catalog locus prior to filtering.
 n_snps	n_loci
-0	110967
+0	110933
 1	6276
-2	5108
+2	5107
 3	4639
-4	3882
+4	3883
 5	3423
-6	3008
-7	2587
-8	2243
-9	1898
-10	1521
-11	1329
-12	1103
-13	889
-14	719
-15	547
-16	425
-17	343
-18	276
-19	192
+6	3007
+7	2588
+8	2245
+9	1896
+10	1519
+11	1335
+12	1104
+13	887
+14	716
+15	558
+16	421
+17	335
+18	278
+19	190
 20	142
-21	111
-22	104
-23	71
-24	57
-25	59
-26	70
-27	45
-28	51
-29	65
-30	46
-31	65
-32	36
-33	48
-34	38
-35	52
-36	32
-37	30
-38	47
-39	44
-40	44
+21	118
+22	102
+23	65
+24	65
+25	53
+26	71
+27	44
+28	53
+29	67
+30	43
+31	58
+32	45
+33	43
+34	42
+35	47
+36	35
+37	27
+38	52
+39	40
+40	46
 41	36
-42	42
-43	30
-44	44
-45	38
-46	43
-47	39
+42	43
+43	39
+44	34
+45	41
+46	41
+47	36
 48	39
 49	38
-50	31
-51	32
-52	48
-53	40
-54	30
-55	25
-56	26
-57	16
-58	15
-59	19
-60	26
-61	20
-62	18
+50	34
+51	36
+52	45
+53	36
+54	32
+55	24
+56	24
+57	17
+58	19
+59	22
+60	20
+61	21
+62	17
 63	14
-64	18
-65	13
-66	13
-67	11
-68	9
-69	7
-70	7
+64	17
+65	15
+66	12
+67	9
+68	10
+69	8
+70	6
 71	5
 72	6
-73	5
-74	6
-75	6
-76	5
-77	6
-78	5
-79	5
+73	7
+74	7
+75	5
+76	2
+77	7
+78	6
+79	4
 80	5
 81	1
 82	2
 83	1
 85	1
 86	1
-87	2
-89	2
-90	2
-91	2
-97	1
+87	3
+89	1
+90	3
+91	1
+96	1
 102	1
 END snps_per_loc_prefilters
 
 BEGIN samples_per_loc_postfilters
 # Distribution of valid samples matched to a catalog locus after filtering.
 n_samples	n_loci
-277	3
-278	3
+276	2
+277	1
+278	4
 279	3
-280	1
-281	2
-282	3
-283	7
-284	3
-285	5
-286	1
-287	3
-288	3
-289	4
-290	3
-291	6
-292	4
+280	3
+281	1
+282	4
+283	4
+284	1
+285	2
+286	4
+287	4
+288	1
+289	3
+290	6
+291	4
+292	2
 293	2
-294	4
-295	4
-296	4
-297	3
-298	4
-299	5
-300	7
-301	4
-302	7
-303	2
-304	5
-305	5
-306	10
-307	5
-308	10
+294	6
+295	6
+296	6
+297	2
+298	5
+299	4
+300	6
+301	6
+302	4
+303	4
+304	4
+305	2
+306	7
+307	13
+308	4
 309	7
-310	12
-311	10
+310	11
+311	8
 312	16
-313	11
-314	11
+313	8
+314	15
 315	16
-316	17
-317	30
-318	23
-319	32
-320	23
-321	35
-322	39
-323	42
-324	26
-325	39
-326	43
-327	38
-328	40
-329	41
-330	33
-331	34
-332	24
-333	22
-334	13
-335	27
-336	16
-337	6
-338	10
-339	15
-340	2
-341	1
+316	18
+317	25
+318	28
+319	27
+320	27
+321	32
+322	31
+323	35
+324	40
+325	37
+326	39
+327	44
+328	39
+329	52
+330	31
+331	31
+332	26
+333	18
+334	19
+335	22
+336	19
+337	13
+338	11
+339	9
+340	1
+341	4
 342	4
-343	3
+343	5
 344	3
-345	5
-346	5
-347	3
-348	1
-349	5
+345	1
+346	2
+347	6
+348	3
+349	3
 350	1
-351	3
-352	1
-353	2
-354	3
-355	2
-356	3
-357	4
+351	5
+353	4
+354	4
+355	1
+356	1
+357	1
 358	4
-359	2
-360	6
-361	2
-362	3
-363	7
-364	1
+359	3
+360	4
+361	8
+362	6
+363	3
+364	3
+365	1
 366	2
-367	2
 368	3
-369	7
-370	2
-371	2
-372	4
+369	3
+370	3
+371	4
+372	2
 373	2
-374	1
-375	4
-376	5
-377	3
-378	3
+374	4
+375	2
+376	4
+377	6
+378	2
 379	2
-380	2
-381	6
-382	2
-383	5
-384	3
+380	4
+381	4
+382	1
+383	3
+384	2
 385	4
-388	5
-389	5
-390	5
-391	4
+386	2
+387	3
+388	4
+389	3
+390	4
+391	6
 392	3
-393	2
+393	3
 394	3
-395	1
-396	3
-397	3
-398	7
+395	3
+397	2
+398	8
 399	3
-400	5
-401	3
-402	4
+400	6
+401	2
+402	7
 403	4
-404	4
-405	1
+404	1
+405	2
 406	4
 407	4
-408	5
+408	3
 409	3
-410	3
-411	2
-412	3
-413	2
-414	5
-415	7
-416	3
+410	2
+411	5
+412	2
+413	3
+414	6
+415	2
+416	4
 417	6
-418	8
+418	10
 419	2
-420	4
-421	3
+420	3
+421	5
 422	5
-423	7
-424	9
-425	8
+423	5
+424	7
+425	10
 426	3
-427	5
-428	4
-429	6
-430	9
-431	10
-432	6
-433	9
-434	4
-435	4
-436	7
-437	6
+427	9
+428	5
+429	4
+430	8
+431	5
+432	10
+433	8
+434	3
+435	5
+436	5
+437	8
 438	8
-439	5
-440	4
+439	6
+440	5
 441	5
+442	5
 443	3
-444	6
-445	5
+444	3
+445	3
 446	4
-447	3
-448	3
-449	6
-450	2
+447	5
+448	4
+449	1
+450	5
 451	2
-452	2
-453	1
-454	3
-455	7
-456	5
-457	2
-458	5
-459	5
-460	5
+452	3
+453	6
+454	2
+455	3
+456	2
+457	5
+458	4
+459	4
+460	8
 461	2
-462	2
+462	3
 463	2
-464	3
 465	6
-466	6
-467	3
+466	5
+467	4
 468	4
+469	1
 470	3
-471	1
-472	3
-473	1
-474	6
-475	2
-476	5
-477	2
+471	3
+472	2
+473	2
+474	3
+475	4
+476	4
+477	8
 478	1
-479	6
-480	6
-481	5
-482	3
-483	4
-484	5
-485	3
-486	10
-487	8
-488	6
-489	3
-490	5
-491	5
-492	3
-493	9
-494	7
-495	4
-496	8
-497	7
-498	8
-499	4
-500	4
-501	8
-502	5
-503	10
-504	6
-505	10
-506	6
+479	3
+480	3
+481	6
+482	4
+483	3
+484	2
+485	7
+486	6
+487	9
+488	5
+489	5
+490	7
+491	7
+492	7
+493	5
+494	4
+495	7
+496	7
+497	5
+498	3
+499	7
+500	10
+501	6
+502	6
+503	6
+504	9
+505	5
+506	10
 507	3
-508	4
-509	10
-510	6
-511	10
-512	4
-513	5
-514	4
+508	10
+509	5
+510	5
+511	8
+512	9
+513	7
+514	7
 515	3
-516	7
-517	3
-518	6
-519	6
-520	6
-521	3
-522	12
-523	9
-524	5
-525	8
-526	10
-527	11
-528	15
-529	17
-530	19
-531	15
-532	10
-533	10
-534	11
-535	6
-536	10
-537	8
-538	6
-539	8
-540	9
-541	14
+516	10
+517	4
+518	5
+519	7
+520	3
+521	9
+522	7
+523	10
+524	10
+525	9
+526	14
+527	16
+528	16
+529	16
+530	12
+531	12
+532	8
+533	8
+534	7
+535	8
+536	7
+537	9
+538	8
+539	9
+540	11
+541	10
 542	9
-543	14
-544	3
-545	7
-546	18
-547	13
+543	12
+544	7
+545	14
+546	12
+547	15
 548	14
-549	14
-550	31
-551	33
-552	72
-553	517
+549	29
+550	33
+551	59
+552	527
 END samples_per_loc_postfilters
 
 BEGIN missing_samples_per_loc_postfilters
 # Distribution of missing samples for each catalog locus after filtering.
 # Absent samples at locus	Count
-0	517
-1	72
+0	527
+1	59
 2	33
-3	31
+3	29
 4	14
-5	14
-6	13
-7	18
+5	15
+6	12
+7	14
 8	7
-9	3
-10	14
-11	9
-12	14
+9	12
+10	9
+11	10
+12	11
 13	9
 14	8
-15	6
-16	8
-17	10
-18	6
-19	11
-20	10
-21	10
-22	15
-23	19
-24	17
-25	15
-26	11
-27	10
-28	8
-29	5
-30	9
-31	12
+15	9
+16	7
+17	8
+18	7
+19	8
+20	8
+21	12
+22	12
+23	16
+24	16
+25	16
+26	14
+27	9
+28	10
+29	10
+30	7
+31	9
 32	3
-33	6
-34	6
-35	6
-36	3
-37	7
-38	3
-39	4
-40	5
-41	4
-42	10
-43	6
+33	7
+34	5
+35	4
+36	10
+37	3
+38	7
+39	7
+40	9
+41	8
+42	5
+43	5
 44	10
-45	4
-46	3
-47	6
-48	10
+45	3
+46	10
+47	5
+48	9
 49	6
-50	10
-51	5
-52	8
-53	4
-54	4
-55	8
+50	6
+51	6
+52	10
+53	7
+54	3
+55	5
 56	7
-57	8
+57	7
 58	4
-59	7
-60	9
-61	3
-62	5
+59	5
+60	7
+61	7
+62	7
 63	5
-64	3
-65	6
-66	8
-67	10
-68	3
-69	5
+64	5
+65	9
+66	6
+67	7
+68	2
+69	3
 70	4
-71	3
-72	5
-73	6
-74	6
-75	1
-76	2
-77	5
-78	2
-79	6
-80	1
+71	6
+72	3
+73	3
+74	1
+75	8
+76	4
+77	4
+78	3
+79	2
+80	2
 81	3
-82	1
-83	3
+82	3
+83	1
+84	4
 85	4
-86	3
+86	5
 87	6
-88	6
-89	3
-90	2
+89	2
+90	3
 91	2
-92	2
-93	5
-94	5
+92	8
+93	4
+94	4
 95	5
 96	2
-97	5
-98	7
-99	3
-100	1
+97	3
+98	2
+99	6
+100	3
 101	2
-102	2
-103	2
-104	6
-105	3
-106	3
-107	4
-108	5
-109	6
-110	3
+102	5
+103	1
+104	4
+105	5
+106	4
+107	3
+108	3
+109	3
+110	5
+111	5
 112	5
-113	4
-114	5
+113	6
+114	8
 115	8
-116	6
-117	7
-118	4
-119	4
-120	9
-121	6
-122	10
-123	9
-124	6
-125	4
-126	5
-127	3
-128	8
-129	9
-130	7
+116	5
+117	5
+118	3
+119	8
+120	10
+121	5
+122	8
+123	4
+124	5
+125	9
+126	3
+127	10
+128	7
+129	5
+130	5
 131	5
 132	3
-133	4
-134	2
-135	8
-136	6
-137	3
-138	7
-139	5
+133	2
+134	10
+135	6
+136	4
+137	2
+138	6
+139	3
 140	2
-141	3
+141	5
 142	2
 143	3
 144	3
-145	5
+145	4
 146	4
-147	4
+147	2
 148	1
 149	4
-150	4
-151	4
-152	3
-153	5
-154	3
-155	7
-156	3
+150	7
+151	2
+152	6
+153	3
+154	8
+155	2
 157	3
-158	1
+158	3
 159	3
-160	2
-161	3
+160	3
+161	6
 162	4
-163	5
-164	5
-165	5
-168	4
+163	3
+164	4
+165	3
+166	2
+167	4
+168	2
 169	3
-170	5
-171	2
-172	6
+170	1
+171	4
+172	4
 173	2
 174	2
-175	3
-176	3
-177	5
+175	6
+176	4
+177	2
 178	4
-179	1
+179	2
 180	2
 181	4
-182	2
-183	2
-184	7
-185	3
+182	3
+183	3
+184	3
 186	2
-187	2
-189	1
-190	7
-191	3
-192	2
-193	6
-194	2
-195	4
-196	4
-197	3
-198	2
-199	3
-200	2
-201	1
-202	3
-203	1
-204	5
-205	1
-206	3
-207	5
-208	5
-209	3
-210	3
+187	1
+188	3
+189	3
+190	6
+191	8
+192	4
+193	3
+194	4
+195	1
+196	1
+197	1
+198	4
+199	4
+201	5
+202	1
+203	3
+204	3
+205	6
+206	2
+207	1
+208	3
+209	5
+210	4
 211	4
 212	1
-213	2
-214	15
-215	10
-216	6
-217	16
-218	27
-219	13
-220	22
-221	24
-222	34
-223	33
-224	41
-225	40
-226	38
-227	43
-228	39
-229	26
-230	42
-231	39
-232	35
-233	23
-234	32
-235	23
-236	30
-237	17
-238	16
-239	11
-240	11
-241	16
-242	10
-243	12
-244	7
-245	10
-246	5
-247	10
-248	5
-249	5
-250	2
-251	7
-252	4
-253	7
+213	9
+214	11
+215	13
+216	19
+217	22
+218	19
+219	18
+220	26
+221	31
+222	31
+223	52
+224	39
+225	44
+226	39
+227	37
+228	40
+229	35
+230	31
+231	32
+232	27
+233	27
+234	28
+235	25
+236	18
+237	16
+238	15
+239	8
+240	16
+241	8
+242	11
+243	7
+244	4
+245	13
+246	7
+247	2
+248	4
+249	4
+250	4
+251	6
+252	6
+253	4
 254	5
-255	4
-256	3
-257	4
-258	4
-259	4
+255	2
+256	6
+257	6
+258	6
+259	2
 260	2
 261	4
 262	6
 263	3
-264	4
-265	3
-266	3
-267	1
-268	5
-269	3
-270	7
-271	3
-272	2
-273	1
-274	3
-275	3
-276	3
+264	1
+265	4
+266	4
+267	2
+268	1
+269	4
+270	4
+271	1
+272	3
+273	3
+274	4
+275	1
+276	2
 END missing_samples_per_loc_postfilters
 
 BEGIN snps_per_loc_postfilters
 # Distribution of the number of SNPs per catalog locus (after filtering).
 n_snps	n_loci
-0	1150
+0	1149
 1	1456
 END snps_per_loc_postfilters

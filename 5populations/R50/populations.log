@@ -1,5 +1,5 @@
-populations v2.5, executed 2020-04-02 10:04:08 (zlib-1.2.7)
-populations -P /mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/4gstacks -O /mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/5populations/R50 -M /mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/info/globalpopmap_R5075mm4cov.tsv --threads 30 -e SbfI --merge-sites --write-random-snp --ordered-export --vcf -R 0.50
+populations v2.5, executed 2020-08-05 09:06:52 (zlib-1.2.7)
+populations -P /mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/4gstacks -O /mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/5populations/R50 -M /mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/info/globalpopmap_R5075mm4cov.tsv --threads 30 -e SbfI --merge-sites --write-random-snp --ordered-export --vcf -R 0.50 --genepop
 Locus/sample distributions will be written to '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/5populations/R50/populations.log.distribs'.
 populations parameters selected:
   Percent samples limit per population: 0
@@ -13,8 +13,8 @@ populations parameters selected:
   Bootstrap resampling: off
 
 Parsing population map...
-The population map contained 553 samples, 35 population(s), 1 group(s).
-Working on 553 samples.
+The population map contained 552 samples, 35 population(s), 1 group(s).
+Working on 552 samples.
 Working on 35 population(s):
     11CO: E69, E70, E82, E84, E92, E94, F10, F19, F20, F21, F22, F9
     12AZ: E59, E60, E65, E67, E68, E77, E78, F15, F16, F17, F18, F23, F24, F4, F5
@@ -33,7 +33,7 @@ Working on 35 population(s):
     32UT: E10, E11, E12, E21, E22, E23, E24_rep, E31, E32, E33, E34, E43, E44, E45, E46, E55, E56, E57, E58, E9
     33NV: E61, E62, E63, E64, E75, E76, E85, E86, E87
     34UT: E17, E18, E19, E20, E39, E40, E41, E42, E5, E51, E52, E53, E54, E7, E8, E90
-    37CR: D46, D47, D48, D70_rep, D71_rep, D72
+    37CR: D46, D47, D48, D71_rep, D72
     38CR: D1, D2, D3, D4, D49, D50, D51, D52, D73, D75, D76
     39CR: D5, D53, D54, D55, D56, D6, D7, D77, D78, D79, D8, D80
     41CR: D12, D13, D15_rep, D16, D41, D42, D43, D44, D57, D58, D59, D60, D81, D82, D83, D84
@@ -56,7 +56,8 @@ Working on 1 group(s) of populations:
     defaultgrp: 11CO, 12AZ, 15TX, 16TX, 18TX, 19TX, 1WY, 20NM, 21NM, 26NM, 27NM, 28NM, 2CO, 31NV, 32UT, 33NV, 34UT, 37CR, 38CR, 39CR, 41CR, 43GR, 44GR, 46CH, 47TX, 49TX, 4CO, 50TX, 51TX, 52TX, 5CO, 6KS, 8OK, CARINA_LAB, SUB_LAB
 
 SNPs and calls will be written in VCF format to '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/5populations/R50/populations.snps.vcf'
-Raw haplotypes will be written to '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/5populations/R50/populations.haplotypes.tsv'
+Polymorphic sites in GenePop format will be written to '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/5populations/R50/populations.snps.genepop'
+Warning: Genepop: The order in which samples appear was modified (as the input population map is not sorted).Raw haplotypes will be written to '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/5populations/R50/populations.haplotypes.tsv'
 Population-level summary statistics will be written to '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/5populations/R50/populations.sumstats.tsv'
 Population-level haplotype summary statistics will be written to '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/5populations/R50/populations.hapstats.tsv'
 
@@ -346,6 +347,7 @@ Now processing...
 745 
 746 
 748 
+750 
 752 
 759 
 763 
@@ -372,7 +374,6 @@ Now processing...
 819 
 822 
 823 
-831 
 834 
 835 
 841 
@@ -1148,45 +1149,45 @@ Now processing...
 37065 
 49901 
 
-Removed 150883 loci that did not pass sample/population constraints from 153489 loci.
-Kept 2606 loci, composed of 2247632 sites; 52785 of those sites were filtered, 1456 variant sites remained.
-    2210637 genomic sites, of which 36113 were covered by multiple loci (1.6%).
-Mean genotyped sites per locus: 854.16bp (stderr 2.70).
+Removed 150848 loci that did not pass sample/population constraints from 153453 loci.
+Kept 2605 loci, composed of 2246634 sites; 52613 of those sites were filtered, 1456 variant sites remained.
+    2209643 genomic sites, of which 36109 were covered by multiple loci (1.6%).
+Mean genotyped sites per locus: 854.12bp (stderr 2.71).
 
 Population summary statistics (more detail in populations.sumstats_summary.tsv):
-  11CO: 9.6562 samples per locus; pi: 0.016867; all/variant/polymorphic sites: 2184582/1312/106; private alleles: 4
-  12AZ: 12.787 samples per locus; pi: 0.021916; all/variant/polymorphic sites: 2149250/1323/126; private alleles: 11
-  15TX: 11.612 samples per locus; pi: 0.083629; all/variant/polymorphic sites: 1835272/1447/443; private alleles: 2
-  16TX: 11.693 samples per locus; pi: 0.066877; all/variant/polymorphic sites: 2197060/1422/380; private alleles: 4
-  18TX: 11.76 samples per locus; pi: 0.12148; all/variant/polymorphic sites: 2225083/1456/622; private alleles: 6
-  19TX: 10.545 samples per locus; pi: 0.06632; all/variant/polymorphic sites: 2225183/1446/334; private alleles: 7
-  1WY: 14.382 samples per locus; pi: 0.015073; all/variant/polymorphic sites: 2200918/1369/86; private alleles: 7
-  20NM: 13.262 samples per locus; pi: 0.044834; all/variant/polymorphic sites: 2225919/1430/306; private alleles: 1
-  21NM: 10.423 samples per locus; pi: 0.054457; all/variant/polymorphic sites: 2225939/1450/317; private alleles: 4
-  26NM: 13.492 samples per locus; pi: 0.059141; all/variant/polymorphic sites: 2225932/1443/388; private alleles: 3
-  27NM: 15.836 samples per locus; pi: 0.0535; all/variant/polymorphic sites: 2225932/1443/361; private alleles: 8
-  28NM: 13.909 samples per locus; pi: 0.18349; all/variant/polymorphic sites: 2225945/1456/709; private alleles: 8
-  2CO: 16.702 samples per locus; pi: 0.018197; all/variant/polymorphic sites: 2221169/1349/108; private alleles: 14
-  31NV: 6.1696 samples per locus; pi: 0.020664; all/variant/polymorphic sites: 2219394/1309/83; private alleles: 2
-  32UT: 17.353 samples per locus; pi: 0.019285; all/variant/polymorphic sites: 2225833/1344/124; private alleles: 9
-  33NV: 7.5016 samples per locus; pi: 0.017488; all/variant/polymorphic sites: 2225763/1274/81; private alleles: 4
-  34UT: 14.102 samples per locus; pi: 0.018044; all/variant/polymorphic sites: 2225779/1290/109; private alleles: 9
-  37CR: 4.2786 samples per locus; pi: 0.05183; all/variant/polymorphic sites: 2160856/1357/163; private alleles: 3
-  38CR: 7.6239 samples per locus; pi: 0.021508; all/variant/polymorphic sites: 2223936/1186/77; private alleles: 14
-  39CR: 9.1004 samples per locus; pi: 0.022883; all/variant/polymorphic sites: 2224186/1165/85; private alleles: 2
-  41CR: 10.129 samples per locus; pi: 0.040926; all/variant/polymorphic sites: 1992451/1293/172; private alleles: 3
-  43GR: 11.584 samples per locus; pi: 0.034932; all/variant/polymorphic sites: 2225675/1186/132; private alleles: 7
-  44GR: 10.077 samples per locus; pi: 0.053133; all/variant/polymorphic sites: 2225876/1387/243; private alleles: 20
-  46CH: 20.758 samples per locus; pi: 0.026875; all/variant/polymorphic sites: 2225932/1443/221; private alleles: 51
-  47TX: 19.851 samples per locus; pi: 0.037085; all/variant/polymorphic sites: 2225915/1426/276; private alleles: 17
-  49TX: 22.251 samples per locus; pi: 0.030413; all/variant/polymorphic sites: 2225893/1404/208; private alleles: 13
-  4CO: 9.2211 samples per locus; pi: 0.016058; all/variant/polymorphic sites: 2221507/1298/76; private alleles: 5
-  50TX: 7.1119 samples per locus; pi: 0.025912; all/variant/polymorphic sites: 1490355/1349/113; private alleles: 5
-  51TX: 11.809 samples per locus; pi: 0.027191; all/variant/polymorphic sites: 1566415/1377/159; private alleles: 3
-  52TX: 16.004 samples per locus; pi: 0.025015; all/variant/polymorphic sites: 1726089/1360/138; private alleles: 5
-  5CO: 16.179 samples per locus; pi: 0.019985; all/variant/polymorphic sites: 2223868/1360/133; private alleles: 9
-  6KS: 7.9863 samples per locus; pi: 0.13096; all/variant/polymorphic sites: 2225945/1456/642; private alleles: 5
-  8OK: 14.933 samples per locus; pi: 0.048466; all/variant/polymorphic sites: 1915348/1409/270; private alleles: 7
-  CARINA_LAB: 10.402 samples per locus; pi: 0.034329; all/variant/polymorphic sites: 1761033/1371/167; private alleles: 6
-  SUB_LAB: 13.044 samples per locus; pi: 0.018082; all/variant/polymorphic sites: 1655732/1378/107; private alleles: 5
+  11CO: 9.6043 samples per locus; pi: 0.020371; all/variant/polymorphic sites: 2183631/1314/115; private alleles: 6
+  12AZ: 12.731 samples per locus; pi: 0.023413; all/variant/polymorphic sites: 2148304/1330/143; private alleles: 7
+  15TX: 11.607 samples per locus; pi: 0.075362; all/variant/polymorphic sites: 1834345/1447/404; private alleles: 6
+  16TX: 11.771 samples per locus; pi: 0.071012; all/variant/polymorphic sites: 2143136/1417/380; private alleles: 4
+  18TX: 11.804 samples per locus; pi: 0.12022; all/variant/polymorphic sites: 2224131/1456/606; private alleles: 5
+  19TX: 10.566 samples per locus; pi: 0.062666; all/variant/polymorphic sites: 2224229/1444/313; private alleles: 5
+  1WY: 14.471 samples per locus; pi: 0.013649; all/variant/polymorphic sites: 2199959/1362/79; private alleles: 8
+  20NM: 13.307 samples per locus; pi: 0.050592; all/variant/polymorphic sites: 2224966/1429/324; private alleles: 1
+  21NM: 10.448 samples per locus; pi: 0.056049; all/variant/polymorphic sites: 2224982/1445/318; private alleles: 0
+  26NM: 13.531 samples per locus; pi: 0.060569; all/variant/polymorphic sites: 2224979/1442/392; private alleles: 7
+  27NM: 15.866 samples per locus; pi: 0.052033; all/variant/polymorphic sites: 2224982/1445/359; private alleles: 2
+  28NM: 13.941 samples per locus; pi: 0.18951; all/variant/polymorphic sites: 2224993/1456/732; private alleles: 12
+  2CO: 16.737 samples per locus; pi: 0.019009; all/variant/polymorphic sites: 2221074/1348/112; private alleles: 8
+  31NV: 6.194 samples per locus; pi: 0.021751; all/variant/polymorphic sites: 2219146/1309/96; private alleles: 5
+  32UT: 17.402 samples per locus; pi: 0.021176; all/variant/polymorphic sites: 2224881/1344/142; private alleles: 9
+  33NV: 7.5 samples per locus; pi: 0.018874; all/variant/polymorphic sites: 2224809/1272/96; private alleles: 8
+  34UT: 14.08 samples per locus; pi: 0.022414; all/variant/polymorphic sites: 2224829/1292/138; private alleles: 8
+  37CR: 3.7662 samples per locus; pi: 0.040342; all/variant/polymorphic sites: 1996432/1232/111; private alleles: 3
+  38CR: 7.6906 samples per locus; pi: 0.02955; all/variant/polymorphic sites: 2223970/1186/105; private alleles: 16
+  39CR: 9.0865 samples per locus; pi: 0.027939; all/variant/polymorphic sites: 2223236/1167/99; private alleles: 1
+  41CR: 10.191 samples per locus; pi: 0.041171; all/variant/polymorphic sites: 1993417/1295/155; private alleles: 6
+  43GR: 11.484 samples per locus; pi: 0.041614; all/variant/polymorphic sites: 2224727/1190/158; private alleles: 12
+  44GR: 10.066 samples per locus; pi: 0.058835; all/variant/polymorphic sites: 2224928/1391/265; private alleles: 27
+  46CH: 20.784 samples per locus; pi: 0.027563; all/variant/polymorphic sites: 2224980/1443/218; private alleles: 60
+  47TX: 19.938 samples per locus; pi: 0.038988; all/variant/polymorphic sites: 2224962/1425/280; private alleles: 19
+  49TX: 22.365 samples per locus; pi: 0.028887; all/variant/polymorphic sites: 2224938/1401/193; private alleles: 8
+  4CO: 9.2392 samples per locus; pi: 0.015692; all/variant/polymorphic sites: 2220553/1296/78; private alleles: 4
+  50TX: 7.1255 samples per locus; pi: 0.023573; all/variant/polymorphic sites: 1490399/1355/97; private alleles: 4
+  51TX: 11.787 samples per locus; pi: 0.028918; all/variant/polymorphic sites: 1566455/1379/143; private alleles: 3
+  52TX: 16.079 samples per locus; pi: 0.027602; all/variant/polymorphic sites: 1725138/1357/137; private alleles: 4
+  5CO: 16.147 samples per locus; pi: 0.018743; all/variant/polymorphic sites: 2222920/1364/124; private alleles: 3
+  6KS: 8.011 samples per locus; pi: 0.12744; all/variant/polymorphic sites: 2224993/1456/632; private alleles: 5
+  8OK: 14.923 samples per locus; pi: 0.04535; all/variant/polymorphic sites: 1913522/1415/238; private alleles: 1
+  CARINA_LAB: 10.362 samples per locus; pi: 0.030809; all/variant/polymorphic sites: 1761076/1376/163; private alleles: 7
+  SUB_LAB: 12.97 samples per locus; pi: 0.023645; all/variant/polymorphic sites: 1655774/1382/127; private alleles: 5
 Populations is done.
