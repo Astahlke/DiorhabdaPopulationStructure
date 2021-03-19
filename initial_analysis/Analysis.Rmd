@@ -91,14 +91,6 @@ vcftools --missing-indv --vcf $p_out/populations.snps.vcf \
 vcftools --missing-site --vcf $p_out/populations.snps.vcf \
          --out $f_out/populations.snps
 
-
-### I used to do this filtering then bring the vcf back to Stacks - this doesn't work
-### anymore so now I'm going to try populations:
-### tried p35, R50, p35R50, r80p35, and R50
-### -p,--min-populations 
-### -r,--min-samples-per-pop 
-### -R,--min-samples-overall 
-
 mkdir R50
 ### winner - reasonable number of loci, snps, and missing data rate for gloabl analysis
 
@@ -123,7 +115,7 @@ populations -P ${g_out} -O ${p_out}/75mmR50 -M ${p_out}/75mmR50/75mmR50_popmap.t
 
 Final sample and site list.
 ```{r}
-global_popmap <- read.delim("info/globalpopmap_R5075mm4cov.tsv",
+global_popmap <- read.delim("../info/globalpopmap_R5075mm4cov.tsv",
            col.names=c("sampID", "popID"),
            header = F)
 table(global_popmap$popID)
@@ -134,7 +126,7 @@ Merge this with existing metadata table.
 ## Samtools flagstat
 Report generated from Multiqc
 ```{r flagstat}
-flagstat <- read.delim("3refaligned/multiqc_data/multiqc_samtools_flagstat.txt")
+flagstat <- read.delim("../3refaligned/multiqc_data/multiqc_samtools_flagstat.txt")
 head(flagstat)
 
 mapped_perc <- select(flagstat, c(Sample,mapped_passed_pct))
@@ -146,7 +138,7 @@ colnames(mapped_perc)[1] <- "sampID"
 ```
 
 ```{r violinplot}
-sample_meta.dat <- read.csv("info/pop_metadata.csv", header = TRUE, stringsAsFactors = FALSE)
+sample_meta.dat <- read.csv("../info/pop_metadata.csv", header = TRUE, stringsAsFactors = FALSE)
 sample_meta.dat
 
 mapped_perc_metadat <- merge(mapped_perc, global_popmap) %>%
@@ -165,17 +157,17 @@ ggsave("mapped_perc_metadat_grp.jpg", dpi = 300)
 ## Gstacks
 
 ```{r gstacks_bamstats}
-bam <- read.delim(file = "3refaligned/bam_stats_per_sample.tsv")
+bam <- read.delim(file = "../3refaligned/bam_stats_per_sample.tsv")
 hist(bam$records, breaks=1000)
 hist(bam$records, breaks=1000, xlim = c(0,1000000))
 bam %>%
-  filter(records < 1000)
+  dplyr::filter(records < 1000)
 ```
 
 
 
 ```{r gstacks_effcov}
-eff_cov <- read.delim("4gstacks/effective_coverages_per_sample.tsv", skip = 2)
+eff_cov <- read.delim("../4gstacks/effective_coverages_per_sample.tsv", skip = 2)
 hist(eff_cov$mean_cov, breaks = 100, xlim = c(5, 50))
 
 ## check which rep to keep among these, kept the higher coverage
@@ -216,14 +208,14 @@ ggstatsplot::ggbetweenstats(data= merge(eff_cov, global_popmap) %>%
 
   merge(popmap)## Missing data
 ```{r ind_missingness}
-imiss <- read.delim("5populations/R50/populations.snps.imiss")
+imiss <- read.delim("../5populations/R50/populations.snps.imiss")
 head(imiss)
 hist(imiss$F_MISS, breaks = 100)
 
 colnames(imiss)[1] <- "sampID"
-colnames(popmap)[1] <- "sampID"
+colnames(global_popmap)[1] <- "sampID"
 
-merge(imiss, popmap) %>%
+merge(imiss, global_popmap) %>%
     arrange(desc(F_MISS)) 
 
 miss_meta <- merge(imiss, global_popmap) %>%
@@ -248,247 +240,4 @@ ggstatsplot::ggbetweenstats(data= miss_meta,
                             x = Grp,
                             y = F_MISS, 
                             outlier.label = popID)
-
-
 ```
-
-## Populations
-
-Summary statistics: Private alleles, exp het, pi, fis
-
-```{r populations}
-sumstats_variant <- read.delim("5populations/R50/populations.sumstats_summary.tsv", skip=1, nrows = 35)
-sumstats_variant_fixed <- read.delim("5populations/R50/populations.sumstats_summary.tsv", skip=38)
-
-colnames(sumstats_variant)[1] <- "popID"
-colnames(sumstats_variant_fixed)[1] <- "popID"
-sample_meta.dat
-
-## reorder 
-sumstats_variant$popID <- factor(sumstats_variant$popID, levels = arrange(sample_meta.dat, Order)[,'popID'])
-sumstats_variant_fixed$popID <- factor(sumstats_variant_fixed$popID, levels = arrange(sample_meta.dat, Order)[,'popID'])
-
-sumstats_variant
-sumstats_variant_fixed
-```
-
-```{r populations_substructure}
-## First section of sumstats for only variable positions 
-## carinu
-sumstats_variant_carinu <- read.delim("substructure/carinulata/5populations/R50/populations.sumstats_summary.tsv", skip=1, nrows = 14)
-sumstats_variant_fixed_carinu <- read.delim("substructure/carinulata/5populations/R50/populations.sumstats_summary.tsv", skip=18)
-sumstats_variant_carinu
-
-## other
-sumstats_variant_others <- read.delim("substructure/others/5populations/R50/populations.sumstats_summary.tsv", skip=1, nrows = 24)
-sumstats_variant_fixed_others <- read.delim("substructure/others/5populations/R50/populations.sumstats_summary.tsv", skip=27)
-sumstats_variant_others
-
-colnames(sumstats_variant_carinu)[1] <- "popID"
-colnames(sumstats_variant_fixed_carinu)[1] <- "popID"
-
-colnames(sumstats_variant_others)[1] <- "popID"
-colnames(sumstats_variant_fixed_others)[1] <- "popID"
-```
-
-```{r}
-sumstats_variant <- merge(sumstats_variant, sample_meta.dat[,c('popID','cat')])
-sumstats_variant$Cat <- factor(sumstats_variant$cat, levels = c("native", "lab", "original_release", "carinulata_expansion", "potential_hybrid_zone"))
-
-sumstats_variant_fixed <- merge(sumstats_variant_fixed, sample_meta.dat[,c('popID','cat')])
-sumstats_variant_fixed$Cat <- factor(sumstats_variant_fixed$cat, levels = c("native", "lab", "original_release", "carinulata_expansion", "potential_hybrid_zone"))
-
-```
-
-
-```{r populations_popgen}
-library(cowplot)
-
-# New facet label names for dose variable
-Cat.labs <- c("Native", "Lab", "Original Release", "D. carinulata Expansion", "Hybrid Zone")
-names(Cat.labs) <- levels(sumstats_variant$Cat)
-
-mytheme <- theme_minimal () +
-  theme(axis.line.x = element_line(),
-        axis.line.y = element_line(),
-        axis.title.x=element_blank(),
-        axis.text.x=element_blank(),
-        axis.ticks.x=element_blank(),
-        strip.background = element_blank(),
-  strip.text.x = element_blank())
-  
-a <- ggplot(data=sumstats_variant) +
-  geom_col(aes(x = popID, y = Private), width = 0.9) +
-  mytheme +
-  # theme(axis.text.x = element_text(angle = 90, hjust = 1))   
- theme(strip.background = element_rect(
-     color="black")) +
-  facet_grid(~Cat, scales = "free", space = "free",
-             labeller = labeller(Cat = Cat.labs)) 
-
-# b <- ggplot(data=sumstats_variant) +
-#   geom_col(aes(x = popID, y = Exp_Het), width = 0.9) +
-#   mytheme +
-#   theme(strip.background = element_blank(),
-#   strip.text.x = element_blank()) +
-#   facet_grid(~Cat, scales = "free", space = "free") 
-
-c <- ggplot(data=sumstats_variant) +
-  geom_col(aes(x = popID, y = Pi), width = 0.9) +
-  mytheme +
-  facet_grid(~Cat, scales = "free", space = "free") 
-
-# d <- ggplot(data=sumstats_variant_fixed) +
-#   geom_col(aes(x = popID, y = X.Polymorphic_Loci), width = 0.9) +
-#   theme_minimal() +
-#   theme(axis.title.x=element_blank(),
-#         axis.text.x=element_blank(),
-#         axis.ticks.x=element_blank()) +
-#   # theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-#   facet_grid(~Cat, scales = "free", space = "free")
-
-e <- ggplot(data=sumstats_variant) +
-  geom_col(aes(x = popID, y = Fis), width = 0.9) +
-  mytheme  +
-  facet_grid(~Cat, scales = "free", space = "free")
-```
-
-```{r include=FALSE}
-plot_grid(a, c, e, align = "v", ncol = 1)
-ggsave("popgenstats.svg", dpi = 300, units = "in", width = 8, height = 8)
-```
-
-
-```{r}
-ggplot() +
-  geom_point(data = sumstats_variant, aes(popID, Private), color = "red") +
-  geom_point(data = sumstats_variant_carinu, aes(popID, Private), color = "blue") +
-  geom_point(data = sumstats_variant_others, aes(popID, Private), color = "green")
-```
-
-
-```{r}
-sumstats_variant_carinu <- merge(sumstats_variant_carinu, sample_meta.dat[,c('popID','cat')])
-sumstats_variant_carinu$Cat <- factor(sumstats_variant_carinu$cat, levels = c("native", "lab", "original_release", "carinulata_expansion", "potential_hybrid_zone"))
-
-sumstats_variant_fixed_carinu <- merge(sumstats_variant_fixed_carinu, sample_meta.dat[,c('popID','cat')])
-sumstats_variant_fixed_carinu$Cat <- factor(sumstats_variant_fixed_carinu$cat, levels = c("native", "lab", "original_release", "carinulata_expansion", "potential_hybrid_zone"))
-
-a_c <- ggplot(data=sumstats_variant_carinu) +
-  geom_col(aes(x = popID, y = Private), width = 0.9) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  facet_grid(~Cat, scales = "free", space = "free")
-
-b_c <- ggplot(data=sumstats_variant_carinu) +
-  geom_col(aes(x = popID, y = Exp_Het), width = 0.9) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  facet_grid(~Cat, scales = "free", space = "free") 
-
-c_c <- ggplot(data=sumstats_variant_carinu) +
-  geom_col(aes(x = popID, y = Pi), width = 0.9) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  facet_grid(~Cat, scales = "free", space = "free") 
-
-d_c <- ggplot(data=sumstats_variant_fixed_carinu) +
-  geom_col(aes(x = popID, y = X.Polymorphic_Loci), width = 0.9) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  facet_grid(~Cat, scales = "free", space = "free")
-
-e_c <- ggplot(data=sumstats_variant_carinu) +
-  geom_col(aes(x = popID, y = Fis), width = 0.9) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  facet_grid(~Cat, scales = "free", space = "free")
-
-plot_grid(a_c, b_c, d_c, e_c)
-```
-
-
-```{r import_adgenet}
-library(adegenet)
-
-popmap <- read.table("info/masterpopmap.tsv", sep = "\t", header = FALSE, col.names =  c("sampID", "pop"), stringsAsFactors = FALSE)
-
-gen_ind <- read.genepop("5populations/R50/populations.snps.gen")
-
-inds <- data.frame(sampID = rownames(gen_ind@tab))
-popmap <- left_join(inds, popmap, by = "sampID")
-
-strata(gen_ind) <- popmap
-setPop(gen_ind) <- ~pop
-
-```
-
-```{r pca}
-# first impute missing data with the mode
-?tab
-gen_ind_mean <- tab(gen_ind, NA.method = "mean")
-
-miss <- tab(gen_ind)
-gen_ind_mode <- apply(miss, 2, function(x) 
-    replace(x, is.na(x), 
-            as.numeric(names(which.max(table((x)))))))
-
-
-pca_mean <- dudi.pca(gen_ind_mean, nf = 100, scannf = FALSE)
-pca_mode <- dudi.pca(gen_ind_mode, nf = 100, scannf = FALSE)
-
-scores <- pca_mode$li
-sampID <- row.names(scores) 
-scores <- cbind(scores, sampID)
-scores <- merge(scores, popmap, by = 'sampID')
-
-scores <- arrange(scores, by=pop)
-# scores <- as.data.frame(pca$scores, as.character(newpopmap[,1]))
-scores$PC1 <-as.numeric(as.character(scores$Axis1))
-scores$PC2 <- as.numeric(as.character(scores$Axis2))
-scores$PC3 <- as.numeric(as.character(scores$Axis3))
-scores$PC4 <- as.numeric(as.character(scores$Axis4))
-scores$PC5 <- as.numeric(as.character(scores$Axis5))
-scores$PC6 <- as.numeric(as.character(scores$Axis6))
-scores$PC7 <- as.numeric(as.character(scores$Axis7))
-scores$PC8 <- as.numeric(as.character(scores$Axis8))
-scores$PC9 <- as.numeric(as.character(scores$Axis9))
-
-pca_mode_plot <- ggplot(data = scores, aes(x=PC1, y=PC2, color = pop, label=pop)) +
-  # geom_point() +
-  geom_hline(yintercept = 0) +
-  geom_vline(xintercept = 0) +
-  geom_text() +
-  # stat_ellipse(geom = "polygon", alpha = .2, aes(fill=pop)) +
-  # xlim(-40, 0) +
-  # ylim(-1.5,0) +
-  guides(fill=FALSE) +
-  theme_bw() +
-  ggtitle("Global dataset")
-
-pca_mean_plot
-```
-```{r}
-pca_mode_plot
-
-```
-
-
-```{r dapc}
-dapc <- dapc(gen_ind_mode, n.pca=100, n.da = 4)
-scatter(dapc)
-
-grp5 <- find.clusters(gen_ind_mean, 
-                     max.n.clust=40, n.pca=100, n.clust=5)
-table(pop(gen_ind), grp5$grp)
-
-grp6 <- find.clusters(gen_ind_mean, 
-                     max.n.clust=40, n.pca=100, n.clust=6)
-table(pop(gen_ind), grp6$grp)
-
-
-
-dapc_grp <- dapc(gen_ind, grp=grp$grp, n.pca=100, n.da = 4)
-scatter(dapc_grp)
-```
-
