@@ -6,13 +6,10 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
 library(dplyr)
 library(ggplot2)
 
 metadat <- read.csv("../info/pop_metadata.csv", stringsAsFactors = F)
-
-
 ```
 
 Can we capture more variation by partitioning carinulata, elongata, others? 
@@ -71,7 +68,7 @@ poly_sumstats <- merge(poly_sumstats, metadat)
 ```
 
 
-```{r, cache=TRUE}
+```{r}
 ggplot(popgenstats, aes(x=popID, y=Exp_Het, fill = ID))  +
   geom_bar(stat = "identity", width = 0.9, position = "dodge") +
   theme(axis.text.x = element_text(angle = 90, hjust = 1),
@@ -112,7 +109,6 @@ ggplot(poly_sumstats, aes(x=popID, y=Perc.Polymorphic_Loci, fill = ID))  +
   theme(axis.text.x = element_text(angle = 90, hjust = 1),
         legend.position = "bottom") +
   facet_grid(~Grp, scales = "free_x", space = "free") 
-
 ggsave("Perc.Polymorphic_Loci_bygroup.jpg", dpi = 300, height = 4, width = 7, units = "in")
 ```
 
@@ -128,7 +124,7 @@ poly_sumstats$popID <- factor(poly_sumstats$popID,levels =
 popgenstats$cat <- factor(popgenstats$cat,
                           levels = 
                             c('original_release', 'native','expansion', 'lab'))
-unique(popgenstats$Grp)
+
 labels <- c(carinulata = "D. carinulata Range", 
             potential_hybrid_zone = "Suspected Hybrid Zone",
             native_elongata = "Native D. elongata",
@@ -165,7 +161,7 @@ polymorphic_loci
 ```
 
 
-```{r, cache=TRUE}
+```{r}
 Pi <- ggplot(popgenstats, aes(x=popID, y=Pi, fill = cat))  +
   geom_bar(stat = "identity", width = 0.9) +
   geom_errorbar( aes(ymin=Pi - StdErr.6, ymax=Pi + StdErr.6),  alpha=0.5) +
@@ -226,11 +222,15 @@ ggsave("popgenstats.jpg", dpi = 300, height = 8, width = 10, units = "in")
 ggsave("popgenstats.svg", dpi = 300, height = 8, width = 10, units = "in")
 ```
 
-
 ```{r}
 popgenstats_carinu_exp <- merge(popgenstats, metadat) %>%
-  dplyr::filter(cat=="carinulata_expansion", ID == "carinulata")
+  dplyr::filter(cat=="expansion" & Grp == "carinulata")
 
+popgenstats_carinu_exp
+```
+
+ˆ
+```{r}
 summary(lm(popgenstats_carinu_exp$Private ~ popgenstats_carinu_exp$Latitude))
 summary(lm(popgenstats_carinu_exp$Pi~ popgenstats_carinu_exp$Latitude))
 summary(lm(popgenstats_carinu_exp$Exp_Het~ popgenstats_carinu_exp$Latitude))
