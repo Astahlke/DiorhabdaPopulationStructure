@@ -1,0 +1,13 @@
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf /mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/substructure/others/5populations/R50/populations.snps.vcf
+	--missing-indv
+	--out /mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/substructure/others/5populations/R50/populations.snps
+
+After filtering, kept 371 out of 371 Individuals
+Outputting Individual Missingness
+After filtering, kept 1415 out of a possible 1415 Sites
+Run Time = 0.00 seconds

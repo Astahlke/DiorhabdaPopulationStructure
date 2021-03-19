@@ -1,0 +1,3351 @@
+# Note: Individual distributions can be extracted using the `stacks-dist-extract` utility.
+#       e.g. `stacks-dist-extract populations.log.distribs dist_name`
+
+BEGIN batch_progress
+1: analyzed 3 loci; filtered 304 loci; 307 loci seen.
+    2627 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2: analyzed 3 loci; filtered 244 loci; 247 loci seen.
+    2745 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+3: analyzed 2 loci; filtered 584 loci; 586 loci seen.
+    1757 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7: analyzed 5 loci; filtered 675 loci; 680 loci seen.
+    3761 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+9: analyzed 3 loci; filtered 381 loci; 384 loci seen.
+    2715 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+13: analyzed 3 loci; filtered 448 loci; 451 loci seen.
+    2845 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+14: analyzed 2 loci; filtered 292 loci; 294 loci seen.
+    1863 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+16: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    1571 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+17: analyzed 2 loci; filtered 398 loci; 400 loci seen.
+    1838 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+20: analyzed 6 loci; filtered 261 loci; 267 loci seen.
+    5266 genomic sites, of which 12 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+21: analyzed 2 loci; filtered 38 loci; 40 loci seen.
+    1839 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+22: analyzed 2 loci; filtered 95 loci; 97 loci seen.
+    1843 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+23: analyzed 2 loci; filtered 173 loci; 175 loci seen.
+    1981 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+24: analyzed 4 loci; filtered 340 loci; 344 loci seen.
+    3652 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+26: analyzed 3 loci; filtered 182 loci; 185 loci seen.
+    2552 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+27: analyzed 2 loci; filtered 73 loci; 75 loci seen.
+    1860 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+28: analyzed 2 loci; filtered 263 loci; 265 loci seen.
+    1800 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+30: analyzed 2 loci; filtered 209 loci; 211 loci seen.
+    1881 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+32: analyzed 2 loci; filtered 247 loci; 249 loci seen.
+    1941 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+34: analyzed 2 loci; filtered 943 loci; 945 loci seen.
+    1801 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+42: analyzed 2 loci; filtered 224 loci; 226 loci seen.
+    1740 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+45: analyzed 4 loci; filtered 106 loci; 110 loci seen.
+    3424 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+46: analyzed 4 loci; filtered 70 loci; 74 loci seen.
+    3513 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+47: analyzed 2 loci; filtered 339 loci; 341 loci seen.
+    1797 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+52: analyzed 4 loci; filtered 292 loci; 296 loci seen.
+    3580 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+53: analyzed 2 loci; filtered 283 loci; 285 loci seen.
+    1980 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+56: analyzed 2 loci; filtered 117 loci; 119 loci seen.
+    1927 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+58: analyzed 3 loci; filtered 279 loci; 282 loci seen.
+    2669 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+61: analyzed 2 loci; filtered 143 loci; 145 loci seen.
+    1680 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+62: analyzed 2 loci; filtered 30 loci; 32 loci seen.
+    1654 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+63: analyzed 5 loci; filtered 683 loci; 688 loci seen.
+    4824 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+71: analyzed 3 loci; filtered 331 loci; 334 loci seen.
+    2591 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+77: analyzed 2 loci; filtered 432 loci; 434 loci seen.
+    1386 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+79: analyzed 4 loci; filtered 41 loci; 45 loci seen.
+    3722 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+80: analyzed 2 loci; filtered 190 loci; 192 loci seen.
+    1679 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+82: analyzed 2 loci; filtered 241 loci; 243 loci seen.
+    1862 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+84: analyzed 2 loci; filtered 242 loci; 244 loci seen.
+    1893 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+86: analyzed 2 loci; filtered 175 loci; 177 loci seen.
+    1764 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+88: analyzed 3 loci; filtered 53 loci; 56 loci seen.
+    2630 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+93: analyzed 3 loci; filtered 361 loci; 364 loci seen.
+    2729 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+94: analyzed 2 loci; filtered 287 loci; 289 loci seen.
+    1798 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+97: analyzed 2 loci; filtered 507 loci; 509 loci seen.
+    1550 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+103: analyzed 2 loci; filtered 383 loci; 385 loci seen.
+    1923 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+108: analyzed 4 loci; filtered 387 loci; 391 loci seen.
+    3203 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+112: analyzed 2 loci; filtered 33 loci; 35 loci seen.
+    1862 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+115: analyzed 2 loci; filtered 185 loci; 187 loci seen.
+    1633 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+116: analyzed 2 loci; filtered 255 loci; 257 loci seen.
+    1943 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+119: analyzed 2 loci; filtered 279 loci; 281 loci seen.
+    1769 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+122: analyzed 2 loci; filtered 67 loci; 69 loci seen.
+    1849 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+123: analyzed 2 loci; filtered 176 loci; 178 loci seen.
+    1904 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+126: analyzed 4 loci; filtered 113 loci; 117 loci seen.
+    2771 genomic sites, of which 796 were covered by multiple loci (28.7%).
+    Calculating F statistics...done.
+127: analyzed 2 loci; filtered 234 loci; 236 loci seen.
+    1909 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+131: analyzed 2 loci; filtered 88 loci; 90 loci seen.
+    1806 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+134: analyzed 3 loci; filtered 218 loci; 221 loci seen.
+    2755 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+135: analyzed 4 loci; filtered 132 loci; 136 loci seen.
+    3528 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+136: analyzed 3 loci; filtered 56 loci; 59 loci seen.
+    2454 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+138: analyzed 3 loci; filtered 408 loci; 411 loci seen.
+    1902 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+142: analyzed 2 loci; filtered 200 loci; 202 loci seen.
+    1936 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+144: analyzed 2 loci; filtered 111 loci; 113 loci seen.
+    1764 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+146: analyzed 2 loci; filtered 168 loci; 170 loci seen.
+    1854 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+148: analyzed 4 loci; filtered 122 loci; 126 loci seen.
+    3739 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+150: analyzed 2 loci; filtered 566 loci; 568 loci seen.
+    1668 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+156: analyzed 2 loci; filtered 400 loci; 402 loci seen.
+    1801 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+162: analyzed 2 loci; filtered 298 loci; 300 loci seen.
+    1772 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+167: analyzed 2 loci; filtered 315 loci; 317 loci seen.
+    1487 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+171: analyzed 3 loci; filtered 100 loci; 103 loci seen.
+    2656 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+172: analyzed 4 loci; filtered 882 loci; 886 loci seen.
+    3773 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+187: analyzed 3 loci; filtered 643 loci; 646 loci seen.
+    1948 genomic sites, of which 966 were covered by multiple loci (49.6%).
+    Calculating F statistics...done.
+193: analyzed 2 loci; filtered 20 loci; 22 loci seen.
+    1816 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+194: analyzed 4 loci; filtered 154 loci; 158 loci seen.
+    3464 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+196: analyzed 5 loci; filtered 96 loci; 101 loci seen.
+    4432 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+197: analyzed 2 loci; filtered 183 loci; 185 loci seen.
+    1846 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+200: analyzed 3 loci; filtered 153 loci; 156 loci seen.
+    2258 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+202: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1772 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+203: analyzed 4 loci; filtered 156 loci; 160 loci seen.
+    3940 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+204: analyzed 2 loci; filtered 664 loci; 666 loci seen.
+    1860 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+216: analyzed 2 loci; filtered 329 loci; 331 loci seen.
+    1620 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+219: analyzed 2 loci; filtered 15 loci; 17 loci seen.
+    1824 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+220: analyzed 2 loci; filtered 139 loci; 141 loci seen.
+    1650 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+222: analyzed 3 loci; filtered 357 loci; 360 loci seen.
+    2767 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+231: analyzed 3 loci; filtered 772 loci; 775 loci seen.
+    2106 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+240: analyzed 2 loci; filtered 180 loci; 182 loci seen.
+    1601 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+242: analyzed 6 loci; filtered 62 loci; 68 loci seen.
+    3777 genomic sites, of which 1576 were covered by multiple loci (41.7%).
+    Calculating F statistics...done.
+244: analyzed 4 loci; filtered 419 loci; 423 loci seen.
+    3362 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+251: analyzed 4 loci; filtered 152 loci; 156 loci seen.
+    3705 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+255: analyzed 7 loci; filtered 314 loci; 321 loci seen.
+    5637 genomic sites, of which 12 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+258: analyzed 2 loci; filtered 223 loci; 225 loci seen.
+    1790 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+261: analyzed 2 loci; filtered 214 loci; 216 loci seen.
+    1743 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+265: analyzed 2 loci; filtered 436 loci; 438 loci seen.
+    1532 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+273: analyzed 3 loci; filtered 148 loci; 151 loci seen.
+    2726 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+274: analyzed 2 loci; filtered 299 loci; 301 loci seen.
+    1614 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+281: analyzed 3 loci; filtered 458 loci; 461 loci seen.
+    2689 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+288: analyzed 2 loci; filtered 41 loci; 43 loci seen.
+    1969 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+290: analyzed 2 loci; filtered 394 loci; 396 loci seen.
+    1578 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+296: analyzed 3 loci; filtered 148 loci; 151 loci seen.
+    2621 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+297: analyzed 4 loci; filtered 193 loci; 197 loci seen.
+    3647 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+300: analyzed 2 loci; filtered 559 loci; 561 loci seen.
+    1751 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+319: analyzed 2 loci; filtered 677 loci; 679 loci seen.
+    1692 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+322: analyzed 2 loci; filtered 99 loci; 101 loci seen.
+    1945 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+324: analyzed 5 loci; filtered 232 loci; 237 loci seen.
+    4727 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+329: analyzed 3 loci; filtered 281 loci; 284 loci seen.
+    1915 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+330: analyzed 2 loci; filtered 54 loci; 56 loci seen.
+    1298 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+332: analyzed 2 loci; filtered 125 loci; 127 loci seen.
+    1072 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+345: analyzed 5 loci; filtered 845 loci; 850 loci seen.
+    4520 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+352: analyzed 3 loci; filtered 571 loci; 574 loci seen.
+    2833 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+358: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+    1034 genomic sites, of which 4 were covered by multiple loci (0.4%).
+    Calculating F statistics...done.
+359: analyzed 2 loci; filtered 264 loci; 266 loci seen.
+    1785 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+363: analyzed 2 loci; filtered 20 loci; 22 loci seen.
+    1908 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+364: analyzed 2 loci; filtered 89 loci; 91 loci seen.
+    1667 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+367: analyzed 4 loci; filtered 322 loci; 326 loci seen.
+    3537 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+374: analyzed 2 loci; filtered 378 loci; 380 loci seen.
+    1755 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+377: analyzed 2 loci; filtered 23 loci; 25 loci seen.
+    1825 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+378: analyzed 2 loci; filtered 93 loci; 95 loci seen.
+    1774 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+380: analyzed 3 loci; filtered 98 loci; 101 loci seen.
+    2744 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+383: analyzed 3 loci; filtered 170 loci; 173 loci seen.
+    2633 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+387: analyzed 3 loci; filtered 224 loci; 227 loci seen.
+    2113 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+389: analyzed 5 loci; filtered 374 loci; 379 loci seen.
+    4280 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+396: analyzed 5 loci; filtered 197 loci; 202 loci seen.
+    4569 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+400: analyzed 4 loci; filtered 125 loci; 129 loci seen.
+    2242 genomic sites, of which 947 were covered by multiple loci (42.2%).
+    Calculating F statistics...done.
+405: analyzed 4 loci; filtered 523 loci; 527 loci seen.
+    3699 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+410: analyzed 2 loci; filtered 196 loci; 198 loci seen.
+    1889 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+418: analyzed 3 loci; filtered 269 loci; 272 loci seen.
+    2651 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+419: analyzed 2 loci; filtered 366 loci; 368 loci seen.
+    1708 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+426: analyzed 2 loci; filtered 19 loci; 21 loci seen.
+    1603 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+428: analyzed 3 loci; filtered 286 loci; 289 loci seen.
+    2834 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+431: analyzed 3 loci; filtered 421 loci; 424 loci seen.
+    2576 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+448: analyzed 3 loci; filtered 518 loci; 521 loci seen.
+    2813 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+450: analyzed 3 loci; filtered 173 loci; 176 loci seen.
+    2830 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+452: analyzed 2 loci; filtered 129 loci; 131 loci seen.
+    1831 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+455: analyzed 3 loci; filtered 180 loci; 183 loci seen.
+    2734 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+462: analyzed 4 loci; filtered 269 loci; 273 loci seen.
+    3599 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+464: analyzed 6 loci; filtered 713 loci; 719 loci seen.
+    5612 genomic sites, of which 12 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+482: analyzed 3 loci; filtered 420 loci; 423 loci seen.
+    2725 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+488: analyzed 4 loci; filtered 119 loci; 123 loci seen.
+    3566 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+490: analyzed 3 loci; filtered 127 loci; 130 loci seen.
+    2665 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+492: analyzed 4 loci; filtered 211 loci; 215 loci seen.
+    3233 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+500: analyzed 3 loci; filtered 148 loci; 151 loci seen.
+    2408 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+501: analyzed 2 loci; filtered 376 loci; 378 loci seen.
+    1851 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+509: analyzed 2 loci; filtered 136 loci; 138 loci seen.
+    1930 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+513: analyzed 3 loci; filtered 227 loci; 230 loci seen.
+    2659 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+517: analyzed 2 loci; filtered 333 loci; 335 loci seen.
+    1843 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+525: analyzed 4 loci; filtered 539 loci; 543 loci seen.
+    3829 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+536: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    1887 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+538: analyzed 2 loci; filtered 449 loci; 451 loci seen.
+    1787 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+550: analyzed 2 loci; filtered 197 loci; 199 loci seen.
+    1918 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+551: analyzed 2 loci; filtered 119 loci; 121 loci seen.
+    1953 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+553: analyzed 2 loci; filtered 57 loci; 59 loci seen.
+    1824 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+554: analyzed 2 loci; filtered 48 loci; 50 loci seen.
+    1939 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+558: analyzed 3 loci; filtered 235 loci; 238 loci seen.
+    2635 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+559: analyzed 2 loci; filtered 33 loci; 35 loci seen.
+    1781 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+560: analyzed 2 loci; filtered 123 loci; 125 loci seen.
+    1476 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+562: analyzed 4 loci; filtered 144 loci; 148 loci seen.
+    2445 genomic sites, of which 8 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+581: analyzed 4 loci; filtered 825 loci; 829 loci seen.
+    3152 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+582: analyzed 2 loci; filtered 116 loci; 118 loci seen.
+    1788 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+585: analyzed 2 loci; filtered 229 loci; 231 loci seen.
+    917 genomic sites, of which 760 were covered by multiple loci (82.9%).
+    Calculating F statistics...done.
+590: analyzed 2 loci; filtered 11 loci; 13 loci seen.
+    1095 genomic sites, of which 4 were covered by multiple loci (0.4%).
+    Calculating F statistics...done.
+594: analyzed 2 loci; filtered 382 loci; 384 loci seen.
+    1722 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+599: analyzed 2 loci; filtered 129 loci; 131 loci seen.
+    1742 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+602: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    1643 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+604: analyzed 4 loci; filtered 321 loci; 325 loci seen.
+    1773 genomic sites, of which 876 were covered by multiple loci (49.4%).
+    Calculating F statistics...done.
+617: analyzed 2 loci; filtered 222 loci; 224 loci seen.
+    1867 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+619: analyzed 5 loci; filtered 338 loci; 343 loci seen.
+    4649 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+627: analyzed 4 loci; filtered 355 loci; 359 loci seen.
+    3005 genomic sites, of which 584 were covered by multiple loci (19.4%).
+    Calculating F statistics...done.
+635: analyzed 3 loci; filtered 122 loci; 125 loci seen.
+    2800 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+636: analyzed 2 loci; filtered 287 loci; 289 loci seen.
+    1706 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+642: analyzed 2 loci; filtered 99 loci; 101 loci seen.
+    1937 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+645: analyzed 2 loci; filtered 85 loci; 87 loci seen.
+    1803 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+646: analyzed 2 loci; filtered 124 loci; 126 loci seen.
+    1698 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+648: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    1952 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+649: analyzed 2 loci; filtered 53 loci; 55 loci seen.
+    1908 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+650: analyzed 2 loci; filtered 365 loci; 367 loci seen.
+    1741 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+661: analyzed 3 loci; filtered 128 loci; 131 loci seen.
+    2621 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+662: analyzed 2 loci; filtered 63 loci; 65 loci seen.
+    1965 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+667: analyzed 2 loci; filtered 371 loci; 373 loci seen.
+    1562 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+675: analyzed 3 loci; filtered 373 loci; 376 loci seen.
+    2237 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+680: analyzed 2 loci; filtered 263 loci; 265 loci seen.
+    1761 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+686: analyzed 2 loci; filtered 153 loci; 155 loci seen.
+    1918 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+688: analyzed 2 loci; filtered 102 loci; 104 loci seen.
+    1617 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+695: analyzed 3 loci; filtered 363 loci; 366 loci seen.
+    1834 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+700: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1664 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+706: analyzed 4 loci; filtered 243 loci; 247 loci seen.
+    3459 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+707: analyzed 2 loci; filtered 321 loci; 323 loci seen.
+    1660 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+714: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    1944 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+715: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    1737 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+718: analyzed 4 loci; filtered 89 loci; 93 loci seen.
+    3262 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+721: analyzed 3 loci; filtered 63 loci; 66 loci seen.
+    2885 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+727: analyzed 3 loci; filtered 797 loci; 800 loci seen.
+    2701 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+739: analyzed 2 loci; filtered 159 loci; 161 loci seen.
+    1759 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+745: analyzed 3 loci; filtered 76 loci; 79 loci seen.
+    2080 genomic sites, of which 202 were covered by multiple loci (9.7%).
+    Calculating F statistics...done.
+746: analyzed 2 loci; filtered 267 loci; 269 loci seen.
+    1783 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+759: analyzed 3 loci; filtered 483 loci; 486 loci seen.
+    2690 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+763: analyzed 2 loci; filtered 47 loci; 49 loci seen.
+    1873 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+766: analyzed 3 loci; filtered 261 loci; 264 loci seen.
+    2033 genomic sites, of which 868 were covered by multiple loci (42.7%).
+    Calculating F statistics...done.
+776: analyzed 3 loci; filtered 411 loci; 414 loci seen.
+    2367 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+779: analyzed 4 loci; filtered 41 loci; 45 loci seen.
+    3755 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+780: analyzed 2 loci; filtered 264 loci; 266 loci seen.
+    1857 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+786: analyzed 2 loci; filtered 86 loci; 88 loci seen.
+    1920 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+791: analyzed 3 loci; filtered 471 loci; 474 loci seen.
+    2681 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+800: analyzed 2 loci; filtered 7 loci; 9 loci seen.
+    1755 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+801: analyzed 3 loci; filtered 284 loci; 287 loci seen.
+    2371 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+809: analyzed 2 loci; filtered 75 loci; 77 loci seen.
+    1463 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+810: analyzed 2 loci; filtered 74 loci; 76 loci seen.
+    1798 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+812: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1908 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+815: analyzed 3 loci; filtered 70 loci; 73 loci seen.
+    2653 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+817: analyzed 2 loci; filtered 157 loci; 159 loci seen.
+    1791 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+819: analyzed 2 loci; filtered 163 loci; 165 loci seen.
+    1794 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+822: analyzed 2 loci; filtered 47 loci; 49 loci seen.
+    1967 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+823: analyzed 2 loci; filtered 410 loci; 412 loci seen.
+    1813 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+834: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1569 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+835: analyzed 2 loci; filtered 257 loci; 259 loci seen.
+    1631 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+844: analyzed 2 loci; filtered 409 loci; 411 loci seen.
+    1749 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+852: analyzed 2 loci; filtered 107 loci; 109 loci seen.
+    1808 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+855: analyzed 2 loci; filtered 297 loci; 299 loci seen.
+    1818 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+864: analyzed 2 loci; filtered 343 loci; 345 loci seen.
+    1803 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+871: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    1873 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+872: analyzed 2 loci; filtered 77 loci; 79 loci seen.
+    1578 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+875: analyzed 2 loci; filtered 621 loci; 623 loci seen.
+    1832 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+900: analyzed 2 loci; filtered 509 loci; 511 loci seen.
+    1837 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+906: analyzed 3 loci; filtered 161 loci; 164 loci seen.
+    2630 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+909: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1690 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+915: analyzed 4 loci; filtered 297 loci; 301 loci seen.
+    3037 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+919: analyzed 2 loci; filtered 121 loci; 123 loci seen.
+    1794 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+923: analyzed 2 loci; filtered 428 loci; 430 loci seen.
+    1657 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+938: analyzed 2 loci; filtered 153 loci; 155 loci seen.
+    1232 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+946: analyzed 3 loci; filtered 419 loci; 422 loci seen.
+    2658 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+952: analyzed 2 loci; filtered 5 loci; 7 loci seen.
+    1835 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+953: analyzed 4 loci; filtered 195 loci; 199 loci seen.
+    3769 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+958: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    1906 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+959: analyzed 4 loci; filtered 99 loci; 103 loci seen.
+    3724 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+965: analyzed 3 loci; filtered 387 loci; 390 loci seen.
+    2724 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+970: analyzed 2 loci; filtered 208 loci; 210 loci seen.
+    1753 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+978: analyzed 3 loci; filtered 129 loci; 132 loci seen.
+    2560 genomic sites, of which 126 were covered by multiple loci (4.9%).
+    Calculating F statistics...done.
+986: analyzed 3 loci; filtered 254 loci; 257 loci seen.
+    2597 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+987: analyzed 3 loci; filtered 311 loci; 314 loci seen.
+    2557 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1001: analyzed 2 loci; filtered 282 loci; 284 loci seen.
+    1883 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1005: analyzed 6 loci; filtered 423 loci; 429 loci seen.
+    5486 genomic sites, of which 12 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1024: analyzed 3 loci; filtered 398 loci; 401 loci seen.
+    2373 genomic sites, of which 199 were covered by multiple loci (8.4%).
+    Calculating F statistics...done.
+1028: analyzed 2 loci; filtered 98 loci; 100 loci seen.
+    1827 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1032: analyzed 3 loci; filtered 567 loci; 570 loci seen.
+    2853 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1052: analyzed 3 loci; filtered 390 loci; 393 loci seen.
+    2742 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1066: analyzed 2 loci; filtered 416 loci; 418 loci seen.
+    1509 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1074: analyzed 3 loci; filtered 452 loci; 455 loci seen.
+    2796 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1097: analyzed 2 loci; filtered 282 loci; 284 loci seen.
+    1828 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1098: analyzed 4 loci; filtered 154 loci; 158 loci seen.
+    3690 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1103: analyzed 3 loci; filtered 133 loci; 136 loci seen.
+    2865 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1113: analyzed 3 loci; filtered 280 loci; 283 loci seen.
+    2650 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1114: analyzed 2 loci; filtered 38 loci; 40 loci seen.
+    1789 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1115: analyzed 2 loci; filtered 138 loci; 140 loci seen.
+    1830 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1120: analyzed 2 loci; filtered 391 loci; 393 loci seen.
+    1729 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1134: analyzed 2 loci; filtered 385 loci; 387 loci seen.
+    1878 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1146: analyzed 2 loci; filtered 158 loci; 160 loci seen.
+    1625 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1149: analyzed 2 loci; filtered 243 loci; 245 loci seen.
+    1866 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1158: analyzed 2 loci; filtered 420 loci; 422 loci seen.
+    1766 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1174: analyzed 2 loci; filtered 135 loci; 137 loci seen.
+    1842 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1178: analyzed 2 loci; filtered 67 loci; 69 loci seen.
+    1851 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1180: analyzed 2 loci; filtered 557 loci; 559 loci seen.
+    1870 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1195: analyzed 2 loci; filtered 159 loci; 161 loci seen.
+    1675 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1200: analyzed 2 loci; filtered 232 loci; 234 loci seen.
+    1907 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1210: analyzed 3 loci; filtered 346 loci; 349 loci seen.
+    2480 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1220: analyzed 2 loci; filtered 21 loci; 23 loci seen.
+    1804 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1221: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    1916 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1225: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    1670 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1226: analyzed 2 loci; filtered 35 loci; 37 loci seen.
+    1798 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1227: analyzed 2 loci; filtered 168 loci; 170 loci seen.
+    1926 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1232: analyzed 2 loci; filtered 24 loci; 26 loci seen.
+    1905 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1233: analyzed 2 loci; filtered 424 loci; 426 loci seen.
+    1767 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1248: analyzed 2 loci; filtered 413 loci; 415 loci seen.
+    1655 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1261: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1861 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1265: analyzed 3 loci; filtered 548 loci; 551 loci seen.
+    2817 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1281: analyzed 5 loci; filtered 105 loci; 110 loci seen.
+    4367 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1282: analyzed 2 loci; filtered 204 loci; 206 loci seen.
+    1951 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1289: analyzed 2 loci; filtered 221 loci; 223 loci seen.
+    1773 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1297: analyzed 3 loci; filtered 369 loci; 372 loci seen.
+    2733 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1308: analyzed 2 loci; filtered 74 loci; 76 loci seen.
+    1863 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1316: analyzed 2 loci; filtered 192 loci; 194 loci seen.
+    1831 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1320: analyzed 3 loci; filtered 127 loci; 130 loci seen.
+    2547 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1323: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    1909 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1325: analyzed 2 loci; filtered 73 loci; 75 loci seen.
+    1655 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1326: analyzed 2 loci; filtered 25 loci; 27 loci seen.
+    1834 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1328: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1727 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1331: analyzed 2 loci; filtered 64 loci; 66 loci seen.
+    1931 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1333: analyzed 2 loci; filtered 471 loci; 473 loci seen.
+    1951 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1353: analyzed 3 loci; filtered 130 loci; 133 loci seen.
+    2340 genomic sites, of which 350 were covered by multiple loci (15.0%).
+    Calculating F statistics...done.
+1354: analyzed 4 loci; filtered 57 loci; 61 loci seen.
+    2480 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1355: analyzed 2 loci; filtered 59 loci; 61 loci seen.
+    1794 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1370: analyzed 3 loci; filtered 764 loci; 767 loci seen.
+    2192 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1386: analyzed 2 loci; filtered 30 loci; 32 loci seen.
+    1740 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1387: analyzed 2 loci; filtered 360 loci; 362 loci seen.
+    1731 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1400: analyzed 2 loci; filtered 184 loci; 186 loci seen.
+    1940 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1412: analyzed 2 loci; filtered 211 loci; 213 loci seen.
+    1745 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1422: analyzed 4 loci; filtered 237 loci; 241 loci seen.
+    3402 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1423: analyzed 2 loci; filtered 63 loci; 65 loci seen.
+    1866 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1425: analyzed 2 loci; filtered 472 loci; 474 loci seen.
+    1555 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+1442: analyzed 2 loci; filtered 38 loci; 40 loci seen.
+    1927 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1443: analyzed 2 loci; filtered 74 loci; 76 loci seen.
+    1823 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1445: analyzed 3 loci; filtered 110 loci; 113 loci seen.
+    2769 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1452: analyzed 3 loci; filtered 433 loci; 436 loci seen.
+    2660 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1466: analyzed 2 loci; filtered 217 loci; 219 loci seen.
+    1819 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1471: analyzed 2 loci; filtered 201 loci; 203 loci seen.
+    1769 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1478: analyzed 2 loci; filtered 17 loci; 19 loci seen.
+    1897 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1479: analyzed 3 loci; filtered 92 loci; 95 loci seen.
+    2949 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1482: analyzed 2 loci; filtered 160 loci; 162 loci seen.
+    1893 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1490: analyzed 2 loci; filtered 233 loci; 235 loci seen.
+    1915 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1500: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    1790 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1504: analyzed 3 loci; filtered 189 loci; 192 loci seen.
+    2283 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1509: analyzed 2 loci; filtered 107 loci; 109 loci seen.
+    1761 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1513: analyzed 2 loci; filtered 49 loci; 51 loci seen.
+    1869 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1521: analyzed 3 loci; filtered 379 loci; 382 loci seen.
+    2577 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1534: analyzed 3 loci; filtered 228 loci; 231 loci seen.
+    2664 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1535: analyzed 2 loci; filtered 347 loci; 349 loci seen.
+    1790 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1547: analyzed 2 loci; filtered 121 loci; 123 loci seen.
+    1452 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1549: analyzed 2 loci; filtered 176 loci; 178 loci seen.
+    1981 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1555: analyzed 4 loci; filtered 31 loci; 35 loci seen.
+    3574 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1556: analyzed 2 loci; filtered 76 loci; 78 loci seen.
+    1890 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1558: analyzed 2 loci; filtered 135 loci; 137 loci seen.
+    648 genomic sites, of which 4 were covered by multiple loci (0.6%).
+    Calculating F statistics...done.
+1564: analyzed 2 loci; filtered 182 loci; 184 loci seen.
+    1938 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1571: analyzed 2 loci; filtered 34 loci; 36 loci seen.
+    1238 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+1577: analyzed 2 loci; filtered 136 loci; 138 loci seen.
+    1675 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1578: analyzed 2 loci; filtered 153 loci; 155 loci seen.
+    1906 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1583: analyzed 2 loci; filtered 28 loci; 30 loci seen.
+    1818 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1584: analyzed 2 loci; filtered 92 loci; 94 loci seen.
+    1782 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1590: analyzed 3 loci; filtered 75 loci; 78 loci seen.
+    1864 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1593: analyzed 2 loci; filtered 540 loci; 542 loci seen.
+    1672 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1613: analyzed 2 loci; filtered 61 loci; 63 loci seen.
+    1917 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1645: analyzed 3 loci; filtered 1034 loci; 1037 loci seen.
+    2583 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1656: analyzed 3 loci; filtered 176 loci; 179 loci seen.
+    2662 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1671: analyzed 2 loci; filtered 277 loci; 279 loci seen.
+    1385 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1677: analyzed 4 loci; filtered 147 loci; 151 loci seen.
+    3570 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1680: analyzed 2 loci; filtered 148 loci; 150 loci seen.
+    1693 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1687: analyzed 5 loci; filtered 234 loci; 239 loci seen.
+    4224 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1696: analyzed 2 loci; filtered 115 loci; 117 loci seen.
+    1742 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1697: analyzed 2 loci; filtered 190 loci; 192 loci seen.
+    1910 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1716: analyzed 3 loci; filtered 431 loci; 434 loci seen.
+    2741 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1722: analyzed 2 loci; filtered 206 loci; 208 loci seen.
+    1823 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1734: analyzed 3 loci; filtered 192 loci; 195 loci seen.
+    1542 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+1741: analyzed 2 loci; filtered 161 loci; 163 loci seen.
+    1944 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1746: analyzed 2 loci; filtered 11 loci; 13 loci seen.
+    1969 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1747: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    1787 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1751: analyzed 2 loci; filtered 14 loci; 16 loci seen.
+    1673 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1753: analyzed 3 loci; filtered 253 loci; 256 loci seen.
+    2741 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1762: analyzed 2 loci; filtered 119 loci; 121 loci seen.
+    1920 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1770: analyzed 3 loci; filtered 295 loci; 298 loci seen.
+    2636 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1782: analyzed 2 loci; filtered 24 loci; 26 loci seen.
+    1181 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+1800: analyzed 3 loci; filtered 393 loci; 396 loci seen.
+    2740 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+1804: analyzed 2 loci; filtered 445 loci; 447 loci seen.
+    1344 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1824: analyzed 2 loci; filtered 49 loci; 51 loci seen.
+    1891 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1838: analyzed 3 loci; filtered 336 loci; 339 loci seen.
+    2635 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1841: analyzed 2 loci; filtered 233 loci; 235 loci seen.
+    1472 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+1853: analyzed 3 loci; filtered 808 loci; 811 loci seen.
+    2654 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1886: analyzed 2 loci; filtered 149 loci; 151 loci seen.
+    1966 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1898: analyzed 3 loci; filtered 236 loci; 239 loci seen.
+    2579 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1905: analyzed 2 loci; filtered 150 loci; 152 loci seen.
+    1796 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1910: analyzed 2 loci; filtered 23 loci; 25 loci seen.
+    689 genomic sites, of which 653 were covered by multiple loci (94.8%).
+    Calculating F statistics...done.
+1912: analyzed 2 loci; filtered 165 loci; 167 loci seen.
+    1606 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1919: analyzed 2 loci; filtered 100 loci; 102 loci seen.
+    1873 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1928: analyzed 3 loci; filtered 450 loci; 453 loci seen.
+    2463 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1945: analyzed 2 loci; filtered 105 loci; 107 loci seen.
+    1855 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1950: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+    1730 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1952: analyzed 2 loci; filtered 10 loci; 12 loci seen.
+    1840 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1953: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    1843 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1955: analyzed 2 loci; filtered 308 loci; 310 loci seen.
+    1827 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1970: analyzed 2 loci; filtered 253 loci; 255 loci seen.
+    1848 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+1979: analyzed 2 loci; filtered 228 loci; 230 loci seen.
+    1311 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+2002: analyzed 2 loci; filtered 333 loci; 335 loci seen.
+    1337 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2006: analyzed 3 loci; filtered 245 loci; 248 loci seen.
+    2102 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2016: analyzed 3 loci; filtered 68 loci; 71 loci seen.
+    2690 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+2018: analyzed 2 loci; filtered 238 loci; 240 loci seen.
+    1748 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2028: analyzed 2 loci; filtered 223 loci; 225 loci seen.
+    1838 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2048: analyzed 3 loci; filtered 230 loci; 233 loci seen.
+    2654 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2053: analyzed 2 loci; filtered 47 loci; 49 loci seen.
+    1690 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2056: analyzed 2 loci; filtered 18 loci; 20 loci seen.
+    1754 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2057: analyzed 2 loci; filtered 222 loci; 224 loci seen.
+    1943 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2066: analyzed 2 loci; filtered 142 loci; 144 loci seen.
+    1816 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2073: analyzed 3 loci; filtered 74 loci; 77 loci seen.
+    2403 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2076: analyzed 2 loci; filtered 49 loci; 51 loci seen.
+    1912 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2084: analyzed 2 loci; filtered 122 loci; 124 loci seen.
+    1717 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2085: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1966 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2088: analyzed 2 loci; filtered 187 loci; 189 loci seen.
+    1801 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2114: analyzed 3 loci; filtered 486 loci; 489 loci seen.
+    2247 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2121: analyzed 4 loci; filtered 16 loci; 20 loci seen.
+    3314 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2122: analyzed 2 loci; filtered 170 loci; 172 loci seen.
+    1893 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2142: analyzed 3 loci; filtered 302 loci; 305 loci seen.
+    2430 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2144: analyzed 2 loci; filtered 17 loci; 19 loci seen.
+    1826 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2145: analyzed 2 loci; filtered 59 loci; 61 loci seen.
+    1862 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2146: analyzed 2 loci; filtered 31 loci; 33 loci seen.
+    1521 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+2148: analyzed 4 loci; filtered 168 loci; 172 loci seen.
+    2870 genomic sites, of which 8 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+2157: analyzed 2 loci; filtered 226 loci; 228 loci seen.
+    1443 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+2175: analyzed 3 loci; filtered 267 loci; 270 loci seen.
+    2373 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2185: analyzed 2 loci; filtered 32 loci; 34 loci seen.
+    1889 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2215: analyzed 3 loci; filtered 664 loci; 667 loci seen.
+    2841 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+2224: analyzed 3 loci; filtered 59 loci; 62 loci seen.
+    2696 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+2226: analyzed 3 loci; filtered 597 loci; 600 loci seen.
+    2433 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2258: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    1732 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2259: analyzed 4 loci; filtered 80 loci; 84 loci seen.
+    2177 genomic sites, of which 634 were covered by multiple loci (29.1%).
+    Calculating F statistics...done.
+2268: analyzed 3 loci; filtered 329 loci; 332 loci seen.
+    2282 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2285: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    1314 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2289: analyzed 2 loci; filtered 246 loci; 248 loci seen.
+    1841 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2302: analyzed 2 loci; filtered 14 loci; 16 loci seen.
+    1646 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2305: analyzed 2 loci; filtered 244 loci; 246 loci seen.
+    1601 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2328: analyzed 2 loci; filtered 382 loci; 384 loci seen.
+    1785 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2339: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1774 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2340: analyzed 2 loci; filtered 147 loci; 149 loci seen.
+    1831 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2346: analyzed 4 loci; filtered 411 loci; 415 loci seen.
+    2098 genomic sites, of which 200 were covered by multiple loci (9.5%).
+    Calculating F statistics...done.
+2370: analyzed 2 loci; filtered 372 loci; 374 loci seen.
+    997 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2386: analyzed 2 loci; filtered 105 loci; 107 loci seen.
+    1688 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2393: analyzed 2 loci; filtered 188 loci; 190 loci seen.
+    1943 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2403: analyzed 2 loci; filtered 69 loci; 71 loci seen.
+    1927 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2411: analyzed 3 loci; filtered 126 loci; 129 loci seen.
+    2504 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2415: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    1925 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2418: analyzed 2 loci; filtered 232 loci; 234 loci seen.
+    1961 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2430: analyzed 2 loci; filtered 149 loci; 151 loci seen.
+    1495 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+2438: analyzed 2 loci; filtered 187 loci; 189 loci seen.
+    1715 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2451: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    1842 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2456: analyzed 2 loci; filtered 65 loci; 67 loci seen.
+    1122 genomic sites, of which 4 were covered by multiple loci (0.4%).
+    Calculating F statistics...done.
+2466: analyzed 3 loci; filtered 105 loci; 108 loci seen.
+    2662 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2468: analyzed 2 loci; filtered 189 loci; 191 loci seen.
+    1933 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2479: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    1994 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2485: analyzed 3 loci; filtered 449 loci; 452 loci seen.
+    2522 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2508: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    1921 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2513: analyzed 2 loci; filtered 107 loci; 109 loci seen.
+    1718 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2519: analyzed 2 loci; filtered 218 loci; 220 loci seen.
+    1412 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+2530: analyzed 4 loci; filtered 55 loci; 59 loci seen.
+    3547 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+2532: analyzed 2 loci; filtered 265 loci; 267 loci seen.
+    1668 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2548: analyzed 2 loci; filtered 174 loci; 176 loci seen.
+    1777 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2564: analyzed 3 loci; filtered 392 loci; 395 loci seen.
+    2693 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+2579: analyzed 2 loci; filtered 221 loci; 223 loci seen.
+    1667 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2596: analyzed 2 loci; filtered 175 loci; 177 loci seen.
+    1770 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2601: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    1633 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2604: analyzed 3 loci; filtered 136 loci; 139 loci seen.
+    2609 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2610: analyzed 4 loci; filtered 95 loci; 99 loci seen.
+    3568 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2617: analyzed 3 loci; filtered 66 loci; 69 loci seen.
+    2541 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2621: analyzed 2 loci; filtered 322 loci; 324 loci seen.
+    1698 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2639: analyzed 2 loci; filtered 64 loci; 66 loci seen.
+    1769 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2642: analyzed 2 loci; filtered 9 loci; 11 loci seen.
+    1735 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2643: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    1729 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2648: analyzed 4 loci; filtered 243 loci; 247 loci seen.
+    3538 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2668: analyzed 2 loci; filtered 624 loci; 626 loci seen.
+    1932 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2699: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1826 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2703: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    1669 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2712: analyzed 3 loci; filtered 225 loci; 228 loci seen.
+    2774 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+2720: analyzed 3 loci; filtered 317 loci; 320 loci seen.
+    2858 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+2748: analyzed 3 loci; filtered 175 loci; 178 loci seen.
+    2678 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+2756: analyzed 3 loci; filtered 316 loci; 319 loci seen.
+    2590 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2775: analyzed 2 loci; filtered 285 loci; 287 loci seen.
+    1894 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2804: analyzed 2 loci; filtered 323 loci; 325 loci seen.
+    1635 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2841: analyzed 3 loci; filtered 490 loci; 493 loci seen.
+    2711 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+2848: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    1754 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2853: analyzed 2 loci; filtered 194 loci; 196 loci seen.
+    1703 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2884: analyzed 2 loci; filtered 388 loci; 390 loci seen.
+    1944 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+2892: analyzed 2 loci; filtered 304 loci; 306 loci seen.
+    1745 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2914: analyzed 3 loci; filtered 82 loci; 85 loci seen.
+    2361 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2918: analyzed 2 loci; filtered 20 loci; 22 loci seen.
+    1503 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+2920: analyzed 3 loci; filtered 359 loci; 362 loci seen.
+    2634 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2947: analyzed 2 loci; filtered 139 loci; 141 loci seen.
+    1284 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+2959: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    1934 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+2969: analyzed 5 loci; filtered 577 loci; 582 loci seen.
+    3773 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3013: analyzed 3 loci; filtered 212 loci; 215 loci seen.
+    2194 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3018: analyzed 2 loci; filtered 190 loci; 192 loci seen.
+    1947 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3030: analyzed 2 loci; filtered 145 loci; 147 loci seen.
+    1895 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3040: analyzed 2 loci; filtered 576 loci; 578 loci seen.
+    1830 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3102: analyzed 3 loci; filtered 203 loci; 206 loci seen.
+    2241 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+3105: analyzed 3 loci; filtered 175 loci; 178 loci seen.
+    2770 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+3112: analyzed 2 loci; filtered 98 loci; 100 loci seen.
+    1765 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3120: analyzed 2 loci; filtered 151 loci; 153 loci seen.
+    1652 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3128: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    1825 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3146: analyzed 2 loci; filtered 101 loci; 103 loci seen.
+    1577 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+3150: analyzed 2 loci; filtered 410 loci; 412 loci seen.
+    1847 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+3175: analyzed 2 loci; filtered 34 loci; 36 loci seen.
+    1858 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3177: analyzed 2 loci; filtered 32 loci; 34 loci seen.
+    1638 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3180: analyzed 2 loci; filtered 8 loci; 10 loci seen.
+    1106 genomic sites, of which 4 were covered by multiple loci (0.4%).
+    Calculating F statistics...done.
+3223: analyzed 5 loci; filtered 642 loci; 647 loci seen.
+    3860 genomic sites, of which 8 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3232: analyzed 3 loci; filtered 294 loci; 297 loci seen.
+    2666 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3256: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    1857 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3258: analyzed 2 loci; filtered 441 loci; 443 loci seen.
+    1868 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3295: analyzed 2 loci; filtered 16 loci; 18 loci seen.
+    1903 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3296: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    1887 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3307: analyzed 3 loci; filtered 166 loci; 169 loci seen.
+    1434 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+3325: analyzed 3 loci; filtered 131 loci; 134 loci seen.
+    2670 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+3326: analyzed 2 loci; filtered 62 loci; 64 loci seen.
+    1696 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3330: analyzed 2 loci; filtered 143 loci; 145 loci seen.
+    1918 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3341: analyzed 2 loci; filtered 80 loci; 82 loci seen.
+    1873 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3371: analyzed 3 loci; filtered 606 loci; 609 loci seen.
+    2140 genomic sites, of which 656 were covered by multiple loci (30.7%).
+    Calculating F statistics...done.
+3415: analyzed 3 loci; filtered 278 loci; 281 loci seen.
+    2757 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+3420: analyzed 2 loci; filtered 271 loci; 273 loci seen.
+    1589 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+3441: analyzed 2 loci; filtered 200 loci; 202 loci seen.
+    1847 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3470: analyzed 2 loci; filtered 538 loci; 540 loci seen.
+    1905 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+3505: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    1032 genomic sites, of which 4 were covered by multiple loci (0.4%).
+    Calculating F statistics...done.
+3506: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    1786 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3512: analyzed 2 loci; filtered 129 loci; 131 loci seen.
+    1871 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3527: analyzed 3 loci; filtered 107 loci; 110 loci seen.
+    2802 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+3528: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    1815 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3537: analyzed 2 loci; filtered 269 loci; 271 loci seen.
+    1359 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+3557: analyzed 2 loci; filtered 162 loci; 164 loci seen.
+    1815 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3581: analyzed 3 loci; filtered 439 loci; 442 loci seen.
+    2478 genomic sites, of which 313 were covered by multiple loci (12.6%).
+    Calculating F statistics...done.
+3605: analyzed 2 loci; filtered 40 loci; 42 loci seen.
+    1880 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3608: analyzed 2 loci; filtered 46 loci; 48 loci seen.
+    1752 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3639: analyzed 2 loci; filtered 372 loci; 374 loci seen.
+    1490 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+3649: analyzed 3 loci; filtered 619 loci; 622 loci seen.
+    2257 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3700: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    1883 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3705: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1735 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3706: analyzed 2 loci; filtered 300 loci; 302 loci seen.
+    1899 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3732: analyzed 2 loci; filtered 171 loci; 173 loci seen.
+    1806 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3771: analyzed 3 loci; filtered 356 loci; 359 loci seen.
+    2635 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3785: analyzed 2 loci; filtered 307 loci; 309 loci seen.
+    1676 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3813: analyzed 2 loci; filtered 580 loci; 582 loci seen.
+    1755 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3879: analyzed 3 loci; filtered 182 loci; 185 loci seen.
+    2382 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3880: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1726 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3959: analyzed 3 loci; filtered 1070 loci; 1073 loci seen.
+    2368 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3972: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    1938 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3977: analyzed 2 loci; filtered 6 loci; 8 loci seen.
+    1964 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+3978: analyzed 2 loci; filtered 6 loci; 8 loci seen.
+    1240 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+4007: analyzed 2 loci; filtered 507 loci; 509 loci seen.
+    1633 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+4029: analyzed 2 loci; filtered 16 loci; 18 loci seen.
+    734 genomic sites, of which 4 were covered by multiple loci (0.5%).
+    Calculating F statistics...done.
+4030: analyzed 2 loci; filtered 187 loci; 189 loci seen.
+    1914 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4047: analyzed 2 loci; filtered 326 loci; 328 loci seen.
+    1916 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4083: analyzed 2 loci; filtered 150 loci; 152 loci seen.
+    1829 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+4110: analyzed 2 loci; filtered 628 loci; 630 loci seen.
+    1108 genomic sites, of which 680 were covered by multiple loci (61.4%).
+    Calculating F statistics...done.
+4176: analyzed 2 loci; filtered 129 loci; 131 loci seen.
+    1873 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+4181: analyzed 2 loci; filtered 656 loci; 658 loci seen.
+    1979 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4249: analyzed 3 loci; filtered 176 loci; 179 loci seen.
+    2289 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4263: analyzed 2 loci; filtered 53 loci; 55 loci seen.
+    1667 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4267: analyzed 2 loci; filtered 125 loci; 127 loci seen.
+    1554 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+4323: analyzed 2 loci; filtered 631 loci; 633 loci seen.
+    1909 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+4340: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1759 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4341: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    1823 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4350: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    1502 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+4362: analyzed 2 loci; filtered 266 loci; 268 loci seen.
+    1711 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+4400: analyzed 2 loci; filtered 314 loci; 316 loci seen.
+    1608 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+4439: analyzed 3 loci; filtered 298 loci; 301 loci seen.
+    2755 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+4443: analyzed 2 loci; filtered 194 loci; 196 loci seen.
+    1696 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+4463: analyzed 3 loci; filtered 26 loci; 29 loci seen.
+    2755 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+4475: analyzed 3 loci; filtered 316 loci; 319 loci seen.
+    2734 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+4495: analyzed 2 loci; filtered 177 loci; 179 loci seen.
+    1879 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4513: analyzed 2 loci; filtered 81 loci; 83 loci seen.
+    1274 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+4521: analyzed 2 loci; filtered 495 loci; 497 loci seen.
+    1717 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4608: analyzed 3 loci; filtered 283 loci; 286 loci seen.
+    1900 genomic sites, of which 736 were covered by multiple loci (38.7%).
+    Calculating F statistics...done.
+4610: analyzed 3 loci; filtered 70 loci; 73 loci seen.
+    2916 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+4616: analyzed 2 loci; filtered 190 loci; 192 loci seen.
+    1387 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+4639: analyzed 2 loci; filtered 158 loci; 160 loci seen.
+    1643 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4653: analyzed 2 loci; filtered 48 loci; 50 loci seen.
+    1881 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4659: analyzed 2 loci; filtered 263 loci; 265 loci seen.
+    1800 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4694: analyzed 2 loci; filtered 296 loci; 298 loci seen.
+    1821 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+4730: analyzed 2 loci; filtered 171 loci; 173 loci seen.
+    1277 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+4747: analyzed 2 loci; filtered 144 loci; 146 loci seen.
+    1578 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+4765: analyzed 2 loci; filtered 85 loci; 87 loci seen.
+    1893 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4773: analyzed 2 loci; filtered 97 loci; 99 loci seen.
+    1820 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4786: analyzed 3 loci; filtered 62 loci; 65 loci seen.
+    2091 genomic sites, of which 439 were covered by multiple loci (21.0%).
+    Calculating F statistics...done.
+4788: analyzed 2 loci; filtered 98 loci; 100 loci seen.
+    1913 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4802: analyzed 2 loci; filtered 31 loci; 33 loci seen.
+    1799 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4805: analyzed 2 loci; filtered 65 loci; 67 loci seen.
+    1659 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4819: analyzed 2 loci; filtered 180 loci; 182 loci seen.
+    1726 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+4846: analyzed 3 loci; filtered 352 loci; 355 loci seen.
+    2689 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+4883: analyzed 3 loci; filtered 164 loci; 167 loci seen.
+    2558 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4901: analyzed 3 loci; filtered 16 loci; 19 loci seen.
+    2335 genomic sites, of which 473 were covered by multiple loci (20.3%).
+    Calculating F statistics...done.
+4932: analyzed 3 loci; filtered 281 loci; 284 loci seen.
+    2851 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+4936: analyzed 3 loci; filtered 48 loci; 51 loci seen.
+    2287 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4942: analyzed 2 loci; filtered 105 loci; 107 loci seen.
+    967 genomic sites, of which 4 were covered by multiple loci (0.4%).
+    Calculating F statistics...done.
+4957: analyzed 3 loci; filtered 36 loci; 39 loci seen.
+    2358 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4961: analyzed 2 loci; filtered 76 loci; 78 loci seen.
+    1755 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4969: analyzed 2 loci; filtered 36 loci; 38 loci seen.
+    1662 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4973: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1867 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+4978: analyzed 2 loci; filtered 60 loci; 62 loci seen.
+    1280 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+4984: analyzed 2 loci; filtered 125 loci; 127 loci seen.
+    1807 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5007: analyzed 3 loci; filtered 194 loci; 197 loci seen.
+    2818 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+5019: analyzed 2 loci; filtered 445 loci; 447 loci seen.
+    1912 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5080: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    1069 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+5097: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    1874 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5115: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    1817 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5140: analyzed 3 loci; filtered 105 loci; 108 loci seen.
+    1776 genomic sites, of which 991 were covered by multiple loci (55.8%).
+    Calculating F statistics...done.
+5144: analyzed 3 loci; filtered 226 loci; 229 loci seen.
+    2112 genomic sites, of which 462 were covered by multiple loci (21.9%).
+    Calculating F statistics...done.
+5183: analyzed 3 loci; filtered 84 loci; 87 loci seen.
+    2684 genomic sites, of which 7 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+5187: analyzed 2 loci; filtered 226 loci; 228 loci seen.
+    1837 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5220: analyzed 2 loci; filtered 20 loci; 22 loci seen.
+    1174 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+5222: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+    1911 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5230: analyzed 4 loci; filtered 236 loci; 240 loci seen.
+    1925 genomic sites, of which 727 were covered by multiple loci (37.8%).
+    Calculating F statistics...done.
+5267: analyzed 2 loci; filtered 103 loci; 105 loci seen.
+    1706 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+5274: analyzed 4 loci; filtered 55 loci; 59 loci seen.
+    2322 genomic sites, of which 630 were covered by multiple loci (27.1%).
+    Calculating F statistics...done.
+5282: analyzed 2 loci; filtered 380 loci; 382 loci seen.
+    1635 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5333: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    1928 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5339: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    1764 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5362: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+    1700 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+5373: analyzed 3 loci; filtered 147 loci; 150 loci seen.
+    1736 genomic sites, of which 819 were covered by multiple loci (47.2%).
+    Calculating F statistics...done.
+5391: analyzed 2 loci; filtered 152 loci; 154 loci seen.
+    1790 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5413: analyzed 2 loci; filtered 12 loci; 14 loci seen.
+    1756 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5415: analyzed 2 loci; filtered 19 loci; 21 loci seen.
+    1708 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5418: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1842 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5430: analyzed 2 loci; filtered 87 loci; 89 loci seen.
+    1876 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5444: analyzed 3 loci; filtered 364 loci; 367 loci seen.
+    2758 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+5514: analyzed 2 loci; filtered 569 loci; 571 loci seen.
+    1879 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+5639: analyzed 3 loci; filtered 553 loci; 556 loci seen.
+    2680 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+5724: analyzed 3 loci; filtered 384 loci; 387 loci seen.
+    2528 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5734: analyzed 2 loci; filtered 96 loci; 98 loci seen.
+    1556 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+5746: analyzed 3 loci; filtered 136 loci; 139 loci seen.
+    2186 genomic sites, of which 141 were covered by multiple loci (6.5%).
+    Calculating F statistics...done.
+5769: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    1756 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5785: analyzed 3 loci; filtered 108 loci; 111 loci seen.
+    2591 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5798: analyzed 2 loci; filtered 10 loci; 12 loci seen.
+    1616 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5799: analyzed 2 loci; filtered 968 loci; 970 loci seen.
+    1622 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+5960: analyzed 2 loci; filtered 52 loci; 54 loci seen.
+    839 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+5989: analyzed 3 loci; filtered 178 loci; 181 loci seen.
+    1644 genomic sites, of which 897 were covered by multiple loci (54.6%).
+    Calculating F statistics...done.
+5998: analyzed 2 loci; filtered 2 loci; 4 loci seen.
+    1645 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6009: analyzed 3 loci; filtered 119 loci; 122 loci seen.
+    2728 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+6015: analyzed 2 loci; filtered 203 loci; 205 loci seen.
+    1921 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6049: analyzed 2 loci; filtered 15 loci; 17 loci seen.
+    1783 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6050: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    1779 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6053: analyzed 2 loci; filtered 23 loci; 25 loci seen.
+    1691 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6061: analyzed 2 loci; filtered 195 loci; 197 loci seen.
+    1866 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6093: analyzed 2 loci; filtered 391 loci; 393 loci seen.
+    1797 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6160: analyzed 2 loci; filtered 217 loci; 219 loci seen.
+    1892 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6206: analyzed 3 loci; filtered 126 loci; 129 loci seen.
+    2195 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6222: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1587 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+6232: analyzed 2 loci; filtered 120 loci; 122 loci seen.
+    1880 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6250: analyzed 2 loci; filtered 253 loci; 255 loci seen.
+    1635 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6297: analyzed 2 loci; filtered 78 loci; 80 loci seen.
+    1801 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6362: analyzed 3 loci; filtered 369 loci; 372 loci seen.
+    2733 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+6385: analyzed 2 loci; filtered 94 loci; 96 loci seen.
+    1906 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6398: analyzed 2 loci; filtered 8 loci; 10 loci seen.
+    1840 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6470: analyzed 3 loci; filtered 818 loci; 821 loci seen.
+    2708 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+6577: analyzed 2 loci; filtered 319 loci; 321 loci seen.
+    1835 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+6612: analyzed 2 loci; filtered 138 loci; 140 loci seen.
+    1762 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6635: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    1738 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6639: analyzed 3 loci; filtered 96 loci; 99 loci seen.
+    2362 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6658: analyzed 2 loci; filtered 339 loci; 341 loci seen.
+    1533 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+6722: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    1917 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6744: analyzed 2 loci; filtered 58 loci; 60 loci seen.
+    1031 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+6756: analyzed 2 loci; filtered 23 loci; 25 loci seen.
+    1805 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6788: analyzed 3 loci; filtered 237 loci; 240 loci seen.
+    2113 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6817: analyzed 2 loci; filtered 139 loci; 141 loci seen.
+    1616 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+6842: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    1770 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6866: analyzed 2 loci; filtered 115 loci; 117 loci seen.
+    1888 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+6890: analyzed 2 loci; filtered 252 loci; 254 loci seen.
+    952 genomic sites, of which 4 were covered by multiple loci (0.4%).
+    Calculating F statistics...done.
+7030: analyzed 3 loci; filtered 446 loci; 449 loci seen.
+    2909 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+7038: analyzed 2 loci; filtered 107 loci; 109 loci seen.
+    1270 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+7144: analyzed 3 loci; filtered 464 loci; 467 loci seen.
+    2445 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7164: analyzed 2 loci; filtered 148 loci; 150 loci seen.
+    1868 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7198: analyzed 2 loci; filtered 20 loci; 22 loci seen.
+    1737 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7203: analyzed 2 loci; filtered 135 loci; 137 loci seen.
+    1969 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7241: analyzed 2 loci; filtered 58 loci; 60 loci seen.
+    1018 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+7247: analyzed 2 loci; filtered 176 loci; 178 loci seen.
+    1093 genomic sites, of which 4 were covered by multiple loci (0.4%).
+    Calculating F statistics...done.
+7286: analyzed 2 loci; filtered 125 loci; 127 loci seen.
+    1904 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7314: analyzed 2 loci; filtered 10 loci; 12 loci seen.
+    1627 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7316: analyzed 2 loci; filtered 33 loci; 35 loci seen.
+    1712 genomic sites, of which 12 were covered by multiple loci (0.7%).
+    Calculating F statistics...done.
+7320: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    1774 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7326: analyzed 2 loci; filtered 57 loci; 59 loci seen.
+    1451 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+7392: analyzed 2 loci; filtered 211 loci; 213 loci seen.
+    1755 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+7414: analyzed 3 loci; filtered 183 loci; 186 loci seen.
+    2609 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7515: analyzed 3 loci; filtered 284 loci; 287 loci seen.
+    2395 genomic sites, of which 42 were covered by multiple loci (1.8%).
+    Calculating F statistics...done.
+7521: analyzed 2 loci; filtered 150 loci; 152 loci seen.
+    1803 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7601: analyzed 3 loci; filtered 299 loci; 302 loci seen.
+    2469 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7636: analyzed 4 loci; filtered 171 loci; 175 loci seen.
+    2867 genomic sites, of which 394 were covered by multiple loci (13.7%).
+    Calculating F statistics...done.
+7689: analyzed 2 loci; filtered 197 loci; 199 loci seen.
+    1900 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7737: analyzed 2 loci; filtered 16 loci; 18 loci seen.
+    1929 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7745: analyzed 2 loci; filtered 398 loci; 400 loci seen.
+    1663 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+7843: analyzed 3 loci; filtered 65 loci; 68 loci seen.
+    1573 genomic sites, of which 700 were covered by multiple loci (44.5%).
+    Calculating F statistics...done.
+7857: analyzed 2 loci; filtered 128 loci; 130 loci seen.
+    1852 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+7931: analyzed 3 loci; filtered 164 loci; 167 loci seen.
+    1690 genomic sites, of which 705 were covered by multiple loci (41.7%).
+    Calculating F statistics...done.
+8047: analyzed 3 loci; filtered 365 loci; 368 loci seen.
+    2632 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+8055: analyzed 2 loci; filtered 14 loci; 16 loci seen.
+    1463 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+8141: analyzed 3 loci; filtered 435 loci; 438 loci seen.
+    1842 genomic sites, of which 749 were covered by multiple loci (40.7%).
+    Calculating F statistics...done.
+8197: analyzed 2 loci; filtered 309 loci; 311 loci seen.
+    1801 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+8278: analyzed 2 loci; filtered 180 loci; 182 loci seen.
+    1845 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+8347: analyzed 3 loci; filtered 134 loci; 137 loci seen.
+    1835 genomic sites, of which 997 were covered by multiple loci (54.3%).
+    Calculating F statistics...done.
+8406: analyzed 3 loci; filtered 164 loci; 167 loci seen.
+    1761 genomic sites, of which 997 were covered by multiple loci (56.6%).
+    Calculating F statistics...done.
+8447: analyzed 3 loci; filtered 255 loci; 258 loci seen.
+    2517 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+8499: analyzed 2 loci; filtered 7 loci; 9 loci seen.
+    1762 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+8501: analyzed 2 loci; filtered 111 loci; 113 loci seen.
+    1824 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+8558: analyzed 3 loci; filtered 198 loci; 201 loci seen.
+    2348 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+8631: analyzed 2 loci; filtered 326 loci; 328 loci seen.
+    1808 genomic sites, of which 80 were covered by multiple loci (4.4%).
+    Calculating F statistics...done.
+8709: analyzed 2 loci; filtered 70 loci; 72 loci seen.
+    1860 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+8753: analyzed 3 loci; filtered 80 loci; 83 loci seen.
+    2073 genomic sites, of which 775 were covered by multiple loci (37.4%).
+    Calculating F statistics...done.
+8767: analyzed 2 loci; filtered 57 loci; 59 loci seen.
+    1092 genomic sites, of which 4 were covered by multiple loci (0.4%).
+    Calculating F statistics...done.
+8785: analyzed 2 loci; filtered 75 loci; 77 loci seen.
+    1941 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+8830: analyzed 3 loci; filtered 190 loci; 193 loci seen.
+    2536 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+8953: analyzed 3 loci; filtered 209 loci; 212 loci seen.
+    1730 genomic sites, of which 324 were covered by multiple loci (18.7%).
+    Calculating F statistics...done.
+8963: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    1595 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+9006: analyzed 3 loci; filtered 82 loci; 85 loci seen.
+    2858 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+9040: analyzed 2 loci; filtered 32 loci; 34 loci seen.
+    1778 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+9110: analyzed 3 loci; filtered 345 loci; 348 loci seen.
+    2692 genomic sites, of which 4 were covered by multiple loci (0.1%).
+    Calculating F statistics...done.
+9176: analyzed 3 loci; filtered 210 loci; 213 loci seen.
+    2649 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+9243: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    1881 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+9272: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    1008 genomic sites, of which 4 were covered by multiple loci (0.4%).
+    Calculating F statistics...done.
+9325: analyzed 3 loci; filtered 212 loci; 215 loci seen.
+    1689 genomic sites, of which 910 were covered by multiple loci (53.9%).
+    Calculating F statistics...done.
+9494: analyzed 2 loci; filtered 598 loci; 600 loci seen.
+    1311 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+9635: analyzed 2 loci; filtered 10 loci; 12 loci seen.
+    1843 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+9670: analyzed 2 loci; filtered 180 loci; 182 loci seen.
+    1780 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+9719: analyzed 2 loci; filtered 19 loci; 21 loci seen.
+    610 genomic sites, of which 4 were covered by multiple loci (0.7%).
+    Calculating F statistics...done.
+9728: analyzed 2 loci; filtered 70 loci; 72 loci seen.
+    1635 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+10003: analyzed 3 loci; filtered 590 loci; 593 loci seen.
+    1932 genomic sites, of which 942 were covered by multiple loci (48.8%).
+    Calculating F statistics...done.
+10075: analyzed 2 loci; filtered 34 loci; 36 loci seen.
+    1771 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+10167: analyzed 2 loci; filtered 235 loci; 237 loci seen.
+    1683 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+10292: analyzed 2 loci; filtered 177 loci; 179 loci seen.
+    1115 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+10484: analyzed 2 loci; filtered 346 loci; 348 loci seen.
+    885 genomic sites, of which 609 were covered by multiple loci (68.8%).
+    Calculating F statistics...done.
+10550: analyzed 2 loci; filtered 101 loci; 103 loci seen.
+    1753 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+10659: analyzed 3 loci; filtered 137 loci; 140 loci seen.
+    2147 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+10688: analyzed 2 loci; filtered 220 loci; 222 loci seen.
+    1687 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+10819: analyzed 2 loci; filtered 13 loci; 15 loci seen.
+    1907 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+10875: analyzed 2 loci; filtered 577 loci; 579 loci seen.
+    1832 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+11227: analyzed 2 loci; filtered 378 loci; 380 loci seen.
+    1629 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+11533: analyzed 3 loci; filtered 112 loci; 115 loci seen.
+    1964 genomic sites, of which 4 were covered by multiple loci (0.2%).
+    Calculating F statistics...done.
+11617: analyzed 2 loci; filtered 177 loci; 179 loci seen.
+    1751 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+11841: analyzed 2 loci; filtered 390 loci; 392 loci seen.
+    1156 genomic sites, of which 661 were covered by multiple loci (57.2%).
+    Calculating F statistics...done.
+12221: analyzed 2 loci; filtered 381 loci; 383 loci seen.
+    954 genomic sites, of which 464 were covered by multiple loci (48.6%).
+    Calculating F statistics...done.
+12522: analyzed 2 loci; filtered 389 loci; 391 loci seen.
+    1375 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+13040: analyzed 2 loci; filtered 142 loci; 144 loci seen.
+    1786 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+13910: analyzed 3 loci; filtered 995 loci; 998 loci seen.
+    1322 genomic sites, of which 832 were covered by multiple loci (62.9%).
+    Calculating F statistics...done.
+14540: analyzed 2 loci; filtered 418 loci; 420 loci seen.
+    1343 genomic sites, of which 4 were covered by multiple loci (0.3%).
+    Calculating F statistics...done.
+15827: analyzed 2 loci; filtered 19 loci; 21 loci seen.
+    950 genomic sites, of which 484 were covered by multiple loci (50.9%).
+    Calculating F statistics...done.
+15993: analyzed 3 loci; filtered 926 loci; 929 loci seen.
+    921 genomic sites, of which 654 were covered by multiple loci (71.0%).
+    Calculating F statistics...done.
+29695: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    304 genomic sites, of which 281 were covered by multiple loci (92.4%).
+    Calculating F statistics...done.
+37065: analyzed 2 loci; filtered 130 loci; 132 loci seen.
+    256 genomic sites, of which 165 were covered by multiple loci (64.5%).
+    Calculating F statistics...done.
+: analyzed 1 loci; filtered 60 loci; 61 loci seen.
+    209 genomic sites, of which 0 were covered by multiple loci (0.0%).
+    Calculating F statistics...done.
+END batch_progress
+
+BEGIN samples_per_loc_prefilters
+# Distribution of valid samples matched to a catalog locus prior to filtering.
+n_samples	n_loci
+0	87774
+1	21999
+2	6483
+3	5799
+4	22816
+5	2194
+6	1998
+7	379
+8	309
+9	137
+10	91
+11	64
+12	47
+13	38
+14	36
+15	21
+16	24
+17	19
+18	12
+19	11
+20	14
+21	4
+22	7
+23	9
+24	12
+25	10
+26	8
+27	16
+28	10
+29	8
+30	4
+31	9
+32	6
+33	7
+34	5
+35	10
+36	5
+37	6
+38	5
+39	9
+40	6
+41	6
+42	2
+43	1
+44	3
+45	4
+46	4
+47	2
+48	3
+49	4
+50	2
+51	3
+52	5
+53	2
+54	8
+55	3
+56	5
+57	4
+58	5
+59	1
+60	7
+61	6
+62	8
+63	5
+64	3
+65	5
+66	5
+67	2
+68	1
+69	5
+70	4
+71	6
+72	3
+73	3
+74	3
+75	6
+76	1
+77	4
+78	3
+79	4
+80	2
+81	6
+82	7
+83	5
+84	3
+85	3
+86	2
+87	4
+88	1
+89	5
+90	2
+91	1
+92	2
+93	3
+94	4
+95	3
+96	2
+97	6
+98	3
+99	6
+100	5
+101	5
+102	1
+103	5
+104	3
+105	5
+106	1
+107	4
+108	7
+109	4
+110	7
+111	6
+112	12
+113	5
+114	6
+115	5
+116	5
+117	5
+118	2
+119	8
+120	4
+121	8
+122	5
+123	9
+124	13
+125	12
+126	16
+127	10
+128	17
+129	17
+130	15
+131	12
+132	15
+133	15
+134	25
+135	25
+136	22
+137	24
+138	50
+139	32
+140	39
+141	43
+142	46
+143	43
+144	49
+145	37
+146	46
+147	44
+148	39
+149	31
+150	29
+151	24
+152	17
+153	23
+154	19
+155	10
+156	9
+157	19
+158	5
+159	6
+160	4
+161	3
+162	4
+163	1
+164	2
+165	4
+166	4
+167	5
+168	3
+169	2
+170	2
+172	4
+173	2
+175	3
+176	3
+177	3
+178	2
+179	5
+180	7
+181	2
+182	2
+183	2
+184	2
+185	3
+186	4
+187	3
+188	2
+190	3
+191	3
+192	1
+193	3
+194	2
+195	4
+196	2
+197	7
+198	1
+199	1
+201	2
+202	5
+203	3
+204	4
+205	1
+206	4
+207	4
+208	4
+209	2
+210	3
+211	4
+212	6
+213	2
+214	1
+215	4
+216	4
+217	6
+218	8
+219	1
+220	3
+221	4
+222	2
+223	4
+224	5
+225	2
+226	3
+227	4
+228	3
+230	3
+231	3
+232	5
+233	4
+234	2
+235	1
+236	5
+237	2
+238	3
+239	3
+240	3
+241	2
+242	6
+243	5
+244	2
+245	6
+246	5
+247	4
+248	10
+249	8
+250	7
+251	5
+252	5
+253	3
+254	5
+255	3
+256	5
+257	3
+258	1
+259	2
+260	3
+261	3
+262	2
+263	1
+264	5
+265	1
+266	6
+267	3
+268	2
+269	3
+270	3
+271	2
+272	4
+273	2
+274	7
+275	2
+276	4
+277	5
+278	3
+279	3
+281	5
+282	1
+283	3
+284	5
+285	7
+286	7
+288	3
+289	1
+290	2
+291	4
+292	4
+293	3
+294	3
+295	6
+296	5
+297	4
+298	7
+299	4
+300	4
+301	3
+302	5
+303	6
+304	10
+305	6
+306	5
+307	3
+308	8
+309	3
+310	7
+311	3
+312	5
+313	6
+314	7
+315	8
+316	7
+317	2
+318	7
+319	4
+320	1
+321	5
+322	4
+323	10
+324	10
+325	4
+326	6
+327	5
+328	7
+329	8
+330	8
+331	5
+332	3
+333	7
+334	14
+335	7
+336	7
+337	8
+338	11
+339	14
+340	15
+341	12
+342	7
+343	10
+344	12
+345	11
+346	17
+347	16
+348	20
+349	16
+350	14
+351	17
+352	10
+353	12
+354	10
+355	11
+356	10
+357	11
+358	10
+359	14
+360	12
+361	15
+362	10
+363	15
+364	17
+365	24
+366	14
+367	21
+368	38
+369	51
+370	81
+371	549
+END samples_per_loc_prefilters
+
+BEGIN missing_samples_per_loc_prefilters
+# Distribution of missing samples for each catalog locus prior to filtering.
+# Absent samples at locus	Count
+0	549
+1	81
+2	51
+3	38
+4	21
+5	14
+6	24
+7	17
+8	15
+9	10
+10	15
+11	12
+12	14
+13	10
+14	11
+15	10
+16	11
+17	10
+18	12
+19	10
+20	17
+21	14
+22	16
+23	20
+24	16
+25	17
+26	11
+27	12
+28	10
+29	7
+30	12
+31	15
+32	14
+33	11
+34	8
+35	7
+36	7
+37	14
+38	7
+39	3
+40	5
+41	8
+42	8
+43	7
+44	5
+45	6
+46	4
+47	10
+48	10
+49	4
+50	5
+51	1
+52	4
+53	7
+54	2
+55	7
+56	8
+57	7
+58	6
+59	5
+60	3
+61	7
+62	3
+63	8
+64	3
+65	5
+66	6
+67	10
+68	6
+69	5
+70	3
+71	4
+72	4
+73	7
+74	4
+75	5
+76	6
+77	3
+78	3
+79	4
+80	4
+81	2
+82	1
+83	3
+85	7
+86	7
+87	5
+88	3
+89	1
+90	5
+92	3
+93	3
+94	5
+95	4
+96	2
+97	7
+98	2
+99	4
+100	2
+101	3
+102	3
+103	2
+104	3
+105	6
+106	1
+107	5
+108	1
+109	2
+110	3
+111	3
+112	2
+113	1
+114	3
+115	5
+116	3
+117	5
+118	3
+119	5
+120	5
+121	7
+122	8
+123	10
+124	4
+125	5
+126	6
+127	2
+128	5
+129	6
+130	2
+131	3
+132	3
+133	3
+134	2
+135	5
+136	1
+137	2
+138	4
+139	5
+140	3
+141	3
+143	3
+144	4
+145	3
+146	2
+147	5
+148	4
+149	2
+150	4
+151	3
+152	1
+153	8
+154	6
+155	4
+156	4
+157	1
+158	2
+159	6
+160	4
+161	3
+162	2
+163	4
+164	4
+165	4
+166	1
+167	4
+168	3
+169	5
+170	2
+172	1
+173	1
+174	7
+175	2
+176	4
+177	2
+178	3
+179	1
+180	3
+181	3
+183	2
+184	3
+185	4
+186	3
+187	2
+188	2
+189	2
+190	2
+191	7
+192	5
+193	2
+194	3
+195	3
+196	3
+198	2
+199	4
+201	2
+202	2
+203	3
+204	5
+205	4
+206	4
+207	2
+208	1
+209	4
+210	3
+211	4
+212	6
+213	5
+214	19
+215	9
+216	10
+217	19
+218	23
+219	17
+220	24
+221	29
+222	31
+223	39
+224	44
+225	46
+226	37
+227	49
+228	43
+229	46
+230	43
+231	39
+232	32
+233	50
+234	24
+235	22
+236	25
+237	25
+238	15
+239	15
+240	12
+241	15
+242	17
+243	17
+244	10
+245	16
+246	12
+247	13
+248	9
+249	5
+250	8
+251	4
+252	8
+253	2
+254	5
+255	5
+256	5
+257	6
+258	5
+259	12
+260	6
+261	7
+262	4
+263	7
+264	4
+265	1
+266	5
+267	3
+268	5
+269	1
+270	5
+271	5
+272	6
+273	3
+274	6
+275	2
+276	3
+277	4
+278	3
+279	2
+280	1
+281	2
+282	5
+283	1
+284	4
+285	2
+286	3
+287	3
+288	5
+289	7
+290	6
+291	2
+292	4
+293	3
+294	4
+295	1
+296	6
+297	3
+298	3
+299	3
+300	6
+301	4
+302	5
+303	1
+304	2
+305	5
+306	5
+307	3
+308	5
+309	8
+310	6
+311	7
+312	1
+313	5
+314	4
+315	5
+316	3
+317	8
+318	2
+319	5
+320	3
+321	2
+322	4
+323	3
+324	2
+325	4
+326	4
+327	3
+328	1
+329	2
+330	6
+331	6
+332	9
+333	5
+334	6
+335	5
+336	10
+337	5
+338	7
+339	6
+340	9
+341	4
+342	8
+343	10
+344	16
+345	8
+346	10
+347	12
+348	9
+349	7
+350	4
+351	14
+352	11
+353	12
+354	19
+355	24
+356	21
+357	36
+358	38
+359	47
+360	64
+361	91
+362	137
+363	309
+364	379
+365	1998
+366	2194
+367	22816
+368	5799
+369	6483
+370	21999
+371	87774
+END missing_samples_per_loc_prefilters
+
+BEGIN snps_per_loc_prefilters
+# Distribution of the number of SNPs per catalog locus prior to filtering.
+n_snps	n_loci
+0	110967
+1	6276
+2	5108
+3	4639
+4	3882
+5	3423
+6	3008
+7	2587
+8	2243
+9	1898
+10	1521
+11	1329
+12	1103
+13	889
+14	719
+15	547
+16	425
+17	343
+18	276
+19	192
+20	142
+21	111
+22	104
+23	71
+24	57
+25	59
+26	70
+27	45
+28	51
+29	65
+30	46
+31	65
+32	36
+33	48
+34	38
+35	52
+36	32
+37	30
+38	47
+39	44
+40	44
+41	36
+42	42
+43	30
+44	44
+45	38
+46	43
+47	39
+48	39
+49	38
+50	31
+51	32
+52	48
+53	40
+54	30
+55	25
+56	26
+57	16
+58	15
+59	19
+60	26
+61	20
+62	18
+63	14
+64	18
+65	13
+66	13
+67	11
+68	9
+69	7
+70	7
+71	5
+72	6
+73	5
+74	6
+75	6
+76	5
+77	6
+78	5
+79	5
+80	5
+81	1
+82	2
+83	1
+85	1
+86	1
+87	2
+89	2
+90	2
+91	2
+97	1
+102	1
+END snps_per_loc_prefilters
+
+BEGIN samples_per_loc_postfilters
+# Distribution of valid samples matched to a catalog locus after filtering.
+n_samples	n_loci
+186	4
+187	3
+188	2
+190	3
+191	3
+192	1
+193	3
+194	2
+195	4
+196	2
+197	7
+198	1
+199	1
+201	2
+202	5
+203	3
+204	4
+205	1
+206	4
+207	4
+208	4
+209	2
+210	3
+211	4
+212	6
+213	2
+214	1
+215	4
+216	4
+217	6
+218	8
+219	1
+220	3
+221	4
+222	2
+223	4
+224	5
+225	2
+226	3
+227	4
+228	3
+230	3
+231	3
+232	5
+233	4
+234	2
+235	1
+236	5
+237	2
+238	3
+239	3
+240	3
+241	2
+242	6
+243	5
+244	2
+245	6
+246	5
+247	4
+248	10
+249	8
+250	7
+251	5
+252	5
+253	3
+254	5
+255	3
+256	5
+257	3
+258	1
+259	2
+260	3
+261	3
+262	2
+263	1
+264	5
+265	1
+266	6
+267	3
+268	2
+269	3
+270	3
+271	2
+272	4
+273	2
+274	7
+275	2
+276	4
+277	5
+278	3
+279	3
+281	5
+282	1
+283	3
+284	5
+285	7
+286	7
+288	3
+289	1
+290	2
+291	4
+292	4
+293	3
+294	3
+295	6
+296	5
+297	4
+298	7
+299	4
+300	4
+301	3
+302	5
+303	6
+304	10
+305	6
+306	5
+307	3
+308	8
+309	3
+310	7
+311	3
+312	5
+313	6
+314	7
+315	8
+316	7
+317	2
+318	7
+319	4
+320	1
+321	5
+322	4
+323	10
+324	10
+325	4
+326	6
+327	5
+328	7
+329	8
+330	8
+331	5
+332	3
+333	7
+334	14
+335	7
+336	7
+337	8
+338	11
+339	14
+340	15
+341	12
+342	7
+343	10
+344	12
+345	11
+346	17
+347	16
+348	20
+349	16
+350	14
+351	17
+352	10
+353	12
+354	10
+355	11
+356	10
+357	11
+358	10
+359	14
+360	12
+361	15
+362	10
+363	15
+364	17
+365	24
+366	14
+367	21
+368	38
+369	51
+370	81
+371	549
+END samples_per_loc_postfilters
+
+BEGIN missing_samples_per_loc_postfilters
+# Distribution of missing samples for each catalog locus after filtering.
+# Absent samples at locus	Count
+0	549
+1	81
+2	51
+3	38
+4	21
+5	14
+6	24
+7	17
+8	15
+9	10
+10	15
+11	12
+12	14
+13	10
+14	11
+15	10
+16	11
+17	10
+18	12
+19	10
+20	17
+21	14
+22	16
+23	20
+24	16
+25	17
+26	11
+27	12
+28	10
+29	7
+30	12
+31	15
+32	14
+33	11
+34	8
+35	7
+36	7
+37	14
+38	7
+39	3
+40	5
+41	8
+42	8
+43	7
+44	5
+45	6
+46	4
+47	10
+48	10
+49	4
+50	5
+51	1
+52	4
+53	7
+54	2
+55	7
+56	8
+57	7
+58	6
+59	5
+60	3
+61	7
+62	3
+63	8
+64	3
+65	5
+66	6
+67	10
+68	6
+69	5
+70	3
+71	4
+72	4
+73	7
+74	4
+75	5
+76	6
+77	3
+78	3
+79	4
+80	4
+81	2
+82	1
+83	3
+85	7
+86	7
+87	5
+88	3
+89	1
+90	5
+92	3
+93	3
+94	5
+95	4
+96	2
+97	7
+98	2
+99	4
+100	2
+101	3
+102	3
+103	2
+104	3
+105	6
+106	1
+107	5
+108	1
+109	2
+110	3
+111	3
+112	2
+113	1
+114	3
+115	5
+116	3
+117	5
+118	3
+119	5
+120	5
+121	7
+122	8
+123	10
+124	4
+125	5
+126	6
+127	2
+128	5
+129	6
+130	2
+131	3
+132	3
+133	3
+134	2
+135	5
+136	1
+137	2
+138	4
+139	5
+140	3
+141	3
+143	3
+144	4
+145	3
+146	2
+147	5
+148	4
+149	2
+150	4
+151	3
+152	1
+153	8
+154	6
+155	4
+156	4
+157	1
+158	2
+159	6
+160	4
+161	3
+162	2
+163	4
+164	4
+165	4
+166	1
+167	4
+168	3
+169	5
+170	2
+172	1
+173	1
+174	7
+175	2
+176	4
+177	2
+178	3
+179	1
+180	3
+181	3
+183	2
+184	3
+185	4
+END missing_samples_per_loc_postfilters
+
+BEGIN snps_per_loc_postfilters
+# Distribution of the number of SNPs per catalog locus (after filtering).
+n_snps	n_loci
+0	332
+1	1416
+END snps_per_loc_postfilters

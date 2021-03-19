@@ -1,0 +1,1080 @@
+populations v2.5, executed 2020-04-03 10:45:27 (zlib-1.2.7)
+populations -P /mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/4gstacks -O /mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/substructure/others/5populations/R50 -M /mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/substructure/info/others_popmap.tsv --threads 30 -e SbfI --merge-sites --write-random-snp --ordered-export --vcf -R 0.50 --fstats
+Locus/sample distributions will be written to '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/substructure/others/5populations/R50/populations.log.distribs'.
+populations parameters selected:
+  Percent samples limit per population: 0
+  Locus Population limit: 1
+  Percent samples overall: 0.5
+  Minor allele frequency cutoff: 0
+  Maximum observed heterozygosity cutoff: 1
+  Applying Fst correction: none.
+  Pi/Fis kernel smoothing: off
+  Fstats kernel smoothing: off
+  Bootstrap resampling: off
+
+Parsing population map...
+The population map contained 371 samples, 24 population(s), 1 group(s).
+Working on 371 samples.
+Working on 24 population(s):
+    15TX: E29, E30, F85, F86, F87, F88, G01_rep, G2, G43, G44, G45, G46, G85, G86, G87, G88
+    16TX: F54, F65, F66, G13, G14, G15, G16, G3, G4, G57, G58, G59, G60, G73, G74, G76, G77, G78
+    18TX: G53, G54, G55, G56, G65, G66, G67, G68, G71, G72, G94, H41, H42, H63, H64
+    19TX: H1, H2, H3, H33, H34, H35, H36, H47, H48, H49, H50, H55, H56, H57, H58
+    20NM: G23, G24, G25, G26, G35, G36, G37, G38, G49, G50, G52, G61, G62, G63, G64, G69, G70
+    21NM: G31, G32, G33, G34, G39, G40, G41_rep, G42, G83, G84, H25, H26, H27, H28
+    26NM: F83, F84, F93, F94, F95, F96, G10, G11, G12, G9, H12, H21, H22, H23, H24, H70, H71, H72
+    27NM: F75, F76, F77, F78, G19, G20, G21, G22, G27, G28, G29, G30, G79, G80, G81, G82, H17, H18, H19, H20
+    28NM: F89, F90, F92, G6, H10, H67, H68, H9
+    37CR: D46, D47, D48, D71_rep, D72
+    38CR: D1, D2, D3, D4, D49, D50, D51, D52, D73, D75, D76
+    39CR: D5, D53, D54, D55, D56, D6, D7, D77, D78, D79, D8, D80
+    41CR: D12, D13, D15_rep, D16, D41, D42, D43, D44, D57, D58, D59, D60, D81, D82, D83, D84
+    43GR: D17, D18, D19, D20, D33, D34, D35, D61, D62, D63, D64, D85, D86, D87, D88
+    44GR: D21, D22, D23, D24_rep, D27, D37, D38, D39, D40, D65_rep, D89, D90, D91, D92, D93, D94
+    47TX: N1, N10, N11, N12, N13, N14, N15, N16, N17, N18, N19, N20, N21, N24, N25, N26, N27, N28, N3, N4, N5, N6, N7, N8, N9
+    49TX: L1, L10, L11, L12, L13, L14, L15, L16, L17, L18_rep, L19, L2, L20, L21, L22, L23, L24, L26, L27, L28, L3, L4, L5, L6, L7, 
+          L8, L9_rep
+    50TX: K1, K2, K3, K32, K33, K34, K4, K5
+    51TX: J14, J15, J16, J17, J18, J19, J20, J21, J22, J23, J24, J25, J26, J27
+    52TX: S1, S11_rep, S12, S13, S15, S16, S17, S18, S19, S2, S20, S21, S22, S23, S24, S3, S4, S6, S7, S8, S9
+    6KS: F29, F30, F41, F42, F43, F44, F63, F64, G48_rep
+    8OK: F33, F34, F35, F36, F45, F46, F47, F48, F55, F56, F57, F58, F67, F68, F69, F70, F79, F80, F81, F82
+    CARINA_LAB: Q1, Q11, Q12, Q13, Q14, Q15, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9
+    SUB_LAB: R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R2, R20, R3, R5, R6, R7, R9
+Working on 1 group(s) of populations:
+    defaultgrp: 15TX, 16TX, 18TX, 19TX, 20NM, 21NM, 26NM, 27NM, 28NM, 37CR, 38CR, 39CR, 41CR, 43GR, 44GR, 47TX, 49TX, 50TX, 51TX, 52TX, 6KS, 8OK, CARINA_LAB, SUB_LAB
+
+SNPs and calls will be written in VCF format to '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/substructure/others/5populations/R50/populations.snps.vcf'
+Raw haplotypes will be written to '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/substructure/others/5populations/R50/populations.haplotypes.tsv'
+Population-level summary statistics will be written to '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/substructure/others/5populations/R50/populations.sumstats.tsv'
+Population-level haplotype summary statistics will be written to '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/substructure/others/5populations/R50/populations.hapstats.tsv'
+
+Processing data in batches:
+  * load a batch of catalog loci and apply filters
+  * compute SNP- and haplotype-wise per-population statistics
+  * compute F-statistics
+  * write the above statistics in the output files
+  * export the genotypes/haplotypes in specified format(s)
+More details in '/mnt/ceph/stah3621/diorhabda/active_stacks/StahlkeBitume_etal_2019/substructure/others/5populations/R50/populations.log.distribs'.
+Now processing...
+1 
+2 
+3 
+7 
+9 
+13 
+14 
+16 
+17 
+20 
+21 
+22 
+23 
+24 
+26 
+27 
+28 
+30 
+32 
+34 
+42 
+45 
+46 
+47 
+52 
+53 
+56 
+58 
+61 
+62 
+63 
+71 
+77 
+79 
+80 
+82 
+84 
+86 
+88 
+93 
+94 
+97 
+103 
+108 
+112 
+115 
+116 
+119 
+122 
+123 
+126 
+127 
+131 
+134 
+135 
+136 
+138 
+142 
+144 
+146 
+148 
+150 
+156 
+162 
+167 
+171 
+172 
+187 
+193 
+194 
+196 
+197 
+200 
+202 
+203 
+204 
+216 
+219 
+220 
+222 
+231 
+240 
+242 
+244 
+251 
+255 
+258 
+261 
+265 
+273 
+274 
+281 
+288 
+290 
+296 
+297 
+300 
+319 
+322 
+324 
+329 
+330 
+332 
+345 
+352 
+358 
+359 
+363 
+364 
+367 
+374 
+377 
+378 
+380 
+383 
+387 
+389 
+396 
+400 
+405 
+410 
+418 
+419 
+426 
+428 
+431 
+448 
+450 
+452 
+455 
+462 
+464 
+482 
+488 
+490 
+492 
+500 
+501 
+509 
+513 
+517 
+525 
+536 
+538 
+550 
+551 
+553 
+554 
+558 
+559 
+560 
+562 
+581 
+582 
+585 
+590 
+594 
+599 
+602 
+604 
+617 
+619 
+627 
+635 
+636 
+642 
+645 
+646 
+648 
+649 
+650 
+661 
+662 
+667 
+675 
+680 
+686 
+688 
+695 
+700 
+706 
+707 
+714 
+715 
+718 
+721 
+727 
+739 
+745 
+746 
+759 
+763 
+766 
+776 
+779 
+780 
+786 
+791 
+800 
+801 
+809 
+810 
+812 
+815 
+817 
+819 
+822 
+823 
+834 
+835 
+844 
+852 
+855 
+864 
+871 
+872 
+875 
+900 
+906 
+909 
+915 
+919 
+923 
+938 
+946 
+952 
+953 
+958 
+959 
+965 
+970 
+978 
+986 
+987 
+1001 
+1005 
+1024 
+1028 
+1032 
+1052 
+1066 
+1074 
+1097 
+1098 
+1103 
+1113 
+1114 
+1115 
+1120 
+1134 
+1146 
+1149 
+1158 
+1174 
+1178 
+1180 
+1195 
+1200 
+1210 
+1220 
+1221 
+1225 
+1226 
+1227 
+1232 
+1233 
+1248 
+1261 
+1265 
+1281 
+1282 
+1289 
+1297 
+1308 
+1316 
+1320 
+1323 
+1325 
+1326 
+1328 
+1331 
+1333 
+1353 
+1354 
+1355 
+1370 
+1386 
+1387 
+1400 
+1412 
+1422 
+1423 
+1425 
+1442 
+1443 
+1445 
+1452 
+1466 
+1471 
+1478 
+1479 
+1482 
+1490 
+1500 
+1504 
+1509 
+1513 
+1521 
+1534 
+1535 
+1547 
+1549 
+1555 
+1556 
+1558 
+1564 
+1571 
+1577 
+1578 
+1583 
+1584 
+1590 
+1593 
+1613 
+1645 
+1656 
+1671 
+1677 
+1680 
+1687 
+1696 
+1697 
+1716 
+1722 
+1734 
+1741 
+1746 
+1747 
+1751 
+1753 
+1762 
+1770 
+1782 
+1800 
+1804 
+1824 
+1838 
+1841 
+1853 
+1886 
+1898 
+1905 
+1910 
+1912 
+1919 
+1928 
+1945 
+1950 
+1952 
+1953 
+1955 
+1970 
+1979 
+2002 
+2006 
+2016 
+2018 
+2028 
+2048 
+2053 
+2056 
+2057 
+2066 
+2073 
+2076 
+2084 
+2085 
+2088 
+2114 
+2121 
+2122 
+2142 
+2144 
+2145 
+2146 
+2148 
+2157 
+2175 
+2185 
+2215 
+2224 
+2226 
+2258 
+2259 
+2268 
+2285 
+2289 
+2302 
+2305 
+2328 
+2339 
+2340 
+2346 
+2370 
+2386 
+2393 
+2403 
+2411 
+2415 
+2418 
+2430 
+2438 
+2451 
+2456 
+2466 
+2468 
+2479 
+2485 
+2508 
+2513 
+2519 
+2530 
+2532 
+2548 
+2564 
+2579 
+2596 
+2601 
+2604 
+2610 
+2617 
+2621 
+2639 
+2642 
+2643 
+2648 
+2668 
+2699 
+2703 
+2712 
+2720 
+2748 
+2756 
+2775 
+2804 
+2841 
+2848 
+2853 
+2884 
+2892 
+2914 
+2918 
+2920 
+2947 
+2959 
+2969 
+3013 
+3018 
+3030 
+3040 
+3102 
+3105 
+3112 
+3120 
+3128 
+3146 
+3150 
+3175 
+3177 
+3180 
+3223 
+3232 
+3256 
+3258 
+3295 
+3296 
+3307 
+3325 
+3326 
+3330 
+3341 
+3371 
+3415 
+3420 
+3441 
+3470 
+3505 
+3506 
+3512 
+3527 
+3528 
+3537 
+3557 
+3581 
+3605 
+3608 
+3639 
+3649 
+3700 
+3705 
+3706 
+3732 
+3771 
+3785 
+3813 
+3879 
+3880 
+3959 
+3972 
+3977 
+3978 
+4007 
+4029 
+4030 
+4047 
+4083 
+4110 
+4176 
+4181 
+4249 
+4263 
+4267 
+4323 
+4340 
+4341 
+4350 
+4362 
+4400 
+4439 
+4443 
+4463 
+4475 
+4495 
+4513 
+4521 
+4608 
+4610 
+4616 
+4639 
+4653 
+4659 
+4694 
+4730 
+4747 
+4765 
+4773 
+4786 
+4788 
+4802 
+4805 
+4819 
+4846 
+4883 
+4901 
+4932 
+4936 
+4942 
+4957 
+4961 
+4969 
+4973 
+4978 
+4984 
+5007 
+5019 
+5080 
+5097 
+5115 
+5140 
+5144 
+5183 
+5187 
+5220 
+5222 
+5230 
+5267 
+5274 
+5282 
+5333 
+5339 
+5362 
+5373 
+5391 
+5413 
+5415 
+5418 
+5430 
+5444 
+5514 
+5639 
+5724 
+5734 
+5746 
+5769 
+5785 
+5798 
+5799 
+5960 
+5989 
+5998 
+6009 
+6015 
+6049 
+6050 
+6053 
+6061 
+6093 
+6160 
+6206 
+6222 
+6232 
+6250 
+6297 
+6362 
+6385 
+6398 
+6470 
+6577 
+6612 
+6635 
+6639 
+6658 
+6722 
+6744 
+6756 
+6788 
+6817 
+6842 
+6866 
+6890 
+7030 
+7038 
+7144 
+7164 
+7198 
+7203 
+7241 
+7247 
+7286 
+7314 
+7316 
+7320 
+7326 
+7392 
+7414 
+7515 
+7521 
+7601 
+7636 
+7689 
+7737 
+7745 
+7843 
+7857 
+7931 
+8047 
+8055 
+8141 
+8197 
+8278 
+8347 
+8406 
+8447 
+8499 
+8501 
+8558 
+8631 
+8709 
+8753 
+8767 
+8785 
+8830 
+8953 
+8963 
+9006 
+9040 
+9110 
+9176 
+9243 
+9272 
+9325 
+9494 
+9635 
+9670 
+9719 
+9728 
+10003 
+10075 
+10167 
+10292 
+10484 
+10550 
+10659 
+10688 
+10819 
+10875 
+11227 
+11533 
+11617 
+11841 
+12221 
+12522 
+13040 
+13910 
+14540 
+15827 
+15993 
+29695 
+37065 
+ 
+
+Removed 151741 loci that did not pass sample/population constraints from 153489 loci.
+Kept 1748 loci, composed of 1503011 sites; 26491 of those sites were filtered, 1416 variant sites remained.
+    1469039 genomic sites, of which 31893 were covered by multiple loci (2.2%).
+Mean genotyped sites per locus: 849.16bp (stderr 3.60).
+
+Population summary statistics (more detail in populations.sumstats_summary.tsv):
+  15TX: 12.228 samples per locus; pi: 0.095134; all/variant/polymorphic sites: 1475646/1412/528; private alleles: 15
+  16TX: 11.326 samples per locus; pi: 0.095529; all/variant/polymorphic sites: 1469839/1377/496; private alleles: 9
+  18TX: 11.056 samples per locus; pi: 0.045836; all/variant/polymorphic sites: 1478400/1416/320; private alleles: 14
+  19TX: 11.134 samples per locus; pi: 0.074953; all/variant/polymorphic sites: 1479633/1413/415; private alleles: 31
+  20NM: 14.351 samples per locus; pi: 0.052034; all/variant/polymorphic sites: 1482311/1416/400; private alleles: 6
+  21NM: 11.338 samples per locus; pi: 0.049862; all/variant/polymorphic sites: 1482612/1415/364; private alleles: 8
+  26NM: 14.653 samples per locus; pi: 0.069883; all/variant/polymorphic sites: 1482670/1416/488; private alleles: 13
+  27NM: 17.178 samples per locus; pi: 0.047582; all/variant/polymorphic sites: 1482666/1416/430; private alleles: 11
+  28NM: 6.7491 samples per locus; pi: 0.10142; all/variant/polymorphic sites: 1482292/1415/385; private alleles: 7
+  37CR: 3.7142 samples per locus; pi: 0.049559; all/variant/polymorphic sites: 1477967/1144/129; private alleles: 8
+  38CR: 7.5847 samples per locus; pi: 0.038997; all/variant/polymorphic sites: 1482217/1110/131; private alleles: 24
+  39CR: 9.1055 samples per locus; pi: 0.040251; all/variant/polymorphic sites: 1482241/1081/133; private alleles: 5
+  41CR: 10.108 samples per locus; pi: 0.055236; all/variant/polymorphic sites: 1478295/1195/215; private alleles: 21
+  43GR: 11.491 samples per locus; pi: 0.046698; all/variant/polymorphic sites: 1482432/1105/172; private alleles: 16
+  44GR: 10.043 samples per locus; pi: 0.068975; all/variant/polymorphic sites: 1483239/1283/297; private alleles: 52
+  47TX: 21.38 samples per locus; pi: 0.037873; all/variant/polymorphic sites: 1482272/1415/318; private alleles: 37
+  49TX: 23.728 samples per locus; pi: 0.031033; all/variant/polymorphic sites: 1482188/1414/248; private alleles: 19
+  50TX: 7.4043 samples per locus; pi: 0.029524; all/variant/polymorphic sites: 1366365/1405/147; private alleles: 6
+  51TX: 12.417 samples per locus; pi: 0.029072; all/variant/polymorphic sites: 1382694/1407/192; private alleles: 8
+  52TX: 16.702 samples per locus; pi: 0.025839; all/variant/polymorphic sites: 1404358/1408/168; private alleles: 13
+  6KS: 7.6135 samples per locus; pi: 0.080458; all/variant/polymorphic sites: 1464821/1410/395; private alleles: 8
+  8OK: 15.67 samples per locus; pi: 0.055806; all/variant/polymorphic sites: 1453301/1394/330; private alleles: 12
+  CARINA_LAB: 10.698 samples per locus; pi: 0.040753; all/variant/polymorphic sites: 1429042/1392/220; private alleles: 18
+  SUB_LAB: 13.897 samples per locus; pi: 0.021632; all/variant/polymorphic sites: 1386428/1404/153; private alleles: 16
+
+Population pair divergence statistics (more in populations.fst_summary.tsv and populations.phistats_summary.tsv):
+  15TX-16TX: mean Fst: 0.35944; mean Phi_st: 0.43568; mean Fst': 0.37846; mean Dxy: 0.00076663
+  15TX-18TX: mean Fst: 0.24219; mean Phi_st: 0.28658; mean Fst': 0.23518; mean Dxy: 0.00062576
+  15TX-19TX: mean Fst: 0.059528; mean Phi_st: 0.055326; mean Fst': 0.025963; mean Dxy: 0.00045934
+  15TX-20NM: mean Fst: 0.23702; mean Phi_st: 0.29001; mean Fst': 0.23371; mean Dxy: 0.00060937
+  15TX-21NM: mean Fst: 0.25196; mean Phi_st: 0.29109; mean Fst': 0.24499; mean Dxy: 0.00062817
+  15TX-26NM: mean Fst: 0.20269; mean Phi_st: 0.25237; mean Fst': 0.20716; mean Dxy: 0.00059952
+  15TX-27NM: mean Fst: 0.24469; mean Phi_st: 0.29305; mean Fst': 0.23843; mean Dxy: 0.00060788
+  15TX-28NM: mean Fst: 0.095543; mean Phi_st: 0.11035; mean Fst': 0.063838; mean Dxy: 0.00050101
+  15TX-37CR: mean Fst: 0.41265; mean Phi_st: 0.50305; mean Fst': 0.49135; mean Dxy: 0.00080915
+  15TX-38CR: mean Fst: 0.45109; mean Phi_st: 0.5212; mean Fst': 0.49606; mean Dxy: 0.00081957
+  15TX-39CR: mean Fst: 0.45498; mean Phi_st: 0.52105; mean Fst': 0.48475; mean Dxy: 0.0008056
+  15TX-41CR: mean Fst: 0.45578; mean Phi_st: 0.52208; mean Fst': 0.47852; mean Dxy: 0.00082155
+  15TX-43GR: mean Fst: 0.42053; mean Phi_st: 0.48395; mean Fst': 0.43844; mean Dxy: 0.00076527
+  15TX-44GR: mean Fst: 0.4379; mean Phi_st: 0.49861; mean Fst': 0.45007; mean Dxy: 0.00078791
+  15TX-47TX: mean Fst: 0.25668; mean Phi_st: 0.31096; mean Fst': 0.23473; mean Dxy: 0.00058969
+  15TX-49TX: mean Fst: 0.27852; mean Phi_st: 0.34107; mean Fst': 0.25595; mean Dxy: 0.00060815
+  15TX-50TX: mean Fst: 0.27134; mean Phi_st: 0.30945; mean Fst': 0.27049; mean Dxy: 0.00061902
+  15TX-51TX: mean Fst: 0.28035; mean Phi_st: 0.32422; mean Fst': 0.26645; mean Dxy: 0.00062091
+  15TX-52TX: mean Fst: 0.2894; mean Phi_st: 0.34085; mean Fst': 0.26608; mean Dxy: 0.0006444
+  15TX-6KS: mean Fst: 0.053612; mean Phi_st: 0.040402; mean Fst': 0.018238; mean Dxy: 0.00042541
+  15TX-8OK: mean Fst: 0.051635; mean Phi_st: 0.049955; mean Fst': 0.017858; mean Dxy: 0.00044816
+  15TX-CARINA_LAB: mean Fst: 0.088117; mean Phi_st: 0.099837; mean Fst': 0.058968; mean Dxy: 0.00046901
+  15TX-SUB_LAB: mean Fst: 0.29446; mean Phi_st: 0.33989; mean Fst': 0.27709; mean Dxy: 0.00062704
+  16TX-18TX: mean Fst: 0.45286; mean Phi_st: 0.52186; mean Fst': 0.47016; mean Dxy: 0.00082455
+  16TX-19TX: mean Fst: 0.39722; mean Phi_st: 0.45017; mean Fst': 0.40277; mean Dxy: 0.00078314
+  16TX-20NM: mean Fst: 0.44803; mean Phi_st: 0.52651; mean Fst': 0.47085; mean Dxy: 0.00081593
+  16TX-21NM: mean Fst: 0.46654; mean Phi_st: 0.53949; mean Fst': 0.48008; mean Dxy: 0.00082017
+  16TX-26NM: mean Fst: 0.41445; mean Phi_st: 0.49188; mean Fst': 0.44199; mean Dxy: 0.00080099
+  16TX-27NM: mean Fst: 0.45096; mean Phi_st: 0.53132; mean Fst': 0.46796; mean Dxy: 0.00080267
+  16TX-28NM: mean Fst: 0.38864; mean Phi_st: 0.45446; mean Fst': 0.39516; mean Dxy: 0.00080165
+  16TX-37CR: mean Fst: 0.085593; mean Phi_st: 0.039744; mean Fst': 0.050317; mean Dxy: 0.00041833
+  16TX-38CR: mean Fst: 0.09498; mean Phi_st: 0.072841; mean Fst': 0.067532; mean Dxy: 0.0004427
+  16TX-39CR: mean Fst: 0.059472; mean Phi_st: 0.043035; mean Fst': 0.032586; mean Dxy: 0.00040548
+  16TX-41CR: mean Fst: 0.11309; mean Phi_st: 0.091461; mean Fst': 0.07457; mean Dxy: 0.00046836
+  16TX-43GR: mean Fst: 0.14466; mean Phi_st: 0.15234; mean Fst': 0.12266; mean Dxy: 0.00047249
+  16TX-44GR: mean Fst: 0.18171; mean Phi_st: 0.18434; mean Fst': 0.15373; mean Dxy: 0.00050204
+  16TX-47TX: mean Fst: 0.45653; mean Phi_st: 0.5197; mean Fst': 0.45195; mean Dxy: 0.00079913
+  16TX-49TX: mean Fst: 0.49189; mean Phi_st: 0.56449; mean Fst': 0.48435; mean Dxy: 0.00082709
+  16TX-50TX: mean Fst: 0.50796; mean Phi_st: 0.57213; mean Fst': 0.52484; mean Dxy: 0.00085993
+  16TX-51TX: mean Fst: 0.50809; mean Phi_st: 0.56946; mean Fst': 0.50929; mean Dxy: 0.00084529
+  16TX-52TX: mean Fst: 0.52112; mean Phi_st: 0.59136; mean Fst': 0.51563; mean Dxy: 0.00084917
+  16TX-6KS: mean Fst: 0.39275; mean Phi_st: 0.44801; mean Fst': 0.40945; mean Dxy: 0.00078407
+  16TX-8OK: mean Fst: 0.44318; mean Phi_st: 0.50622; mean Fst': 0.44733; mean Dxy: 0.00081198
+  16TX-CARINA_LAB: mean Fst: 0.47071; mean Phi_st: 0.53558; mean Fst': 0.48321; mean Dxy: 0.00083422
+  16TX-SUB_LAB: mean Fst: 0.52266; mean Phi_st: 0.58877; mean Fst': 0.52291; mean Dxy: 0.00084106
+  18TX-19TX: mean Fst: 0.27876; mean Phi_st: 0.32527; mean Fst': 0.27751; mean Dxy: 0.00069196
+  18TX-20NM: mean Fst: 0.028411; mean Phi_st: 0.0076666; mean Fst': 0.0030878; mean Dxy: 0.00041795
+  18TX-21NM: mean Fst: 0.034301; mean Phi_st: 0.01319; mean Fst': 0.0040164; mean Dxy: 0.00041438
+  18TX-26NM: mean Fst: 0.031852; mean Phi_st: 0.015721; mean Fst': 0.0053295; mean Dxy: 0.00043882
+  18TX-27NM: mean Fst: 0.02804; mean Phi_st: 0.014032; mean Fst': 0.0035499; mean Dxy: 0.00040264
+  18TX-28NM: mean Fst: 0.15885; mean Phi_st: 0.2032; mean Fst': 0.13643; mean Dxy: 0.00058882
+  18TX-37CR: mean Fst: 0.59353; mean Phi_st: 0.61932; mean Fst': 0.59115; mean Dxy: 0.00086751
+  18TX-38CR: mean Fst: 0.60102; mean Phi_st: 0.62691; mean Fst': 0.59812; mean Dxy: 0.00085965
+  18TX-39CR: mean Fst: 0.59401; mean Phi_st: 0.61882; mean Fst': 0.58456; mean Dxy: 0.00085904
+  18TX-41CR: mean Fst: 0.55199; mean Phi_st: 0.5794; mean Fst': 0.54466; mean Dxy: 0.0008579
+  18TX-43GR: mean Fst: 0.55364; mean Phi_st: 0.58748; mean Fst': 0.54658; mean Dxy: 0.00082747
+  18TX-44GR: mean Fst: 0.52736; mean Phi_st: 0.56321; mean Fst': 0.51696; mean Dxy: 0.00082779
+  18TX-47TX: mean Fst: 0.041332; mean Phi_st: 0.043747; mean Fst': 0.017006; mean Dxy: 0.00040998
+  18TX-49TX: mean Fst: 0.049759; mean Phi_st: 0.058295; mean Fst': 0.022669; mean Dxy: 0.00041772
+  18TX-50TX: mean Fst: 0.039297; mean Phi_st: 0.0096784; mean Fst': 0.0050917; mean Dxy: 0.00042574
+  18TX-51TX: mean Fst: 0.040959; mean Phi_st: 0.02714; mean Fst': 0.0091803; mean Dxy: 0.00043657
+  18TX-52TX: mean Fst: 0.040438; mean Phi_st: 0.035277; mean Fst': 0.0085226; mean Dxy: 0.00047518
+  18TX-6KS: mean Fst: 0.26264; mean Phi_st: 0.3117; mean Fst': 0.26732; mean Dxy: 0.00069308
+  18TX-8OK: mean Fst: 0.30953; mean Phi_st: 0.36033; mean Fst': 0.31565; mean Dxy: 0.00072711
+  18TX-CARINA_LAB: mean Fst: 0.37073; mean Phi_st: 0.41294; mean Fst': 0.37227; mean Dxy: 0.0007633
+  18TX-SUB_LAB: mean Fst: 0.060427; mean Phi_st: 0.062176; mean Fst': 0.028609; mean Dxy: 0.00043896
+  19TX-20NM: mean Fst: 0.25734; mean Phi_st: 0.31108; mean Fst': 0.25876; mean Dxy: 0.00065293
+  19TX-21NM: mean Fst: 0.26631; mean Phi_st: 0.30215; mean Fst': 0.25727; mean Dxy: 0.000642
+  19TX-26NM: mean Fst: 0.20834; mean Phi_st: 0.25656; mean Fst': 0.21284; mean Dxy: 0.00060875
+  19TX-27NM: mean Fst: 0.25337; mean Phi_st: 0.29879; mean Fst': 0.2468; mean Dxy: 0.00062515
+  19TX-28NM: mean Fst: 0.10499; mean Phi_st: 0.11776; mean Fst': 0.069206; mean Dxy: 0.00055194
+  19TX-37CR: mean Fst: 0.51085; mean Phi_st: 0.5424; mean Fst': 0.5234; mean Dxy: 0.00081647
+  19TX-38CR: mean Fst: 0.52626; mean Phi_st: 0.55785; mean Fst': 0.52912; mean Dxy: 0.00082676
+  19TX-39CR: mean Fst: 0.52742; mean Phi_st: 0.55973; mean Fst': 0.52173; mean Dxy: 0.00082007
+  19TX-41CR: mean Fst: 0.49587; mean Phi_st: 0.5396; mean Fst': 0.50168; mean Dxy: 0.00082542
+  19TX-43GR: mean Fst: 0.49552; mean Phi_st: 0.53373; mean Fst': 0.48628; mean Dxy: 0.0007889
+  19TX-44GR: mean Fst: 0.47148; mean Phi_st: 0.51885; mean Fst': 0.47253; mean Dxy: 0.00078123
+  19TX-47TX: mean Fst: 0.2849; mean Phi_st: 0.33417; mean Fst': 0.26982; mean Dxy: 0.0006541
+  19TX-49TX: mean Fst: 0.31091; mean Phi_st: 0.37323; mean Fst': 0.29444; mean Dxy: 0.00067534
+  19TX-50TX: mean Fst: 0.31982; mean Phi_st: 0.35919; mean Fst': 0.32014; mean Dxy: 0.00071084
+  19TX-51TX: mean Fst: 0.31769; mean Phi_st: 0.35927; mean Fst': 0.30546; mean Dxy: 0.00069025
+  19TX-52TX: mean Fst: 0.33091; mean Phi_st: 0.38251; mean Fst': 0.31326; mean Dxy: 0.00071625
+  19TX-6KS: mean Fst: 0.048859; mean Phi_st: 0.025688; mean Fst': 0.011312; mean Dxy: 0.00047455
+  19TX-8OK: mean Fst: 0.044992; mean Phi_st: 0.035943; mean Fst': 0.012712; mean Dxy: 0.00048187
+  19TX-CARINA_LAB: mean Fst: 0.096476; mean Phi_st: 0.099449; mean Fst': 0.064551; mean Dxy: 0.00052138
+  19TX-SUB_LAB: mean Fst: 0.33968; mean Phi_st: 0.38359; mean Fst': 0.32467; mean Dxy: 0.00070154
+  20NM-21NM: mean Fst: 0.029876; mean Phi_st: 0.010854; mean Fst': 0.0034037; mean Dxy: 0.00037558
+  20NM-26NM: mean Fst: 0.023819; mean Phi_st: 0.0070134; mean Fst': 0.00052898; mean Dxy: 0.0003918
+  20NM-27NM: mean Fst: 0.025134; mean Phi_st: 0.011897; mean Fst': 0.0039057; mean Dxy: 0.00034929
+  20NM-28NM: mean Fst: 0.13642; mean Phi_st: 0.18402; mean Fst': 0.12011; mean Dxy: 0.00053394
+  20NM-37CR: mean Fst: 0.56023; mean Phi_st: 0.60939; mean Fst': 0.58438; mean Dxy: 0.0008577
+  20NM-38CR: mean Fst: 0.57468; mean Phi_st: 0.61186; mean Fst': 0.58729; mean Dxy: 0.00086695
+  20NM-39CR: mean Fst: 0.57794; mean Phi_st: 0.61419; mean Fst': 0.58294; mean Dxy: 0.00085754
+  20NM-41CR: mean Fst: 0.5393; mean Phi_st: 0.57324; mean Fst': 0.53998; mean Dxy: 0.00086402
+  20NM-43GR: mean Fst: 0.53332; mean Phi_st: 0.5724; mean Fst': 0.53633; mean Dxy: 0.00082202
+  20NM-44GR: mean Fst: 0.5164; mean Phi_st: 0.55919; mean Fst': 0.51337; mean Dxy: 0.00082321
+  20NM-47TX: mean Fst: 0.038262; mean Phi_st: 0.039779; mean Fst': 0.013811; mean Dxy: 0.00035627
+  20NM-49TX: mean Fst: 0.042717; mean Phi_st: 0.049525; mean Fst': 0.018037; mean Dxy: 0.00035326
+  20NM-50TX: mean Fst: 0.032542; mean Phi_st: 0.0075798; mean Fst': 0.0045748; mean Dxy: 0.00035628
+  20NM-51TX: mean Fst: 0.036817; mean Phi_st: 0.025655; mean Fst': 0.0095641; mean Dxy: 0.0003726
+  20NM-52TX: mean Fst: 0.034358; mean Phi_st: 0.027683; mean Fst': 0.0054585; mean Dxy: 0.00043429
+  20NM-6KS: mean Fst: 0.23486; mean Phi_st: 0.29043; mean Fst': 0.2458; mean Dxy: 0.00063532
+  20NM-8OK: mean Fst: 0.28578; mean Phi_st: 0.33742; mean Fst': 0.29182; mean Dxy: 0.00067982
+  20NM-CARINA_LAB: mean Fst: 0.32848; mean Phi_st: 0.37261; mean Fst': 0.33914; mean Dxy: 0.00072275
+  20NM-SUB_LAB: mean Fst: 0.049899; mean Phi_st: 0.049372; mean Fst': 0.02249; mean Dxy: 0.00039265
+  21NM-26NM: mean Fst: 0.034185; mean Phi_st: 0.021086; mean Fst': 0.0077905; mean Dxy: 0.00040577
+  21NM-27NM: mean Fst: 0.02349; mean Phi_st: 0.0061927; mean Fst': 0.0012407; mean Dxy: 0.00037101
+  21NM-28NM: mean Fst: 0.15877; mean Phi_st: 0.19485; mean Fst': 0.1317; mean Dxy: 0.00054562
+  21NM-37CR: mean Fst: 0.58998; mean Phi_st: 0.64231; mean Fst': 0.615; mean Dxy: 0.00087286
+  21NM-38CR: mean Fst: 0.603; mean Phi_st: 0.63874; mean Fst': 0.61128; mean Dxy: 0.00088655
+  21NM-39CR: mean Fst: 0.59598; mean Phi_st: 0.63237; mean Fst': 0.59974; mean Dxy: 0.00087267
+  21NM-41CR: mean Fst: 0.56765; mean Phi_st: 0.60803; mean Fst': 0.56757; mean Dxy: 0.00086383
+  21NM-43GR: mean Fst: 0.55044; mean Phi_st: 0.58837; mean Fst': 0.55051; mean Dxy: 0.00083791
+  21NM-44GR: mean Fst: 0.5334; mean Phi_st: 0.57349; mean Fst': 0.52933; mean Dxy: 0.00082637
+  21NM-47TX: mean Fst: 0.034864; mean Phi_st: 0.035076; mean Fst': 0.0093627; mean Dxy: 0.00037976
+  21NM-49TX: mean Fst: 0.040463; mean Phi_st: 0.045624; mean Fst': 0.012699; mean Dxy: 0.0003828
+  21NM-50TX: mean Fst: 0.034186; mean Phi_st: 0.0022608; mean Fst': 0.001381; mean Dxy: 0.00038091
+  21NM-51TX: mean Fst: 0.034283; mean Phi_st: 0.018457; mean Fst': 0.0035975; mean Dxy: 0.00038775
+  21NM-52TX: mean Fst: 0.036199; mean Phi_st: 0.02821; mean Fst': 0.0043653; mean Dxy: 0.00043799
+  21NM-6KS: mean Fst: 0.25455; mean Phi_st: 0.29174; mean Fst': 0.25287; mean Dxy: 0.00064019
+  21NM-8OK: mean Fst: 0.29746; mean Phi_st: 0.33844; mean Fst': 0.29591; mean Dxy: 0.00068587
+  21NM-CARINA_LAB: mean Fst: 0.33626; mean Phi_st: 0.36653; mean Fst': 0.3277; mean Dxy: 0.00070414
+  21NM-SUB_LAB: mean Fst: 0.054519; mean Phi_st: 0.052282; mean Fst': 0.024061; mean Dxy: 0.00040999
+  26NM-27NM: mean Fst: 0.029727; mean Phi_st: 0.021919; mean Fst': 0.0067469; mean Dxy: 0.00038586
+  26NM-28NM: mean Fst: 0.09885; mean Phi_st: 0.12787; mean Fst': 0.091282; mean Dxy: 0.00052669
+  26NM-37CR: mean Fst: 0.50896; mean Phi_st: 0.57354; mean Fst': 0.55242; mean Dxy: 0.00083082
+  26NM-38CR: mean Fst: 0.53048; mean Phi_st: 0.57962; mean Fst': 0.55341; mean Dxy: 0.00084581
+  26NM-39CR: mean Fst: 0.53359; mean Phi_st: 0.57788; mean Fst': 0.54608; mean Dxy: 0.00083044
+  26NM-41CR: mean Fst: 0.49844; mean Phi_st: 0.5399; mean Fst': 0.50465; mean Dxy: 0.000845
+  26NM-43GR: mean Fst: 0.4953; mean Phi_st: 0.54386; mean Fst': 0.5037; mean Dxy: 0.00080147
+  26NM-44GR: mean Fst: 0.4835; mean Phi_st: 0.53228; mean Fst': 0.48833; mean Dxy: 0.00080866
+  26NM-47TX: mean Fst: 0.047409; mean Phi_st: 0.058662; mean Fst': 0.017056; mean Dxy: 0.00037959
+  26NM-49TX: mean Fst: 0.052565; mean Phi_st: 0.070537; mean Fst': 0.021057; mean Dxy: 0.00037527
+  26NM-50TX: mean Fst: 0.037508; mean Phi_st: 0.023092; mean Fst': 0.010199; mean Dxy: 0.00037237
+  26NM-51TX: mean Fst: 0.044027; mean Phi_st: 0.042749; mean Fst': 0.01474; mean Dxy: 0.00039758
+  26NM-52TX: mean Fst: 0.045098; mean Phi_st: 0.049722; mean Fst': 0.012204; mean Dxy: 0.00043945
+  26NM-6KS: mean Fst: 0.18436; mean Phi_st: 0.23158; mean Fst': 0.20312; mean Dxy: 0.00060292
+  26NM-8OK: mean Fst: 0.24143; mean Phi_st: 0.29305; mean Fst': 0.24991; mean Dxy: 0.00064712
+  26NM-CARINA_LAB: mean Fst: 0.26171; mean Phi_st: 0.30612; mean Fst': 0.27621; mean Dxy: 0.00066766
+  26NM-SUB_LAB: mean Fst: 0.05665; mean Phi_st: 0.064486; mean Fst': 0.024418; mean Dxy: 0.00041123
+  27NM-28NM: mean Fst: 0.14879; mean Phi_st: 0.20262; mean Fst': 0.12599; mean Dxy: 0.00051473
+  27NM-37CR: mean Fst: 0.54623; mean Phi_st: 0.61459; mean Fst': 0.59035; mean Dxy: 0.00085398
+  27NM-38CR: mean Fst: 0.56811; mean Phi_st: 0.61444; mean Fst': 0.58978; mean Dxy: 0.0008599
+  27NM-39CR: mean Fst: 0.5692; mean Phi_st: 0.61153; mean Fst': 0.58365; mean Dxy: 0.00085586
+  27NM-41CR: mean Fst: 0.53686; mean Phi_st: 0.57734; mean Fst': 0.54301; mean Dxy: 0.00085943
+  27NM-43GR: mean Fst: 0.52411; mean Phi_st: 0.5661; mean Fst': 0.53377; mean Dxy: 0.00081331
+  27NM-44GR: mean Fst: 0.51445; mean Phi_st: 0.56183; mean Fst': 0.51643; mean Dxy: 0.0008211
+  27NM-47TX: mean Fst: 0.028206; mean Phi_st: 0.025902; mean Fst': 0.008047; mean Dxy: 0.00035053
+  27NM-49TX: mean Fst: 0.032487; mean Phi_st: 0.032311; mean Fst': 0.011499; mean Dxy: 0.00034613
+  27NM-50TX: mean Fst: 0.02298; mean Phi_st: -0.0043432; mean Fst': 0.00048215; mean Dxy: 0.00033603
+  27NM-51TX: mean Fst: 0.023856; mean Phi_st: 0.0086583; mean Fst': 0.0020265; mean Dxy: 0.00036122
+  27NM-52TX: mean Fst: 0.025836; mean Phi_st: 0.014955; mean Fst': 0.002684; mean Dxy: 0.00041462
+  27NM-6KS: mean Fst: 0.23529; mean Phi_st: 0.28569; mean Fst': 0.23628; mean Dxy: 0.00060269
+  27NM-8OK: mean Fst: 0.28494; mean Phi_st: 0.32621; mean Fst': 0.28477; mean Dxy: 0.00065978
+  27NM-CARINA_LAB: mean Fst: 0.31049; mean Phi_st: 0.34543; mean Fst': 0.3111; mean Dxy: 0.00067872
+  27NM-SUB_LAB: mean Fst: 0.042629; mean Phi_st: 0.039682; mean Fst': 0.022257; mean Dxy: 0.00038565
+  28NM-37CR: mean Fst: 0.53441; mean Phi_st: 0.55909; mean Fst': 0.52652; mean Dxy: 0.00083666
+  28NM-38CR: mean Fst: 0.5452; mean Phi_st: 0.58258; mean Fst': 0.53254; mean Dxy: 0.00085625
+  28NM-39CR: mean Fst: 0.54537; mean Phi_st: 0.58744; mean Fst': 0.52687; mean Dxy: 0.0008368
+  28NM-41CR: mean Fst: 0.50711; mean Phi_st: 0.55382; mean Fst': 0.49312; mean Dxy: 0.0008515
+  28NM-43GR: mean Fst: 0.50243; mean Phi_st: 0.55434; mean Fst': 0.48194; mean Dxy: 0.0008002
+  28NM-44GR: mean Fst: 0.48054; mean Phi_st: 0.5277; mean Fst': 0.46618; mean Dxy: 0.00081341
+  28NM-47TX: mean Fst: 0.18396; mean Phi_st: 0.26289; mean Fst': 0.14598; mean Dxy: 0.00053001
+  28NM-49TX: mean Fst: 0.20969; mean Phi_st: 0.30995; mean Fst': 0.16782; mean Dxy: 0.00055086
+  28NM-50TX: mean Fst: 0.20227; mean Phi_st: 0.24271; mean Fst': 0.17486; mean Dxy: 0.00056617
+  28NM-51TX: mean Fst: 0.21061; mean Phi_st: 0.27336; mean Fst': 0.17248; mean Dxy: 0.0005684
+  28NM-52TX: mean Fst: 0.21936; mean Phi_st: 0.3052; mean Fst': 0.17303; mean Dxy: 0.00061489
+  28NM-6KS: mean Fst: 0.075718; mean Phi_st: 0.059298; mean Fst': 0.043561; mean Dxy: 0.00053832
+  28NM-8OK: mean Fst: 0.1219; mean Phi_st: 0.16505; mean Fst': 0.088557; mean Dxy: 0.00056274
+  28NM-CARINA_LAB: mean Fst: 0.16219; mean Phi_st: 0.20019; mean Fst': 0.12519; mean Dxy: 0.00059487
+  28NM-SUB_LAB: mean Fst: 0.23274; mean Phi_st: 0.31133; mean Fst': 0.18806; mean Dxy: 0.00058703
+  37CR-38CR: mean Fst: 0.12976; mean Phi_st: 0.091481; mean Fst': 0.066302; mean Dxy: 0.00054971
+  37CR-39CR: mean Fst: 0.10728; mean Phi_st: 0.064455; mean Fst': 0.043408; mean Dxy: 0.00053479
+  37CR-41CR: mean Fst: 0.11367; mean Phi_st: 0.066227; mean Fst': 0.042482; mean Dxy: 0.00052559
+  37CR-43GR: mean Fst: 0.26137; mean Phi_st: 0.29654; mean Fst': 0.24433; mean Dxy: 0.00061207
+  37CR-44GR: mean Fst: 0.19292; mean Phi_st: 0.19824; mean Fst': 0.18229; mean Dxy: 0.00058339
+  37CR-47TX: mean Fst: 0.58037; mean Phi_st: 0.62517; mean Fst': 0.58901; mean Dxy: 0.00086178
+  37CR-49TX: mean Fst: 0.6224; mean Phi_st: 0.66871; mean Fst': 0.62147; mean Dxy: 0.00088281
+  37CR-50TX: mean Fst: 0.69711; mean Phi_st: 0.71422; mean Fst': 0.6828; mean Dxy: 0.00093295
+  37CR-51TX: mean Fst: 0.6786; mean Phi_st: 0.71369; mean Fst': 0.67417; mean Dxy: 0.00092727
+  37CR-52TX: mean Fst: 0.68095; mean Phi_st: 0.71765; mean Fst': 0.6707; mean Dxy: 0.00091357
+  37CR-6KS: mean Fst: 0.52517; mean Phi_st: 0.54549; mean Fst': 0.5287; mean Dxy: 0.00081587
+  37CR-8OK: mean Fst: 0.55304; mean Phi_st: 0.60171; mean Fst': 0.57064; mean Dxy: 0.00085015
+  37CR-CARINA_LAB: mean Fst: 0.64525; mean Phi_st: 0.67816; mean Fst': 0.63998; mean Dxy: 0.00090365
+  37CR-SUB_LAB: mean Fst: 0.68844; mean Phi_st: 0.71787; mean Fst': 0.67496; mean Dxy: 0.00091271
+  38CR-39CR: mean Fst: 0.08566; mean Phi_st: 0.053833; mean Fst': 0.035091; mean Dxy: 0.00050568
+  38CR-41CR: mean Fst: 0.11747; mean Phi_st: 0.090918; mean Fst': 0.078699; mean Dxy: 0.00050438
+  38CR-43GR: mean Fst: 0.25076; mean Phi_st: 0.27118; mean Fst': 0.23338; mean Dxy: 0.00061055
+  38CR-44GR: mean Fst: 0.19333; mean Phi_st: 0.20568; mean Fst': 0.17407; mean Dxy: 0.00056616
+  38CR-47TX: mean Fst: 0.59455; mean Phi_st: 0.62728; mean Fst': 0.59433; mean Dxy: 0.00088104
+  38CR-49TX: mean Fst: 0.62347; mean Phi_st: 0.65768; mean Fst': 0.62286; mean Dxy: 0.00090134
+  38CR-50TX: mean Fst: 0.69144; mean Phi_st: 0.7095; mean Fst': 0.6833; mean Dxy: 0.00094921
+  38CR-51TX: mean Fst: 0.671; mean Phi_st: 0.69484; mean Fst': 0.66651; mean Dxy: 0.00093668
+  38CR-52TX: mean Fst: 0.6781; mean Phi_st: 0.70448; mean Fst': 0.67061; mean Dxy: 0.00091892
+  38CR-6KS: mean Fst: 0.54326; mean Phi_st: 0.56903; mean Fst': 0.53898; mean Dxy: 0.00083932
+  38CR-8OK: mean Fst: 0.57161; mean Phi_st: 0.61096; mean Fst': 0.58169; mean Dxy: 0.00086034
+  38CR-CARINA_LAB: mean Fst: 0.64533; mean Phi_st: 0.67002; mean Fst': 0.63927; mean Dxy: 0.00089973
+  38CR-SUB_LAB: mean Fst: 0.69043; mean Phi_st: 0.71175; mean Fst': 0.68281; mean Dxy: 0.00092832
+  39CR-41CR: mean Fst: 0.0842; mean Phi_st: 0.062397; mean Fst': 0.038013; mean Dxy: 0.00052268
+  39CR-43GR: mean Fst: 0.26243; mean Phi_st: 0.28875; mean Fst': 0.2426; mean Dxy: 0.00060172
+  39CR-44GR: mean Fst: 0.18979; mean Phi_st: 0.20885; mean Fst': 0.16971; mean Dxy: 0.00057961
+  39CR-47TX: mean Fst: 0.58368; mean Phi_st: 0.61585; mean Fst': 0.57806; mean Dxy: 0.00086283
+  39CR-49TX: mean Fst: 0.61135; mean Phi_st: 0.64552; mean Fst': 0.60652; mean Dxy: 0.00088656
+  39CR-50TX: mean Fst: 0.67884; mean Phi_st: 0.6983; mean Fst': 0.66863; mean Dxy: 0.00093501
+  39CR-51TX: mean Fst: 0.66253; mean Phi_st: 0.68686; mean Fst': 0.65394; mean Dxy: 0.00092803
+  39CR-52TX: mean Fst: 0.66671; mean Phi_st: 0.6929; mean Fst': 0.65541; mean Dxy: 0.00091416
+  39CR-6KS: mean Fst: 0.53298; mean Phi_st: 0.56276; mean Fst': 0.52329; mean Dxy: 0.00081653
+  39CR-8OK: mean Fst: 0.56436; mean Phi_st: 0.60284; mean Fst': 0.56837; mean Dxy: 0.0008601
+  39CR-CARINA_LAB: mean Fst: 0.63497; mean Phi_st: 0.6617; mean Fst': 0.62537; mean Dxy: 0.00089704
+  39CR-SUB_LAB: mean Fst: 0.67815; mean Phi_st: 0.70077; mean Fst': 0.66834; mean Dxy: 0.00091955
+  41CR-43GR: mean Fst: 0.21919; mean Phi_st: 0.242; mean Fst': 0.19742; mean Dxy: 0.00060083
+  41CR-44GR: mean Fst: 0.18667; mean Phi_st: 0.19681; mean Fst': 0.15795; mean Dxy: 0.00053641
+  41CR-47TX: mean Fst: 0.55097; mean Phi_st: 0.58836; mean Fst': 0.54564; mean Dxy: 0.00087111
+  41CR-49TX: mean Fst: 0.58567; mean Phi_st: 0.62675; mean Fst': 0.5763; mean Dxy: 0.00088817
+  41CR-50TX: mean Fst: 0.63207; mean Phi_st: 0.65703; mean Fst': 0.6214; mean Dxy: 0.00092818
+  41CR-51TX: mean Fst: 0.62079; mean Phi_st: 0.64893; mean Fst': 0.6104; mean Dxy: 0.00091651
+  41CR-52TX: mean Fst: 0.62863; mean Phi_st: 0.66163; mean Fst': 0.61426; mean Dxy: 0.00089459
+  41CR-6KS: mean Fst: 0.50817; mean Phi_st: 0.54832; mean Fst': 0.50908; mean Dxy: 0.00083869
+  41CR-8OK: mean Fst: 0.54364; mean Phi_st: 0.59061; mean Fst': 0.55012; mean Dxy: 0.00085874
+  41CR-CARINA_LAB: mean Fst: 0.60097; mean Phi_st: 0.63451; mean Fst': 0.59675; mean Dxy: 0.00088073
+  41CR-SUB_LAB: mean Fst: 0.63568; mean Phi_st: 0.66831; mean Fst': 0.62648; mean Dxy: 0.00090162
+  43GR-44GR: mean Fst: 0.083762; mean Phi_st: 0.073829; mean Fst': 0.054015; mean Dxy: 0.00046084
+  43GR-47TX: mean Fst: 0.54827; mean Phi_st: 0.58075; mean Fst': 0.53994; mean Dxy: 0.00083665
+  43GR-49TX: mean Fst: 0.57377; mean Phi_st: 0.60907; mean Fst': 0.56553; mean Dxy: 0.00085635
+  43GR-50TX: mean Fst: 0.62848; mean Phi_st: 0.65737; mean Fst': 0.62398; mean Dxy: 0.00090051
+  43GR-51TX: mean Fst: 0.61195; mean Phi_st: 0.63886; mean Fst': 0.60382; mean Dxy: 0.00088406
+  43GR-52TX: mean Fst: 0.619; mean Phi_st: 0.6477; mean Fst': 0.60831; mean Dxy: 0.0008884
+  43GR-6KS: mean Fst: 0.50081; mean Phi_st: 0.53863; mean Fst': 0.48882; mean Dxy: 0.00079183
+  43GR-8OK: mean Fst: 0.5337; mean Phi_st: 0.57259; mean Fst': 0.53231; mean Dxy: 0.00082758
+  43GR-CARINA_LAB: mean Fst: 0.59412; mean Phi_st: 0.62576; mean Fst': 0.5855; mean Dxy: 0.00085773
+  43GR-SUB_LAB: mean Fst: 0.6385; mean Phi_st: 0.66561; mean Fst': 0.6304; mean Dxy: 0.00088547
+  44GR-47TX: mean Fst: 0.51722; mean Phi_st: 0.56251; mean Fst': 0.51105; mean Dxy: 0.00084175
+  44GR-49TX: mean Fst: 0.55103; mean Phi_st: 0.5984; mean Fst': 0.53813; mean Dxy: 0.00085144
+  44GR-50TX: mean Fst: 0.59201; mean Phi_st: 0.62208; mean Fst': 0.58292; mean Dxy: 0.00088282
+  44GR-51TX: mean Fst: 0.5804; mean Phi_st: 0.61637; mean Fst': 0.5692; mean Dxy: 0.00087514
+  44GR-52TX: mean Fst: 0.59038; mean Phi_st: 0.6314; mean Fst': 0.5744; mean Dxy: 0.00085188
+  44GR-6KS: mean Fst: 0.48247; mean Phi_st: 0.52366; mean Fst': 0.47953; mean Dxy: 0.00080059
+  44GR-8OK: mean Fst: 0.51251; mean Phi_st: 0.56024; mean Fst': 0.5108; mean Dxy: 0.00081785
+  44GR-CARINA_LAB: mean Fst: 0.55713; mean Phi_st: 0.59089; mean Fst': 0.54785; mean Dxy: 0.00083554
+  44GR-SUB_LAB: mean Fst: 0.59046; mean Phi_st: 0.62255; mean Fst': 0.57594; mean Dxy: 0.00084718
+  47TX-49TX: mean Fst: 0.019502; mean Phi_st: 0.01189; mean Fst': 0.0039986; mean Dxy: 0.00037629
+  47TX-50TX: mean Fst: 0.024849; mean Phi_st: 0.0058793; mean Fst': 0.0066915; mean Dxy: 0.00036925
+  47TX-51TX: mean Fst: 0.022953; mean Phi_st: 0.011354; mean Fst': 0.0052069; mean Dxy: 0.00037919
+  47TX-52TX: mean Fst: 0.028511; mean Phi_st: 0.020161; mean Fst': 0.011407; mean Dxy: 0.00044119
+  47TX-6KS: mean Fst: 0.27493; mean Phi_st: 0.33388; mean Fst': 0.2638; mean Dxy: 0.00063684
+  47TX-8OK: mean Fst: 0.30656; mean Phi_st: 0.34755; mean Fst': 0.29874; mean Dxy: 0.00068453
+  47TX-CARINA_LAB: mean Fst: 0.35531; mean Phi_st: 0.39363; mean Fst': 0.34771; mean Dxy: 0.00071933
+  47TX-SUB_LAB: mean Fst: 0.046992; mean Phi_st: 0.04759; mean Fst': 0.032716; mean Dxy: 0.00041101
+  49TX-50TX: mean Fst: 0.02673; mean Phi_st: 0.0088629; mean Fst': 0.006841; mean Dxy: 0.0003949
+  49TX-51TX: mean Fst: 0.019135; mean Phi_st: 0.0047156; mean Fst': 0.0013251; mean Dxy: 0.0003985
+  49TX-52TX: mean Fst: 0.029784; mean Phi_st: 0.021222; mean Fst': 0.014011; mean Dxy: 0.00046967
+  49TX-6KS: mean Fst: 0.30526; mean Phi_st: 0.38284; mean Fst': 0.29296; mean Dxy: 0.00065293
+  49TX-8OK: mean Fst: 0.34135; mean Phi_st: 0.39051; mean Fst': 0.33535; mean Dxy: 0.00070949
+  49TX-CARINA_LAB: mean Fst: 0.39887; mean Phi_st: 0.44512; mean Fst': 0.39469; mean Dxy: 0.00076713
+  49TX-SUB_LAB: mean Fst: 0.054862; mean Phi_st: 0.057784; mean Fst': 0.039804; mean Dxy: 0.00043469
+  50TX-51TX: mean Fst: 0.029993; mean Phi_st: -0.0049468; mean Fst': -0.0019385; mean Dxy: 0.00041767
+  50TX-52TX: mean Fst: 0.032382; mean Phi_st: 0.0078568; mean Fst': -0.00016391; mean Dxy: 0.00051582
+  50TX-6KS: mean Fst: 0.31325; mean Phi_st: 0.35531; mean Fst': 0.31769; mean Dxy: 0.00068055
+  50TX-8OK: mean Fst: 0.35967; mean Phi_st: 0.40851; mean Fst': 0.37313; mean Dxy: 0.00075328
+  50TX-CARINA_LAB: mean Fst: 0.45648; mean Phi_st: 0.49037; mean Fst': 0.4525; mean Dxy: 0.0008315
+  50TX-SUB_LAB: mean Fst: 0.070408; mean Phi_st: 0.063951; mean Fst': 0.035963; mean Dxy: 0.00045308
+  51TX-52TX: mean Fst: 0.02308; mean Phi_st: 0.0025627; mean Fst': -0.0011019; mean Dxy: 0.00048291
+  51TX-6KS: mean Fst: 0.31565; mean Phi_st: 0.36763; mean Fst': 0.30591; mean Dxy: 0.00066532
+  51TX-8OK: mean Fst: 0.35987; mean Phi_st: 0.40233; mean Fst': 0.36084; mean Dxy: 0.00074373
+  51TX-CARINA_LAB: mean Fst: 0.43023; mean Phi_st: 0.46413; mean Fst': 0.42272; mean Dxy: 0.00078388
+  51TX-SUB_LAB: mean Fst: 0.059246; mean Phi_st: 0.052525; mean Fst': 0.034521; mean Dxy: 0.00043555
+  52TX-6KS: mean Fst: 0.32776; mean Phi_st: 0.39233; mean Fst': 0.31064; mean Dxy: 0.00071453
+  52TX-8OK: mean Fst: 0.36571; mean Phi_st: 0.40844; mean Fst': 0.35875; mean Dxy: 0.00075567
+  52TX-CARINA_LAB: mean Fst: 0.44494; mean Phi_st: 0.48416; mean Fst': 0.43369; mean Dxy: 0.00081137
+  52TX-SUB_LAB: mean Fst: 0.056922; mean Phi_st: 0.053467; mean Fst': 0.035493; mean Dxy: 0.00049988
+  6KS-8OK: mean Fst: 0.05039; mean Phi_st: 0.042599; mean Fst': 0.01189; mean Dxy: 0.0004636
+  6KS-CARINA_LAB: mean Fst: 0.10086; mean Phi_st: 0.10778; mean Fst': 0.062374; mean Dxy: 0.00049432
+  6KS-SUB_LAB: mean Fst: 0.3427; mean Phi_st: 0.40197; mean Fst': 0.32943; mean Dxy: 0.00068755
+  8OK-CARINA_LAB: mean Fst: 0.094185; mean Phi_st: 0.10287; mean Fst': 0.073544; mean Dxy: 0.00051267
+  8OK-SUB_LAB: mean Fst: 0.37421; mean Phi_st: 0.41438; mean Fst': 0.37301; mean Dxy: 0.00074188
+  CARINA_LAB-SUB_LAB: mean Fst: 0.46574; mean Phi_st: 0.49861; mean Fst': 0.45514; mean Dxy: 0.00080223
+
+Populations is done.
