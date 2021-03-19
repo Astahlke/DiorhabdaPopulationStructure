@@ -1,1 +1,15 @@
 5populations/R50/populations.snps/vcf
+
+structure_analysis/Results
+structure_analysis/StahlkeBitume_
+
+substructure/carinulata/5populations/R50/populations.snps.vcf
+substructure/carinulata/structure_analysis/carinulata.structure
+substructure/carinulata/structure_analysis/Results
+
+substructure/elongata/5populations/R50/populations.snps.vcf
+
+map/ne_10m_rivers_lake_centerlines.zip
+map/ne_10m_rivers_lake_centerlines
+map/ne_10m_rivers_north_america.zip
+map/ne_10m_rivers_north_america
