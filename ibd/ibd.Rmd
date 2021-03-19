@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(dplyr)
 library(ggplot2)
 library(geosphere)
-
+citation("geosphere")
 options(scipen = 999)
 ```
 
@@ -22,6 +22,7 @@ deg2rad <- function(deg) return(deg*pi/180)
 # Calculates the geodesic distance between two points specified by
 # radian latitude/longitude using the Haversine formula
 # Ouputs distance between sites 1 and 2 as meters
+
 gcd.hf <- function(long1, lat1, long2, lat2) {
   R <- 6371 # Earth mean radius [km]
   delta.long <- (long2 - long1)
@@ -31,6 +32,7 @@ gcd.hf <- function(long1, lat1, long2, lat2) {
   d = (R * c)
   return(d) # Distance in meters
 }
+
 CalcDists <- function(longlats) {
   name <- list(rownames(longlats), rownames(longlats))
   n <- nrow(longlats)
@@ -96,7 +98,7 @@ Seperate relevant pops
 
 ```{r}
 
-carinu_pops <- filter(metadat, Grp=="carinulata") %>%
+carinu_pops <- dplyr::filter(metadat, Grp=="carinulata") %>%
   select("popID")
 carinu_pops
 colnames(carinu_pops)[1] <- "row"
@@ -134,13 +136,6 @@ ggsave("carinulata_ibd.jpg", dpi = 300, height = 5, width = 10, units = "in")
 
 ```
 
-Is it more appropriate to report the linear model or correlation?
-
-```{r}
-carinu_ibd.lm = lm(g_dist ~ km, data=carinu_ibd)
-summary(carinu_ibd.lm)
-cor.test(carinu_ibd$g_dist, carinu_ibd$km)
-```
 ```{r}
 fukang_ibd <- filter(carinu_ibd, Ecotype=="within" & eco1==1)
 chilik_ibd <- filter(carinu_ibd, Ecotype=="within" & eco1==2)
@@ -155,7 +150,7 @@ cor.test(chilik_ibd$g_dist, chilik_ibd$km)
 ```
 
 ```{r}
-elongata_pops <- filter(metadat, Grp=="native_elongata") %>%
+elongata_pops <- dplyr::filter(metadat, Grp=="native_elongata") %>%
   select("popID")
 colnames(elongata_pops)[1] <- "row"
 elongata_ibd <- semi_join(ibd_test, elongata_pops)
@@ -179,8 +174,8 @@ elongata_ibd.plot <- ggplot(data = elongata_ibd, aes(x=km, y = g_dist, label = l
   #          " Slope =",signif(carinulata_ibd.lm$coef[[2]], 5),
   #          " P =",signif(summary(carinulata_ibd.lm)$coef[2,4], 5)),
   #          color="red", size = 2) +
-  ggrepel::geom_label_repel(size = 2) +
   geom_point(size = 3, aes(shape = Ecotype)) +
+  ggrepel::geom_label_repel(size = 3) +
   scale_shape_manual(name= "",
                      values = c(15, 12),
                       labels = c("Across Ecotypes",
@@ -189,7 +184,7 @@ elongata_ibd.plot <- ggplot(data = elongata_ibd, aes(x=km, y = g_dist, label = l
   ylab("FST/(1-FST)") +
   xlab("Distance between sites (km)")
 elongata_ibd.plot
-ggsave("elongata_ibd.jpg", dpi = 300, height = 5, width = 10, units = "in")
+ggsave("elongata_ibd.jpg", dpi = 300, height = 5, width = 7, units = "in")
 ```
 
 
@@ -197,6 +192,7 @@ ggsave("elongata_ibd.jpg", dpi = 300, height = 5, width = 10, units = "in")
 elongata_ibd.lm = lm(g_dist ~ km, data=elongata_ibd)
 summary(elongata_ibd.lm)
 cor.test(elongata_ibd$g_dist, elongata_ibd$km)
+
 ```
 
 ```{r}
@@ -209,7 +205,7 @@ cor.test(crete_ibd$g_dist, crete_ibd$km)
 
 
 ```{r}
-hybrid_pops <- filter(metadat, cat=="potential_hybrid_zone") %>%
+hybrid_pops <- dplyr::filter(metadat, Grp=="potential_hybrid_zone") %>%
   select("popID")
 colnames(hybrid_pops)[1] <- "row"
 hybrid_ibd <- semi_join(ibd_test, hybrid_pops)
@@ -217,7 +213,6 @@ colnames(hybrid_pops)[1] <- "col"
 hybrid_ibd <- semi_join(hybrid_ibd, hybrid_pops)
 hybrid_ibd$Group <- "hybrid"
 hybrid_ibd
-
 
 hybridzone_ibd <- ggplot(data = hybrid_ibd, aes(x=km, y = g_dist, label = label)) +
   stat_smooth(method = "lm", col = "red") +
@@ -241,10 +236,46 @@ summary(hybrid_ibd.lm)
 cor.test(hybrid_ibd$g_dist, hybrid_ibd$km)
 ```
 
+Perform linear regression and mantel test!
+
+
+```{r}
+
+ibd.df <- carinu_ibd #hybrid_ibd
+ibd.df <- elongata_ibd 
+
+df <- ibd.df %>% 
+  select(row, col, fst)
+
+df2 <- reshape(df, idvar = "row", timevar = "col", direction = "wide")
+df3 <- df2[,order((colSums(is.na(df2))))]
+df4 <- df3[order(as.numeric(rowSums(is.na(df3)))),]
+colnames(df4)
+rownames(df4) <- paste0("fst.",df4[,1])
+df5 <- df4[,2:ncol(df4)]
+fst.mat <- as.matrix(df5)
+fst.mat
+
+df <- ibd.df %>% 
+  select(row, col, km)
+
+df2 <- reshape(df, idvar = "row", timevar = "col", direction = "wide")
+df3 <- df2[,order((colSums(is.na(df2))))]
+df4 <- df3[order(as.numeric(rowSums(is.na(df3)))),]
+colnames(df4)
+rownames(df4) <- paste0("km.",df4[,1])
+df5 <- df4[,2:ncol(df4)]
+km.mat <- as.matrix(df5)
+
+library(vegan)
+mantel(km.mat, fst.mat, method = "spearman", permutations = 9999, na.rm = TRUE)
+
+```
+
+
 
 ```{r}
 library(cowplot)
-plot_grid(carinu_ibd.plot, elongata_ibd.plot)
 
 legend_b <- get_legend(
   carinu_ibd.plot +
@@ -253,17 +284,13 @@ legend_b <- get_legend(
 )
 
 prow <- plot_grid(carinu_ibd.plot + theme(legend.position="none") ,
-          elongata_ibd.plot + theme(legend.position="none") + ylab(NULL),
-          align = 'vh',
-          labels = c("A", "B"),
-           hjust = -1)
+          hybridzone_ibd + theme(legend.position="none"),
+          labels = "AUTO",
+          nrow = 2)
 
-plot_grid(prow, legend_b, ncol = 1, rel_heights = c(1, .1))
-ggsave("carinulata_elongata_ibd.jpg", dpi = 300, height = 5, width = 10, units = "in")
+plot_grid(prow, legend_b,  nrow = 2, rel_heights = c(1, .1))
 
-
-plot_grid(prow,  hybridzone_ibd, legend_b ,ncol = 1, labels = c('', 'C'),  rel_heights = c(1, 1.5, .1))
-ggsave("hybrid_carinulata_elongata_ibd.jpg", dpi = 300, height = 10, width = 10, units = "in")
+ggsave("hybrid_carinulata_ibd.jpg", dpi = 300, height = 10, width = 10, units = "in")
 
 
 ```

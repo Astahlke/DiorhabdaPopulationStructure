@@ -27,13 +27,13 @@ sample_meta.dat <- read.csv("Git_Repo/info/pop_metadata.csv",
                             header = TRUE, stringsAsFactors = FALSE)
 
 #### Release data from Ellyn
-Bitume_release.dat <- read.csv("subset_EBitume Draft Table of Diorhabda spp releases 2018_11_20.xlsx - Table.csv",
+Bitume_release.dat <- read.csv("Git_Repo/map/subset_EBitume Draft Table of Diorhabda spp releases 2018_11_20.xlsx - Table.csv",
                                na.strings = "")
 Bitume_release.dat$GPS.Lat <- as.numeric(as.character(Bitume_release.dat$GPS.Lat))
 Bitume_release.dat$GPS.Long <- as.numeric(as.character(Bitume_release.dat$GPS.Long))
 
 #### Release data from Knutson
-release.dat <- read.csv("Knutsen_2019_suppdata.csv")
+release.dat <- read.csv("Git_Repo/map/Knutsen_2019_suppdata.csv")
 release.dat %>%
   select(Species, ID, Latitude, Longitude)
 
@@ -49,7 +49,7 @@ legend_colors
 
 
 #### Map data
-shapeData <- rgdal::readOGR("map/ne_10m_rivers_lake_centerlines/",
+shapeData <- rgdal::readOGR("Git_Repo/map/ne_10m_rivers_lake_centerlines/",
                             "ne_10m_rivers_lake_centerlines")
 shapeData@data$id <- rownames(shapeData@data)
 watershedPoints <- fortify(shapeData, region = "id")
@@ -57,7 +57,7 @@ watershedDF <- merge(watershedPoints, shapeData@data, by = "id")
 
 
 ### Focusing on N America
-NA_shapeData <- rgdal::readOGR("map/ne_10m_rivers_north_america/", "ne_10m_rivers_north_america")
+NA_shapeData <- rgdal::readOGR("Git_Repo/map/ne_10m_rivers_north_america/", "ne_10m_rivers_north_america")
 NA_shapeData@data$id <- rownames(NA_shapeData@data)
 NA_watershedPoints <- fortify(NA_shapeData, region = "id")
 NA_watershedDF <- merge(NA_watershedPoints, NA_shapeData@data, by = "id")
@@ -125,15 +125,15 @@ release_sampling_map <- ggplot(data = world) +
 
 release_sampling_map
 
-ggsave("releasedat_2-11-20_sampling_map.jpg", width = 8, height = 7, dpi =300)
-ggsave("releasedat_2-11-20_sampling_map.svg", width = 8, height = 7, dpi =300) # svg for later editing
+ggsave("Git_Repo/map/releasedat_2-11-20_sampling_map.jpg", width = 8, height = 7, dpi =300)
+ggsave("Git_Repo/map/releasedat_2-11-20_sampling_map.svg", width = 8, height = 7, dpi =300) # svg for later editing
 
 
 ### Native range map
 dplyr::filter(sample_meta.dat, cat == "native")
 
 ## source collection data
-native_range <- read.csv("source_populations.csv") %>%
+native_range <- read.csv("Git_Repo/source_populations.csv") %>%
   mutate(Grp = paste0("source_",Species)) %>%
   rename(popID = Pop) %>%
   full_join(
@@ -176,7 +176,7 @@ GRmap <- ggplot(data = world) +
         legend.text = element_markdown()) +
   xlab("Longitude") + ylab("Latitude")
 GRmap
-ggsave("GR_sampling_map.jpg", width = 9, height = 9, dpi = 300)
+ggsave("Git_Repo/map/GR_sampling_map.jpg", width = 9, height = 9, dpi = 300)
 
 ### D. carinulata native range sampling and source populations
 
@@ -214,4 +214,4 @@ CHmap <- ggplot(data = world) +
         legend.text = element_markdown()) +
   xlab("Longitude") + ylab("Latitude")
 CHmap
-ggsave("China_sampling_map.jpg", width = 9, height = 9, dpi = 300)
+ggsave("Git_Repo/map/China_sampling_map.jpg", width = 9, height = 9, dpi = 300)
