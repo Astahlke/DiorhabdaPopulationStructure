@@ -6,54 +6,53 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-library(dplyr)
-library(ggplot2)
+# devtools::install_github('royfrancis/pophelper')
 library(pophelper)
 library(gridExtra)
 library(gtable)
 library(label.switching)
 
-cbbPalette <- c("#56B4E9", "#E69F00", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
-human_colors <- c('blue', 'orange', 'green', 'yellow', 'dark blue', 'red', 'pink')
+library(dplyr)
+
+cbbPalette <- c("#56B4E9", "#E69F00", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#9370DB") 
+human_colors <- c('blue', 'orange', 'green', 'yellow', 'dark blue', 'red', 'purple')
 spp <- c('carinata', 'elongata', 'sublineata', 'carinulata', 'elongata_sub', 'carinulata_sub', 'other')
 
 legend_colors <- as.data.frame(cbind(cbbPalette, human_colors, spp), stringsAsFactors = F)
 legend_colors
 
-```
-
-## Structure 
-
-Examined "global" ancestry for all available samples. Old replicates and some suspected contamination/switching have been removed. The masterpopmap has ALL of these samples. 
-
-Admixture model, LD=0, allele freqs are uncorrelated, alpha is inferred for each popualtion.
-
-```{r inputs}
 masterpopmap <- read.delim("../info/masterpopmap.tsv",
                   sep = "\t",
                    col.names = c("sampID", "popID"),
                    stringsAsFactors = FALSE, header = FALSE)
+table(masterpopmap$popID)
 
-sfiles <- list.files(path="~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/Results/", 
+sample_meta.dat <- read.csv("../info/pop_metadata.csv", header = TRUE, stringsAsFactors = FALSE)
+sample_meta.dat
+```
+
+## Structure
+
+Examined "global" ancestry for all available samples. Old replicates and some suspected contamination/switching have been removed. The masterpopmap has ALL of these samples.
+
+Admixture model, LD=0, allele freqs are uncorrelated, alpha is inferred for each popualtion.
+
+```{r global_structure_inputs}
+sfiles <- list.files(path="Results/",
   pattern=glob2rx("outfile_*f"),full.names=TRUE)
 
-slist <- readQ(sfiles,filetype="structure", 
-               indlabfromfile = TRUE, 
+slist <- readQ(sfiles,filetype="structure",
+               indlabfromfile = TRUE,
                readci = TRUE)
 
-popmap <- left_join(data.frame(sampID = rownames(slist[[1]])), 
+popmap <- left_join(data.frame(sampID = rownames(slist[[1]])),
                     masterpopmap)
 
 popID <- data.frame(popID = popmap$popID)
 popID <- data.frame(lapply(popID, as.character), stringsAsFactors=FALSE)
-sapply(popID, is.character)
-
-sample_meta.dat <- read.csv("~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/info/pop_metadata.csv", header = TRUE, stringsAsFactors = FALSE)
-sample_meta.dat
 
 pop_order <- sample_meta.dat[,c("popID", "Order")]
 pop_order <- arrange(pop_order, Order)[,1]
-pop_order
 ```
 
 
@@ -61,6 +60,7 @@ pop_order
 samplesize <- left_join(popmap, sample_meta.dat) %>%
   count(popID) %>%
   merge(sample_meta.dat)
+samplesize
 
 write.table(samplesize, "pop_metadata_samplesize.tsv", sep = "\t", row.names = F, quote = F)
 
@@ -75,251 +75,56 @@ grid.arrange(p)
 
 evannoMethodStructure(data=sr1,
                   exportplot=T,
-                  exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/plots/",
+                  exportpath = "plots",
                 outputfilename = "global_deltaK",
                 returndata=F,
                 height = 10, width = 9)
 ```
 
-K=2 and K=3 are super stable. D. carinata appears as a mix between sublineata and elongata. I am surprised to see, for the first time in these samples, indications of admixture between carinlata and sublineata along the Rio Grande. 
+K=2 and K=3 are super stable. D. carinata appears as a mix between sublineata and elongata. I am surprised to see, for the first time in these samples, indications of admixture between carinlata and sublineata along the Rio Grande.
 
-```{r Ks2-3}
-k2 <- plotQ(alignK(slist[c(21:30)]),
-            imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
-            clustercol=cbbPalette,
-            subsetgrp = pop_order,
-            ordergrp = T,
-            grplab = popID,
-            linepos = 1,
-            grplabangle=-45,
-            grplabpos = 0, 
-            grplabheight=20)
-grid.arrange(k2$plot[[1]])
-
-k3 <- plotQ(alignK(slist[c(31:40)]),
-            imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
-            clustercol=cbbPalette,
-            ordergrp = T,
-            grplab = popID,
-            grplabangle=-90)
-grid.arrange(k3$plot[[1]])
-```
-As usual, K=4 reflects lab populations, elongata in the native range, and hints at carinulata substructure. 
+As usual, K=4 reflects lab populations, elongata in the native range, and hints at carinulata substructure.
 
 ```{r alignK4-8}
 
 k4 <- plotQ(alignK(slist[c(41:50)]),
             imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            returnplot=T,exportplot=F,basesize=11,
             clustercol=cbbPalette,
             grplab = popID,
             ordergrp = T,
             grplabangle=-90)
 grid.arrange(k4$plot[[1]])
 
-
-k5 <- plotQ(alignK(slist[c(51:60)]),
-            imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
-            clustercol=cbbPalette,
-            grplab = popID,
-            ordergrp = T,
-            grplabangle=-90)
-grid.arrange(k5$plot[[1]])
-
-k6 <- plotQ(alignK(slist[c(61:70)]),
-            imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
-            clustercol=cbbPalette,
-            grplab = popID,
-            ordergrp = T,
-            grplabangle=-90)
-grid.arrange(k6$plot[[1]])
-
-
-k7 <- plotQ(alignK(slist[c(71:80)]),
-            imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
-            clustercol=cbbPalette,
-            grplab = popID,
-            grplabangle=-90)
-grid.arrange(k7$plot[[1]])
-
-k8 <- plotQ(alignK(slist[c(81:90)]),
-            imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
-            # clustercol=cbbPalette,
-            grplab = popID,
-            grplabangle=-90)
-grid.arrange(k8$plot[[1]])
-
-```
-
-
-```{r K4}
-plotQMultiline(slist[41],
-      showticks=T,
-      clustercol=cbbPalette,
-      grplab = popID,
-      ordergrp=TRUE,
-      spl = 25,
-      showindlab = T,
-      showyaxis = T,
-      barsize = .9,
-      subsetgrp = pop_order,
-      basesize=11, 
-      exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/plots/",
-      outputfilename = "multilineK4",
-      useindlab = T)
-
 ```
 
 ```{r plots2save_repsK}
-plotQ(alignK(slist[c(21:30)]),
-            imgoutput="join",
-                  exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/plots/",
-  outputfilename =  "Joined-K2",  
-  exportplot=T,
-  showyaxis=T,
-  showsp = F,
-  clustercol=cbbPalette,
-  subsetgrp = pop_order,
-  height = .1,
-  ordergrp = T,
-  grplab = popID,
-  linepos = 1,
-  divtype = 1,
-  grplabangle=45,
-  grplabpos = .8,
-  grplabspacer = 0,
-  grplabheight=70,
-  width=100,
-  showtitle=T,
-  grplabsize = 4,
-  titlelab="Global Population Structure, K=2",
-  titlesize = 20)
 
-plotQ(alignK(slist[c(31:40)]),
-            imgoutput="join",
-                  exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/plots/",
-  outputfilename =  "Joined-K3",    
-  exportplot=T,
-  showyaxis=T,
-  showsp = F,
-  clustercol=cbbPalette,
-  subsetgrp = pop_order,
-  height = .1,
-  ordergrp = T,
-  grplab = popID,
-  linepos = 1,
-  divtype = 1,
-  grplabangle=45,
-  grplabpos = .8,
-  grplabspacer = 0,
-  grplabheight=70,
-  width=100,
-  showtitle=T,
-  grplabsize = 4,
-  titlelab="Global Population Structure, K=3",
-  titlesize = 20)
+fn1 <- function(x) attr(x,"k")
+spnames <- rep("", 10)
 
 plotQ(alignK(slist[c(41:50)]),
             imgoutput="join",
-            exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/plots/",
+            exportpath = "plots",
   outputfilename =  "Joined-K4",  
   exportplot=T,
-  showyaxis=T,
-  showsp = F,
+  showyaxis=F,
+  showsp = T,
+  splab=rep("", 10),
   clustercol=cbbPalette,
   subsetgrp = pop_order,
-  height = .1,
+  height = .005,
   ordergrp = T,
   grplab = popID,
   linepos = 1,
   divtype = 1,
-  grplabangle=45,
+  grplabangle=90,
   grplabpos = .8,
   grplabspacer = 0,
-  grplabheight=70,
-  width=100,
-  showtitle=T,
-  grplabsize = 4,
-  titlelab="Global Population Structure, K=4",
-  titlesize = 20)
-
-plotQ(alignK(slist[c(51:60)]),
-            imgoutput="join",
-            exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/plots/",
-  outputfilename =  "Joined-K5",  
-  exportplot=T,
-  showyaxis=T,
-  showsp = F,
-  clustercol=cbbPalette,
-  subsetgrp = pop_order,
-  height = .1,
-  ordergrp = T,
-  grplab = popID,
-  linepos = 1,
-  divtype = 1,
-  grplabangle=45,
-  grplabpos = .8,
-  grplabspacer = 0,
-  grplabheight=70,
-  width=100,
-  showtitle=T,
-  grplabsize = 4,
-  titlelab="Global Population Structure, K=5",
-  titlesize = 20)
-
-plotQ(alignK(slist[c(61:70)]),
-            imgoutput="join",
-            exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/plots/",
-  outputfilename =  "Joined-K6",  
-  exportplot=T,
-  showyaxis=T,
-  showsp = F,
-  clustercol=cbbPalette,
-  subsetgrp = pop_order,
-  height = .1,
-  ordergrp = T,
-  grplab = popID,
-  linepos = 1,
-  divtype = 1,
-  grplabangle=45,
-  grplabpos = .8,
-  grplabspacer = 0,
-  grplabheight=70,
-  width=100,
-  showtitle=T,
-  grplabsize = 4,
-  titlelab="Global Population Structure, K=6",
-  titlesize = 20)
-
-plotQ(alignK(slist[c(71:80)]),
-            imgoutput="join",
-            exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/plots/",
-  outputfilename =  "Joined-K7",  
-  exportplot=T,
-  showyaxis=T,
-  showsp = F,
-  clustercol=cbbPalette,
-  subsetgrp = pop_order,
-  height = .1,
-  ordergrp = T,
-  grplab = popID,
-  linepos = 1,
-  divtype = 1,
-  grplabangle=45,
-  grplabpos = .8,
-  grplabspacer = 0,
-  grplabheight=70,
-  width=100,
-  showtitle=T,
-  grplabsize = 4,
-  titlelab="Global Population Structure, K=7",
-  titlesize = 20)
+  basesize=14,
+  grplabsize = 15,
+  width = 150,
+  grplabheight=150)
 ```
 
 ```{r designate_cluster, message=F}
@@ -363,12 +168,7 @@ q_popmap <- merge(global_k4_q, popmap)
 head(q_popmap)
 ```
 
-```{r Global_K4_2save}
-## slist[43]
-## 1 = elongata
-## 2 = carinata
-## 3 = sub
-## 4 = carinu
+```{r}
 legend <- merge(legend_colors, clusters)
 clustercols <- arrange(legend, cluster) %>%
   select(cbbPalette)
@@ -377,21 +177,25 @@ clustercols <- clustercols$cbbPalette
 legendlab <- arrange(legend, cluster) %>%
   mutate(label = paste("D. ", spp))
 legendlab <- legendlab$label[1:4]
+```
 
+
+```{r Global_K4_2save, message=F}
 plotQ(slist[41],
-            exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/plots/",
+            exportpath = "plots",
         outputfilename =  "MainTextFigure_K4",  
   exportplot=T,
   showyaxis=T,
   showsp = F,
   clustercol=clustercols,
   subsetgrp = pop_order,
-  ordergrp = T,
+  sortind="all",
   grplab = popID,
   linepos = 1,
   linesize=0.8,
   pointsize = 5,
   divtype = 1,
+  divsize=1.1,
   grplabangle= 90,
   grplabpos = .9,
   grplabspacer = 0,
@@ -405,144 +209,318 @@ plotQ(slist[41],
   basesize=30)
 ```
 
-```{r plotmultiK}
+```{r k2_k3_k4_2save, message=F}
 # custom strip panel label showing k only
 fn1 <- function(x) attr(x,"k")
 spnames <- paste0("K=",sapply(slist,fn1))
-
 
 # Combine K=2, K=3, K=4
 k2k3k4 <- c(21,31,41)
 plotQ(slist[k2k3k4],
             imgoutput="join",
-            exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/plots/",
+            exportpath = "plots",
   outputfilename =  "Joined-K2-K3-K4",  
   exportplot=T,
-  showyaxis=T,
-  splab=spnames[k2k3k4],
-  splabsize= 20,
+  showyaxis=F,
   clustercol=clustercols,
   subsetgrp = pop_order,
-  height = .1,
   ordergrp = T,
   grplab = popID,
   linepos = 1,
   divtype = 1,
+  # divsize = 1.2,
   grplabangle= 90,
   grplabpos = .8,
   grplabspacer = 0,
-  grplabheight=70,
-  width=100,
-  showtitle=T,
-  grplabsize = 8,
-  # showlegend = T,
-  # legendkeysize=20,legendtextsize=20, legendpos="right", legendlab=legendlab,
-  titlelab="Global Population Structure across K",
-  titlesize = 20)
+  basesize=14,
+  showsp = F,
+  grplabsize = 6,
+  width = 30,
+  grplabheight=40)
+```
+
+## Exploratory visualizations that are not presented in the manuscript
+
+Multi-line K=4 to visulize individuals
+```{r multiline_inds_K4}
+plotQMultiline(slist[41],
+      showticks=T,
+      clustercol=cbbPalette,
+      grplab = popID,
+      ordergrp=TRUE,
+      spl = 25,
+      showindlab = T,
+      showyaxis = T,
+      barsize = .9,
+      subsetgrp = pop_order,
+      basesize=11,
+      exportpath = "plots",
+      outputfilename = "multilineK4",
+      useindlab = T)
+```
+
+All reps of each run to visualize results across K values
+```{r Ks2-8}
+k2 <- plotQ(alignK(slist[c(21:30)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,basesize=11,
+            clustercol=cbbPalette,
+            subsetgrp = pop_order,
+            ordergrp = T,
+            grplab = popID,
+            linepos = 1,
+            grplabangle=-45,
+            grplabpos = 0,
+            grplabheight=20)
+grid.arrange(k2$plot[[1]])
+
+k3 <- plotQ(alignK(slist[c(31:40)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,basesize=11,
+            clustercol=cbbPalette,
+            ordergrp = T,
+            grplab = popID,
+            grplabangle=-90)
+grid.arrange(k3$plot[[1]])
+
+
+k5 <- plotQ(alignK(slist[c(51:60)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,basesize=11,
+            clustercol=cbbPalette,
+            grplab = popID,
+            ordergrp = T,
+            grplabangle=-90)
+grid.arrange(k5$plot[[1]])
+
+k6 <- plotQ(alignK(slist[c(61:70)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,basesize=11,
+            clustercol=cbbPalette,
+            grplab = popID,
+            ordergrp = T,
+            grplabangle=-90)
+grid.arrange(k6$plot[[1]])
+
+
+k7 <- plotQ(alignK(slist[c(71:80)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,basesize=11,
+            clustercol=cbbPalette,
+            grplab = popID,
+            grplabangle=-90)
+grid.arrange(k7$plot[[1]])
+
+k8 <- plotQ(alignK(slist[c(81:90)]),
+            imgoutput="join",
+            returnplot=T,exportplot=F,basesize=11,
+            # clustercol=cbbPalette,
+            grplab = popID,
+            grplabangle=-90)
+grid.arrange(k8$plot[[1]])
+
+```
+
+##Among individuals, how many pure? How many hybrids, and of what type?
+
+Extract confidence intervals. 
+
+```{r}
+ci <- data.frame(attributes(slist[[41]])$ci)
+colnames(ci) <- paste0(rep(colnames(global_k4_q)[1:4], each=2),
+       "_", rep(c("L", "H"), times = 4))
+ci <- cbind(ci, global_k4_q)
+ci <- merge(ci, masterpopmap)
+head(ci)
+
+write.csv(ci,"ancestry_confidenceintervals.csv",
+          quote = FALSE)
+
+```
+
+Use "diagnostic" samples to define threshold. 
+```{r}
+diag_sublineata <- c("SUB_LAB", "47TX", "49TX", "50TX", "51TX", "52TX")
+diagnostic <- data.frame(popID = diag_sublineata, spp=rep("sublineata", length(diag_sublineata)))
+diag_elongata <- c("43GR", "44GR", "37CR", "38CR", "39CR", "41CR")
+diagnostic <- rbind(diagnostic, 
+      data.frame(popID = diag_elongata, spp=rep("elongata", length(diag_elongata))))
+
+ci %>%
+  semi_join(diagnostic) %>%
+  arrange(desc(carinulata_L))
+
+find_threshold <- ci %>%
+  semi_join(diagnostic) %>%
+  arrange(desc(carinulata_L))
+
+t <- find_threshold[1,"carinulata"]
+t
+
+t_low <- find_threshold[1,"carinulata_L"]
+t_low
+```
+### Each hybrid type
+
+How many hybrids with carinulata?
+```{r}
+carinu_hyb <- ci %>%
+  dplyr::filter(carinulata_L > t_low ) %>%
+  dplyr::filter(elongata_L > t_low |
+           sublineata_L > t_low | 
+             carinata_L > t_low) %>%
+  arrange(desc(carinulata_L))
+
+carinu_hyb
 ```
 
 
-```{r plotsubsets}
-## Plot subsets of the whole set
-subset1 <- sample_meta.dat %>% 
-  arrange(Order) %>%
-  select(popID) %>%
-  slice(1:20)
+How many tri-specific hybrids?
+```{r}
+ci %>%
+  dplyr::filter(carinata_L > t_low & elongata_L > t_low & sublineata_L > t_low) 
 
-subset2 <- sample_meta.dat %>% 
-  arrange(Order) %>%
-  select(popID) %>%
-  slice(21:nrow(sample_meta.dat))
-
-plotQ(slist[41],
-            exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/plots/",
-        outputfilename =  "subset1_global",  
-  exportplot=T,
-  showyaxis=T,
-  showsp = F,
-  clustercol=clustercols,
-  subsetgrp=as.character(subset1$popID),
-  ordergrp = T,
-  grplab = popID,
-  linepos = .98,
-  linesize=0.8,
-  pointsize = 5,
-  divtype = 1,
-  grplabangle= 90,
-  grplabpos = .9,
-  grplabspacer = 0,
-  grplabheight=55,
-  grplabsize = 20,
-  height = .05,
-  width=100,
-  showlegend = T, legendkeysize=30,legendtextsize=30, legendpos="left", legendlab=legendlab,
-  basesize=30)
-
- 
-plotQ(slist[41],
-            exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/structure_analysis/plots/",
-        outputfilename =  "subset2_global",  
-  exportplot=T,
-  showyaxis=T,
-  showsp = F,
-  clustercol=clustercols,
-  subsetgrp=as.character(subset2$popID),
-  ordergrp = T,
-  grplab = popID,
-  linepos = 1,
-  linesize=0.8,
-  pointsize = 5,
-  divtype = 1,
-  grplabangle= 90,
-  grplabpos = .9,
-  grplabspacer = 0,
-  grplabheight=45,
-  grplabsize =  20,
-  height = .05,
-  width=100,
-  basesize=30)
+## If we count less-conservatively:
+ci %>%
+  dplyr::filter(carinata_L >.01 & elongata_L> .01 & sublineata_L > .01) %>%
+  arrange(desc(elongata_L))
 
 ```
+
+
+How many hybrids with sublineata?
+```{r}
+
+ci %>%
+  dplyr::filter(sublineata_L > t_low) %>%
+  dplyr::filter(carinulata_L > t_low |
+           elongata_L > t_low | carinata_L > t_low) %>%
+  arrange(desc(sublineata_L)) 
+
+ci %>%
+  dplyr::filter(sublineata_L > t) %>%
+  dplyr::filter(carinulata_L > t_low |
+           elongata_L > t_low | carinata_L > t_low) %>%
+  arrange(desc(sublineata_L)) %>%
+  count()
+```
+
+D. elongata hybrids
+
+```{r}
+ci %>%
+  dplyr::filter(elongata_L > t_low) %>%
+  dplyr::filter(carinulata_L > t_low |
+           sublineata_L > t_low | carinata_L > t_low) %>%
+  arrange(desc(elongata_L))
+
+ci %>%
+  dplyr::filter(elongata_L > t_low) %>%
+  dplyr::filter(carinulata_L > t_low |
+           sublineata_L > t_low | carinata_L > t_low) %>%
+  arrange(desc(elongata_L)) %>%
+  count()
+```
+### Specific bi-parental types
+How many carinata-sublineata hybrids?
+How many carinata-elongata hybrids?
+How many elong-sublineata hybrids?
+```{r}
+
+car_sub_hyb <- ci %>%
+  dplyr::filter(carinata_L >t_low  & sublineata_L > t_low & elongata_L < t_low)
+car_sub_hyb
+
+car_sub_hyb %>%
+  summarise(mean(sublineata), nrow(.))
+
+
+car_elong_hyb <- ci %>%
+  dplyr::filter(carinata_L > t_low & elongata_L> t_low & sublineata_L < t_low) %>%
+  arrange(desc(elongata_L))
+car_elong_hyb
+car_elong_hyb %>%
+  summarise(mean(carinata), nrow(.))
+
+
+elong_sub_hyb <- ci %>%
+  dplyr::filter(carinata_L < t_low  & sublineata_L > t_low & elongata_L > t_low)
+elong_sub_hyb
+
+elong_sub_hyb %>%
+  summarise(mean(sublineata), nrow(.))
+```
+
+## Vizualize bi-parental crosses!
+This could be better represented as a simplex (triangle)?
+
+```{r}
+pCS <- ggplot(car_sub_hyb) +
+  geom_histogram(aes(carinata),
+                 alpha = .5, fill = legend[which(legend$spp=="carinata"), "cbbPalette"], stat = "bin", binwidth = .05) +
+  geom_histogram(aes(sublineata),
+                 alpha = .5, fill = legend[which(legend$spp=="sublineata"), "cbbPalette"], stat = "bin", binwidth = .05) +
+  ylim(c(0,8)) +
+  scale_x_continuous(name= expression( ~italic("D. carinata")~ "X"  ~italic("D. sublineata")~ "q-values")) +
+  theme_bw()
+pCS
+
+pCE <-ggplot(car_elong_hyb) +
+  geom_histogram(aes(carinata),
+                 alpha = .5, fill = legend[which(legend$spp=="carinata"), "cbbPalette"], stat = "bin", binwidth = .05) +
+  geom_histogram(aes(elongata),
+                 alpha = .5, fill = legend[which(legend$spp=="elongata"), "cbbPalette"], stat = "bin", binwidth = .05) +
+  ylim(c(0,8)) +
+    scale_x_continuous(name= expression( ~italic("D. elongata")~ "X"  ~italic(" D. carinata")~ "q-values")) +
+  theme_bw()
+pCE
+
+pES <-ggplot(elong_sub_hyb) +
+  geom_histogram(aes(elongata),
+                 alpha = .5,fill = legend[which(legend$spp=="elongata"), "cbbPalette"], stat = "bin", binwidth = .05) +
+  geom_histogram(aes(sublineata),
+                 alpha = .5, fill = legend[which(legend$spp=="sublineata"), "cbbPalette"], stat = "bin", binwidth = .05) +
+  ylim(c(0,8)) +
+      scale_x_continuous(name= expression( ~italic("D. elongata")~ "X"  ~italic(" D. sublineata")~ "q-values")) +
+  theme_bw()
+
+cowplot::plot_grid(pCS, pCE, pES, nrow = 1, labels = c('A','B','C'))
+ggsave("hybrid_distributions.jpg", dpi = 300, height = 4, width = 10, units = "in")
+
+```
+
+
 
 
 ```{r}
-## subset individuals for substructure of elongata 
-elongata <- filter(global_k4_q, elongata > .1) %>%
-  select('sampID')
-nrow(elongata)
-elongata_popmap <- semi_join(popmap, elongata)
-write.table(elongata_popmap,
-  file = "../info/elongata_popmap.tsv", 
-            sep = "\t",
-            quote=F, col.names = F, row.names = F)
 
-## subset individuals for substructure of elongata 
-carinulata <- filter(global_k4_q, carinulata > .1) %>%
-  select('sampID')
-nrow(carinulata)
-carinulata_popmap <- semi_join(popmap, carinulata)
-write.table(carinulata_popmap,
-  file = "../info/carinulata_popmap.tsv", 
-            sep = "\t",
-            quote=F, col.names = F, row.names = F)
-
-## Are population genetic statistics (like private alleles etc) to populations filtering?
-others_popmap <- anti_join(popmap, carinulata)
-write.table(others_popmap,
-  file = "../info/others_popmap.tsv", 
-            sep = "\t",
-            quote=F, col.names = F, row.names = F)
 ```
 
 
-## Which sites have individuals with admxiture? 
+## Which sites have individuals with admxiture?
 ```{r designate_pops}
 sample_size <- samplesize %>%
   select('popID', 'n')
 
-num_admixed_inds <- q_popmap %>%
-  filter_at(vars(elongata:sublineata),
-            ~ . < .95) %>%
+hybrids <- rbind(elong_sub_hyb, car_elong_hyb, carinu_hyb, car_sub_hyb)
+nrow(hybrids)
+
+no_hybrids <- anti_join(ci, hybrids)
+pure_carinu <- dplyr::filter(no_hybrids, carinulata > .9)  
+ nrow(pure_carinu)
+pure_sub <- dplyr::filter(no_hybrids, sublineata > .9)  
+   nrow(pure_sub)
+pure_carinata <- dplyr::filter(no_hybrids, carinata > .9 )  
+   nrow(pure_carinata)
+pure_elongata <- dplyr::filter(no_hybrids, elongata > .9 )  
+   nrow(pure_elongata)   
+
+pure_parentals <- rbind(pure_carinu, pure_sub, pure_carinata, pure_elongata)
+
+what_else <- anti_join( ci, pure_parentals) %>%
+  anti_join(., hybrids)
+  
+ num_admixed_inds <- hybrids %>%
   group_by(popID) %>%
   count(popID)
 colnames(num_admixed_inds)[2] <- 'num_admixed'
@@ -553,23 +531,23 @@ merge(sample_size, num_admixed_inds) %>%
   mutate(perc_admixed = num_admixed/n) %>%
   arrange(desc(perc_admixed))
 
-q_popmap %>%
-  filter_at(vars(elongata:sublineata),
+hybrids %>%
+  filter_at(vars(elongata:carinata),
             ~ . < .95) %>%
   group_by(popID) %>%
   summarize_at(vars(carinata:sublineata), funs(mean, var))
 ```
 
-## Which sites have multiple spp, even without admixture? 
+## Which sites have multiple spp, even without admixture?
 ```{r}
 foo <- q_popmap %>%
   filter_all(any_vars(. > .95)) %>%
   group_by(popID) %>%
-  summarize_at(vars(elongata:sublineata), funs(sum)) %>%
-  merge(sample_size) 
+  summarize_at(vars(elongata:carinata), funs(sum)) %>%
+  merge(sample_size)
 
 max_ancestry <-  apply(X=foo[,2:5], MARGIN=1, FUN=max)
-### if a cluster has less than foo$sample_size-.5, will return any pop with an ind less than 50% of majority ancestry 
+### if a cluster has less than foo$sample_size-.5, will return any pop with an ind less than 50% of majority ancestry
 mixed_pops <- foo[foo$n - .5 > max_ancestry,]
 mixed_pops
 
@@ -579,147 +557,22 @@ perc_admixed <- merge(sample_size, num_admixed_inds) %>%
 perc_admixed
 
 mix_admix <- full_join(mixed_pops, perc_admixed[,c('popID', 'perc_admixed')]) %>%
-  arrange(desc(perc_admixed)) 
+  arrange(desc(perc_admixed))
 mix_admix
 ```
 
-There may be almost no population that is completely pure. How many 'pure' sites did we detect? 
+How many 'pure' sites did we detect?
 
 ```{r}
 setdiff(popmap$popID, mix_admix$popID )
-```
-
-
-Among individuals, how many pure? How many hybrids, and of what type? 
-
-```{r}
-ci <- data.frame(attributes(slist[[41]])$ci)
-colnames(ci) <- paste0(rep(colnames(global_k4_q)[1:4], each=2),
-       "_", rep(c("L", "H"), times = 4))
-ci <- cbind(ci, global_k4_q)
-ci <- merge(ci, masterpopmap)
-ci
-write.csv(ci,"ancestry_confidenceintervals.csv",
-          quote = FALSE)
-
-library(tibble)  # for `rownames_to_column` and `column_to_rownames`
-colnames(ci)
-
-## How many tri-specific hybrids? 
-ci %>%
-  rownames_to_column('individual') %>%
-  filter(carinata_L >.01 & elongata_L> .01 & sublineata_L > .01) %>%
-  arrange(desc(elongata_L))
-
-ci %>%
-  rownames_to_column('individual') %>%
-  filter(carinata >.01 & elongata > .01 & sublineata > .01) %>%
-  arrange(desc(elongata))
-
-## How many hybrids with carinulata?
-ci %>%
-  rownames_to_column('individual') %>%
-  filter(carinulata_L >.01) %>%
-  filter(elongata_L> .01 | 
-           sublineata_L > .01 | carinata_L > .01) %>%
-  arrange(desc(carinulata_L))
-
-ci %>%
-  rownames_to_column('individual') %>%
-  filter(carinulata_H >.1) %>%
-  filter(elongata_L> .01 | 
-           sublineata_L > .01 | carinata_L > .01) %>%
-  arrange(desc(carinulata_L))
-
-## How many hybrids with sublineata?
-ci %>%
-  rownames_to_column('individual') %>%
-  filter(sublineata_L >.01) %>%
-  filter(carinulata_L > .01 | 
-           elongata_L > .01 | carinata_L > .01) %>%
-  arrange(desc(sublineata_L))
-
-
-## How many carinata-sublineata hybrids? 
-car_sub_hyb <- ci %>%
-  rownames_to_column('individual') %>%
-  filter(carinata_L >.01  & sublineata_L > .01 & elongata_L < .01)
-car_sub_hyb
-
-ci %>%
-  rownames_to_column('individual') %>%
-  filter(carinata_L >.01  & sublineata_L > .01 & elongata_L < .01) %>%
-  count()
-
-mean(car_sub_hyb$sublineata)
-
-## How many carinata-elongata hybrids? 
-car_elong_hyb <- ci %>%
-  rownames_to_column('individual') %>%
-  filter(carinata_L >.01 & elongata_L> .01 & sublineata_L < .01)
-
-ci %>%
-  rownames_to_column('individual') %>%
-  filter(carinata_L >.01 & elongata_L> .01 & sublineata_L < .01) %>%
-  count()
-
-ci %>%
-  rownames_to_column('individual') %>%
-  filter(carinata_L >.01 & elongata_L> .01 & sublineata_L < .01) %>%
-  summarize_at(vars(carinata_L, elongata_L), funs(mean))
-
-
-## How many elong-sublineata hybrids? 
-elong_sub_hyb <- ci %>%
-  rownames_to_column('individual') %>%
-  filter(carinata_L < .01  & sublineata_L > .01 & elongata_L > .01)
-elong_sub_hyb
-mean(elong_sub_hyb$sublineata)
-
-
-
+length(setdiff(popmap$popID, mix_admix$popID ))
 ```
 
 ```{r}
-### this is probably better represented as a simplex (triangle)
-pCS <- ggplot(car_sub_hyb) +
-  geom_histogram(aes(carinata), 
-                 alpha = .5, fill = legend[which(legend$spp=="carinata"), "cbbPalette"], stat = "bin", binwidth = .05) +
-  geom_histogram(aes(sublineata), 
-                 alpha = .5, fill = legend[which(legend$spp=="sublineata"), "cbbPalette"], stat = "bin", binwidth = .05) +
-  ylim(c(0,8)) +
-  scale_x_continuous(name= expression( ~italic("D. carinata")~ "X"  ~italic("D. sublineata")~ "q-values")) +
-  theme_bw()
-
-pCE <-ggplot(car_elong_hyb) +
-  geom_histogram(aes(carinata), 
-                 alpha = .5, fill = legend[which(legend$spp=="carinata"), "cbbPalette"], stat = "bin", binwidth = .05) +
-  geom_histogram(aes(elongata), 
-                 alpha = .5, fill = legend[which(legend$spp=="elongata"), "cbbPalette"], stat = "bin", binwidth = .05) +
-  ylim(c(0,8)) +
-    scale_x_continuous(name= expression( ~italic("D. elongata")~ "X"  ~italic(" D. carinata")~ "q-values")) +
-  theme_bw()
-pCE
-
-pES <-ggplot(elong_sub_hyb) +
-  geom_histogram(aes(elongata), 
-                 alpha = .5,fill = legend[which(legend$spp=="elongata"), "cbbPalette"], stat = "bin", binwidth = .05) +
-  geom_histogram(aes(sublineata), 
-                 alpha = .5, fill = legend[which(legend$spp=="sublineata"), "cbbPalette"], stat = "bin", binwidth = .05) +
-  ylim(c(0,8)) +
-      scale_x_continuous(name= expression( ~italic("D. elongata")~ "X"  ~italic(" D. sublineata")~ "q-values")) +
-  theme_bw()
-  
-cowplot::plot_grid(pCS, pCE, pES, nrow = 1, labels = c('A','B','C'))
-ggsave("hybrid_distributions.jpg", dpi = 300, height = 4, width = 10, units = "in")
-
-```
-
-```{r}
-## Pull pure parental species 
+## Pull pure parental species
 pure_parentals <- ci %>%
-  filter(carinata_L > .995 | elongata_L > .995 | 
-           sublineata_L > .995 | carinulata_L > .995) %>% 
+  dplyr::filter(carinata_L > 1 - t_low | elongata_L > 1 - t_low |
+           sublineata_L > 1 - t_low | carinulata_L > 1 - t_low) %>%
   merge(popmap)
 
 pure_parentals$assignment <- colnames(pure_parentals[,c('elongata', 'carinata', 'carinulata', 'sublineata')])[max.col(pure_parentals[,c('elongata', 'carinata', 'carinulata', 'sublineata')])]
@@ -731,31 +584,46 @@ write.table(pure_parentals_popmap, "../info/pure_parentals_popmap.tsv", col.name
 ```
 
 
+# Substructure
 
-### Substructure
+```{r}
+## subset individuals for substructure of elongata
+elongata <- dplyr::filter(ci, elongata_L > t_low) %>%
+  select('sampID', 'popID')
+nrow(elongata)
+write.table(elongata,
+  file = "../info/elongata_popmap.tsv",
+            sep = "\t",
+            quote=F, col.names = F, row.names = F)
+
+## subset individuals for substructure of elongata
+carinulata <- dplyr::filter(ci, carinulata_L > t_low) %>%
+  select('sampID', 'popID')
+nrow(carinulata)
+write.table(carinulata,
+  file = "../info/carinulata_popmap.tsv",
+            sep = "\t",
+            quote=F, col.names = F, row.names = F)
+
+## Are population genetic statistics (like private alleles etc) to populations filtering?
+others_popmap <- anti_join(popmap, carinulata)
+write.table(others_popmap,
+  file = "../info/others_popmap.tsv",
+            sep = "\t",
+            quote=F, col.names = F, row.names = F)
+```
 
 ## Population structure within D. carinulata
 
-```{r substructure_carinu}
-sfiles <- list.files(path="~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/carinulata/structure_analysis/Results/", 
+```{r}
+sfiles <- list.files(path="~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/carinulata/structure_analysis/Results/",
   pattern=glob2rx("outfile_*f"),full.names=TRUE)
 
-carinu_slist <- readQ(sfiles,filetype="structure", 
-               indlabfromfile = TRUE, 
+carinu_slist <- readQ(sfiles,filetype="structure",
+               indlabfromfile = TRUE,
                readci = TRUE)
 
-sr1 <- summariseQ(tabulateQ(carinu_slist))
-p <- evannoMethodStructure(data=sr1,exportplot=F,returnplot=T,returndata=F,basesize=12,linesize=0.7)
-grid.arrange(p)
-
-evannoMethodStructure(data=sr1,
-                  exportplot=T,
-                  exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/carinulata/structure_analysis/plots/",
-                outputfilename = "carinulata_deltaK",
-                returndata=F,
-                height = 10, width = 9)
-
-popmap <- left_join(data.frame(sampID = rownames(carinu_slist[[1]])), 
+popmap <- left_join(data.frame(sampID = rownames(carinu_slist[[1]])),
                     masterpopmap)
 
 popID <- data.frame(popID = popmap$popID)
@@ -770,6 +638,22 @@ pop_order <- pop_order[,1]
 legend_colors
 carinu_legend <- legend_colors[c(4,6,7),]
 carinu_cbbPalette <- carinu_legend[,'cbbPalette']
+carinu_cbbPalette
+```
+
+
+```{r substructure_carinu}
+sr1 <- summariseQ(tabulateQ(carinu_slist))
+p <- evannoMethodStructure(data=sr1,exportplot=F,returnplot=T,returndata=F,basesize=12,linesize=0.7)
+grid.arrange(p)
+
+evannoMethodStructure(data=sr1,
+                  exportplot=T,
+                  exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/carinulata/structure_analysis/plots/",
+                outputfilename = "carinulata_deltaK",
+                returndata=F,
+                height = 10, width = 9)
+
 
 plotQ(alignK(carinu_slist[c(21:30)]),
             imgoutput="join",
@@ -822,7 +706,7 @@ plotQ(alignK(carinu_slist[c(31:40)]),
 
 k4 <- plotQ(alignK(carinu_slist[c(41:50)]),
             imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            returnplot=T,exportplot=F,basesize=11,
             clustercol=cbbPalette,
             subsetgrp = pop_order,
             ordergrp = T,
@@ -833,7 +717,7 @@ grid.arrange(k4$plot[[1]])
 k5 <- plotQ(alignK(carinu_slist[c(51:60)]),
             imgoutput="join",
             subsetgrp = pop_order,
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            returnplot=T,exportplot=F,basesize=11,
             clustercol=cbbPalette,
             ordergrp = T,
             grplab = popID,
@@ -843,7 +727,7 @@ grid.arrange(k5$plot[[1]])
 k6 <- plotQ(alignK(carinu_slist[c(61:70)]),
             imgoutput="join",
             subsetgrp = pop_order,
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            returnplot=T,exportplot=F,basesize=11,
             clustercol=cbbPalette,
             ordergrp = T,
             grplab = popID,
@@ -853,7 +737,7 @@ grid.arrange(k6$plot[[1]])
 k7 <- plotQ(alignK(carinu_slist[c(71:80)]),
             imgoutput="join",
             subsetgrp = pop_order,
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            returnplot=T,exportplot=F,basesize=11,
             clustercol=cbbPalette,
             ordergrp = T,
             grplab = popID,
@@ -863,21 +747,20 @@ grid.arrange(k7$plot[[1]])
 
 ```{r carinu_K3_2save}
 
-plotQ(carinu_slist[31],
-            exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/carinulata/structure_analysis/plots/",
-        outputfilename =  "MainTextFigure_carinuK3",  
+plotQ(carinu_slist[32],
+  exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/carinulata/structure_analysis/plots/",
+  outputfilename =  "MainTextFigure_carinuK3",  
   exportplot=T,
   showyaxis=T,
-  showsp = F,
   clustercol=carinu_cbbPalette,
   subsetgrp = pop_order,
-  ordergrp = T,
+  sortind="all",
   grplab = popID,
   linepos = 1,
   linesize=0.8,
   pointsize = 5,
   divtype = 1,
-  divsize = 1,
+  divsize = 1.2,
   grplabangle= 90,
   grplabpos = .9,
   grplabspacer = 0,
@@ -885,22 +768,24 @@ plotQ(carinu_slist[31],
   grplabsize = 25,
   height = .05,
   width=100,
-  showlegend = T, legendkeysize=30,legendtextsize=30, legendpos="left", legendlab= c("D. carinulata Fukang Ecotype", "D. carinulata Chilik Ecotype", "Other"),
-  basesize=30)
+  showlegend = T,
+  showsp = F, 
+  legendkeysize=40,legendtextsize=40, legendpos="left", legendlab= c("D. carinulata Fukang Ecotype", "D. carinulata Chilik Ecotype", "Other"),
+  basesize=40)
 
 ```
 
 ## Population structure within D. elongata
 
 ```{r elongata_substructure}
-sfiles <- list.files(path="~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/elongata/structure_analysis/Results/", 
-  pattern="outfile_*",full.names=TRUE)
+sfiles <- list.files(path="~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/elongata/structure_analysis/Results/",
+  pattern=glob2rx("outfile_*f"),full.names=TRUE)
 
-elong_slist <- readQ(sfiles,filetype="structure", 
-               indlabfromfile = TRUE, 
+elong_slist <- readQ(sfiles,filetype="structure",
+               indlabfromfile = TRUE,
                readci = TRUE)
 
-popmap <- left_join(data.frame(sampID = rownames(elong_slist[[1]])), 
+popmap <- left_join(data.frame(sampID = rownames(elong_slist[[1]])),
                     masterpopmap)
 
 popID <- data.frame(popID = popmap$popID)
@@ -915,7 +800,7 @@ pop_order <- pop_order[,1]
 legend_colors
 elong_legend <- legend_colors[c(2,5,7),]
 elong_cbbPalette <- elong_legend[,'cbbPalette']
-
+elong_cbbPalette
 ```
 
 ```{r}
@@ -928,58 +813,58 @@ evannoMethodStructure(data=sr1,
                 returndata=F,
                 height = 10, width = 9)
 
-k2 <- plotQ(alignK(slist[c(21:30)]),
+k2 <- plotQ(alignK(elong_slist[c(21:30)]),
             imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            returnplot=T,exportplot=F,basesize=11,
             clustercol=cbbPalette,
             subsetgrp = pop_order,
             ordergrp = T,
             grplab = popID,
             linepos = 1,
             grplabangle=-45,
-            grplabpos = 0, 
+            grplabpos = 0,
             grplabheight=20)
 grid.arrange(k2$plot[[1]])
 
-k3 <- plotQ(alignK(slist[c(31:40)]),
+k3 <- plotQ(alignK(elong_slist[c(31:40)]),
             imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            returnplot=T,exportplot=F,basesize=11,
             clustercol=cbbPalette,
             ordergrp = T,
             grplab = popID,
             grplabangle=-90)
 grid.arrange(k3$plot[[1]])
 
-k4 <- plotQ(alignK(slist[c(41:50)]),
+k4 <- plotQ(alignK(elong_slist[c(41:50)]),
             imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            returnplot=T,exportplot=F,basesize=11,
             clustercol=cbbPalette,
             ordergrp = T,
             grplab = popID,
             grplabangle=-90)
 grid.arrange(k4$plot[[1]])
 
-k5 <- plotQ(alignK(slist[c(51:60)]),
+k5 <- plotQ(alignK(elong_slist[c(51:60)]),
             imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            returnplot=T,exportplot=F,basesize=11,
             clustercol=cbbPalette,
             ordergrp = T,
             grplab = popID,
             grplabangle=-90)
 grid.arrange(k5$plot[[1]])
 
-k6 <- plotQ(alignK(slist[c(61:70)]),
+k6 <- plotQ(alignK(elong_slist[c(61:70)]),
             imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            returnplot=T,exportplot=F,basesize=11,
             clustercol=cbbPalette,
             ordergrp = T,
             grplab = popID,
             grplabangle=-90)
 grid.arrange(k6$plot[[1]])
 
-k7 <- plotQ(alignK(slist[c(71:80)]),
+k7 <- plotQ(alignK(elong_slist[c(71:80)]),
             imgoutput="join",
-            returnplot=T,exportplot=F,quiet=T,basesize=11,
+            returnplot=T,exportplot=F,basesize=11,
             clustercol=cbbPalette,
             ordergrp = T,
             grplab = popID,
@@ -989,21 +874,20 @@ grid.arrange(k7$plot[[1]])
 
 ```{r elongata_substructure_K32Save}
 
-plotQ(elong_slist[32],
+plotQ(elong_slist[37],
             exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/elongata/structure_analysis/plots/",
         outputfilename =  "MainTextFigure_elongataK3",  
   exportplot=T,
-  showyaxis=T,
-  showsp = F,
+  showyaxis=F,
   clustercol=elong_cbbPalette,
   subsetgrp = pop_order,
-  ordergrp = T,
+  sortind="all",
   grplab = popID,
   linepos = 1,
   linesize=0.8,
   pointsize = 5,
   divtype = 1,
-  divsize = 1,
+  divsize = 1.2,
   grplabangle= 90,
   grplabpos = .9,
   grplabspacer = 0,
@@ -1011,7 +895,107 @@ plotQ(elong_slist[32],
   grplabsize = 25,
   height = .05,
   width=100,
-  showlegend = T, legendkeysize=30,legendtextsize=30, legendpos="left", legendlab= c("D. elongata Mainland Ecotype", "D. elongata Crete Ecotype", "Other"),
-  basesize=30)
+  showlegend = F,
+  showsp = F,
+  basesize=40)
+```
+
+
+```{r}
+library(ggtext) 
+
+global_q.dat <- slist[[41]]
+global_q.dat$sampID <- rownames(global_q.dat)
+global_q.dat.popmap.meta <- merge(global_q.dat,
+                    masterpopmap) %>%
+  merge(sample_meta.dat)   %>%
+ dplyr::filter(Grp == "potential_hybrid_zone")
+
+sub_plot <- ggplot(global_q.dat.popmap.meta, aes(x = Latitude, y = Cluster2)) +
+  geom_smooth(method = "lm", color = "red") +
+  geom_jitter(aes(color = popID, shape = cat), alpha = .8, size = 4) +
+  ylim(c(0,1)) +
+  ylab("Proportion of *D. sublineata* ancestry") +
+  guides(col = guide_legend(ncol = 2)) +
+  theme_bw(base_size = 12)+
+  theme(axis.title.y = element_markdown())
+sub_plot
+ggsave("sublineata_ancestry_latitude.jpg")
+
+fit_carina <- lm(global_q.dat.popmap.meta$Cluster4 ~ global_q.dat.popmap.meta$Latitude)
+summary(fit_carina)
+
+fit_sub <- lm(global_q.dat.popmap.meta$Cluster2 ~ global_q.dat.popmap.meta$Latitude)
+summary(fit_sub)
+
+plot(fit_sub, which=1, col=c("blue"))
+plot(fit_sub, which=2, col=c("blue"))
+
+global_q.dat.popmap.meta$predicted <- predict(fit_sub)   # Save the predicted values
+global_q.dat.popmap.meta$residuals <- residuals(fit_sub) # Save the residual values
+
+ggplot(global_q.dat.popmap.meta, aes(x = Latitude, y = Cluster2)) +
+  geom_smooth(method = "lm", se = FALSE, color = "lightgrey") +     # regression line  
+  geom_segment(aes(xend = Latitude, yend = predicted), alpha = .2) +      # draw line from point to line
+  geom_point(aes(color = abs(residuals), size = abs(residuals))) +  # size of the points
+  scale_color_continuous(low = "green", high = "red") +             # colour of the points mapped to residual size - green smaller, red larger
+  guides(color = FALSE, size = FALSE) +                             # Size legend removed
+  geom_point(aes(y = predicted), shape = 1) +
+  ylab("Proportion of D. sublineata ancestry") +
+  theme_bw()
+ggsave("sublineata_ancestry_latitude_fit.jpg")
+
+```
+
+
+```{r plot_q_v_latitude_carinu}
+carinu_q.dat <- carinu_slist[[32]]
+carinu_q.dat$sampID <- rownames(carinu_q.dat)
+carinu_q.popmap.meta <- merge(carinu_q.dat,
+                    masterpopmap) %>%
+  merge(sample_meta.dat) #%>%
+  # dplyr::filter(Cluster3 < .5)  # %>%
+  # dplyr::filter( popID != "46CH"  & popID != "1WY"& popID != "18TX" &  popID != "28NM")
+
+
+carinu_plot <- ggplot(carinu_q.popmap.meta) +
+  geom_smooth(aes(Latitude, Cluster2), method = "lm", color = "red") +
+  geom_jitter(aes(x = Latitude, y = Cluster2, color = popID, shape = cat), alpha = .8, size = 4) +
+  ylab("Proportion of Chilik ancestry") +
+  ylim(c(0,1)) +
+  guides(col = guide_legend(ncol = 2)) +
+  theme_bw(base_size = 12) 
+carinu_plot
+ggsave("fukang_ancestry_latitude.jpg")
+
+fit_carinu <- lm(carinu_q.popmap.meta$Cluster2 ~ carinu_q.popmap.meta$Latitude)
+summary(fit_carinu)
+plot(fit_carinu, which=1, col=c("blue"))
+plot(fit_carinu, which=2, col=c("blue"))
+
+carinu_q.popmap.meta$predicted <- predict(fit_carinu)   # Save the predicted values
+carinu_q.popmap.meta$residuals <- residuals(fit_carinu) # Save the residual values
+
+ggplot(carinu_q.popmap.meta, aes(x = Latitude, y = Cluster2)) +
+  geom_smooth(method = "lm", se = FALSE, color = "lightgrey") +     # regression line  
+  geom_segment(aes(xend = Latitude, yend = predicted), alpha = .2) +      # draw line from point to line
+  geom_point(aes(color = abs(residuals), size = abs(residuals))) +  # size of the points
+  scale_color_continuous(low = "green", high = "red") +
+  ylab("Proportion of Fukang ancestry") + # colour of the points mapped to residual size - green smaller, red larger
+  guides(color = FALSE, size = FALSE) +      
+    ylab("Proportion of Chilik ancestry") +# Size legend removed
+  geom_point(aes(y = predicted), shape = 1) +
+  theme_bw()
+ggsave("fukang_ancestry_latitude_fit.jpg")
+```
+
+```{r}
+library(cowplot)
+plots <- align_plots( sub_plot, carinu_plot, align = 'v', axis = 'l')
+plot_grid(plots[[1]],
+          plots[[2]],
+          ncol = 1, 
+          labels = c('A', 'B'))
+ggsave("sublineata_Carinulata_ancestry_latitude.png", dpi = 300, height = 8, width = 8, units = "in")
 ```
 

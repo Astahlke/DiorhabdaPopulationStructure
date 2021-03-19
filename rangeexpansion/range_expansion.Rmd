@@ -2,7 +2,9 @@
 title: "range_expansion"
 author: "Amanda Stahlke"
 date: "3/6/2020"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -23,7 +25,7 @@ library(dplyr)
 library(snpStats) #1.32.0
 library(geosphere)
 library(rworldmap)
-
+library(sp)
 library(ggplot2)
 ```
 
@@ -104,6 +106,7 @@ rbind(orgin_1 = as.data.frame(results_summary$`1`),
            origin_1_2 = as.data.frame(results_summary$`1+2`))
 
 plot.origin.result.list(results)
+plot.origin.results(results$regions)
 ```
 
 ## psi is directionality index
@@ -117,6 +120,7 @@ melted_cormat <- reshape2::melt(my_psi, na.rm = TRUE)
 melted_cormat <- melted_cormat[order(melted_cormat$value, decreasing = TRUE),]
 melted_cormat$Var1 <- factor(melted_cormat$Var1, levels=unique(melted_cormat$Var1[order(melted_cormat$value)]))
 melted_cormat$Var2 <- factor(melted_cormat$Var2, levels=unique(melted_cormat$Var2[order(melted_cormat$value)]))
+
 
 # library(ggplot2)
 ggplot(data = melted_cormat, aes(Var1, Var2, fill = value))+
@@ -159,7 +163,6 @@ meta_ind
 unique(meta_ind$popID)
 virgin_meta_regions <- merge(meta_ind, carinu_regions)
 colnames(virgin_meta_regions)[c(1,3,4)] <- c('pop','longitude', 'latitude')
-View(virgin_meta_regions)
 
 virgin_meta_regions <- virgin_meta_regions[,c('id','longitude', 'latitude', 'pop')]
 ## missing region; add this back in 
