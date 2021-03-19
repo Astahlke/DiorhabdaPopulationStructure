@@ -108,20 +108,21 @@ carinu_ibd <- semi_join(carinu_ibd, carinu_pops)
 carinu_ibd$Group <- "carinulata"
 
 arrange(carinu_ibd, desc(g_dist))
+
+## Don't overwrite this file
+## Manually designated pops as either Fukang, Chilik, or Admixed
+# write.table(carinu_ibd, "carinu_ibd.txt",
+#           sep = "\t",
+#           row.names =F,
+#           quote = F)
 ```
 
 ```{r}
-### Manually designated pops as either Fukang, Chilik, or Admixed
 carinu_ibd <- read.delim("carinu_ibd.txt")
 carinu_ibd
 
 carinu_ibd.plot <- ggplot(data = carinu_ibd, aes(x=km, y = g_dist, label = label)) +
   stat_smooth(method = "lm", col = "red") +
-  # annotate(geom="text", x=250, y=.09, label=paste("Adj R2 = ",signif(summary(carinulata_ibd.lm)$adj.r.squared, 5),
-  #                    "Intercept =",signif(carinulata_ibd.lm$coef[[1]],5 ),
-  #          " Slope =",signif(carinulata_ibd.lm$coef[[2]], 5),
-  #          " P =",signif(summary(carinulata_ibd.lm)$coef[2,4], 5)),
-  #          color="red", size = 2) +
   ggrepel::geom_label_repel(size = 2) +
   geom_point(size = 3, aes(shape = Ecotype)) +
   scale_shape_manual(name= "",
@@ -136,18 +137,6 @@ ggsave("carinulata_ibd.jpg", dpi = 300, height = 5, width = 10, units = "in")
 
 ```
 
-```{r}
-fukang_ibd <- filter(carinu_ibd, Ecotype=="within" & eco1==1)
-chilik_ibd <- filter(carinu_ibd, Ecotype=="within" & eco1==2)
-
-fukang_ibd.lm = lm(g_dist ~ km, data=fukang_ibd)
-summary(fukang_ibd.lm)
-cor.test(fukang_ibd$g_dist, fukang_ibd$km)
-
-chilik_ibd.lm = lm(g_dist ~ km, data=chilik_ibd)
-summary(chilik_ibd.lm)
-cor.test(chilik_ibd$g_dist, chilik_ibd$km)
-```
 
 ```{r}
 elongata_pops <- dplyr::filter(metadat, Grp=="native_elongata") %>%
@@ -159,21 +148,18 @@ elongata_ibd <- semi_join(elongata_ibd, elongata_pops)
 head(elongata_ibd)
 elongata_ibd$Group <- "elongata"
 
-write.table(elongata_ibd, "elongata_ibd.tsv",
-          sep = "\t",
-          row.names =F,
-          quote = F)
-### Manually designated pops as either Fukang, Chilik, or Admixed
+### Don't overwrite this on accident
+### Manually designated pops with ecotype assignment
+# write.table(elongata_ibd, "elongata_ibd.tsv",
+#           sep = "\t",
+#           row.names =F,
+#           quote = F)
+
 elongata_ibd <- read.delim("elongata_ibd.txt")
 elongata_ibd
 
 elongata_ibd.plot <- ggplot(data = elongata_ibd, aes(x=km, y = g_dist, label = label)) +
   stat_smooth(method = "lm", col = "red") +
-  # annotate(geom="text", x=250, y=.09, label=paste("Adj R2 = ",signif(summary(carinulata_ibd.lm)$adj.r.squared, 5),
-  #                    "Intercept =",signif(carinulata_ibd.lm$coef[[1]],5 ),
-  #          " Slope =",signif(carinulata_ibd.lm$coef[[2]], 5),
-  #          " P =",signif(summary(carinulata_ibd.lm)$coef[2,4], 5)),
-  #          color="red", size = 2) +
   geom_point(size = 3, aes(shape = Ecotype)) +
   ggrepel::geom_label_repel(size = 3) +
   scale_shape_manual(name= "",
@@ -188,20 +174,6 @@ ggsave("elongata_ibd.jpg", dpi = 300, height = 5, width = 7, units = "in")
 ```
 
 
-```{r}
-elongata_ibd.lm = lm(g_dist ~ km, data=elongata_ibd)
-summary(elongata_ibd.lm)
-cor.test(elongata_ibd$g_dist, elongata_ibd$km)
-
-```
-
-```{r}
-crete_ibd <- filter(elongata_ibd, Ecotype=="within" & eco1==1)
-
-crete_ibd.lm = lm(g_dist ~ km, data=crete_ibd)
-summary(crete_ibd.lm)
-cor.test(crete_ibd$g_dist, crete_ibd$km)
-```
 
 
 ```{r}
@@ -216,11 +188,6 @@ hybrid_ibd
 
 hybridzone_ibd <- ggplot(data = hybrid_ibd, aes(x=km, y = g_dist, label = label)) +
   stat_smooth(method = "lm", col = "red") +
-  # annotate(geom="text", x=250, y=.09, label=paste("Adj R2 = ",signif(summary(carinulata_ibd.lm)$adj.r.squared, 5),
-  #                    "Intercept =",signif(carinulata_ibd.lm$coef[[1]],5 ),
-  #          " Slope =",signif(carinulata_ibd.lm$coef[[2]], 5),
-  #          " P =",signif(summary(carinulata_ibd.lm)$coef[2,4], 5)),
-  #          color="red", size = 2) +
   ggrepel::geom_label_repel(size = 2) +
   geom_point()  +
   theme_bw() +
@@ -230,45 +197,43 @@ hybridzone_ibd
 ggsave("hybridzone_ibd.jpg", dpi = 300, height = 5, width = 10, units = "in")
 ```
 
-```{r}
-hybrid_ibd.lm = lm(g_dist ~ km, data=hybrid_ibd)
-summary(hybrid_ibd.lm)
-cor.test(hybrid_ibd$g_dist, hybrid_ibd$km)
-```
-
-Perform linear regression and mantel test!
-
+Perform mantel test!
 
 ```{r}
-
-ibd.df <- carinu_ibd #hybrid_ibd
-ibd.df <- elongata_ibd 
-
-df <- ibd.df %>% 
-  select(row, col, fst)
-
-df2 <- reshape(df, idvar = "row", timevar = "col", direction = "wide")
-df3 <- df2[,order((colSums(is.na(df2))))]
-df4 <- df3[order(as.numeric(rowSums(is.na(df3)))),]
-colnames(df4)
-rownames(df4) <- paste0("fst.",df4[,1])
-df5 <- df4[,2:ncol(df4)]
-fst.mat <- as.matrix(df5)
-fst.mat
-
-df <- ibd.df %>% 
-  select(row, col, km)
-
-df2 <- reshape(df, idvar = "row", timevar = "col", direction = "wide")
-df3 <- df2[,order((colSums(is.na(df2))))]
-df4 <- df3[order(as.numeric(rowSums(is.na(df3)))),]
-colnames(df4)
-rownames(df4) <- paste0("km.",df4[,1])
-df5 <- df4[,2:ncol(df4)]
-km.mat <- as.matrix(df5)
-
 library(vegan)
-mantel(km.mat, fst.mat, method = "spearman", permutations = 9999, na.rm = TRUE)
+
+ibd_test <- function(ibd.df) {
+  
+  df <- ibd.df %>% 
+  select(row, col, fst)
+  
+  df2 <- reshape(df, idvar = "row", timevar = "col", direction = "wide")
+  df3 <- df2[,order((colSums(is.na(df2))))]
+  df4 <- df3[order(as.numeric(rowSums(is.na(df3)))),]
+  colnames(df4)
+  rownames(df4) <- paste0("fst.",df4[,1])
+  df5 <- df4[,2:ncol(df4)]
+  fst.mat <- as.matrix(df5)
+  fst.mat
+  
+  df <- ibd.df %>% 
+    select(row, col, km)
+  
+  df2 <- reshape(df, idvar = "row", timevar = "col", direction = "wide")
+  df3 <- df2[,order((colSums(is.na(df2))))]
+  df4 <- df3[order(as.numeric(rowSums(is.na(df3)))),]
+  colnames(df4)
+  rownames(df4) <- paste0("km.",df4[,1])
+  df5 <- df4[,2:ncol(df4)]
+  km.mat <- as.matrix(df5)
+  
+  mantel(km.mat, fst.mat, method = "spearman", permutations = 9999, na.rm = TRUE)
+
+}
+
+ibd_test(carinu_ibd)
+ibd_test(elongata_ibd)
+ibd_test(hybrid_ibd)
 
 ```
 
