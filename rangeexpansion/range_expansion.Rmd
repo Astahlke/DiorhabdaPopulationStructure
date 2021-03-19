@@ -7,9 +7,6 @@ output:
   pdf_document: default
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ``````{r, engine = 'bash', eval = FALSE, plinkcode}
 ## convert this contig vcf to plink
@@ -20,6 +17,7 @@ plink --bfile contig.populations.snps --set-missing-var-ids "@_#" --make-bed --o
 
 ```{r}
 ## range expansion
+# devtools::install_github("BenjaminPeter/rangeExpansion", ref="package")
 library(rangeExpansion) ## Version: 0.0.0.9000
 library(dplyr)
 library(snpStats) #1.32.0
