@@ -6,8 +6,12 @@ structure_analysis/StahlkeBitume_
 substructure/carinulata/5populations/R50/populations.snps.vcf
 substructure/carinulata/structure_analysis/carinulata.structure
 substructure/carinulata/structure_analysis/Results
+substructure/carinulata/structure_analysis/Results.zip
 
 substructure/elongata/5populations/R50/populations.snps.vcf
+substructure/elongata/structure_analysis/elongata.structure
+substructure/elongata/structure_analysis/Results
+substructure/elongata/structure_analysis/Results.zip
 
 map/ne_10m_rivers_lake_centerlines.zip
 map/ne_10m_rivers_lake_centerlines
