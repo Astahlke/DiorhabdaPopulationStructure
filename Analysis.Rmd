@@ -221,9 +221,9 @@ head(imiss)
 hist(imiss$F_MISS, breaks = 100)
 
 colnames(imiss)[1] <- "sampID"
-colnames(global_popmap)[1] <- "sampID"
+colnames(popmap)[1] <- "sampID"
 
-merge(imiss, global_popmap) %>%
+merge(imiss, popmap) %>%
     arrange(desc(F_MISS)) 
 
 miss_meta <- merge(imiss, global_popmap) %>%
