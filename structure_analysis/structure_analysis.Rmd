@@ -866,7 +866,6 @@ grid.arrange(k6$plot[[1]])
 k7 <- plotQ(alignK(elong_slist[c(71:80)]),
             imgoutput="join",
             returnplot=T,exportplot=F,basesize=11,
-            clustercol=cbbPalette,
             ordergrp = T,
             grplab = popID,
             grplabangle=-90)
