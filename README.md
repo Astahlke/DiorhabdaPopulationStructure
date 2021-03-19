@@ -27,11 +27,11 @@ Most work was performed on the IBEST cluster, usually crick or watson.
   * populations
 
 3. Model-based ancestry assignment in Structure
-   * downloaded vcf to local computer
-   * converted vcf to structure format with PGDspider
-   * uploaded this back to cluster
-   * ran K= 1-10 for 10 reps each
-   * Re-ran this for carinulata and elongata to examine population substructure
+  * downloaded vcf to local computer
+  * converted vcf to structure format with PGDspider
+  * uploaded this back to cluster
+  * ran K= 1-10 for 10 reps each
+  * Re-ran this for carinulata and elongata to examine population substructure
 
 4. Examined population genetics in the context of hybridization
   * Popgen stats
@@ -39,6 +39,7 @@ Most work was performed on the IBEST cluster, usually crick or watson.
   * RangeExpansion analysis on carinulata
 
 ## To-do
-* upload scripts for genome assembly
-* upload raw data for genome assembly
-* upload raw data for population genetics
+  * upload scripts for genome assembly
+  * upload raw data for genome assembly
+  * upload raw data for population genetics
+  * associate each of the steps above with scripts and directories
