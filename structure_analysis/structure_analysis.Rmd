@@ -14,6 +14,8 @@ library(label.switching)
 
 library(dplyr)
 
+getwd()
+
 cbbPalette <- c("#56B4E9", "#E69F00", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#9370DB") 
 human_colors <- c('blue', 'orange', 'green', 'yellow', 'dark blue', 'red', 'purple')
 spp <- c('carinata', 'elongata', 'sublineata', 'carinulata', 'elongata_sub', 'carinulata_sub', 'other')
@@ -31,12 +33,13 @@ sample_meta.dat <- read.csv("../info/pop_metadata.csv", header = TRUE, stringsAs
 sample_meta.dat
 ```
 
-## Structure
+# Structure Analysis
 
 Examined "global" ancestry for all available samples. Old replicates and some suspected contamination/switching have been removed. The masterpopmap has ALL of these samples.
 
 Admixture model, LD=0, allele freqs are uncorrelated, alpha is inferred for each popualtion.
 
+Read in Results and set up popmap/poporder for visualization and downstream analysis. 
 ```{r global_structure_inputs}
 sfiles <- list.files(path="Results/",
   pattern=glob2rx("outfile_*f"),full.names=TRUE)
@@ -55,6 +58,7 @@ pop_order <- sample_meta.dat[,c("popID", "Order")]
 pop_order <- arrange(pop_order, Order)[,1]
 ```
 
+Sample size for just Structure analysis
 
 ```{r}
 samplesize <- left_join(popmap, sample_meta.dat) %>%
@@ -98,6 +102,8 @@ grid.arrange(k4$plot[[1]])
 
 ```
 
+Code to save a nice version of all reps of K=4 for the manuscript. 
+
 ```{r plots2save_repsK}
 
 fn1 <- function(x) attr(x,"k")
@@ -127,8 +133,10 @@ plotQ(alignK(slist[c(41:50)]),
   grplabheight=150)
 ```
 
+## Assign species identity to each cluster
+Extract one q file that reflects known species identity
+
 ```{r designate_cluster, message=F}
-## extract one q file that reflects known species identity
 global_k4_q <- slist[[41]]
 global_k4_q$sampID <- row.names(global_k4_q)
 
@@ -162,7 +170,6 @@ cls <- c(carinata_cluster, carinulata_cluster, sublineata_cluster, elongata_clus
 spp <- c("carinata", "carinulata", "sublineata", "elongata")
 clusters <- as.data.frame(cbind(spp = spp[order(cls)], cluster = seq(1,4)))
 
-
 colnames(global_k4_q)[1:4] <- as.character(clusters$spp)
 q_popmap <- merge(global_k4_q, popmap)
 head(q_popmap)
@@ -179,6 +186,7 @@ legendlab <- arrange(legend, cluster) %>%
 legendlab <- legendlab$label[1:4]
 ```
 
+Code to save a nice version of one rep of K=4 for the manuscript. 
 
 ```{r Global_K4_2save, message=F}
 plotQ(slist[41],
@@ -208,6 +216,8 @@ plotQ(slist[41],
   # titlesize = 20,
   basesize=30)
 ```
+
+Code to save a nice version of K=2-4 for the manuscript. 
 
 ```{r k2_k3_k4_2save, message=F}
 # custom strip panel label showing k only
@@ -321,7 +331,7 @@ grid.arrange(k8$plot[[1]])
 
 ```
 
-##Among individuals, how many pure? How many hybrids, and of what type?
+## Among individuals, how many pure? How many hybrids, and of what type?
 
 Extract confidence intervals. 
 
@@ -363,7 +373,7 @@ t_low
 ### Each hybrid type
 
 How many hybrids with carinulata?
-```{r}
+```{r carinulata}
 carinu_hyb <- ci %>%
   dplyr::filter(carinulata_L > t_low ) %>%
   dplyr::filter(elongata_L > t_low |
@@ -376,7 +386,7 @@ carinu_hyb
 
 
 How many tri-specific hybrids?
-```{r}
+```{r tri-specific}
 ci %>%
   dplyr::filter(carinata_L > t_low & elongata_L > t_low & sublineata_L > t_low) 
 
@@ -389,8 +399,7 @@ ci %>%
 
 
 How many hybrids with sublineata?
-```{r}
-
+```{r sublineata}
 ci %>%
   dplyr::filter(sublineata_L > t_low) %>%
   dplyr::filter(carinulata_L > t_low |
@@ -407,7 +416,7 @@ ci %>%
 
 D. elongata hybrids
 
-```{r}
+```{r elongata}
 ci %>%
   dplyr::filter(elongata_L > t_low) %>%
   dplyr::filter(carinulata_L > t_low |
@@ -421,19 +430,19 @@ ci %>%
   arrange(desc(elongata_L)) %>%
   count()
 ```
+
 ### Specific bi-parental types
 How many carinata-sublineata hybrids?
 How many carinata-elongata hybrids?
 How many elong-sublineata hybrids?
-```{r}
 
+```{r  bi-parental}
 car_sub_hyb <- ci %>%
   dplyr::filter(carinata_L >t_low  & sublineata_L > t_low & elongata_L < t_low)
 car_sub_hyb
 
 car_sub_hyb %>%
   summarise(mean(sublineata), nrow(.))
-
 
 car_elong_hyb <- ci %>%
   dplyr::filter(carinata_L > t_low & elongata_L> t_low & sublineata_L < t_low) %>%
@@ -454,7 +463,7 @@ elong_sub_hyb %>%
 ## Vizualize bi-parental crosses!
 This could be better represented as a simplex (triangle)?
 
-```{r}
+```{r viz_bi-parental}
 pCS <- ggplot(car_sub_hyb) +
   geom_histogram(aes(carinata),
                  alpha = .5, fill = legend[which(legend$spp=="carinata"), "cbbPalette"], stat = "bin", binwidth = .05) +
@@ -486,13 +495,6 @@ pES <-ggplot(elong_sub_hyb) +
 
 cowplot::plot_grid(pCS, pCE, pES, nrow = 1, labels = c('A','B','C'))
 ggsave("hybrid_distributions.jpg", dpi = 300, height = 4, width = 10, units = "in")
-
-```
-
-
-
-
-```{r}
 
 ```
 
@@ -568,8 +570,9 @@ setdiff(popmap$popID, mix_admix$popID )
 length(setdiff(popmap$popID, mix_admix$popID ))
 ```
 
+Pull pure parental species for reference down the road. 
+
 ```{r}
-## Pull pure parental species
 pure_parentals <- ci %>%
   dplyr::filter(carinata_L > 1 - t_low | elongata_L > 1 - t_low |
            sublineata_L > 1 - t_low | carinulata_L > 1 - t_low) %>%
@@ -583,29 +586,28 @@ pure_parentals_popmap <- pure_parentals[,c('sampID', 'assignment')]
 write.table(pure_parentals_popmap, "../info/pure_parentals_popmap.tsv", col.names = F, quote = F, row.names = F, sep = "\t")
 ```
 
-
 # Substructure
+Subset individuals for substructure of elongata, carinulata, and everything but carinulata ("others").
 
 ```{r}
-## subset individuals for substructure of elongata
 elongata <- dplyr::filter(ci, elongata_L > t_low) %>%
   select('sampID', 'popID')
 nrow(elongata)
+
 write.table(elongata,
   file = "../info/elongata_popmap.tsv",
             sep = "\t",
             quote=F, col.names = F, row.names = F)
 
-## subset individuals for substructure of elongata
 carinulata <- dplyr::filter(ci, carinulata_L > t_low) %>%
   select('sampID', 'popID')
 nrow(carinulata)
+
 write.table(carinulata,
   file = "../info/carinulata_popmap.tsv",
             sep = "\t",
             quote=F, col.names = F, row.names = F)
 
-## Are population genetic statistics (like private alleles etc) to populations filtering?
 others_popmap <- anti_join(popmap, carinulata)
 write.table(others_popmap,
   file = "../info/others_popmap.tsv",
@@ -615,8 +617,8 @@ write.table(others_popmap,
 
 ## Population structure within D. carinulata
 
-```{r}
-sfiles <- list.files(path="~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/carinulata/structure_analysis/Results/",
+```{r substructure_carinu_results}
+sfiles <- list.files(path="../substructure/carinulata/structure_analysis/Results/",
   pattern=glob2rx("outfile_*f"),full.names=TRUE)
 
 carinu_slist <- readQ(sfiles,filetype="structure",
@@ -649,7 +651,7 @@ grid.arrange(p)
 
 evannoMethodStructure(data=sr1,
                   exportplot=T,
-                  exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/carinulata/structure_analysis/plots/",
+                  exportpath = "../substructure/carinulata/structure_analysis/plots/",
                 outputfilename = "carinulata_deltaK",
                 returndata=F,
                 height = 10, width = 9)
@@ -657,7 +659,7 @@ evannoMethodStructure(data=sr1,
 
 plotQ(alignK(carinu_slist[c(21:30)]),
             imgoutput="join",
-                  exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/carinulata/structure_analysis/plots/",
+                  exportpath = "../substructure/carinulata/structure_analysis/plots/",
   outputfilename =  "Joined-K2",  
   exportplot=T,
   showyaxis=T,
@@ -682,7 +684,7 @@ plotQ(alignK(carinu_slist[c(21:30)]),
 
 plotQ(alignK(carinu_slist[c(31:40)]),
             imgoutput="join",
-                  exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/carinulata/structure_analysis/plots/",
+                  exportpath = "../substructure/carinulata/structure_analysis/plots/",
   outputfilename =  "Joined-K3",  
   exportplot=T,
   showyaxis=T,
@@ -746,9 +748,8 @@ grid.arrange(k7$plot[[1]])
 ```
 
 ```{r carinu_K3_2save}
-
 plotQ(carinu_slist[32],
-  exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/carinulata/structure_analysis/plots/",
+  exportpath = "../substructure/carinulata/structure_analysis/plots/",
   outputfilename =  "MainTextFigure_carinuK3",  
   exportplot=T,
   showyaxis=T,
@@ -778,7 +779,7 @@ plotQ(carinu_slist[32],
 ## Population structure within D. elongata
 
 ```{r elongata_substructure}
-sfiles <- list.files(path="~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/elongata/structure_analysis/Results/",
+sfiles <- list.files(path="../substructure/elongata/structure_analysis/Results/",
   pattern=glob2rx("outfile_*f"),full.names=TRUE)
 
 elong_slist <- readQ(sfiles,filetype="structure",
@@ -808,7 +809,7 @@ sr1 <- summariseQ(tabulateQ(elong_slist))
 
 evannoMethodStructure(data=sr1,
                   exportplot=T,
-                  exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/elongata/structure_analysis/plots/",
+                  exportpath = "../substructure/elongata/structure_analysis/plots/",
                 outputfilename = "elongata_deltaK",
                 returndata=F,
                 height = 10, width = 9)
@@ -875,7 +876,7 @@ grid.arrange(k7$plot[[1]])
 ```{r elongata_substructure_K32Save}
 
 plotQ(elong_slist[37],
-            exportpath = "~/Code/diorhabda/StahlkeBitume_heirarchical_str/Git_Repo/substructure/elongata/structure_analysis/plots/",
+            exportpath = "../substructure/elongata/structure_analysis/plots/",
         outputfilename =  "MainTextFigure_elongataK3",  
   exportplot=T,
   showyaxis=F,
@@ -900,6 +901,7 @@ plotQ(elong_slist[37],
   basesize=40)
 ```
 
+# Is there a latitudinal gradient found for ecotypes or ancestry?
 
 ```{r}
 library(ggtext) 
@@ -996,6 +998,6 @@ plot_grid(plots[[1]],
           plots[[2]],
           ncol = 1, 
           labels = c('A', 'B'))
-ggsave("sublineata_Carinulata_ancestry_latitude.png", dpi = 300, height = 8, width = 8, units = "in")
+ggsave("sublineata_carinulata_ancestry_latitude.png", dpi = 300, height = 8, width = 8, units = "in")
 ```
 

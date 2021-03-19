@@ -11,7 +11,8 @@ library(dplyr)
 library(ggplot2)
 
 metadat <- read.csv("../info/pop_metadata.csv", stringsAsFactors = F)
-metadat
+
+
 ```
 
 Can we capture more variation by partitioning carinulata, elongata, others? 
@@ -47,16 +48,20 @@ poly_sumstats_global$ID <- 'global'
 poly_sumstats_global
 
 poly_sumstats_carinulata <- read.csv("../substructure/carinulata/5populations/R50/populations.sumstats_summary.tsv", 
-                      sep = "\t",  skip = 18)
+                      sep = "\t",  skip = 17, header = T)
 poly_sumstats_carinulata$ID <- 'carinulata'
+head(poly_sumstats_carinulata)
 
 poly_sumstats_others<- read.csv("../substructure/others/5populations/R50/populations.sumstats_summary.tsv", 
-                      sep = "\t",  skip = 27)
+                      sep = "\t",  skip = 27, header = T)
 poly_sumstats_others$ID <- 'others'
+head(poly_sumstats_others)
 
 poly_sumstats_elongata <- read.csv("../substructure/elongata/5populations/R50/populations.sumstats_summary.tsv", 
-                      sep = "\t",  skip = 12)
+                      sep = "\t",  skip = 14, header = T)
 poly_sumstats_elongata$ID <- 'elongata'
+head(poly_sumstats_elongata)
+
 
 poly_sumstats <- list(poly_sumstats_global, poly_sumstats_elongata, poly_sumstats_carinulata, poly_sumstats_others)
 poly_sumstats <- do.call(rbind,poly_sumstats)
@@ -72,20 +77,31 @@ ggplot(popgenstats, aes(x=popID, y=Exp_Het, fill = ID))  +
   theme(axis.text.x = element_text(angle = 90, hjust = 1),
         legend.position = "bottom") +
   facet_grid(~Grp, scales = "free_x", space = "free") 
+ggsave("ExpHet_bygroup.jpg", dpi = 300, height = 4, width = 7, units = "in")
 
 ggplot(popgenstats, aes(x=popID, y=Private, fill = ID))  +
   geom_bar(stat = "identity", width = 0.9, position = "dodge") +
   theme(axis.text.x = element_text(angle = 90, hjust = 1),
         legend.position = "bottom") +
   facet_grid(~Grp, scales = "free_x", space = "free") 
+ggsave("PrivateAlleles_bygroup.jpg", dpi = 300, height = 4, width = 7, units = "in")
 
 ggplot(popgenstats, aes(x=popID, y=Fis, fill = ID))  +
   geom_bar(stat = "identity", width = 0.9, position = "dodge") +
   theme(axis.text.x = element_text(angle = 90, hjust = 1),
         legend.position = "bottom") +
   facet_grid(~Grp, scales = "free_x", space = "free") 
+ggsave("FIS_bygroup.jpg", dpi = 300, height = 4, width = 7, units = "in")
 
 ggplot(popgenstats, aes(x=popID, y=Pi, fill = ID))  +
+  geom_bar(stat = "identity", width = 0.9, position = "dodge") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        legend.position = "bottom") +
+  facet_grid(~Grp, scales = "free_x", space = "free") 
+ggsave("Pi_bygroup.jpg", dpi = 300, height = 4, width = 7, units = "in")
+
+ggsave("Pi_bygroup.jpg", dpi = 300, height = 4, width = 7, units = "in")
+ggplot(poly_sumstats, aes(x=popID, y=Perc.Polymorphic_Loci, fill = ID))  +
   geom_bar(stat = "identity", width = 0.9, position = "dodge") +
   theme(axis.text.x = element_text(angle = 90, hjust = 1),
         legend.position = "bottom") +
@@ -96,17 +112,30 @@ ggplot(poly_sumstats, aes(x=popID, y=Perc.Polymorphic_Loci, fill = ID))  +
   theme(axis.text.x = element_text(angle = 90, hjust = 1),
         legend.position = "bottom") +
   facet_grid(~Grp, scales = "free_x", space = "free") 
+
+ggsave("Perc.Polymorphic_Loci_bygroup.jpg", dpi = 300, height = 4, width = 7, units = "in")
 ```
 
-```{r, cache=TRUE}
-popgenstats <- filter(popgenstats, ID == "global")
+```{r}
+popgenstats <- dplyr::filter(popgenstats, ID == "global")
 popgenstats$popID <- factor(popgenstats$popID,levels = 
           popgenstats$popID[order(popgenstats$Order)])
 
-poly_sumstats <- filter(poly_sumstats, ID == "global")
+poly_sumstats <- dplyr::filter(poly_sumstats, ID == "global")
 poly_sumstats$popID <- factor(poly_sumstats$popID,levels = 
           poly_sumstats$popID[order(poly_sumstats$Order)])
  
+popgenstats$cat <- factor(popgenstats$cat,
+                          levels = 
+                            c('original_release', 'native','expansion', 'lab'))
+unique(popgenstats$Grp)
+labels <- c(carinulata = "D. carinulata Range", 
+            potential_hybrid_zone = "Suspected Hybrid Zone",
+            native_elongata = "Native D. elongata",
+            lab = "Lab")
+```
+
+```{r}
 het <- ggplot(popgenstats, aes(x=popID, y=Exp_Het, fill = cat))  +
   geom_bar(stat = "identity", width = 0.9) +
   geom_errorbar( aes(ymin=Exp_Het-StdErr.4, ymax=Exp_Het+StdErr.4),  alpha=0.5) +
@@ -120,12 +149,23 @@ het <- ggplot(popgenstats, aes(x=popID, y=Exp_Het, fill = cat))  +
     legend.position = "bottom")
 het
 
-unique(popgenstats$Grp)
-labels <- c(carinulata = "D. carinulata Range", 
-            potential_hybrid_zone = "Suspected Hybrid Zone",
-            native_elongata = "Native D. elongata",
-            lab = "Lab")
+polymorphic_loci <- ggplot(poly_sumstats, aes(x=popID, y=Perc.Polymorphic_Loci, fill = cat))  +
+  geom_bar(stat = "identity", width = 0.9) +
+  facet_grid(~ Grp, scales = "free_x", space = "free") +
+  scale_fill_grey() +
+  theme_bw() +
+  theme(
+    strip.background = element_blank(),
+    strip.text.x = element_blank(),
+    # axis.title.x=element_blank(),
+     legend.position = "bottom",
+    axis.text.x = element_text(angle = 90, hjust = 1))
+polymorphic_loci
 
+```
+
+
+```{r, cache=TRUE}
 Pi <- ggplot(popgenstats, aes(x=popID, y=Pi, fill = cat))  +
   geom_bar(stat = "identity", width = 0.9) +
   geom_errorbar( aes(ymin=Pi - StdErr.6, ymax=Pi + StdErr.6),  alpha=0.5) +
@@ -137,23 +177,10 @@ Pi <- ggplot(popgenstats, aes(x=popID, y=Pi, fill = cat))  +
     # strip.background = element_blank(),
     # strip.text.x = element_blank(),
     legend.position = "none",
+    strip.text.x = element_text(size = 12), 
     axis.text.x=element_blank(),
     axis.title.x=element_blank())
 Pi
-
-Fis <- ggplot(popgenstats, aes(x=popID, y=Fis, fill = cat))  +
-  geom_bar(stat = "identity", width = 0.9) +
-  geom_errorbar( aes(ymin=Fis - StdErr.7, ymax=Fis + StdErr.7),  alpha=0.5) +
-  facet_grid(~ Grp, scales = "free_x", space = "free") +
-  scale_fill_grey() +
-  theme_bw() +
-  theme(
-    # strip.background = element_blank(),
-    # strip.text.x = element_blank(),
-    # legend.position = "none",
-    axis.text.x = element_text(angle = 90, hjust = 1),
-    legend.position = "bottom")
-Fis
 
 Private <- ggplot(popgenstats, aes(x=popID, y=Private, fill = cat))  +
   geom_bar(stat = "identity", width = 0.9) +
@@ -163,37 +190,55 @@ Private <- ggplot(popgenstats, aes(x=popID, y=Private, fill = cat))  +
   theme(
     strip.background = element_blank(),
     strip.text.x = element_blank(),
-    # axis.text.x=element_blank(),
-    axis.text.x = element_text(angle = 90, hjust = 1),
     axis.title.x=element_blank(),
-    legend.position = "bottom")
+    legend.position = "none",
+    axis.text.x=element_blank()) #,
+    # axis.text.x = element_text(angle = 90, hjust = 1),
+    # axis.title.x=element_blank(),
+    # legend.position = "bottom")
 Private
 
-
-polymorphic_loci <- ggplot(poly_sumstats, aes(x=popID, y=Perc.Polymorphic_Loci, fill = cat))  +
+Fis <- ggplot(popgenstats, aes(x=popID, y=Fis, fill = cat))  +
   geom_bar(stat = "identity", width = 0.9) +
+  geom_errorbar( aes(ymin=Fis - StdErr.7, ymax=Fis + StdErr.7),  alpha=0.5) +
   facet_grid(~ Grp, scales = "free_x", space = "free") +
   scale_fill_grey() +
   theme_bw() +
   theme(
     strip.background = element_blank(),
     strip.text.x = element_blank(),
-    axis.title.x=element_blank(),
-     legend.position = "bottom",
-    axis.text.x = element_text(angle = 90, hjust = 1))
-polymorphic_loci
+    # legend.position = "none",
+    axis.text.x = element_text(angle = 90, hjust = 1),
+    legend.position = "bottom")
+Fis
+
 ```
 
 ```{r}
-plots <- align_plots(Pi, Private, polymorphic_loci, align = 'v', axis = 'l')
+library(cowplot)
+plots <- align_plots(Pi, Private, Fis, align = 'v', axis = 'l')
 plot_grid(plots[[1]],
           plots[[2]],
-          # plots[[3]],
-          ncol = 1, 
-          labels = c('A', 'B', 'C'))
+           plots[[3]],
+          rel_heights = c(.5, .5, 1),
+          ncol = 1)
 ggsave("popgenstats.jpg", dpi = 300, height = 8, width = 10, units = "in")
+ggsave("popgenstats.svg", dpi = 300, height = 8, width = 10, units = "in")
 ```
 
 
+```{r}
+popgenstats_carinu_exp <- merge(popgenstats, metadat) %>%
+  dplyr::filter(cat=="carinulata_expansion", ID == "carinulata")
+
+summary(lm(popgenstats_carinu_exp$Private ~ popgenstats_carinu_exp$Latitude))
+summary(lm(popgenstats_carinu_exp$Pi~ popgenstats_carinu_exp$Latitude))
+summary(lm(popgenstats_carinu_exp$Exp_Het~ popgenstats_carinu_exp$Latitude))
+
+ggplot(popgenstats_carinu_exp)+
+  geom_point(aes(x= Latitude, y = Private, color= popID, shape = cat))
+ggplot(popgenstats_carinu_exp)+
+  geom_point(aes(x= Latitude, y = Pi, color= popID, shape = cat))
+```
 
 
