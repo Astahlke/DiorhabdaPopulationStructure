@@ -82,7 +82,8 @@ evannoMethodStructure(data=sr1,
                   exportpath = "plots",
                 outputfilename = "global_deltaK",
                 returndata=F,
-                height = 10, width = 9)
+                height = 10, width = 9, 
+                xaxisbreaks=c(1:nrow(sr1)))
 ```
 
 K=2 and K=3 are super stable. D. carinata appears as a mix between sublineata and elongata. I am surprised to see, for the first time in these samples, indications of admixture between carinlata and sublineata along the Rio Grande.
@@ -654,7 +655,8 @@ evannoMethodStructure(data=sr1,
                   exportpath = "../substructure/carinulata/structure_analysis/plots/",
                 outputfilename = "carinulata_deltaK",
                 returndata=F,
-                height = 10, width = 9)
+                height = 10, width = 9, 
+                xaxisbreaks=c(1:nrow(sr1)))
 
 
 plotQ(alignK(carinu_slist[c(21:30)]),
@@ -812,7 +814,8 @@ evannoMethodStructure(data=sr1,
                   exportpath = "../substructure/elongata/structure_analysis/plots/",
                 outputfilename = "elongata_deltaK",
                 returndata=F,
-                height = 10, width = 9)
+                height = 10, width = 9,
+                xaxisbreaks=c(1:nrow(sr1)))
 
 k2 <- plotQ(alignK(elong_slist[c(21:30)]),
             imgoutput="join",
